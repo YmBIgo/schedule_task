@@ -58,8 +58,10 @@
                         <td>
                         <% if p_tasks.include?(p_num) %>
                             <div class="alert-<%= alert_array[p_num-1] %> text-center">
-                                <a href="/tasks/<%= Task.find_by(:parent_task_id => 0, :t_number => p_num).id %>">
-                                    <%= Task.find_by(:parent_task_id => 0, :t_number => p_num).t_name %>
+                                <a href="/tasks/<%= Task.find_by(:work_id => @work.id, :parent_task_id => 0, :t_number => p_num).id %>">
+                                    <%= Task.find_by(:work_id => @work.id, :parent_task_id => 0, :t_number => p_num).t_name %>
+                                    <br>
+                                    <small><%= Task.find_by(:work_id => @work.id, :parent_task_id => 0, :t_number => p_num).end_date %>まで</small>
                                 </a>
                             </div>
                         <% end %>
@@ -68,6 +70,20 @@
                 </tr>
             <% end %>
         </table>
+        <br>
+        <h4><i class="fas fa-angle-double-right"></i>全タスク表</h4>
+        <div class="list-group">
+        <% @tasks.each do |z_task| %>
+            <div class="list-group-item list-group-item-action">
+                <a href="/tasks/<%= z_task.id %>">
+                    <%= z_task.t_name %>　<%= z_task.end_date %>まで
+                    <br>
+                    <small><%= z_task.role %>さんの担当</small>
+                    <a class="btn btn-success" style="float:right;color:white;margin-top:-20px;">未終了</a>
+                </a>
+            </div>
+        <% end %>
+        </div>
     </div>
     <br>
 </div>

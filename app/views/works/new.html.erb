@@ -1,28 +1,43 @@
-<div style="margin:20px 60px;">
-    <h1>合宿の日程</h1>
-    <hr>
-    <%= form_for  %>
-    <div class="list-group">
-        <% @tasks.each do |task| %>
-            <% if task.parent_task_id == 0 then %>
-                <div class="list-group-item list-group-item-action active">
-                    <p><%= task.t_name %></p>
-                    <small>
-                     <%= task.role %>　　<input type="date" class="form-control" style="width:180px;display:inline;" value="<%= year_month_date(@today.prev_day(task.before_date)) %>">
-                     から <input type="date" class="form-control" style="width:180px;display:inline;" value="<%= year_month_date(@today.prev_day(task.before_date).next_day(task.date_duration)) %>"> まで
-                     </small>
-                </div>
-            <% else %>
-                <div class="list-group-item list-group-item-action" style="margin-left:30px;">
-                    <p style="width:200px"><%= task.t_name %></p>
-                    <small><%= task.role %>　　<%= year_month_date(@today.prev_day(task.before_date)) %>
-                    から <%= year_month_date(@today.prev_day(task.before_date).next_day(task.date_duration)) %> まで</small>
-                </div>
+<div style="margin:50px 60px;">
+    <%= form_for(@work) do |f| %>
+        <h3><%= f.label :w_name, :value => "タイトル" %></h3>
+        <%= f.text_field :w_name, :value => "合宿1", :class => "form-control", :style => "width:200px;" %>
+        <br>
+        <div class="list-group">
+            <%= fields_for 'tasks[]', @tasks do |task| %>
+                <% task.object.collection.each do |task_collection_data| %>
+                    <% t_start_date = year_month_date(@today.prev_day(task_collection_data.before_date)); %>
+                    <% t_end_date   = year_month_date(@today.prev_day(task_collection_data.before_date).next_day(task_collection_data.date_duration))  %>
+                    <% if task_collection_data.parent_task_id == 0 then %>
+                        <div class="list-group-item list-group-item-action active">
+                            <p><%= task_collection_data.t_name %></p>
+                            <small>
+                            <%= task_collection_data.role %>　　<input type="date" class="form-control" style="width:180px;display:inline;" value="<%= t_start_date %>">
+                            から <input type="date" class="form-control" style="width:180px;display:inline;" value="<%= t_end_date %>"> まで
+                            </small>
+                        </div>
+                    <% else %>
+                        <div class="list-group-item list-group-item-action" style="margin-left:30px;">
+                            <p style="width:200px"><%= task_collection_data.t_name %></p>
+                            <small><%= task_collection_data.role %>　　<%= t_start_date %>
+                            から <%= t_end_date %> まで</small>
+                        </div>
+                    <% end %>
+                    <%= task.hidden_field :t_name, :value => task_collection_data.t_name %>
+                    <%= task.hidden_field :role,   :value => task_collection_data.role %>
+                    <%= task.hidden_field :t_number, :value => task_collection_data.t_number %>
+                    <%= task.hidden_field :before_date,   :value => task_collection_data.before_date %>
+                    <%= task.hidden_field :date_duration,   :value => task_collection_data.date_duration %>
+                    <%= task.hidden_field :parent_task_id, :value => task_collection_data.parent_task_id %>
+                    <%= task.hidden_field :start_date, :value => t_start_date %>
+                    <%= task.hidden_field :end_date, :value => t_end_date %>
+                <% end %>
             <% end %>
-        <% end %>
-    </div>
+        </div>
+        <br>
+        <div class="text-center">
+            <%= f.submit "スケジュール作成する", :class => "btn btn-success" %>
+        </div>
+    <% end %>
     <br>
-    <div class="text-center">
-        <a href="/works/qlZ2p5uPs2A" class="btn btn-success">登録する</a>
-    </div>
 </div>

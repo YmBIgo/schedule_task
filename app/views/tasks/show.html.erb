@@ -17,7 +17,7 @@
     <% if @task.parent_task_id == 0 then %>
         <h4>含まれる作業</h4>
         <div class="list-group">
-            <% Task.where(:t_number => @task.t_number).each do |t_task| %>
+            <% Task.where(:t_number => @task.t_number, :work_id => @task.work.id).each do |t_task| %>
                 <% if t_task.parent_task_id == 0 then %>
                     <div class="list-group-item list-group-item-action active">
                         <a href="/tasks/<%= t_task.id %>" style="color:white;"><%= t_task.t_name %></a>
