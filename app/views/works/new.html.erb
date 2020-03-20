@@ -5,12 +5,15 @@
         <% @tasks.each do |task| %>
             <% if task.parent_task_id == 0 then %>
                 <div class="list-group-item list-group-item-action active">
+                    <%= task.t_name %>
+                    <small><%= task.role %>係　　<input type="date" class="form-control" style="width:230px;display:inline;" value="<%= task.start_date %>"> から <input type="date" class="form-control" style="width:230px;display:inline;" value="<%= task.end_date %>"> まで</small>
+                </div>
             <% else %>
                 <div class="list-group-item list-group-item-action" style="margin-left:30px;">
+                    <%= task.t_name %>
+                    <small><%= task.role %>係　　<%= task.start_date %> から <%= task.end_date %> まで</small>
+                </div>
             <% end %>
-                <%= task.t_name %>
-                <small><%= task.role %>係　　<input type="date" class="form-control" style="width:230px;display:inline;" value="<%= task.start_date %>"> から <input type="date" class="form-control" style="width:230px;display:inline;" value="<%= task.end_date %>"> まで</small>
-            </div>
         <% end %>
     </div>
     <br>
