@@ -33,6 +33,8 @@ ActiveRecord::Schema.define(version: 2020_03_20_071501) do
     t.integer "t_number", null: false
     t.integer "work_id", null: false
     t.integer "person_id", null: false
+    t.integer "before_date", default: 1, null: false
+    t.integer "date_duration", default: 1, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

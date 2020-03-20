@@ -12,6 +12,9 @@ class CreateTasks < ActiveRecord::Migration[6.0]
       t.integer   :work_id,        null: false, default: ""
       t.integer   :person_id,      null: false, default: ""
 
+      t.integer   :before_date,    null: false, default: 1
+      t.integer   :date_duration,  null: false, default: 1
+
       t.timestamps
     end
   end

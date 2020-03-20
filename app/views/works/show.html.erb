@@ -6,15 +6,16 @@
             <h4><i class="fas fa-angle-double-right"></i>今週終わらせること</h4>
             <br>
             <div class="list-group">
+                <div class="list-group-item list-group-item-action active">
+                    <a href="/tasks/<%= @recent_task_top.id %>" style="color:white;">
+                        <%= @recent_task_top.t_name %>　<%= @recent_task_top.start_date %>まで
+                    </a>
+                </div>
                 <% @recent_tasks.each do |r_task| %>
-                    <div class="list-group-item list-group-item-action row">
+                    <div class="list-group-item list-group-item-action">
                         <a href="/tasks/<%= r_task.id %>">
-                        <span class="col-sm-6" style="min-width:40%;">
-                        <%= r_task.t_name %>　<%= r_task.end_date %>まで
-                        </span>
-                        <span class="col-sm-6">
-                        <span class="btn btn-success" style="color:white;">未終了</span>
-                        </span>
+                            <%= r_task.t_name %>　<%= r_task.end_date %>まで
+                            <span class="btn btn-success" style="color:white;float:right;">未終了</span>
                         </a>
                     </div>
                 <% end %>
@@ -37,9 +38,8 @@
             <br>
             <div class="list-group">
                 <div class="list-group-item list-group-item-action">
-                  <a href="/tasks/3">
-                　予算案
-                  </a>
+                  <a href="/tasks/3">予算案</a>
+                  <span class="btn btn-success" style="color:white;float:right;">未終了</span>
                 </div>
             </div>
         </div>
@@ -49,41 +49,24 @@
         <h4><i class="fas fa-angle-double-right"></i>スケジュール</h4>
         <br>
         <table class="table">
-            <tr>
-                <td>担当者</td>
-                <td>3月</td>
-                <td>4月</td>
-                <td>5月</td>
-                <td>6月</td>
-            </tr>
-            <tr>
-                <td>幹部1</td>
-                <td><div style="width:240%;" class="alert-danger text-center">hoge1</div></td>
-                <td></td>
-                <td><div style="width:115%;" class="alert-warning text-center">hoge2</div></td>
-                <td><div style="width:115%;" class="alert-success text-center">hoge3</div></td>
-            </tr>
-            <tr>
-                <td>幹部2</td>
-                <td></td>
-                <td><div style="width:115%;" class="alert-warning text-center">hoge2</div></td>
-                <td><div style="width:115%;" class="alert-primary text-center">hoge3</div></td>
-                <td><div style="width:115%;" class="alert-success text-center">hoge3</div></td>
-            </tr>
-            <tr>
-                <td>予算</td>
-                <td><div style="width:115%;" class="alert-warning text-center">hoge2</div></td>
-                <td><div style="width:115%;" class="alert-primary text-center">hoge3</div></td>
-                <td><div style="width:115%;" class="alert-success text-center">hoge3</div></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>飲み会</td>
-                <td><div style="width:115%;" class="alert-danger text-center">hoge2</div></td>
-                <td><div style="width:115%;" class="alert-warning text-center">hoge2</div></td>
-                <td><div style="width:115%;" class="alert-primary text-center">hoge3</div></td>
-                <td><div style="width:115%;" class="alert-success text-center">hoge3</div></td>
-            </tr>
+            <% @persons.each do |person| %>
+                <% p_tasks = person.tasks.pluck(:t_number).uniq %>
+                <tr>
+                    <td><%= person.p_name %>(<%= person.role %>)</td>
+                    <% alert_array = ["danger", "primary", "warning", "success"]; %>
+                    <% (1..4).each do |p_num| %>
+                        <td>
+                        <% if p_tasks.include?(p_num) %>
+                            <div class="alert-<%= alert_array[p_num-1] %> text-center">
+                                <a href="/tasks/<%= Task.find_by(:parent_task_id => 0, :t_number => p_num).id %>">
+                                    <%= Task.find_by(:parent_task_id => 0, :t_number => p_num).t_name %>
+                                </a>
+                            </div>
+                        <% end %>
+                        </td>
+                    <% end %>
+                </tr>
+            <% end %>
         </table>
     </div>
     <br>

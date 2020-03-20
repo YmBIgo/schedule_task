@@ -4,15 +4,37 @@
     </div>
     <hr>
     <form action="/works/new" method="get" >
-    <label name="name1">幹部1</label>
-    <input type="text" name="name1" class="form-control" style="width:200px;"></input>
-    <label name="name1">幹部2</label>
-    <input type="text" name="name2" class="form-control" style="width:200px;"></input>
-    <label name="name1">飲み会</label>
-    <input type="text" name="name3" class="form-control" style="width:200px;"></input>
-    <label name="name1">予算</label>
-    <input type="text" name="name4" class="form-control" style="width:200px;"></input>
-    
-    <br><br>
-    <input type="submit" value="送信する" class="btn btn-success">
+    <div class="row">
+    <div class="col-sm-6">
+        <div class="top-page-input">
+        <label name="name1">幹部1</label>
+        <input type="text" name="name1" class="form-control" style="width:200px;"></input>
+        </div>
+        <div class="top-page-input">
+        <label name="name2">幹部2</label>
+        <input type="text" name="name2" class="form-control" style="width:200px;"></input>
+        </div>
+        <div class="top-page-input">
+        <label name="name3">飲み会</label>
+        <input type="text" name="name3" class="form-control" style="width:200px;"></input>
+        </div>
+        <div class="top-page-input">
+        <label name="name4">予算</label>
+        <input type="text" name="name4" class="form-control" style="width:200px;"></input>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="top-page-input">
+            <label name="start-date">合宿開始日</label>
+            <input type="date" name="start-date" class="form-control" style="width:200px;"></input>
+            <label name="end-date">合宿開始日</label>
+            <input type="date" name="end-date" class="form-control" style="width:200px;"></input>
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="text-center">
+        <input type="submit" value="送信する" class="btn btn-success">
+    </div>
+    </form>
 </div>
