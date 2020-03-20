@@ -1,0 +1,20 @@
+<div style="margin:20px 60px;">
+    <h1>合宿の日程</h1>
+    <hr>
+    <div class="list-group">
+        <% @tasks.each do |task| %>
+            <% if task.parent_task_id == 0 then %>
+                <div class="list-group-item list-group-item-action active">
+            <% else %>
+                <div class="list-group-item list-group-item-action" style="margin-left:30px;">
+            <% end %>
+                <%= task.t_name %>
+                <small><%= task.role %>係　　<%= task.start_date %> から <%= task.end_date %> まで</small>
+            </div>
+        <% end %>
+    </div>
+    <br>
+    <div class="text-center">
+        <a href="/works/qlZ2p5uPs2A" class="btn btn-success">登録する</a>
+    </div>
+</div>

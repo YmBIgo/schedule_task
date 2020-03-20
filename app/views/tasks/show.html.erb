@@ -1,0 +1,16 @@
+<div style="margin:20px 60px;">
+    <h4><%= @task.t_name %>　<a class="btn btn-success" style="color:white;">未終了</a></h4>
+    <br>
+    <table class="table">
+        <tr>
+            <td>開始日</td><td><%= @task.start_date %></td>
+        </tr>
+        <tr>
+            <td>終了日</td><td><%= @task.end_date %></td>
+        </tr>
+        <tr>
+            <td>担当者</td><td><%= @task.role %></td>
+        </tr>
+    </table>
+    <a class="btn btn-warning">終了した</a>
+</div>
