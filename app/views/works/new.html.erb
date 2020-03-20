@@ -1,6 +1,7 @@
 <div style="margin:20px 60px;">
     <h1>合宿の日程</h1>
     <hr>
+    <%= form_for  %>
     <div class="list-group">
         <% @tasks.each do |task| %>
             <% if task.parent_task_id == 0 then %>
