@@ -10,6 +10,7 @@
             </h4>
             <div class="schdule-detail-section" style="background-color:#eee;padding:15px;margin-top:20px">
                 <% if @task.reference_url != "" then %>
+                    <h5>参考ページ</h5>
                     <a class="thumbnail" target="_blank" href="<%= @task.reference_url %>">
                         <h5><%= @task.reference_text %></h5>
                         <div style="margin:0 auto;">
