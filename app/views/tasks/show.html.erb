@@ -1,35 +1,103 @@
 <div style="margin:20px 60px;">
-    <h4><%= @task.t_name %>　<a class="btn btn-success" style="color:white;">未終了</a></h4>
-    <br>
-    <table class="table">
-        <tr>
-            <td>開始日</td><td><%= @task.start_date %></td>
-        </tr>
-        <tr>
-            <td>終了日</td><td><%= @task.end_date %></td>
-        </tr>
-        <tr>
-            <td>担当者</td><td><%= @task.role %></td>
-        </tr>
-    </table>
-    <a class="btn btn-warning">終了した</a>
-    <br><br>
-    <% if @task.parent_task_id == 0 then %>
-        <h4>含まれる作業</h4>
-        <div class="list-group">
-            <% Task.where(:t_number => @task.t_number, :work_id => @task.work.id).each do |t_task| %>
-                <% if t_task.parent_task_id == 0 then %>
-                    <div class="list-group-item list-group-item-action active">
-                        <a href="/tasks/<%= t_task.id %>" style="color:white;"><%= t_task.t_name %></a>
-                    </div>
-                <% else %>
-                    <div class="list-group-item list-group-item-action">
-                        <a href="/tasks/<%= t_task.id %>"><%= t_task.t_name %></a>
-                    </div>     
-                <% end %>           
+    <div class="row">
+        <div class="col-sm-8">
+            <h4>
+                <i class="fas fa-asterisk"></i>　
+                <%= @task.t_name %>　<a class="btn btn-success" style="color:white;">未終了</a>　
+                <% if @parent_task != nil then %>
+                    <a class="btn btn-info" href="/tasks/<%= @parent_task.id %>" style="color:white;"><%= @parent_task.t_name %></a>
+                <% end %>
+            </h4>
+            <div class="schedule-detail-section">
+                <h5 id="sd-days" style="text-align:center;"></h5>
+            </div>
+            <br>
+            <h4><i class="fas fa-asterisk"></i> <%= @task.t_name %>の詳細</h4>
+            <div class="schedule-detail-section">
+                <textarea rows="3" cols="100" class="form-control"></textarea>
+                <a href="" class="btn btn-xs btn-success" style="margin-top:10px;margin-bottom:20px;">保存</a>
+            <br>
+            </div>
+            <br>
+            <h4><i class="fas fa-asterisk"></i> <%= @task.t_name %>の役割分担</h4>
+            <div class="schedule-detail-section">
+            <table class="table">
+                <tr>
+                    <td>開始日</td><td><%= @task.start_date %></td>
+                </tr>
+                <tr>
+                    <td>終了日</td><td><%= @task.end_date %></td>
+                </tr>
+                <tr>
+                    <td>担当者</td><td><%= @task.role %></td>
+                </tr>
+            </table>
+            <a class="btn btn-warning">終了した</a>
+            <br><br>
+            <% if @task.parent_task_id == 0 then %>
+                <h4><i class="fas fa-asterisk"></i> 含まれる作業</h4>
+                <div class="list-group">
+                    <% Task.where(:t_number => @task.t_number, :work_id => @task.work.id).each do |t_task| %>
+                        <% if t_task.parent_task_id == 0 then %>
+                            <div class="list-group-item list-group-item-action active">
+                                <a href="/tasks/<%= t_task.id %>" style="color:white;"><%= t_task.t_name %></a>
+                            </div>
+                        <% else %>
+                            <div class="list-group-item list-group-item-action">
+                                <a href="/tasks/<%= t_task.id %>"><%= t_task.t_name %></a>
+                            </div>     
+                        <% end %>           
+                    <% end %>
+                </div>
+                <br>
             <% end %>
+            <a href="/works/<%= @task.work.w_url %>" class="btn btn-danger" style="margin-top:20px;">戻る</a>
+            </div>
         </div>
-        <br>
-    <% end %>
-    <a href="/works/<%= @task.work.w_url %>" class="btn btn-danger" style="margin-top:20px;">戻る</a>
+        <div class="col-sm-4">
+            <div class="task-detail-left">
+                <h4><i class="fas fa-asterisk"></i> 関係するタスク</h4>
+                <br>
+                <div class="schdule-detail-section">
+                    <div class="list-group">
+                        <% @relate_tasks.each do |r_task| %>
+                            <a href="/tasks/<%= r_task.id %>">
+                            <div class="list-group-item list-group-item-action">
+                                <%= r_task.t_name %>
+                                <br>
+                                <i class="fas fa-user-circle"></i>　<small><%= r_task.role %></small>
+                                <br>
+                                <i class="fas fa-clock"></i>　<small><%= r_task.start_date %></small>
+                            </div>
+                            </a>
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<script type="text/javascript">
+    function time(){
+        var now = new Date();
+        // 来年の1月1日
+        var firstDay = new Date(<%= @task.end_date.year %>, (<%= @task.end_date.month %>-1), <%= @task.end_date.day %>);
+        // 秒数差
+        var diff = (firstDay.getTime() - now.getTime()) / 1000;
+        // 日時の計算と端数切り捨て
+        var daysLeft = Math.floor(diff / (24 * 60 * 60));
+        var hoursLeft = (Math.floor(diff / (60 * 60))) % 24;
+        var minitesLeft = (Math.floor(diff / 60)) % 60;
+        var secondsLeft = Math.floor(diff) % 60;
+        // 二桁表示
+        minitesLeft = ("0" + minitesLeft).slice(-2)
+        secondsLeft = ("0" + secondsLeft).slice(-2)
+        // 出力
+        if (daysLeft < 0 || hoursLeft < 0 || minitesLeft < 0 || secondsLeft < 0){
+            document.getElementById("sd-days").innerHTML = "期限切れです...";
+        }else{
+            document.getElementById("sd-days").innerHTML = ("残り時間　　　<div class='d-day'>" + daysLeft + "日</div> <div class='d-hour'>" + hoursLeft + "時間</div> <div class='d-min'>" + minitesLeft + "分</div> <div class='d-sec'>" + secondsLeft + "秒</div>");
+        }
+    }
+    setInterval('time()',500);
+</script>

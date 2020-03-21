@@ -1,23 +1,28 @@
 <div style="margin:20px 60px;">
-    <h1><%= @work.w_name %>のスケジュール</h1>
+    <h1><%= @work.w_name %> のスケジュール</h1>
     <hr>
     <div class="row">
         <div class="col-sm-7">
             <h4><i class="fas fa-angle-double-right"></i>今週終わらせること</h4>
             <br>
             <div class="list-group">
-                <div class="list-group-item list-group-item-action active">
-                    <a href="/tasks/<%= @recent_task_top.id %>" style="color:white;">
-                        <%= @recent_task_top.t_name %>　<%= @recent_task_top.start_date %>まで
-                    </a>
-                </div>
-                <% @recent_tasks.each do |r_task| %>
-                    <div class="list-group-item list-group-item-action">
-                        <a href="/tasks/<%= r_task.id %>">
-                            <%= r_task.t_name %>　<%= r_task.end_date %>まで
-                            <span class="btn btn-success" style="color:white;float:right;">未終了</span>
-                        </a>
+                <a href="/tasks/<%= @recent_task_top.id %>" style="color:white;">
+                    <div class="list-group-item list-group-item-action active">
+                        <%= @recent_task_top.t_name %>　　
+                        <small><i class="fas fa-clock"></i>　<%= @recent_task_top.start_date %>まで</small>
                     </div>
+                </a>
+                <% @recent_tasks.each do |r_task| %>
+                    <a href="/tasks/<%= r_task.id %>" class="list-group-item list-group-item-action">
+                        <%= r_task.t_name %>
+                        <br>
+                        <small>
+                        <i class="fas fa-user-circle"></i>　<%= r_task.role %>
+                        <br>
+                        <i class="fas fa-clock"></i>　<%= r_task.end_date %>まで
+                        </small>
+                        <span class="btn btn-success" style="color:white;float:right;">未終了</span>
+                    </a>
                 <% end %>
             </div>
             <br>
@@ -37,10 +42,10 @@
             <h3><i class="fas fa-angle-double-right"></i>遅れそうなスケジュール</h3>
             <br>
             <div class="list-group">
-                <div class="list-group-item list-group-item-action">
-                  <a href="/tasks/3">予算案</a>
+                <a href="/tasks/3" class="list-group-item list-group-item-action">
+                  予算案
                   <span class="btn btn-success" style="color:white;float:right;">未終了</span>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -72,16 +77,23 @@
         </table>
         <br>
         <h4><i class="fas fa-angle-double-right"></i>全タスク表</h4>
+        <br>
         <div class="list-group">
         <% @tasks.each do |z_task| %>
-            <div class="list-group-item list-group-item-action">
-                <a href="/tasks/<%= z_task.id %>">
-                    <%= z_task.t_name %>　<%= z_task.end_date %>まで
-                    <br>
-                    <small><%= z_task.role %>さんの担当</small>
-                    <a class="btn btn-success" style="float:right;color:white;margin-top:-20px;">未終了</a>
-                </a>
-            </div>
+            <% if z_task.parent_task_id == 0 %>
+                <a href="/tasks/<%= z_task.id %>" class="list-group-item list-group-item-action active">
+            <% else %>
+                <a href="/tasks/<%= z_task.id %>" class="list-group-item list-group-item-action">
+            <% end %>
+                <%= z_task.t_name %>
+                <br>
+                <small>
+                <i class="fas fa-user-circle"></i>　<%= z_task.role %>
+                <br>
+                <i class="fas fa-clock"></i>　<%= z_task.end_date %>まで
+                </small>
+                <span class="btn btn-success" style="float:right;color:white;margin-top:-20px;">未終了</span>
+            </a>
         <% end %>
         </div>
     </div>

@@ -9,5 +9,24 @@
   }
 
   .kanban-board{
-      margin-bottom:20px;
+    margin-bottom:20px;
   }
+
+
+.schedule-detail-section{
+  margin-top:20px;
+  margin-left:30px;
+}
+
+.task-detail-left{
+  background-color:#ccc;
+  padding:20px;
+  height:500px;
+}
+
+.sd-days{}
+
+.d-day{ display:inline-block; }
+.d-hour{ display:inline-block; }
+.d-min{ display:inline-block; }
+.d-sec{ display:inline-block; }
