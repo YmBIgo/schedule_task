@@ -1,0 +1,13 @@
+.task {
+    background-color: #F4CE46;
+  }
+  .progress-task {
+    background-color: #2A92BF;
+  }
+  .done {
+    background-color: #00B961;
+  }
+
+  .kanban-board{
+      margin-bottom:20px;
+  }
