@@ -33,6 +33,11 @@
                         <%= task.hidden_field :before_date,   :value => task_collection_data.before_date %>
                         <%= task.hidden_field :date_duration,   :value => task_collection_data.date_duration %>
                         <%= task.hidden_field :parent_task_id, :value => task_collection_data.parent_task_id %>
+                        
+                        <%= task.hidden_field :reference_url, :value => task_collection_data.reference_url %>
+                        <%= task.hidden_field :reference_image, :value => task_collection_data.reference_image %>
+                        <%= task.hidden_field :reference_text, :value => task_collection_data.reference_text %>
+
                         <%= task.hidden_field :start_date, :value => t_start_date %>
                         <%= task.hidden_field :end_date, :value => t_end_date %>
                     </div>
@@ -149,6 +154,10 @@
         var c_end_date = $(css_selector + " input[name='tasks[][end_date]']").val();
         var t_number   = $(css_selector + " input[name='tasks[][t_number]']").val();
 
+        var reference_url   = $(css_selector + " input[name='tasks[][reference_url]']").val();
+        var reference_image = $(css_selector + " input[name='tasks[][reference_image]']").val();
+        var reference_text      = $(css_selector + " input[name='tasks[][reference_text]']").val();
+
         console.log(f_event + role + before_term_date + parent_task_id + term_day + c_start_date + c_end_date + t_number)
 
         var date_selector = "<select name='calendar' style='width:100px'>";
@@ -182,14 +191,17 @@
         <a href=\'javascript:FilledForm("' + css_selector +'","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\'" class="btn btn-warning" style="float:right;margin:0 10px;">決定する</a>\
         <a href=\'javascript:AppendList("' + css_selector +'","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\'" class="btn btn-success" style="float:right;margin:0 10px;">追加する</a>\
         <a href=\'javascript:DeleteList("' + css_selector +'");\'" class="btn btn-danger" style="float:right;margin:0 10px;">削除する</a></div>\
-        <input value="'+ f_event +'" type="hidden" name="tasks[][t_name]" id="tasks__t_name">\
-        <input value="' + role + '" type="hidden" name="tasks[][role]" id="tasks__role">\
-        <input value="' + t_number + '" type="hidden" name="tasks[][t_number]" id="tasks__t_number">\
-        <input value="' + before_term_date +'" type="hidden" name="tasks[][before_date]" id="tasks__before_date">\
-        <input value="' + term_day + '" type="hidden" name="tasks[][date_duration]" id="tasks__date_duration">\
-        <input value="' + parent_task_id + '" type="hidden" name="tasks[][parent_task_id]" id="tasks__parent_task_id">\
-        <input value="' + c_start_date +'" type="hidden" name="tasks[][start_date]" id="tasks__start_date">\
-        <input value="' + c_end_date + '" type="hidden" name="tasks[][end_date]" id="tasks__end_date">';
+        <input value="'+ f_event +'" type="hidden" name="tasks[][t_name]" id="tasks_t_name">\
+        <input value="' + role + '" type="hidden" name="tasks[][role]" id="tasks_role">\
+        <input value="' + t_number + '" type="hidden" name="tasks[][t_number]" id="tasks_t_number">\
+        <input value="' + before_term_date +'" type="hidden" name="tasks[][before_date]" id="tasks_before_date">\
+        <input value="' + term_day + '" type="hidden" name="tasks[][date_duration]" id="tasks_date_duration">\
+        <input value="' + parent_task_id + '" type="hidden" name="tasks[][parent_task_id]" id="tasks_parent_task_id">\
+        <input value="' + c_start_date +'" type="hidden" name="tasks[][start_date]" id="tasks_start_date">\
+        <input value="' + c_end_date + '" type="hidden" name="tasks[][end_date]" id="tasks_end_date">\
+        <input value="' + reference_url + '" type="hidden" name="tasks[][reference_url]" id="reference_url">\
+        <input value="' + reference_text + '" type="hidden" name="tasks[][reference_text]" id="reference_text">\
+        <input value="' + reference_image + '" type="hidden" name="tasks[][reference_image]" id="reference_image">';
         $(css_selector).html(fixed_selector);
     }
 
@@ -202,6 +214,10 @@
         term_day = Math.floor((Date.parse(c_end_date) - Date.parse(c_start_date))/86400000)
         event_end_date = document.getElementById("start-date").innerText
         before_term_date = Math.floor((Date.parse(event_end_date) - Date.parse(c_start_date))/86400000)
+
+        var reference_url   = $(css_selector + " input[name='tasks[][reference_url]']").val();
+        var reference_image = $(css_selector + " input[name='tasks[][reference_image]']").val();
+        var reference_text      = $(css_selector + " input[name='tasks[][reference_text]']").val();
 
         // t_number と　parent_id は実装必要あり。
         var filled_selector = '<p style="width:200px">' + f_event + '</p>\
@@ -217,7 +233,10 @@
         <input value="' + term_day + '" type="hidden" name="tasks[][date_duration]" id="tasks__date_duration">\
         <input value="' + parent_task_id + '" type="hidden" name="tasks[][parent_task_id]" id="tasks__parent_task_id">\
         <input value="'+ c_start_date +'" type="hidden" name="tasks[][start_date]" id="tasks__start_date">\
-        <input value="' + c_end_date + '" type="hidden" name="tasks[][end_date]" id="tasks__end_date">';
+        <input value="' + c_end_date + '" type="hidden" name="tasks[][end_date]" id="tasks__end_date">\
+        <input value="' + reference_url + '" type="hidden" name="tasks[][reference_url]" id="reference_url">\
+        <input value="' + reference_text + '" type="hidden" name="tasks[][reference_text]" id="reference_text">\
+        <input value="' + reference_image + '" type="hidden" name="tasks[][reference_image]" id="reference_image">';
         $(css_selector).html(filled_selector);
     }
 

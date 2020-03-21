@@ -21,7 +21,7 @@
 .task-detail-left{
   background-color:#ccc;
   padding:20px;
-  height:500px;
+  min-height:500px;
 }
 
 .sd-days{}

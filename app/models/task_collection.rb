@@ -21,7 +21,10 @@ class TaskCollection
                     :t_number       => value['t_number'],
                     :person_id      => value['person_id'],
                     :before_date    => value['before_date'],
-                    :date_duration  => value['date_duration']
+                    :date_duration  => value['date_duration'],
+                    :reference_url  => value['reference_url'],
+                    :reference_text => value['reference_text'],
+                    :reference_image => value['reference_image']
                 )
             end
         else

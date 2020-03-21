@@ -8,8 +8,26 @@
                     <a class="btn btn-info" href="/tasks/<%= @parent_task.id %>" style="color:white;"><%= @parent_task.t_name %></a>
                 <% end %>
             </h4>
-            <div class="schedule-detail-section">
-                <h5 id="sd-days" style="text-align:center;"></h5>
+            <div class="schdule-detail-section" style="background-color:#eee;padding:15px;margin-top:20px">
+                <% if @task.reference_url != "" then %>
+                    <a class="thumbnail" target="_blank" href="<%= @task.reference_url %>">
+                        <h5><%= @task.reference_text %></h5>
+                        <div style="margin:0 auto;">
+                        <img src="<%= @task.reference_image %>" width="70%">
+                        </div>
+                    </a>
+                <% else %>
+                    <h5>参考ページを登録しよう</h5>
+                    <label name="reference_text">サイト名</label>
+                    <input type="text" name="reference_text" class="form-control" style="width:300px;">
+                    <label name="reference_url">ページURL</label>
+                    <input type="text" name="reference_url" class="form-control" style="width:300px;">
+                    <label name="reference_image">画像URL</label>
+                    <input type="text" name="reference_image" class="form-control" style="width:300px;">
+                <% end %>
+                <div class="schedule-detail-section">
+                    <h5 id="sd-days" style="text-align:left;"></h5>
+                </div>
             </div>
             <br>
             <h4><i class="fas fa-asterisk"></i> <%= @task.t_name %>の詳細</h4>
@@ -75,6 +93,7 @@
                         <% end %>
                     </div>
                 </div>
+                <br>
             </div>
         </div>
     </div>
