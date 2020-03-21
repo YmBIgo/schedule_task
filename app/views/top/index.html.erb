@@ -1,43 +1,75 @@
-<div style="margin:0px 30px;">
-    <div class="text-center">
-    <h1>合宿のスケジュールを登録しよう</h1>
+<div style="margin:30px 30px;">
+    <div class="top-search-section">
+        <div class="text-center">
+        <h3><i class="fas fa-calendar"></i>　合宿のスケジュールを登録しよう</h3>
+        </div>
+        <br>
+        <form action="/works/new" method="get" >
+        <div class="row">
+        <div class="col-sm-6">
+            <div class="top-page-input">
+            <label name="name1">幹部1</label>
+            <input type="text" name="name1" class="form-control" style="width:200px;" value="太郎"></input>
+            </div>
+            <div class="top-page-input">
+            <label name="name2">幹部2</label>
+            <input type="text" name="name2" class="form-control" style="width:200px;" value="二郎"></input>
+            </div>
+            <div class="top-page-input">
+            <label name="name3">飲み会</label>
+            <input type="text" name="name3" class="form-control" style="width:200px;" value="三田"></input>
+            </div>
+            <div class="top-page-input">
+            <label name="name4">予算</label>
+            <input type="text" name="name4" class="form-control" style="width:200px;" value="四谷"></input>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="top-page-input">
+                <label name="start-date">合宿開始日</label>
+                <input type="date" name="start-date" class="form-control" style="width:200px;" value="2020-04-10"></input>
+                <label name="end-date">合宿終了日</label>
+                <input type="date" name="end-date" class="form-control" style="width:200px;" value="2020-04-13"></input>
+                <br>
+                <label name="email">代表者メールアドレス</input>
+                <input type="email" name="email" class="form-control" style="width:300px" placeholder="example@example.com"></input>
+            </div>
+        </div>
+        </div>
+        <br>
+        <div class="text-center">
+            <input type="submit" value="送信する" class="btn btn-success">
+        </div>
+        </form>
+        <br>
     </div>
     <hr>
-    <form action="/works/new" method="get" >
-    <div class="row">
-    <div class="col-sm-6">
-        <div class="top-page-input">
-        <label name="name1">幹部1</label>
-        <input type="text" name="name1" class="form-control" style="width:200px;" value="太郎"></input>
-        </div>
-        <div class="top-page-input">
-        <label name="name2">幹部2</label>
-        <input type="text" name="name2" class="form-control" style="width:200px;" value="二郎"></input>
-        </div>
-        <div class="top-page-input">
-        <label name="name3">飲み会</label>
-        <input type="text" name="name3" class="form-control" style="width:200px;" value="三田"></input>
-        </div>
-        <div class="top-page-input">
-        <label name="name4">予算</label>
-        <input type="text" name="name4" class="form-control" style="width:200px;" value="四谷"></input>
-        </div>
-    </div>
-    <div class="col-sm-6">
-        <div class="top-page-input">
-            <label name="start-date">合宿開始日</label>
-            <input type="date" name="start-date" class="form-control" style="width:200px;" value="2020-04-10"></input>
-            <label name="end-date">合宿終了日</label>
-            <input type="date" name="end-date" class="form-control" style="width:200px;" value="2020-04-13"></input>
-            <br>
-            <label name="email">代表者メールアドレス</input>
-            <input type="email" name="email" class="form-control" style="width:300px" placeholder="example@example.com"></input>
+    <div class="explanation-area">
+        <div class="text-center"><h3><i class="fas fa-mouse-pointer"></i>　使い方</h3></div>
+        <br>
+        <div class="row text-center">
+            <div class="col-sm-6">
+                <h6>１：幹事の名前と日程を入力します</h6>
+                <img src="https://scheduletask.s3-ap-northeast-1.amazonaws.com/images/usage/Usage1.png" width="80%" style="margin:20px auto;border:1px solid #777;">
+                <br><br>
+                <p></p>
+            </div>
+            <div class="col-sm-6">
+                <h6>２：「やること」が自動で出てきます。確認しましょう。</h6>
+                <img src="https://scheduletask.s3-ap-northeast-1.amazonaws.com/images/usage/Usage2.png" width="80%" style="margin:20px auto;border:1px solid #777;">
+                <br><br><br>
+                <p></p>
+            </div>
+            <div class="col-sm-6">
+                <h6>３：スケジュールが自動生成されます</h6>
+                <img src="https://scheduletask.s3-ap-northeast-1.amazonaws.com/images/usage/Usage3.png" width="80%" style="margin:20px auto;border:1px solid #777;">
+                <br><br>
+            </div>
+            <div class="col-sm-6">
+                <h6>４：みんなで一緒に管理しましょう</h6>
+                <img src="https://scheduletask.s3-ap-northeast-1.amazonaws.com/images/usage/Usage4.png" width="80%" style="margin:20px auto;border:1px solid #777;">
+                <br><br>
+            </div>
         </div>
     </div>
-    </div>
-    <br>
-    <div class="text-center">
-        <input type="submit" value="送信する" class="btn btn-success">
-    </div>
-    </form>
 </div>
