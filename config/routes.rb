@@ -4,7 +4,11 @@ Rails.application.routes.draw do
   get '/top', to: "top#index"
   root to: 'top#index'
   get '/top_second', to: "static_page#index"
+  
   resources :works, :only => [:new, :show, :index, :create]
+
   resources :tasks, :only => [:show]
+  post '/tasks/:id/done' => 'tasks#done',   as: 'done'
+  post '/tasks/:id/undone' => 'tasks#undone',   as: 'undone'
 
 end

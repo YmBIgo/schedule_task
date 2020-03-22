@@ -1,11 +1,21 @@
+<style type="text/css">
+    .button_to{display: inline-block !important;}
+</style>
 <div style="margin:20px 60px;">
     <div class="row">
         <div class="col-sm-8">
             <h4>
                 <i class="fas fa-asterisk"></i>　
-                <%= @task.t_name %>　<a class="btn btn-success" style="color:white;">未終了</a>　
+                <%= @task.t_name %>　
                 <% if @parent_task != nil then %>
-                    <a class="btn btn-info" href="/tasks/<%= @parent_task.id %>" style="color:white;"><%= @parent_task.t_name %></a>
+                    <a class="btn btn-info" href="/tasks/<%= @parent_task.id %>" style="color:white;display: inline-block;"><%= @parent_task.t_name %></a>
+                <% end %>
+                <% if @task.done == false %>
+                    <a id="task<%= @task.id %>" class="btn btn-success" style="display:none;width:100px;color:white;display:none"><%= @task.task_status[0] %></a>
+                    <%= button_to @task.task_status[0], done_path(@task), method: :post, remote: true, :class => "btn btn-#{@task.task_status[1]}", :id => "task-not-yet"%>
+                <% elsif @task.done == true %>
+                    <a id="task<%= @task.id %>" class="btn btn-danger" style="display:none;width:100px;color:white;display:none">未完了</a>
+                    <%= button_to @task.task_status[0], undone_path(@task), method: :post, remote: true, :class => "btn btn-#{@task.task_status[1]}", :id => "task-not-yet"%>
                 <% end %>
             </h4>
             <div class="schdule-detail-section" style="background-color:#eee;padding:15px;margin-top:20px">

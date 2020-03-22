@@ -22,6 +22,7 @@ class WorksController < ApplicationController
         @recent_tasks = @work.tasks.where.not(:parent_task_id => 0).order(start_date: "ASC").limit(4)
         @recent_task_top = Task.find_by(:parent_task_id => 0, :t_number => @recent_tasks.first.t_number)
         @persons = Person.all.order(:id)
+        @late_tasks = Task.where('end_date <= ?', Date.today+3).limit(3)
     end
 
     def index

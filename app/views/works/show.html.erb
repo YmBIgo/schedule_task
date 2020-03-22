@@ -21,7 +21,7 @@
                         <br>
                         <i class="fas fa-clock"></i>　<%= r_task.end_date %>まで
                         </small>
-                        <span class="btn btn-success" style="color:white;float:right;">未終了</span>
+                        <span class="btn btn-<%= r_task.task_status[1] %>" style="color:white;float:right;"><%= r_task.task_status[0] %></span>
                     </a>
                 <% end %>
             </div>
@@ -38,10 +38,12 @@
             <h3><i class="fas fa-angle-double-right"></i>遅れそうなスケジュール</h3>
             <br>
             <div class="list-group">
-                <a href="/tasks/3" class="list-group-item list-group-item-action">
-                  予算案
-                  <span class="btn btn-success" style="color:white;float:right;">未終了</span>
-                </a>
+                <% @late_tasks.each do |l_task| %>
+                    <a href="/tasks/<%= l_task.id %>" class="list-group-item list-group-item-action">
+                    <%= l_task.t_name %> <small>締め切り <%= (l_task.end_date - Date.today).to_i %>日前</small>
+                    <span class="btn btn-<%= l_task.task_status[1] %>" style="color:white;float:right;"><%= l_task.task_status[0] %></span>
+                    </a>
+                <% end %>
             </div>
             <br>
             <hr>
@@ -84,10 +86,6 @@
                 <%= task_schedule_to_task_calendar(w_task, w_start_date, w_end_date, w_diff_date, true, false) %>
             <% end %>
         </table>
-        <%= @work.tasks.where(:t_number => 1).length %>
-        <%= @work.tasks.where(:t_number => 2).length %>
-        <%= @work.tasks.where(:t_number => 3).length %>
-        <%= @work.tasks.where(:t_number => 4).length %>
     </div>
     <br>
     <div>
@@ -137,10 +135,10 @@
                 <br>
                 <i class="fas fa-clock"></i>　<%= z_task.end_date %>まで
                 </small>
-                <br><br>
-                <p>
-                <span class="btn btn-success" style="color:white;margin-top:-20px;">未終了</span>
-                </p>
+                <br>
+                <% if z_task.parent_task_id != 0 then %>
+                <p><span class="btn btn-<%= z_task.task_status[1] %>" style="color:white;margin-top:-20px;float:right;"><%= z_task.task_status[0] %></span></p>
+                <% end %>
             </a>
             <% if z_task.parent_task_id == 0 %>
                 </div>
