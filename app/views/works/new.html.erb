@@ -65,50 +65,62 @@
             <% end %>
         </div>
         <br>
-
-        <div id="search-plan2" style="margin-top:40px;">
-        <% t_start_date = Date.new; t_end_date = Date.new; t_diff_date = Date.new %>
-        <%= fields_for 'tasks[]', @tasks do |task| %>
-            <% task.object.collection.each do |task_collection_data| %>
-                <% if task_collection_data.parent_task_id == 0 then %>
-                    <% if task_collection_data.t_number != 1  then %>
-                        </tr></table>
-                        <br><hr><br>
+    </div>
+</div>
+<div id="search-plan2" style="margin:40px 60px;">
+    <% t_start_date = Date.new; t_end_date = Date.new; t_diff_date = Date.new %>
+    <%= fields_for 'tasks[]', @tasks do |task| %>
+        <% task.object.collection.each do |task_collection_data| %>
+            <% if task_collection_data.parent_task_id == 0 then %>
+                <% if task_collection_data.t_number != 1  then %>
+                    </tr></table>
+                    <br><hr><br>
+                <% end %>
+                <table class="table table-borderless">
+                <!-- parent の場合 thead 作成 -->
+                <% t_start_date = Date.parse(year_month_date(@today.prev_day(task_collection_data.before_date))); %>
+                <% t_end_date   = Date.parse(year_month_date(@today.prev_day(task_collection_data.before_date).next_day(task_collection_data.date_duration))) %>
+                <% t_diff_date = ((t_end_date - t_start_date + 2).to_i/4).ceil %>
+                <h4><%= task_collection_data.t_name %>　<%= t_start_date %>〜<%= t_end_date %></h4>
+                <br>
+                <thead>
+                    <% if task_collection_data.before_date != 0 then %>
+                    <tr style='font-size:12px;'>
+                        <td>タスク</td>
+                        <td><%= "#{t_start_date.to_s} 〜 #{(t_start_date + t_diff_date).to_s}" %></td>
+                        <td><%= "#{t_start_date + t_diff_date+1} から #{t_start_date + t_diff_date*2}" %></td>
+                        <td><%= "#{t_start_date + t_diff_date*2+1} から #{t_start_date + t_diff_date*3}" %></td>
+                        <td><%= "#{t_start_date + t_diff_date*3+1} から #{t_end_date}" %></td>
+                    </tr>
+                    <% else %>
+                    <tr style='font-size:12px;'>
+                        <td width="20%">タスク</td>
+                        <td width="20%"></td>
+                        <td width="40%"><%= "#{t_start_date.to_s} 当日" %></td>
+                        <td width="20%"></td>
+                    </tr>
                     <% end %>
-                    <table class="table table-borderless">
-                    <!-- parent の場合 thead 作成 -->
-                    <% t_start_date = Date.parse(year_month_date(@today.prev_day(task_collection_data.before_date))); %>
-                    <% t_end_date   = Date.parse(year_month_date(@today.prev_day(task_collection_data.before_date).next_day(task_collection_data.date_duration))) %>
-                    <% t_diff_date = ((t_end_date - t_start_date + 2).to_i/4).ceil %>
-                    <h4><%= task_collection_data.t_name %>　<%= t_start_date %>〜<%= t_end_date %></h4>
-                    <br>
-                        <thead>
-                        <tr style='font-size:12px;'>
-                            <td>タスク</td>
-                            <td><%= "#{t_start_date.to_s} 〜 #{(t_start_date + t_diff_date).to_s}" %></td>
-                            <td><%= "#{t_start_date + t_diff_date+1} から #{t_start_date + t_diff_date*2}" %></td>
-                            <td><%= "#{t_start_date + t_diff_date*2+1} から #{t_start_date + t_diff_date*3}" %></td>
-                            <td><%= "#{t_start_date + t_diff_date*3+1} から #{t_end_date}" %></td>
-                        </tr>
-                        </thead>
-                        <tr>
+                </thead>
+            <% else %>
+                <!-- parent の場合 thead 作成 -->
+                <% tc_start_date = Date.parse(year_month_date(@today.prev_day(task_collection_data.before_date))); %>
+                <% tc_end_date   = Date.parse(year_month_date(@today.prev_day(task_collection_data.before_date).next_day(task_collection_data.date_duration))) %>
+                <% task_collection_data.start_date = tc_start_date; task_collection_data.end_date = tc_end_date; %>
+                <% if task_collection_data.before_date == 0 then %>
+                    <%= task_schedule_to_task_calendar(task_collection_data, t_start_date, t_end_date, t_diff_date, false, true) %>
                 <% else %>
-                    <!-- parent の場合 thead 作成 -->
-                    <% tc_start_date = Date.parse(year_month_date(@today.prev_day(task_collection_data.before_date))); %>
-                    <% tc_end_date   = Date.parse(year_month_date(@today.prev_day(task_collection_data.before_date).next_day(task_collection_data.date_duration))) %>
-                    <% task_collection_data.start_date = tc_start_date; task_collection_data.end_date = tc_end_date; %>
-                    <%= task_schedule_to_task_calendar(task_collection_data, t_start_date, t_end_date, t_diff_date, false) %>
+                    <%= task_schedule_to_task_calendar(task_collection_data, t_start_date, t_end_date, t_diff_date, false, false) %>
                 <% end %>
             <% end %>
         <% end %>
-        <br>
-        <div class="text-center" style="margin:0 auto;">
-            <%= f.submit "スケジュール作成する", :class => "btn btn-warning btn-lg", :style => "color:white;" %>
-        </div>
-        </div>
+        </table>
     <% end %>
-
 </div>
+    <div class="text-center" style="margin:0 auto;">
+        <%= f.submit "スケジュール作成する", :class => "btn btn-warning btn-lg", :style => "color:white;" %>
+    </div>
+<% end %>
+
 
 <script type="text/javascript">
 

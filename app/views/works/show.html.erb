@@ -81,7 +81,7 @@
             </tr>
             </thead>
             <% Task.where(:t_number => 1, :work_id => @work.id).where.not(:parent_task_id => 0).each do |w_task| %>
-                <%= task_schedule_to_task_calendar(w_task, w_start_date, w_end_date, w_diff_date, true) %>
+                <%= task_schedule_to_task_calendar(w_task, w_start_date, w_end_date, w_diff_date, true, false) %>
             <% end %>
         </table>
         <%= @work.tasks.where(:t_number => 1).length %>
