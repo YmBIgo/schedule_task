@@ -14,18 +14,32 @@ module WorksHelper
         end
         c_counter = 0
         if on_the_day_flag == false then
+
+            w_date_alert_array = []
+            
             w_date_array.each do |w_date|
                 if t_start_date.between?(w_date[0], w_date[1]) then
-                    if href_flag == true then
-                        calendar_html += "<td class='alert alert-info'><a href='/tasks/#{task.id}'><i class='fas fa-user-circle'></i>　" + task.role + "　〜" + task.end_date.to_s + "</a>"
-                    else
-                        calendar_html += "<td class='alert alert-info'><i class='fas fa-user-circle'></i>　" + task.role + "　〜" + task.end_date.to_s +
-                                         "<br><br><a style='color:white;' class='btn btn-sm btn-danger calendar-card-btn'>削除</a>　<a style='color:white;' class='btn btn-sm btn-success calendar-card-btn'>編集</a>"
-                    end
+                  if w_date_alert_array[-1] == 1 then
+                      w_date_alert_array[-1] += 1
+                  else
+                      w_date_alert_array.push(1)
+                  end
                 else
-                    calendar_html += "<td></td>"
+                  w_date_alert_array.push(0)  
                 end
-                c_counter += 1
+            end
+
+            w_date_alert_array.each do |w_date_a|
+              if w_date_a == 0 then
+                  calendar_html += "<td></td>"
+              else
+                if href_flag == true then
+                    calendar_html += "<td class='alert alert-info' colspan=#{w_date_a}><a href='/tasks/#{task.id}'><i class='fas fa-user-circle'></i>　" + task.role + "　〜" + task.end_date.to_s + "</a>"
+                else
+                    calendar_html += "<td class='alert alert-info' colspan=#{w_date_a}><i class='fas fa-user-circle'></i>　" + task.role + "　〜" + task.end_date.to_s +
+                                     "<br><br><a style='color:white;' class='btn btn-sm btn-danger calendar-card-btn'>削除</a>　<a style='color:white;' class='btn btn-sm btn-success calendar-card-btn'>編集</a>"
+                end
+              end
             end
         else
             if href_flag == true then
