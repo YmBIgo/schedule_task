@@ -22,8 +22,8 @@
                             <small>
                             <i class="fas fa-user-circle"></i>　<%= task_collection_data.role %>
                             <br>
-                            <i class="fas fa-clock"></i>　<input type="date" class="form-control start-date-form" style="width:180px;display:inline;" value="<%= t_start_date %>">
-                            から <input type="date" class="form-control end-date-form" style="width:180px;display:inline;" value="<%= t_end_date %>"> まで
+                            <i class="fas fa-clock"></i>　<input type="date" class="form-control start-date-form" style="width:180px;display:inline;height:27px;" value="<%= t_start_date %>">
+                            から <input type="date" class="form-control end-date-form" style="width:180px;display:inline;height:27px;" value="<%= t_end_date %>"> まで
                             </small>
                     <% else %>
                         <div class="list-group-item list-group-item-action" id="list-item-<%= list_count %>">
@@ -61,6 +61,10 @@
             <% end %>
         </div>
         <br>
+
+
+
+
         <div class="text-center" style="margin:0 auto;">
             <%= f.submit "スケジュール作成する", :class => "btn btn-warning btn-lg", :style => "color:white;" %>
         </div>
@@ -117,7 +121,7 @@
         date_selector += "</select>"
         date_end_selector += "</select>"
         var fixed_selector = '<p class="list-event" style="width:200px">\
-        <input name="event_name" type="text" value="' + f_event + '" placeholder="用事を入力してください">\
+        <input name="event_name" type="text" value="' + f_event + '" placeholder="用事を入力してください" style="height:27px;">\
         </p>\
         <small>\
         <select name="role" style="width:50px">\
@@ -200,7 +204,7 @@
         date_end_selector += "</select>"
         var adding_selector = '<div class="list-group-item list-group-item-action" id="new-list-item-'+new_list_item+'" >\
         <p style="width:200px">\
-        <input name="event_name" type="text" placeholder="用事を入力してください">\
+        <input name="event_name" type="text" placeholder="用事を入力してください" style="height:27px;">\
         </p>\
         <small>\
         <select name="role" style="width:50px">\

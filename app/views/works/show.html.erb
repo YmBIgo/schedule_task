@@ -64,6 +64,32 @@
         <p>まだ情報が少ないため、表示できません。</p>
         <br>
     </div>
+    <div style="margin-top:40px;">
+        <% w_start_date = @work.tasks.find_by(:t_number => 1, :parent_task_id => 0).start_date %>
+        <% w_end_date = @work.tasks.find_by(:t_number => 1, :parent_task_id => 0).end_date %>
+        <% w_diff_date = ((w_end_date - w_start_date+2).to_i/4).ceil %>
+        <h4>一部カレンダー　<%= w_start_date %>〜<%= w_end_date %></h4>
+        <br>
+        <table class="table table-borderless">
+            <thead>
+            <tr style='font-size:12px;'>
+                <td>タスク</td>
+                <td><%= "#{w_start_date} 〜 #{w_start_date+w_diff_date}" %></td>
+                <td><%= "#{w_start_date+w_diff_date+1} から #{w_start_date+w_diff_date*2}" %></td>
+                <td><%= "#{w_start_date+w_diff_date*2+1} から #{w_start_date+w_diff_date*3}" %></td>
+                <td><%= "#{w_start_date+w_diff_date*3+1} から #{w_end_date}" %></td>
+            </tr>
+            </thead>
+            <% Task.where(:t_number => 1, :work_id => @work.id).where.not(:parent_task_id => 0).each do |w_task| %>
+                <%= task_schedule_to_task_calendar(w_task, w_start_date, w_end_date, w_diff_date) %>
+            <% end %>
+        </table>
+        <%= @work.tasks.where(:t_number => 1).length %>
+        <%= @work.tasks.where(:t_number => 2).length %>
+        <%= @work.tasks.where(:t_number => 3).length %>
+        <%= @work.tasks.where(:t_number => 4).length %>
+    </div>
+    <br>
     <div>
         <h4><i class="fas fa-angle-double-right"></i>スケジュール</h4>
         <br>
