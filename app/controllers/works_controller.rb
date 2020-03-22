@@ -106,19 +106,18 @@ class WorksController < ApplicationController
             {"t_name" => "下見","role" => "幹事1", "parent_task_id" => 0,"before_date" => 65,"date_duration" => 34,"t_number" => 2},
             {"t_name" => "下見","role" => "幹事1", "parent_task_id" => 2,"before_date" => 65,"date_duration" => 10,"t_number" => 2},
             {"t_name" => "料理・ドリンク決定","role" => "幹事1", "parent_task_id" => 2,"before_date" => 55,"date_duration" => 15,"t_number" => 2},
-            {"t_name" => "予約","role" => "幹事1", "parent_task_id" => 0,"before_date" => 50,"date_duration" => 5,"t_number" => 3},
-            {"t_name" => "予約","role" => "幹事1", "parent_task_id" => 3,"before_date" => 31,"date_duration" => 30,"t_number" => 3,"reference_url" => "https://www.hotpepper.jp/smart_kanji/", "reference_text" => "スマート幹事", "reference_image" => "https://rr.img.naver.jp/mig?src=http%3A%2F%2Fimgcc.naver.jp%2Fkaze%2Fmission%2FUSER%2F20181005%2F13%2F10170273%2F7%2F928x414xb7f96d4193721dcfffddcd1a.jpg&twidth=1000&theight=0&qlt=80&res_format=jpg&op=r"},
-            {"t_name" => "案内","role" => "幹事1", "parent_task_id" => 0,"before_date" => 26,"date_duration" => 5,"t_number" => 4},
-            {"t_name" => "タイムスケジュール","role" => "幹事1", "parent_task_id" => 4,"before_date" => 21,"date_duration" => 5,"t_number" => 4, "reference_url" => "https://shinkohyo.com/", "reference_text" => "進行表さん", "reference_image" => "https://image.news.livedoor.com/newsimage/0/a/0a3c9_1477_f8effb5c_15580a16.png"},
-            {"t_name" => "席順","role" => "幹事1", "parent_task_id" => 4,"before_date" => 5,"date_duration" => 5,"t_number" => 4},
-            {"t_name" => "二次会確認","role" => "幹事1", "parent_task_id" => 4,"before_date" => 0,"date_duration" => 1,"t_number" => 4, "reference_url" => "https://tabelog.com/", "reference_text" => "食べログ", "reference_image" => "https://image.itmedia.co.jp/business/articles/1910/17/l_kstabe0.jpg"},
-            {"t_name" => "会費徴収","role" => "幹事1", "parent_task_id" => 4,"before_date" => 0,"date_duration" => 1,"t_number" => 4, "reference_url" => "https://apps.apple.com/jp/app/%E5%89%B2%E3%82%8A%E5%8B%98%E3%81%97%E3%81%BE%E3%81%97%E3%82%87/id665785271", "reference_text" => "割り勘しましょ", "reference_image" => "https://party-organizer.tokyo/wp-content/uploads/2018/05/warikansimasyo-e1528243121105.png"},
-            {"t_name" => "メール・LINE連絡","role" => "幹事1", "parent_task_id" => 4,"before_date" => 0,"date_duration" => 1,"t_number" => 4, "reference_url" => "https://www.line.me", "reference_text" => "LINE", "reference_image" => "https://d.line-scdn.net/stf/line-lp/1200x630.png"},
-            {"t_name" => "最終確認連絡","role" => "幹事1", "parent_task_id" => 4,"before_date" => 0,"date_duration" => 1,"t_number" => 4, "reference_url" => "https://www.line.me", "reference_text" => "LINE", "reference_image" => "https://d.line-scdn.net/stf/line-lp/1200x630.png"},
-            {"t_name" => "当日","role" => "幹事1", "parent_task_id" => 0,"before_date" => 0,"date_duration" => 1,"t_number" => 5},
-            {"t_name" => "最終連絡","role" => "幹事1", "parent_task_id" => 5,"before_date" => 0,"date_duration" => 1,"t_number" => 5},
-            {"t_name" => "追加徴収","role" => "幹事1", "parent_task_id" => 5,"before_date" => 0,"date_duration" => 1,"t_number" => 5, "reference_url" => "https://apps.apple.com/jp/app/%E5%89%B2%E3%82%8A%E5%8B%98%E3%81%97%E3%81%BE%E3%81%97%E3%82%87/id665785271", "reference_text" => "割り勘しましょ", "reference_image" => "https://party-organizer.tokyo/wp-content/uploads/2018/05/warikansimasyo-e1528243121105.png"},
-            {"t_name" => "二次会","role" => "幹事1", "parent_task_id" => 5,"before_date" => 0,"date_duration" => 1,"t_number" => 5}
+            {"t_name" => "予約","role" => "幹事1", "parent_task_id" => 2,"before_date" => 50,"date_duration" => 18,"t_number" => 2,"reference_url" => "https://www.hotpepper.jp/smart_kanji/", "reference_text" => "スマート幹事", "reference_image" => "https://rr.img.naver.jp/mig?src=http%3A%2F%2Fimgcc.naver.jp%2Fkaze%2Fmission%2FUSER%2F20181005%2F13%2F10170273%2F7%2F928x414xb7f96d4193721dcfffddcd1a.jpg&twidth=1000&theight=0&qlt=80&res_format=jpg&op=r"},
+            {"t_name" => "案内","role" => "幹事1", "parent_task_id" => 0,"before_date" => 26,"date_duration" => 5,"t_number" => 3},
+            {"t_name" => "タイムスケジュール","role" => "幹事1", "parent_task_id" => 3,"before_date" => 21,"date_duration" => 5,"t_number" => 3, "reference_url" => "https://shinkohyo.com/", "reference_text" => "進行表さん", "reference_image" => "https://image.news.livedoor.com/newsimage/0/a/0a3c9_1477_f8effb5c_15580a16.png"},
+            {"t_name" => "席順","role" => "幹事1", "parent_task_id" => 3,"before_date" => 5,"date_duration" => 5,"t_number" => 3},
+            {"t_name" => "二次会確認","role" => "幹事1", "parent_task_id" => 3,"before_date" => 0,"date_duration" => 1,"t_number" => 3, "reference_url" => "https://tabelog.com/", "reference_text" => "食べログ", "reference_image" => "https://image.itmedia.co.jp/business/articles/1910/17/l_kstabe0.jpg"},
+            {"t_name" => "会費徴収","role" => "幹事1", "parent_task_id" => 3,"before_date" => 0,"date_duration" => 1,"t_number" => 3, "reference_url" => "https://apps.apple.com/jp/app/%E5%89%B2%E3%82%8A%E5%8B%98%E3%81%97%E3%81%BE%E3%81%97%E3%82%87/id665785271", "reference_text" => "割り勘しましょ", "reference_image" => "https://party-organizer.tokyo/wp-content/uploads/2018/05/warikansimasyo-e1528243121105.png"},
+            {"t_name" => "メール・LINE連絡","role" => "幹事1", "parent_task_id" => 3,"before_date" => 0,"date_duration" => 1,"t_number" => 3, "reference_url" => "https://www.line.me", "reference_text" => "LINE", "reference_image" => "https://d.line-scdn.net/stf/line-lp/1200x630.png"},
+            {"t_name" => "最終確認連絡","role" => "幹事1", "parent_task_id" => 3,"before_date" => 0,"date_duration" => 1,"t_number" => 3},
+            {"t_name" => "当日","role" => "幹事1", "parent_task_id" => 0,"before_date" => 0,"date_duration" => 1,"t_number" => 4},
+            {"t_name" => "最終連絡","role" => "幹事1", "parent_task_id" => 4,"before_date" => 0,"date_duration" => 1,"t_number" => 4},
+            {"t_name" => "追加徴収","role" => "幹事1", "parent_task_id" => 4,"before_date" => 0,"date_duration" => 1,"t_number" => 4},
+            {"t_name" => "二次会","role" => "幹事1", "parent_task_id" => 4,"before_date" => 0,"date_duration" => 1,"t_number" => 4}
         ]);
         return task_collection
     end

@@ -4,13 +4,18 @@
         <h3><%= f.label :w_name, :value => "タイトル" %>　<small><span id="start-date"><%= params["start-date"] %></span>から<span id="end-date"><%= params["end-date"] %></span>まで</small></h3>
         <%= f.text_field :w_name, :value => "合宿1", :class => "form-control", :style => "width:200px;" %>
         <br>
-        <div class="list-group">
+        <div class="row">
             <%= fields_for 'tasks[]', @tasks do |task| %>
                 <% task.object.collection.each do |task_collection_data| %>
                     <% list_count += 1 %>
                     <% t_start_date = year_month_date(@today.prev_day(task_collection_data.before_date)); %>
                     <% t_end_date   = year_month_date(@today.prev_day(task_collection_data.before_date).next_day(task_collection_data.date_duration))  %>
                     <% if task_collection_data.parent_task_id == 0 then %>
+                        <% if task_collection_data.t_number != 1 then %>
+                            </div>
+                        <% end %>
+                        <div class="col-sm-6" style="margin-bottom:20px;">
+                        <div class="list-group">
                         <% @js_t_start_date = t_start_date; @js_t_end_date = t_end_date; %>
                         <div class="list-group-item list-group-item-action active" id="list-item-<%= list_count %>">
                             <p><%= task_collection_data.t_name %></p>
@@ -28,9 +33,12 @@
                             <br>
                             <i class="fas fa-user-circle"></i>　<span class="list-start-date"><%= t_start_date %></span>
                             から <span class="list-end-date"><%= t_end_date %></span> まで</small>
-                            <a href='javascript:FixForm("#list-item-<%= list_count %>", "<%= @js_t_start_date %>", "<%= @js_t_end_date %>");' class="btn btn-info btn-sm" style="float:right;margin:0 10px;">編集する</a>
-                            <a href='javascript:AppendList("#list-item-<%= list_count %>", "<%= @js_t_start_date %>", "<%= @js_t_end_date %>", <%= task_collection_data.t_number %>, <%= task_collection_data.parent_task_id %>);' class="btn btn-success btn-sm" style="float:right;margin:0 10px;">追加する</a>
-                            <a href='javascript:DeleteList("#list-item-<%= list_count %>");' class="btn btn-danger btn-sm" style="float:right;margin:0 10px;">削除する</a>
+                            <br><br>
+                            <p>
+                            <a href='javascript:FixForm("#list-item-<%= list_count %>", "<%= @js_t_start_date %>", "<%= @js_t_end_date %>");' class="btn btn-info btn-sm" style="margin:0 10px;">編集する</a>
+                            <a href='javascript:AppendList("#list-item-<%= list_count %>", "<%= @js_t_start_date %>", "<%= @js_t_end_date %>", <%= task_collection_data.t_number %>, <%= task_collection_data.parent_task_id %>);' class="btn btn-success btn-sm" style="margin:0 10px;">追加する</a>
+                            <a href='javascript:DeleteList("#list-item-<%= list_count %>");' class="btn btn-danger btn-sm" style="margin:0 10px;">削除する</a>
+                            </p>
                     <% end %>
                         <%= task.hidden_field :t_name, :value => task_collection_data.t_name %>
                         <%= task.hidden_field :role,   :value => task_collection_data.role %>
@@ -46,11 +54,14 @@
                         <%= task.hidden_field :start_date, :value => t_start_date %>
                         <%= task.hidden_field :end_date, :value => t_end_date %>
                     </div>
+                    <% if task_collection_data.parent_task_id == 0 then %>
+                        </div>
+                    <% end %>
                 <% end %>
             <% end %>
         </div>
         <br>
-        <div class="text-center">
+        <div class="text-center" style="margin:0 auto;">
             <%= f.submit "スケジュール作成する", :class => "btn btn-warning btn-lg", :style => "color:white;" %>
         </div>
     <% end %>
@@ -115,10 +126,10 @@
         <option value="予算">予算</option>\
         <option value="飲み会">飲み会</option>\
         </select>\
-        '+ date_selector +' から '+ date_end_selector +' まで</small>\
-        <a href=\'javascript:FilledForm("' + css_selector +'","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\'" class="btn btn-warning btn-sm" style="float:right;margin:0 10px;">決定する</a>\
-        <a href=\'javascript:AppendList("' + css_selector +'","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\'" class="btn btn-success btn-sm" style="float:right;margin:0 10px;">追加する</a>\
-        <a href=\'javascript:DeleteList("' + css_selector +'");\'" class="btn btn-danger btn-sm" style="float:right;margin:0 10px;">削除する</a></div>\
+        '+ date_selector +' から '+ date_end_selector +' まで</small><br><br>\
+        <p><a href=\'javascript:FilledForm("' + css_selector +'","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\'" class="btn btn-warning btn-sm" style="margin:0 10px;">決定する</a>\
+        <a href=\'javascript:AppendList("' + css_selector +'","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\'" class="btn btn-success btn-sm" style="margin:0 10px;">追加する</a>\
+        <a href=\'javascript:DeleteList("' + css_selector +'");\'" class="btn btn-danger btn-sm" style="margin:0 10px;">削除する</a></p></div>\
         <input value="'+ f_event +'" type="hidden" name="tasks[][t_name]" id="tasks_t_name">\
         <input value="' + role + '" type="hidden" name="tasks[][role]" id="tasks_role">\
         <input value="' + t_number + '" type="hidden" name="tasks[][t_number]" id="tasks_t_number">\
@@ -151,10 +162,10 @@
         var filled_selector = '<p class="list-event" style="width:200px">' + f_event + '</p>\
         <small><i class="fas fa-user-circle"></i>　<span class="list-role">' + role + 
         '</span><br><i class="fas fa-clock"></i>　<span class="list-start-date">' + c_start_date + '</span>\
-        から <span class="list-end-date">' + c_end_date + '</span>まで</small>\
-        <a href=\'javascript:FixForm("'+ css_selector + '","' + start_date + '","' + end_date + '");\' class="btn btn-info btn-sm" style="float:right;margin:0 10px;">編集する</a>\
-        <a href=\'javascript:AppendList("'+ css_selector + '","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\' class="btn btn-success btn-sm" style="float:right;margin:0 10px;">追加する</a>\
-        <a href=\'javascript:DeleteList("'+ css_selector + '","' + start_date + '","' + end_date + '");\' class="btn btn-danger btn-sm" style="float:right;margin:0 10px;">削除する</a>\
+        から <span class="list-end-date">' + c_end_date + '</span>まで</small><br><br>\
+        <p><a href=\'javascript:FixForm("'+ css_selector + '","' + start_date + '","' + end_date + '");\' class="btn btn-info btn-sm" style="margin:0 10px;">編集する</a>\
+        <a href=\'javascript:AppendList("'+ css_selector + '","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\' class="btn btn-success btn-sm" style="margin:0 10px;">追加する</a>\
+        <a href=\'javascript:DeleteList("'+ css_selector + '","' + start_date + '","' + end_date + '");\' class="btn btn-danger btn-sm" style="margin:0 10px;">削除する</a></p>\
         <input value="'+ f_event +'" type="hidden" name="tasks[][t_name]" id="tasks__t_name">\
         <input value="' + role + '" type="hidden" name="tasks[][role]" id="tasks__role">\
         <input value="' + t_number + '" type="hidden" name="tasks[][t_number]" id="tasks__t_number">\
@@ -187,7 +198,7 @@
         }
         date_selector += "</select>"
         date_end_selector += "</select>"
-        var adding_selector = '<div class="list-group-item list-group-item-action" id="new-list-item-'+new_list_item+'" style="margin-left:30px;">\
+        var adding_selector = '<div class="list-group-item list-group-item-action" id="new-list-item-'+new_list_item+'" >\
         <p style="width:200px">\
         <input name="event_name" type="text" placeholder="用事を入力してください">\
         </p>\
@@ -198,10 +209,10 @@
         <option value="予算">予算</option>\
         <option value="飲み会">飲み会</option>\
         </select>\
-        '+ date_selector +' から '+ date_end_selector +' まで</small>\
-        <a href=\'javascript:FilledForm("#new-list-item-'+new_list_item+'","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\'" class="btn btn-warning btn-sm" style="float:right;margin:0 10px;">決定する</a>\
-        <a href=\'javascript:AppendList("#new-list-item-'+new_list_item+'","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\'" class="btn btn-success btn-sm" style="float:right;margin:0 10px;">追加する</a>\
-        <a href=\'javascript:DeleteList("#new-list-item-'+new_list_item+'");\'" class="btn btn-danger btn-sm" style="float:right;margin:0 10px;">削除する</a>\
+        '+ date_selector +' から '+ date_end_selector +' まで</small><br><br>\
+        <p><a href=\'javascript:FilledForm("#new-list-item-'+new_list_item+'","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\'" class="btn btn-warning btn-sm" style="margin:0 10px;">決定する</a>\
+        <a href=\'javascript:AppendList("#new-list-item-'+new_list_item+'","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\'" class="btn btn-success btn-sm" style="margin:0 10px;">追加する</a>\
+        <a href=\'javascript:DeleteList("#new-list-item-'+new_list_item+'");\'" class="btn btn-danger btn-sm" style="margin:0 10px;">削除する</a></p>\
         </div>';
         $(css_selector).after(adding_selector);
         new_list_item += 1
