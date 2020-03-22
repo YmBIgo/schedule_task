@@ -43,6 +43,6 @@ class TasksController < ApplicationController
 
     private
     def update_params
-        params.require(:task).permit(:start_date, :end_date, :role, :reference_url, :reference_image, :reference_text, :details)
+        params.require(:task).permit(:t_name, :start_date, :end_date, :role, :reference_url, :reference_image, :reference_text, :details)
     end
 end
