@@ -7,8 +7,9 @@ Rails.application.routes.draw do
   
   resources :works, :only => [:new, :show, :index, :create]
 
-  resources :tasks, :only => [:show]
+  resources :tasks, :only => [:show, :update]
   post '/tasks/:id/done' => 'tasks#done',   as: 'done'
   post '/tasks/:id/undone' => 'tasks#undone',   as: 'undone'
+  post '/tasks/:id/' => 'tasks#update', as: 'update'
 
 end
