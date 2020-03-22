@@ -19,10 +19,10 @@ class WorksController < ApplicationController
     def show
         @work = Work.find_by(:w_url => params[:id])
         @tasks = @work.tasks
-        @recent_tasks = @work.tasks.where.not(:parent_task_id => 0).order(start_date: "ASC").limit(4)
+        @recent_tasks = @work.tasks.where.not(:parent_task_id => 0).where('end_date <= ?', Date.today+7).limit(4)
         @recent_task_top = Task.find_by(:parent_task_id => 0, :t_number => @recent_tasks.first.t_number)
         @persons = Person.all.order(:id)
-        @late_tasks = Task.where('end_date <= ?', Date.today+3).limit(3)
+        @late_tasks = Task.where('end_date <= ?', Date.today+1).limit(3)
     end
 
     def index

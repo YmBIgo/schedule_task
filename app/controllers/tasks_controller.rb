@@ -12,10 +12,17 @@ class TasksController < ApplicationController
     def done
         @task = Task.find(params[:id])
         @task.update(:done => true)
+        task_length = @task.work.tasks.length
+        finished_tasks_length = Task.where(:done => true).length
+        task_percent = (finished_tasks_length.to_f / task_length.to_f)*100
+        @task.work.update(:w_percent => task_percent)
     end
     def undone
         @task = Task.find(params[:id])
         @task.update(:done => false)
-        logger.debug("\n#{@task.t_name} undone\n")
+        task_length = @task.work.tasks.length
+        finished_tasks_length = Task.where(:done => true).length
+        task_percent = (finished_tasks_length.to_f / task_length.to_f)*100
+        @task.work.update(:w_percent => task_percent)
     end
 end
