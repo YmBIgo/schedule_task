@@ -15,17 +15,22 @@
                         <div class="list-group-item list-group-item-action active" id="list-item-<%= list_count %>">
                             <p><%= task_collection_data.t_name %></p>
                             <small>
-                            <%= task_collection_data.role %>　　<input type="date" class="form-control start-date-form" style="width:180px;display:inline;" value="<%= t_start_date %>">
+                            <i class="fas fa-user-circle"></i>　<%= task_collection_data.role %>
+                            <br>
+                            <i class="fas fa-clock"></i>　<input type="date" class="form-control start-date-form" style="width:180px;display:inline;" value="<%= t_start_date %>">
                             から <input type="date" class="form-control end-date-form" style="width:180px;display:inline;" value="<%= t_end_date %>"> まで
                             </small>
                     <% else %>
                         <div class="list-group-item list-group-item-action" id="list-item-<%= list_count %>">
                             <p class="list-event" style="width:200px"><%= task_collection_data.t_name %></p>
-                            <small><span class="list-role"><%= task_collection_data.role %></span>　　<span class="list-start-date"><%= t_start_date %></span>
+                            <small>
+                            <i class="fas fa-clock"></i>　<span class="list-role"><%= task_collection_data.role %></span>
+                            <br>
+                            <i class="fas fa-user-circle"></i>　<span class="list-start-date"><%= t_start_date %></span>
                             から <span class="list-end-date"><%= t_end_date %></span> まで</small>
-                            <a href='javascript:FixForm("#list-item-<%= list_count %>", "<%= @js_t_start_date %>", "<%= @js_t_end_date %>");' class="btn btn-info" style="float:right;margin:0 10px;">編集する</a>
-                            <a href='javascript:AppendList("#list-item-<%= list_count %>", "<%= @js_t_start_date %>", "<%= @js_t_end_date %>", <%= task_collection_data.t_number %>, <%= task_collection_data.parent_task_id %>);' class="btn btn-success" style="float:right;margin:0 10px;">追加する</a>
-                            <a href='javascript:DeleteList("#list-item-<%= list_count %>");' class="btn btn-danger" style="float:right;margin:0 10px;">削除する</a>
+                            <a href='javascript:FixForm("#list-item-<%= list_count %>", "<%= @js_t_start_date %>", "<%= @js_t_end_date %>");' class="btn btn-info btn-sm" style="float:right;margin:0 10px;">編集する</a>
+                            <a href='javascript:AppendList("#list-item-<%= list_count %>", "<%= @js_t_start_date %>", "<%= @js_t_end_date %>", <%= task_collection_data.t_number %>, <%= task_collection_data.parent_task_id %>);' class="btn btn-success btn-sm" style="float:right;margin:0 10px;">追加する</a>
+                            <a href='javascript:DeleteList("#list-item-<%= list_count %>");' class="btn btn-danger btn-sm" style="float:right;margin:0 10px;">削除する</a>
                     <% end %>
                         <%= task.hidden_field :t_name, :value => task_collection_data.t_name %>
                         <%= task.hidden_field :role,   :value => task_collection_data.role %>
@@ -46,86 +51,9 @@
         </div>
         <br>
         <div class="text-center">
-            <%= f.submit "スケジュール作成する", :class => "btn btn-success" %>
+            <%= f.submit "スケジュール作成する", :class => "btn btn-warning btn-lg", :style => "color:white;" %>
         </div>
     <% end %>
-    <br>
-
-    <h4>このデザインを使いたい</h4>
-    <br>
-    <div id="myKanban" class="row">
-    </div>
-
-<script type="text/javascript">
-
-    //初期状態のタスク管理ボード用JSONデータ
-    const defaultBoards = [
-    {
-        "id": "sample-board-1",
-        "title": "タスク",
-        "class": "task",
-        "dragTo": ['sample-board-2'], 
-        "item": [
-            { "title": "報告書の作成" },
-            { "title": "14時から打ち合わせ" }
-        ]
-    },
-
-    {
-        "id": "sample-board-2",
-        "title": "進行中",
-        "class": "progress-task",
-        "item": [{ "title": "○○案の企画書作成" }]
-    },
-
-    {
-        "id": "sample-board-3",
-        "title": "完了",
-        "class": "done",
-        "item": [{ "title": "日報の提出" }]
-    },
-    
-    {
-        "id": "sample-board-4",
-        "title": "Test",
-        "class": "done",
-        "item": [{"title": "日報の提出"}]
-    }
-    ];
-
-    //jKanbanのインスタンス作成
-    const kanban = new jKanban({
-      element         : '#myKanban',  //タスク管理ボードを表示するHTML要素
-      gutter          : '15px',       //ボード同士の間隔
-      widthBoard      : '250px',      //ボードのサイズ
-      boards          : defaultBoards,//初期状態のJSONデータ
-      addItemButton   : true,         //タスク追加用のボタンを表示
-      
-      click: (elem) => kanban.removeElement(elem),  //タスクをクリックして削除
-      buttonClick: (elem, id) => addFormElement(id) //タスク追加用の関数を指定
-    });
-  
-    
-    
-    //タスク追加用の関数
-    function addFormElement(id) {
-        const formItem = document.createElement('form');
-
-        formItem.innerHTML = '<div class="kanban-item" style="margin-bottom:20px;">\
-        <input type="text">\
-        </div>';  //タスクを追加するための入力ボックスを作成
-        kanban.addForm(id, formItem);  //入力ボックスをボードに追加
-
-        //タスクを登録する時のイベント処理
-        formItem.addEventListener('submit', (e) => {
-          e.preventDefault();
-
-          kanban.addElement(id, {"title": e.target[0].value}); //入力された文字列をタスクとして登録
-          formItem.parentNode.removeChild(formItem); //入力ボックスを非表示にするために削除
-        }) 
-    }
-
-</script>
 
 </div>
 
@@ -177,20 +105,20 @@
         }
         date_selector += "</select>"
         date_end_selector += "</select>"
-        var fixed_selector = '<p style="width:200px">\
+        var fixed_selector = '<p class="list-event" style="width:200px">\
         <input name="event_name" type="text" value="' + f_event + '" placeholder="用事を入力してください">\
         </p>\
         <small>\
         <select name="role" style="width:50px">\
-        <option value="幹事1">幹事1</option>\
+        <option value="幹事1" selected>幹事1</option>\
         <option value="幹事2">幹事2</option>\
         <option value="予算">予算</option>\
         <option value="飲み会">飲み会</option>\
         </select>\
         '+ date_selector +' から '+ date_end_selector +' まで</small>\
-        <a href=\'javascript:FilledForm("' + css_selector +'","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\'" class="btn btn-warning" style="float:right;margin:0 10px;">決定する</a>\
-        <a href=\'javascript:AppendList("' + css_selector +'","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\'" class="btn btn-success" style="float:right;margin:0 10px;">追加する</a>\
-        <a href=\'javascript:DeleteList("' + css_selector +'");\'" class="btn btn-danger" style="float:right;margin:0 10px;">削除する</a></div>\
+        <a href=\'javascript:FilledForm("' + css_selector +'","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\'" class="btn btn-warning btn-sm" style="float:right;margin:0 10px;">決定する</a>\
+        <a href=\'javascript:AppendList("' + css_selector +'","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\'" class="btn btn-success btn-sm" style="float:right;margin:0 10px;">追加する</a>\
+        <a href=\'javascript:DeleteList("' + css_selector +'");\'" class="btn btn-danger btn-sm" style="float:right;margin:0 10px;">削除する</a></div>\
         <input value="'+ f_event +'" type="hidden" name="tasks[][t_name]" id="tasks_t_name">\
         <input value="' + role + '" type="hidden" name="tasks[][role]" id="tasks_role">\
         <input value="' + t_number + '" type="hidden" name="tasks[][t_number]" id="tasks_t_number">\
@@ -220,12 +148,13 @@
         var reference_text      = $(css_selector + " input[name='tasks[][reference_text]']").val();
 
         // t_number と　parent_id は実装必要あり。
-        var filled_selector = '<p style="width:200px">' + f_event + '</p>\
-        <small>' + role + '　　' + c_start_date + '\
-        から ' + c_end_date + ' まで</small>\
-        <a href=\'javascript:FixForm("'+ css_selector +'");\'="" class="btn btn-info" style="float:right;margin:0 10px;">編集する</a>\
-        <a href=\'javascript:AppendList("'+ css_selector + '","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\'="" class="btn btn-success" style="float:right;margin:0 10px;">追加する</a>\
-        <a href=\'javascript:DeleteList("'+ css_selector + '","' + start_date + '","' + end_date + '");\'="" class="btn btn-danger" style="float:right;margin:0 10px;">削除する</a>\
+        var filled_selector = '<p class="list-event" style="width:200px">' + f_event + '</p>\
+        <small><i class="fas fa-user-circle"></i>　<span class="list-role">' + role + 
+        '</span><br><i class="fas fa-clock"></i>　<span class="list-start-date">' + c_start_date + '</span>\
+        から <span class="list-end-date">' + c_end_date + '</span>まで</small>\
+        <a href=\'javascript:FixForm("'+ css_selector + '","' + start_date + '","' + end_date + '");\' class="btn btn-info btn-sm" style="float:right;margin:0 10px;">編集する</a>\
+        <a href=\'javascript:AppendList("'+ css_selector + '","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\' class="btn btn-success btn-sm" style="float:right;margin:0 10px;">追加する</a>\
+        <a href=\'javascript:DeleteList("'+ css_selector + '","' + start_date + '","' + end_date + '");\' class="btn btn-danger btn-sm" style="float:right;margin:0 10px;">削除する</a>\
         <input value="'+ f_event +'" type="hidden" name="tasks[][t_name]" id="tasks__t_name">\
         <input value="' + role + '" type="hidden" name="tasks[][role]" id="tasks__role">\
         <input value="' + t_number + '" type="hidden" name="tasks[][t_number]" id="tasks__t_number">\
@@ -270,9 +199,9 @@
         <option value="飲み会">飲み会</option>\
         </select>\
         '+ date_selector +' から '+ date_end_selector +' まで</small>\
-        <a href=\'javascript:FilledForm("#new-list-item-'+new_list_item+'","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\'" class="btn btn-warning" style="float:right;margin:0 10px;">決定する</a>\
-        <a href=\'javascript:AppendList("#new-list-item-'+new_list_item+'","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\'" class="btn btn-success" style="float:right;margin:0 10px;">追加する</a>\
-        <a href=\'javascript:DeleteList("#new-list-item-'+new_list_item+'");\'" class="btn btn-danger" style="float:right;margin:0 10px;">削除する</a>\
+        <a href=\'javascript:FilledForm("#new-list-item-'+new_list_item+'","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\'" class="btn btn-warning btn-sm" style="float:right;margin:0 10px;">決定する</a>\
+        <a href=\'javascript:AppendList("#new-list-item-'+new_list_item+'","' + start_date + '","' + end_date + '","' + t_number + '","' + parent_task_id + '");\'" class="btn btn-success btn-sm" style="float:right;margin:0 10px;">追加する</a>\
+        <a href=\'javascript:DeleteList("#new-list-item-'+new_list_item+'");\'" class="btn btn-danger btn-sm" style="float:right;margin:0 10px;">削除する</a>\
         </div>';
         $(css_selector).after(adding_selector);
         new_list_item += 1
