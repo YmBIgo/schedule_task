@@ -69,8 +69,10 @@
 </div>
 <div id="search-plan2" style="margin:40px 60px;">
     <% t_start_date = Date.new; t_end_date = Date.new; t_diff_date = Date.new %>
+    <% task_count = 0 %>
     <%= fields_for 'tasks[]', @tasks do |task| %>
         <% task.object.collection.each do |task_collection_data| %>
+            <% task_count += 1 %>
             <% if task_collection_data.parent_task_id == 0 then %>
                 <% if task_collection_data.t_number != 1  then %>
                     </tr></table>
@@ -81,8 +83,11 @@
                 <% t_start_date = Date.parse(year_month_date(@today.prev_day(task_collection_data.before_date))); %>
                 <% t_end_date   = Date.parse(year_month_date(@today.prev_day(task_collection_data.before_date).next_day(task_collection_data.date_duration))) %>
                 <% t_diff_date = ((t_end_date - t_start_date + 2).to_i/4).ceil %>
-                <h4><%= task_collection_data.t_name %>　<%= t_start_date %>〜<%= t_end_date %></h4>
+                <h4>
+                    <%= task_collection_data.t_name %>　<%= t_start_date %>〜<%= t_end_date %>　<a href="" class="btn btn-success btn-sm">タスク追加</a>
+                </h4>
                 <br>
+
                 <thead>
                     <% if task_collection_data.before_date != 0 then %>
                     <tr style='font-size:12px;'>
@@ -107,9 +112,9 @@
                 <% tc_end_date   = Date.parse(year_month_date(@today.prev_day(task_collection_data.before_date).next_day(task_collection_data.date_duration))) %>
                 <% task_collection_data.start_date = tc_start_date; task_collection_data.end_date = tc_end_date; %>
                 <% if task_collection_data.before_date == 0 then %>
-                    <%= task_schedule_to_task_calendar(task_collection_data, t_start_date, t_end_date, t_diff_date, false, true) %>
+                    <%= task_schedule_to_task_calendar(task_collection_data, t_start_date, t_end_date, t_diff_date, false, true, task_count) %>
                 <% else %>
-                    <%= task_schedule_to_task_calendar(task_collection_data, t_start_date, t_end_date, t_diff_date, false, false) %>
+                    <%= task_schedule_to_task_calendar(task_collection_data, t_start_date, t_end_date, t_diff_date, false, false, task_count) %>
                 <% end %>
             <% end %>
         <% end %>
@@ -121,6 +126,52 @@
     </div>
 <% end %>
 
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+        タイトル　<input type="text" name="t_name" id="m-title" class="form-control" style="width:300px;display:inline-block;">
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+            <label name="start-date" style="display:inline-block;margin-right:50px;">開始日</label><input type="date" id="m-start-date" class="form-control" style="width:200px;display:inline-block">
+            <br>
+            <label name="end-date" style="display:inline-block;margin-right:50px;">終了日</label><input type="date" id="m-end-date" class="form-control" style="width:200px;display:inline-block">
+        </div>
+        <div class="modal-footer">
+        <a id="edit-button"></a>
+        <a id="delete-button"></a>
+        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">閉じる</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget);
+    var start_date = button.data('startdate');
+    var end_date = button.data('enddate');
+    var roll_people = button.data('role');
+    var title = button.data('title');
+    var t_id = button.data('taskid');
+    var editbutton = '<a href="javascript:editTask("' + t_id + '") class="btn btn-sm btn-success">編集する</a>'
+    var deletebutton = '<a href="javascript:deleteTask("' + t_id + '") class="btn btn-sm btn-danger">削除する</a>'
+
+    var modal = $(this);
+    modal.find('.modal-title input#m-title').val(title);
+    modal.find('.modal-body input#m-start-date').val(start_date);
+    modal.find('.modal-body input#m-end-date').val(end_date);
+    modal.find('.modal-footer a#edit-button').html(editbutton);
+    modal.find('.modal-footer a#delete-button').html(deletebutton);
+    })
+</script>
 
 <script type="text/javascript">
 

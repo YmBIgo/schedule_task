@@ -111,9 +111,9 @@
                     </thead>
                     <% Task.where(:t_number => p_t.t_number, :work_id => @work.id).where.not(:parent_task_id => 0).each do |w_task| %>
                         <% if w_task.before_date != 0 then %>
-                            <%= task_schedule_to_task_calendar(w_task, w_start_date, w_end_date, w_diff_date, true, false) %>
+                            <%= task_schedule_to_task_calendar(w_task, w_start_date, w_end_date, w_diff_date, true, false, 0) %>
                         <% else %>
-                            <%= task_schedule_to_task_calendar(w_task, w_start_date, w_end_date, w_diff_date, true, true) %>
+                            <%= task_schedule_to_task_calendar(w_task, w_start_date, w_end_date, w_diff_date, true, true, 0) %>
                         <% end %>
                     <% end %>
                 </table>
