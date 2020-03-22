@@ -31,6 +31,10 @@
   padding-top:2px;
 }
 
+.visible-calendar{
+  display:block;
+}
+
 .sd-days{}
 
 .d-day{ display:inline-block; }
