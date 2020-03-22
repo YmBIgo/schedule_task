@@ -24,6 +24,13 @@
   min-height:500px;
 }
 
+.calendar-card-btn{
+  color:white;
+  height:18px;
+  font-size:10px;
+  padding-top:2px;
+}
+
 .sd-days{}
 
 .d-day{ display:inline-block; }
