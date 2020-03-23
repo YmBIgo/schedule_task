@@ -7,7 +7,6 @@ if Rails.env.production?
         :authentication => :plain,
         :user_name      => 'k-kazuya@coffee-cup.info',
         :password       => ENV['EMAIL_PASSWORD'],
-        :domain         => 'coffee-cup.info',
         :enable_starttls_auto => true
     }
   elsif Rails.env.development?
@@ -19,7 +18,6 @@ if Rails.env.production?
         :authentication => :plain,
         :user_name      => 'k-kazuya@coffee-cup.info',
         :password       => ENV['EMAIL_PASSWORD'],
-        :domain         => 'coffee-cup.info',
         :enable_starttls_auto => true
     }
   else

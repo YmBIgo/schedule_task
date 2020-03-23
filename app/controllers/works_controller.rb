@@ -49,6 +49,7 @@ class WorksController < ApplicationController
                 if role.save then
                     works_url = request.url.gsub("/works", "/") + "login?guijhw=" + @work.w_url
                     NotificationMailer.send_confirm_to_user(role, g_password, email, works_url).deliver
+                    NotificationMailer.send_confirm_to_admin(role, g_password, email, works_url).deliver
                     sign_in role
                     # ユーザー名とパスワードのページに飛ばせたい
                     redirect_to "/welcome?g_password=#{g_password}"
