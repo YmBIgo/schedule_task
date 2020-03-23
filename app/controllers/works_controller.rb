@@ -3,6 +3,7 @@ require "securerandom"
 class WorksController < ApplicationController
 
     before_action :authenticate_role!, :only => [:show, :welcome]
+    before_action :authenticate_role_page!, :only => [:show, :welcome]
 
     def new
         # binding.pry
