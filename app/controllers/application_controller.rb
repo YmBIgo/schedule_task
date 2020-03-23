@@ -24,4 +24,10 @@ class ApplicationController < ActionController::Base
         end
     end
 
+    def redirect_to_role!
+        if role_signed_in?
+            redirect_to work_path(current_role.workurl)
+        end
+    end
+
 end

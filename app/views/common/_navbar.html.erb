@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <% if @work != nil then %>
-    <a class="navbar-brand" href="/works/<%= @work.w_url %>"><%= @work.w_name %></a>
+  <% if role_signed_in? then %>
+    <a class="navbar-brand" href="/works/<%= current_role.workurl %>"><%= Work.find(current_role.work_id).w_name %></a>
   <% else %>
-    <a class="navbar-brand" href="/">タイトル</a>
+    <a class="navbar-brand" href="/top">タイトル</a>
   <% end %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
