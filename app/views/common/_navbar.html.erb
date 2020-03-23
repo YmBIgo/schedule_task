@@ -18,7 +18,9 @@
         </li>
       <% end %>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <% if role_signed_in? %>
+          <%= link_to "ログアウト", destroy_role_session_path, method: :delete %>
+        <% end %>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>

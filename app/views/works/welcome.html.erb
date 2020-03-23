@@ -1,0 +1,24 @@
+<div style="margin:50px 60px;">
+    <% works_url = request.url.split("welcome")[0] + "works/" + current_role.workurl %>
+    <h3>ようこそ！</h3>
+    <br>
+    <table class="table">
+    <tr>
+        <td>パスワード</td>
+        <td><%= params[:g_password] %></td>
+    </tr>
+    <tr>
+        <td>URL</td>
+        <td><%= works_url %></td>
+    </tr>
+    <tr>
+        <td>共有</td>
+        <td>
+            <div class="line-it-button" data-lang="ja" data-type="share-b" data-ver="3" data-url="<%= works_url %>" data-color="default" data-size="small" data-count="true" style="display: none;"></div>
+            <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+        </td>
+    </tr>
+    </table>
+    <br>
+    <a href="/works/<%= current_role.workurl %>" class="btn btn-primary">始める</a>
+</div>

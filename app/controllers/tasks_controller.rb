@@ -1,4 +1,7 @@
 class TasksController < ApplicationController
+
+    before_action :authenticate_role!, :only => [:show, :update, :done, :undone]
+
     def show
         @task = Task.find(params[:id])
         @work = @task.work

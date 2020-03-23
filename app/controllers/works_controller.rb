@@ -2,6 +2,8 @@ require "securerandom"
 
 class WorksController < ApplicationController
 
+    before_action :authenticate_role!, :only => [:show, :welcome]
+
     def new
         # binding.pry
         @today = Time.parse(params["start-date"])
@@ -40,9 +42,20 @@ class WorksController < ApplicationController
         end
         if @work.save then
             if @tasks.save(@work.id) then
-                redirect_to "/works/#{@work.w_url}"
+                g_password = generate_password()
+                role = Role.create(:workurl => @work.w_url, :work_id => @work.id, :password => g_password)
+                if role.save then
+                    sign_in role
+                    # ユーザー名とパスワードのページに飛ばせたい
+                    redirect_to "/welcome?g_password=#{g_password}"
+                    return
+                end
             end
         end
+        redirect_to "/works/new"
+    end
+
+    def welcome
     end
 
     private
@@ -122,6 +135,11 @@ class WorksController < ApplicationController
             {"t_name" => "二次会","role" => "幹事1", "parent_task_id" => 4,"before_date" => 0,"date_duration" => 1,"t_number" => 4}
         ]);
         return task_collection
+    end
+
+    def generate_password()
+        new_password = SecureRandom.hex(10)[0..3]
+        return new_password
     end
 
     def work_params
