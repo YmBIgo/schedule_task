@@ -35,6 +35,7 @@ class WorksController < ApplicationController
     def create
         @work = Work.new(work_params)
         @tasks = TaskCollection.new(task_params)
+        email = params[:email]
         while (work_url = SecureRandom.hex(10))
             if Work.find_by(:w_url => work_url) == nil then
                 @work.update(:w_url => work_url, :w_percent => 0)
@@ -46,6 +47,8 @@ class WorksController < ApplicationController
                 g_password = generate_password()
                 role = Role.create(:workurl => @work.w_url, :work_id => @work.id, :password => g_password)
                 if role.save then
+                    works_url = request.url.gsub("/works", "/") + "login?guijhw=" + @work.w_url
+                    NotificationMailer.send_confirm_to_user(role, g_password, email, works_url).deliver
                     sign_in role
                     # ユーザー名とパスワードのページに飛ばせたい
                     redirect_to "/welcome?g_password=#{g_password}"
