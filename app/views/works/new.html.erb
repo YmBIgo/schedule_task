@@ -111,6 +111,7 @@
                         <%= task.hidden_field :reference_url, :value => task_collection_data.reference_url %>
                         <%= task.hidden_field :reference_image, :value => task_collection_data.reference_image %>
                         <%= task.hidden_field :reference_text, :value => task_collection_data.reference_text %>
+                        <%= task.hidden_field :reference_title, :value => task_collection_data.reference_title %>
 
                         <%= task.hidden_field :start_date, :value => t_start_date %>
                         <%= task.hidden_field :end_date, :value => t_end_date %>
@@ -210,6 +211,7 @@
         var reference_url   = $(css_selector + " input[name='tasks[][reference_url]']").val();
         var reference_image = $(css_selector + " input[name='tasks[][reference_image]']").val();
         var reference_text      = $(css_selector + " input[name='tasks[][reference_text]']").val();
+        var reference_title      = $(css_selector + " input[name='tasks[][reference_title]']").val();
 
         console.log(f_event + role + before_term_date + parent_task_id + term_day + c_start_date + c_end_date + t_number)
 
@@ -253,6 +255,7 @@
         <input value="' + c_start_date +'" type="hidden" name="tasks[][start_date]" id="tasks_start_date">\
         <input value="' + c_end_date + '" type="hidden" name="tasks[][end_date]" id="tasks_end_date">\
         <input value="' + reference_url + '" type="hidden" name="tasks[][reference_url]" id="reference_url">\
+        <input value="' + reference_title + '" type="hidden" name="tasks[][reference_title]" id="reference_title">\
         <input value="' + reference_text + '" type="hidden" name="tasks[][reference_text]" id="reference_text">\
         <input value="' + reference_image + '" type="hidden" name="tasks[][reference_image]" id="reference_image">';
         $(css_selector).html(fixed_selector);
@@ -271,6 +274,7 @@
         var reference_url   = $(css_selector + " input[name='tasks[][reference_url]']").val();
         var reference_image = $(css_selector + " input[name='tasks[][reference_image]']").val();
         var reference_text      = $(css_selector + " input[name='tasks[][reference_text]']").val();
+        var reference_title     = $(css_selector + " input[name='tasks[][reference_title]']").val();
 
         // t_number と　parent_id は実装必要あり。
         var filled_selector = '<p class="list-event" style="width:200px">' + f_event + '</p>\
@@ -290,6 +294,7 @@
         <input value="' + c_end_date + '" type="hidden" name="tasks[][end_date]" id="tasks__end_date">\
         <input value="' + reference_url + '" type="hidden" name="tasks[][reference_url]" id="reference_url">\
         <input value="' + reference_text + '" type="hidden" name="tasks[][reference_text]" id="reference_text">\
+        <input value="' + reference_title + '" type="hidden" name="tasks[][reference_title]" id="reference_title">\
         <input value="' + reference_image + '" type="hidden" name="tasks[][reference_image]" id="reference_image">';
         $(css_selector).html(filled_selector);
     }

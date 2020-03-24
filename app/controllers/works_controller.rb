@@ -20,7 +20,7 @@ class WorksController < ApplicationController
         @recent_tasks = @work.tasks.where.not(:parent_task_id => 0).order(end_date: "ASC").limit(4)
         @recent_task_top = @work.tasks.find_by(:parent_task_id => 0, :t_number => @recent_tasks.first.t_number)
         @persons = @work.tasks.pluck(:role).uniq
-        @late_tasks = Task.where('end_date <= ?', Date.today+1).limit(3)
+        @late_tasks = @work.tasks.where('end_date <= ?', Date.today+1).limit(3)
     end
 
     def index
@@ -42,8 +42,8 @@ class WorksController < ApplicationController
                 role = Role.create(:workurl => @work.w_url, :work_id => @work.id, :password => g_password)
                 if role.save then
                     works_url = request.url.gsub("/works", "/") + "login?guijhw=" + @work.w_url
-                    NotificationMailer.send_confirm_to_user(role, g_password, email, works_url).deliver
-                    NotificationMailer.send_confirm_to_admin(role, g_password, email, works_url).deliver
+                    # NotificationMailer.send_confirm_to_user(role, g_password, email, works_url).deliver
+                    # NotificationMailer.send_confirm_to_admin(role, g_password, email, works_url).deliver
                     sign_in role
                     # ユーザー名とパスワードのページに飛ばせたい
                     redirect_to "/welcome?g_password=#{g_password}"

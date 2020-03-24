@@ -24,7 +24,8 @@ class TaskCollection
                     :date_duration  => value['date_duration'],
                     :reference_url  => value['reference_url'],
                     :reference_text => value['reference_text'],
-                    :reference_image => value['reference_image']
+                    :reference_image => value['reference_image'],
+                    :reference_title => value['reference_title']
                 )
             end
         else
