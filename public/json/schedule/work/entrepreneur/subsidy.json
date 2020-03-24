@@ -1,0 +1,146 @@
+[
+	{
+		"t_name": "イベント・説明会",
+		"role": "事業者",
+		"parent_task_id": 0,
+		"before_date": 300,
+		"date_duration": 60,
+		"t_number": 1
+	},
+	{
+		"t_name": "IT導入支援事業者募集説明会",
+		"role": "事業者",
+		"parent_task_id": 1,
+		"before_date": 293,
+		"date_duration": 7,
+		"t_number": 1,
+		"reference_url": "https://www.it-hojo.jp/eventinformation/||||https://www.boc-cloud.jp/||||https://www.it-hojo.jp/",
+		"reference_title": "イベント・説明会 | IT導入補助金||||IT導入補助金||||IT導入補助金: トップページ",
+		"reference_text": "IT導入補助金の説明会や生産性向上を目的としたイベントを全国各地で行います。お近くの会場へぜひお越しください。||||中小企業・小規模事業者の生産性向上を目的としたホームページ制作やITツール導入を補助する「IT導入補助金」。「補助を受けるにはどうしたらいいの？」「どんなことに使えるの？」…こんなご質問にお答えするセミナーを開催します。IT導入補助金の概要や、 ...||||平成30年度補正予算「IT導入補助金（サービス等生産性向上IT導入支援事業）」のポータルサイトです。本事業は、ITツールを ... プラスITフェア内にて実施しました中小企業・小規模事業者向け説明会で使用した資料を公開しました。 2019.5.27. 「交付申請の ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOV49Xw4KDn_pnjKBAZ5f6Oz9qAnCGgLJdgOmYxCmx1G-hq9liTKbSPg||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiSbczKL8P8aLaSqNo4R8TFx0TUYR_qkRk2lp1wiQc3ydZ4vUZibt0shTD||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOV49Xw4KDn_pnjKBAZ5f6Oz9qAnCGgLJdgOmYxCmx1G-hq9liTKbSPg"
+	},
+	{
+		"t_name": "中小企業・小規模事業者向け説明会(プラスITフェア)",
+		"role": "事業者",
+		"parent_task_id": 1,
+		"before_date": 255,
+		"date_duration": 15,
+		"t_number": 1,
+		"reference_url": "http://www.plus-it-fair.jp/||||https://www.hkd.meti.go.jp/hokim/20180613/index.htm||||https://www.plus-it-fair.jp/place/osaka.html",
+		"reference_title": "IT導入で商売繁盛！ プラスITフェア2019||||IT導入で商売繁盛！「プラスITフェア2018 in 札幌」を開催します｜経済 ...||||IT導入で商売繁盛！ プラスITフェア2019 大阪会場",
+		"reference_text": "プラスITで商売繁盛！プラスITフェア2019.||||2018年6月13日 ... プラスITフェア2018実行委員会は、中小企業・小規模事業者のITの利活用を推進するための「プラスITフェア2018 in 札幌」を7月3日（火）に開催します。 会場では、IT導入補助金の説明会、最新ITツールの展示会、ITの専門家による相談会等 ...||||日経 中堅・中小企業活性化プロジェクト プラスITで商売繁盛！プラスITフェア2019.",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSozhNGvAeo6PYHAQfgwldWWK12EWJaWyUna7KJXiWpGCdZlxlO6ZL0oig||||https://1.bp.blogspot.com/-jkjWb2M6Vr8/XQtdnTiGS4I/AAAAAAAAEz8/105R2yFvC34TsA6uISvG5OvvO3ktLKQKwCLcBGAs/s1600/l_e_others_501.png||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_bOfYc4FTAQD5fWJ1U_U_rE_UyB7F7XuXYZvOYJ1qQVooVlZGP9tCRM09"
+	},
+	{
+		"t_name": "IT導入支援事業者申請・登録",
+		"role": "事業者",
+		"parent_task_id": 0,
+		"before_date": 300,
+		"date_duration": 150,
+		"t_number": 2
+	},
+	{
+		"t_name": "IT導入支援事業者の登録申請",
+		"role": "事業者",
+		"parent_task_id": 2,
+		"before_date": 300,
+		"date_duration": 105,
+		"t_number": 2,
+		"reference_url": "https://www.it-hojo.jp/vendor/authorization.html||||https://hojyokin-portal.jp/itvender/||||https://www.it-hojo.jp/vendor/",
+		"reference_title": "IT導入支援事業者の登録申請 - IT導入補助金||||IT補助金ベンダー登録はじめました。 | 補助金ポータル||||ITベンダー・サービス事業者のみなさま | IT導入補助金",
+		"reference_text": "IT導入支援事業者の登録申請. お知らせ. 昨今のコロナウイルスの影響を勘案した景気対策としてIT導入補助金2020 1次公募（臨時対応）を行います。詳しくはこちらをご確認ください。 なお、このページに記載している内容はIT導入補助金2019の情報のため、IT ...||||2018年3月31日 ... 一言で言ってしまうと、IT導入補助金を活用してITツールを販売できる権利を得るための登録のことです。 補助金は金額的な支援を受けられることはとても魅力ではありますが、書類の準備や手続きなども多く、忙しくて ...||||なお、このページに記載している内容はIT導入補助金2019の情報のため、IT導入補助金2020 1次公募（臨時対応）に関する情報は必ずこちらをご確認ください。 【IT導入支援事業者採択の取消とITツールの登録解除について】 平成30年度補正 サービス等生産性 ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOV49Xw4KDn_pnjKBAZ5f6Oz9qAnCGgLJdgOmYxCmx1G-hq9liTKbSPg||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXxFZOH_MwMRuN7dctQuBjExZI272_mhwtXBsSv_YTTcGwXSBcv1j60Beu||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOV49Xw4KDn_pnjKBAZ5f6Oz9qAnCGgLJdgOmYxCmx1G-hq9liTKbSPg"
+	},
+	{
+		"t_name": "ITツール登録",
+		"role": "事業者",
+		"parent_task_id": 2,
+		"before_date": 293,
+		"date_duration": 120,
+		"t_number": 2,
+		"reference_url": "https://www.it-hojo.jp/vendor/authorization.html||||https://hojyokin-portal.jp/itvender/||||https://www.it-hojo.jp/vendor/",
+		"reference_title": "IT導入支援事業者の登録申請 - IT導入補助金||||IT補助金ベンダー登録はじめました。 | 補助金ポータル||||ITベンダー・サービス事業者のみなさま | IT導入補助金",
+		"reference_text": "IT導入支援事業者の登録申請. お知らせ. 昨今のコロナウイルスの影響を勘案した景気対策としてIT導入補助金2020 1次公募（臨時対応）を行います。詳しくはこちらをご確認ください。 なお、このページに記載している内容はIT導入補助金2019の情報のため、IT ...||||2018年3月31日 ... 一言で言ってしまうと、IT導入補助金を活用してITツールを販売できる権利を得るための登録のことです。 補助金は金額的な支援を受けられることはとても魅力ではありますが、書類の準備や手続きなども多く、忙しくて ...||||なお、このページに記載している内容はIT導入補助金2019の情報のため、IT導入補助金2020 1次公募（臨時対応）に関する情報は必ずこちらをご確認ください。 【IT導入支援事業者採択の取消とITツールの登録解除について】 平成30年度補正 サービス等生産性 ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOV49Xw4KDn_pnjKBAZ5f6Oz9qAnCGgLJdgOmYxCmx1G-hq9liTKbSPg||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXxFZOH_MwMRuN7dctQuBjExZI272_mhwtXBsSv_YTTcGwXSBcv1j60Beu||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOV49Xw4KDn_pnjKBAZ5f6Oz9qAnCGgLJdgOmYxCmx1G-hq9liTKbSPg"
+	},
+	{
+		"t_name": "交付申請・実績報告",
+		"role": "事業者",
+		"parent_task_id": 0,
+		"before_date": 250,
+		"date_duration": 250,
+		"t_number": 3
+	},
+	{
+		"t_name": "申請期間　一次公募　A類型",
+		"role": "事業者",
+		"parent_task_id": 3,
+		"before_date": 250,
+		"date_duration": 20,
+		"t_number": 3,
+		"reference_url": "https://www.it-hojo.jp/||||https://www.uchida-it.co.jp/info/2019it/||||https://www.it-hojo.jp/2020emergency/",
+		"reference_title": "IT導入補助金: トップページ||||IT補助金 2019年は上限450万へ大幅UP 採択数は減少の見通し | 内田 ...||||IT導入補助金2020 1次公募（臨時対応）",
+		"reference_text": "平成30年度補正予算「IT導入補助金（サービス等生産性向上IT導入支援事業）」のポータルサイトです。本事業は、ITツールを導入しようとする事業者に ... 一次公募 交付申請について、本日より受付を開始しました。詳細は「中小企業・小規模事業者のみなさま」 ...||||2019年7月9日 ... 最終更新日：2019年7月9日2019年IT導入補助金二次公募は7月17日より申請開始!IT導入補助金の二次公募は7月17日から ... 2019年IT導入補助金のスケジュール. 2019年IT導入補助金一次公募の公募期間・採択予定日・実施期間など ...||||IT導入補助金2020 1次公募（臨時対応）. こちらのページに記載されている内容は、昨今の新型コロナウイルス感染症の影響 ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOV49Xw4KDn_pnjKBAZ5f6Oz9qAnCGgLJdgOmYxCmx1G-hq9liTKbSPg||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo5CxzgOhoGNneeKxgb6tzUVCWv9kerZnCKPptqvLWtev9kR3gY_e5btjA||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOV49Xw4KDn_pnjKBAZ5f6Oz9qAnCGgLJdgOmYxCmx1G-hq9liTKbSPg"
+	},
+	{
+		"t_name": "申請期間　一次公募　B類型",
+		"role": "事業者",
+		"parent_task_id": 3,
+		"before_date": 250,
+		"date_duration": 30,
+		"t_number": 3,
+		"reference_url": "https://www.it-hojo.jp/||||https://www.uchida-it.co.jp/info/2019it/||||https://www.it-hojo.jp/2020emergency/",
+		"reference_title": "IT導入補助金: トップページ||||IT補助金 2019年は上限450万へ大幅UP 採択数は減少の見通し | 内田 ...||||IT導入補助金2020 1次公募（臨時対応）",
+		"reference_text": "平成30年度補正予算「IT導入補助金（サービス等生産性向上IT導入支援事業）」のポータルサイトです。本事業は、ITツールを導入しようとする事業者に ... 一次公募 交付申請について、本日より受付を開始しました。詳細は「中小企業・小規模事業者のみなさま」 ...||||2019年7月9日 ... 最終更新日：2019年7月9日2019年IT導入補助金二次公募は7月17日より申請開始!IT導入補助金の二次公募は7月17日から ... 2019年IT導入補助金のスケジュール. 2019年IT導入補助金一次公募の公募期間・採択予定日・実施期間など ...||||IT導入補助金2020 1次公募（臨時対応）. こちらのページに記載されている内容は、昨今の新型コロナウイルス感染症の影響 ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOV49Xw4KDn_pnjKBAZ5f6Oz9qAnCGgLJdgOmYxCmx1G-hq9liTKbSPg||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo5CxzgOhoGNneeKxgb6tzUVCWv9kerZnCKPptqvLWtev9kR3gY_e5btjA||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOV49Xw4KDn_pnjKBAZ5f6Oz9qAnCGgLJdgOmYxCmx1G-hq9liTKbSPg"
+	},
+	{
+		"t_name": "事業実施期間　一次公募　A類型",
+		"role": "事業者",
+		"parent_task_id": 3,
+		"before_date": 220,
+		"date_duration": 190,
+		"t_number": 3,
+		"reference_url": "https://www.it-hojo.jp/||||https://www.uchida-it.co.jp/info/2019it/||||https://www.it-hojo.jp/2020emergency/",
+		"reference_title": "IT導入補助金: トップページ||||IT補助金 2019年は上限450万へ大幅UP 採択数は減少の見通し | 内田 ...||||IT導入補助金2020 1次公募（臨時対応）",
+		"reference_text": "平成30年度補正予算「IT導入補助金（サービス等生産性向上IT導入支援事業）」のポータルサイトです。本事業は、ITツールを導入しようとする事業者に ... 一次公募 交付申請について、本日より受付を開始しました。詳細は「中小企業・小規模事業者のみなさま」 ...||||2019年7月9日 ... 最終更新日：2019年7月9日2019年IT導入補助金二次公募は7月17日より申請開始!IT導入補助金の二次公募は7月17日から ... 2019年IT導入補助金のスケジュール. 2019年IT導入補助金一次公募の公募期間・採択予定日・実施期間など ...||||IT導入補助金2020 1次公募（臨時対応）. こちらのページに記載されている内容は、昨今の新型コロナウイルス感染症の影響 ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOV49Xw4KDn_pnjKBAZ5f6Oz9qAnCGgLJdgOmYxCmx1G-hq9liTKbSPg||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo5CxzgOhoGNneeKxgb6tzUVCWv9kerZnCKPptqvLWtev9kR3gY_e5btjA||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOV49Xw4KDn_pnjKBAZ5f6Oz9qAnCGgLJdgOmYxCmx1G-hq9liTKbSPg"
+	},
+	{
+		"t_name": "事業実施期間　一次公募　B類型",
+		"role": "事業者",
+		"parent_task_id": 3,
+		"before_date": 195,
+		"date_duration": 165,
+		"t_number": 3,
+		"reference_url": "https://www.it-hojo.jp/||||https://www.uchida-it.co.jp/info/2019it/||||https://www.it-hojo.jp/2020emergency/",
+		"reference_title": "IT導入補助金: トップページ||||IT補助金 2019年は上限450万へ大幅UP 採択数は減少の見通し | 内田 ...||||IT導入補助金2020 1次公募（臨時対応）",
+		"reference_text": "平成30年度補正予算「IT導入補助金（サービス等生産性向上IT導入支援事業）」のポータルサイトです。本事業は、ITツールを導入しようとする事業者に ... 一次公募 交付申請について、本日より受付を開始しました。詳細は「中小企業・小規模事業者のみなさま」 ...||||2019年7月9日 ... 最終更新日：2019年7月9日2019年IT導入補助金二次公募は7月17日より申請開始!IT導入補助金の二次公募は7月17日から ... 2019年IT導入補助金のスケジュール. 2019年IT導入補助金一次公募の公募期間・採択予定日・実施期間など ...||||IT導入補助金2020 1次公募（臨時対応）. こちらのページに記載されている内容は、昨今の新型コロナウイルス感染症の影響 ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOV49Xw4KDn_pnjKBAZ5f6Oz9qAnCGgLJdgOmYxCmx1G-hq9liTKbSPg||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo5CxzgOhoGNneeKxgb6tzUVCWv9kerZnCKPptqvLWtev9kR3gY_e5btjA||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOV49Xw4KDn_pnjKBAZ5f6Oz9qAnCGgLJdgOmYxCmx1G-hq9liTKbSPg"
+	},
+	{
+		"t_name": "申請期間　二次公募",
+		"role": "事業者",
+		"parent_task_id": 3,
+		"before_date": 195,
+		"date_duration": 35,
+		"t_number": 3,
+		"reference_url": "https://www.it-hojo.jp/||||https://www.uchida-it.co.jp/info/2019it/||||https://www.it-hojo.jp/schedule/",
+		"reference_title": "IT導入補助金: トップページ||||IT補助金 2019年は上限450万へ大幅UP 採択数は減少の見通し | 内田 ...||||スケジュール | IT導入補助金",
+		"reference_text": "平成30年度補正予算「IT導入補助金（サービス等生産性向上IT導入支援事業）」のポータルサイトです。本事業は、ITツールを導入しようとする事業者に ... 二次公募 交付申請について、本日より受付を開始しました。詳細は「中小企業・小規模事業者のみなさま」 ...||||IT導入補助金の二次公募は7月17日からとなります。申請のためにはソフトウェアの登録が事前に必要となりますので、申請を検討の方は早めにご相談ください。||||※IT導入補助金2019の公募はすべて終了いたしました。 図を左右にスクロールできます. スケジュール ... 二次公募. 交付申請期間. 2019年7月17日（水）11：00～2019年8月23日（金）17：00まで. 交付決定日. 2019年9月6日（金）. 事業実施期間. 交付決定日 ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOV49Xw4KDn_pnjKBAZ5f6Oz9qAnCGgLJdgOmYxCmx1G-hq9liTKbSPg||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo5CxzgOhoGNneeKxgb6tzUVCWv9kerZnCKPptqvLWtev9kR3gY_e5btjA||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOV49Xw4KDn_pnjKBAZ5f6Oz9qAnCGgLJdgOmYxCmx1G-hq9liTKbSPg"
+	},
+	{
+		"t_name": "事業実施期間　二次公募",
+		"role": "事業者",
+		"parent_task_id": 3,
+		"before_date": 150,
+		"date_duration": 150,
+		"t_number": 3,
+		"reference_url": "https://www.it-hojo.jp/||||https://www.uchida-it.co.jp/info/2019it/||||https://www.it-hojo.jp/schedule/",
+		"reference_title": "IT導入補助金: トップページ||||IT補助金 2019年は上限450万へ大幅UP 採択数は減少の見通し | 内田 ...||||スケジュール | IT導入補助金",
+		"reference_text": "平成30年度補正予算「IT導入補助金（サービス等生産性向上IT導入支援事業）」のポータルサイトです。本事業は、ITツールを導入しようとする事業者に ... 二次公募 交付申請について、本日より受付を開始しました。詳細は「中小企業・小規模事業者のみなさま」 ...||||IT導入補助金の二次公募は7月17日からとなります。申請のためにはソフトウェアの登録が事前に必要となりますので、申請を検討の方は早めにご相談ください。||||※IT導入補助金2019の公募はすべて終了いたしました。 図を左右にスクロールできます. スケジュール ... 二次公募. 交付申請期間. 2019年7月17日（水）11：00～2019年8月23日（金）17：00まで. 交付決定日. 2019年9月6日（金）. 事業実施期間. 交付決定日 ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOV49Xw4KDn_pnjKBAZ5f6Oz9qAnCGgLJdgOmYxCmx1G-hq9liTKbSPg||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo5CxzgOhoGNneeKxgb6tzUVCWv9kerZnCKPptqvLWtev9kR3gY_e5btjA||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOV49Xw4KDn_pnjKBAZ5f6Oz9qAnCGgLJdgOmYxCmx1G-hq9liTKbSPg"
+	}
+]

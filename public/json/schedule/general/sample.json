@@ -1,0 +1,130 @@
+[
+	{
+		"t_name": "大項目",
+		"role": "幹事1",
+		"parent_task_id": 0,
+		"before_date": 50,
+		"date_duration": 15,
+		"t_number": 1
+	},
+	{
+		"t_name": "小項目",
+		"role": "幹事1",
+		"parent_task_id": 1,
+		"before_date": 45,
+		"date_duration": 5,
+		"t_number": 1
+	},
+	{
+		"t_name": "小項目",
+		"role": "幹事1",
+		"parent_task_id": 1,
+		"before_date": 40,
+		"date_duration": 5,
+		"t_number": 1
+	},
+	{
+		"t_name": "小項目",
+		"role": "幹事1",
+		"parent_task_id": 1,
+		"before_date": 40,
+		"date_duration": 5,
+		"t_number": 1
+	},
+	{
+		"t_name": "大項目",
+		"role": "幹事1",
+		"parent_task_id": 0,
+		"before_date": 35,
+		"date_duration": 15,
+		"t_number": 2
+	},
+	{
+		"t_name": "小項目",
+		"role": "幹事1",
+		"parent_task_id": 2,
+		"before_date": 30,
+		"date_duration": 5,
+		"t_number": 2
+	},
+	{
+		"t_name": "小項目",
+		"role": "幹事1",
+		"parent_task_id": 2,
+		"before_date": 30,
+		"date_duration": 5,
+		"t_number": 2
+	},
+	{
+		"t_name": "小項目",
+		"role": "幹事1",
+		"parent_task_id": 2,
+		"before_date": 25,
+		"date_duration": 5,
+		"t_number": 2
+	},
+	{
+		"t_name": "大項目",
+		"role": "幹事1",
+		"parent_task_id": 0,
+		"before_date": 20,
+		"date_duration": 20,
+		"t_number": 3
+	},
+	{
+		"t_name": "小項目",
+		"role": "幹事1",
+		"parent_task_id": 3,
+		"before_date": 15,
+		"date_duration": 5,
+		"t_number": 3
+	},
+	{
+		"t_name": "小項目",
+		"role": "幹事1",
+		"parent_task_id": 3,
+		"before_date": 10,
+		"date_duration": 5,
+		"t_number": 3
+	},
+	{
+		"t_name": "小項目",
+		"role": "幹事1",
+		"parent_task_id": 3,
+		"before_date": 5,
+		"date_duration": 5,
+		"t_number": 3
+	},
+	{
+		"t_name": "大項目",
+		"role": "幹事1",
+		"parent_task_id": 0,
+		"before_date": 0,
+		"date_duration": 1,
+		"t_number": 4
+	},
+	{
+		"t_name": "小項目",
+		"role": "幹事1",
+		"parent_task_id": 4,
+		"before_date": 0,
+		"date_duration": 1,
+		"t_number": 4
+	},
+	{
+		"t_name": "小項目",
+		"role": "幹事1",
+		"parent_task_id": 4,
+		"before_date": 0,
+		"date_duration": 1,
+		"t_number": 4
+	},
+	{
+		"t_name": "小項目",
+		"role": "幹事1",
+		"parent_task_id": 4,
+		"before_date": 0,
+		"date_duration": 1,
+		"t_number": 4
+	}
+]
