@@ -23,6 +23,8 @@ class Task < ApplicationRecord
             tasks = generate_inheritance_tasks()
         elsif input_word == "マイホーム購入"
             tasks = generate_myhome_tasks()
+        elsif input_word == "赤ちゃん予防接種"
+            tasks = generate_baby_vaccination_tasks()
         else
             tasks = generate_normal_tasks()
         end
@@ -54,6 +56,12 @@ class Task < ApplicationRecord
     def generate_gassyuku_tasks()
         tc_gassyuku = generate_public_taskcollection("schedule/lifeevent/school/gassuku.json")
         return tc_gassyuku
+    end
+
+    # 赤ちゃん予防接種
+    def generate_baby_vaccination_tasks()
+        tc_babyv = generate_public_taskcollection("schedule/lifeevent/baby/vaccination.json")
+        return tc_babyv
     end
 
     # マイホーム

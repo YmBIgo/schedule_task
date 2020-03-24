@@ -61,7 +61,13 @@
                                 <img src="<%= @task.reference_image.split("||||")[r_count] %>" width="90%">
                                 </div>
                                 <div class="col-sm-8">
-                                <p><%= @task.reference_text.split("||||")[r_count][0..100] %></p>
+                                <p>
+                                <% if @task.reference_text.split("||||")[r_count] != nil %>
+                                    <%= @task.reference_text.split("||||")[r_count][0..100] %>
+                                <% else %>
+                                    詳細はありません
+                                <% end %>
+                                </p>
                                 </div>
                             </div>
                         </div>
