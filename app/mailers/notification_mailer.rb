@@ -1,5 +1,6 @@
 class NotificationMailer < ApplicationMailer
     default from: "k-kazuya@coffee-cup.info"
+    default to: "coffeecup_japan@icloud.com"
 
     def send_confirm_to_user(role, password, email, w_url)
       @role = role
