@@ -25,8 +25,14 @@ class Task < ApplicationRecord
             tasks = generate_inheritance_tasks()
         elsif input_word == "引越し" then
             tasks = generate_housemoving_tasks()
+        elsif input_word == "新居インテリア" then
+            tasks = generate_interior_tasks()
         elsif input_word == "マイホーム購入" then
             tasks = generate_myhome_tasks()
+        elsif input_word == "マンション修繕工事" then
+            tasks = generate_repair_mansion()
+        elsif input_word == "デイサービス事業所開設" then
+            tasks = generate_open_daycare_tasks()
         elsif input_word == "IT補助金" then
             tasks = generate_it_subsidy_tasks()
         elsif input_word == "飲食店開業" then
@@ -106,10 +112,22 @@ class Task < ApplicationRecord
         return tc_house_moving
     end
 
+    # 新居インテリア
+    def generate_interior_tasks()
+        tc_interior = generate_public_taskcollection("schedule/lifeevent/house/interior.json")
+        return tc_interior
+    end
+
     # マイホーム
     def generate_myhome_tasks()
         tc_gassyuku = generate_public_taskcollection("schedule/lifeevent/house/myhome.json")
         return tc_gassyuku
+    end
+
+    # マンション修繕
+    def generate_repair_mansion()
+        tc_repair_mansion = generate_public_taskcollection("schedule/work/real_estate/mansion_repair.json")
+        return tc_repair_mansion
     end
 
     # 相続
@@ -124,6 +142,12 @@ class Task < ApplicationRecord
         return tc_itsub      
     end
 
+    # デイサービス事業所開設
+    def generate_open_daycare_tasks()
+        tc_daycare = generate_public_taskcollection("schedule/work/entrepreneur/daycare.json")
+    end
+
+    # レストラン開業
     def generate_open_restrant_tasks()
         tc_open_restaurant = generate_public_taskcollection("schedule/work/entrepreneur/open_restaurant.json")
     end
