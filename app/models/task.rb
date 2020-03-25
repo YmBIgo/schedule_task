@@ -15,9 +15,9 @@ class Task < ApplicationRecord
             tasks = generate_gassyuku_tasks()
         elsif input_word == "飲み会" then
             tasks = generate_nomikai_tasks()
-        elsif input_word == "赤ちゃん予防接種"
+        elsif input_word == "赤ちゃん予防接種" then
             tasks = generate_baby_vaccination_tasks()
-        elsif input_word == "子供イベント運営"
+        elsif input_word == "子供イベント運営" then
             tasks = generate_kids_event_basic_tasks()
         elsif input_word == "結婚" then
             tasks = generate_wedding_tasks()
@@ -29,17 +29,25 @@ class Task < ApplicationRecord
             tasks = generate_interior_tasks()
         elsif input_word == "マイホーム購入" then
             tasks = generate_myhome_tasks()
+        elsif input_word == "中古マンション購入" then
+            tasks = generate_old_mansion()
         elsif input_word == "マンション修繕工事" then
             tasks = generate_repair_mansion()
         elsif input_word == "デイサービス事業所開設" then
             tasks = generate_open_daycare_tasks()
         elsif input_word == "IT補助金" then
             tasks = generate_it_subsidy_tasks()
+        elsif input_word == "オフィス移転" then
+            tasks = generate_new_office_tasks()
+        elsif input_word == "医院開業"
+            tasks = generate_open_doctor_tasks()
         elsif input_word == "飲食店開業" then
             tasks = generate_open_restrant_tasks()
-        elsif input_word == "アメリカ大学院留学"
+        elsif input_word == "論文" then
+            tasks = generate_article_tasks()
+        elsif input_word == "アメリカ大学院留学" then
             tasks = generate_graduate_america()
-        elsif input_word == "イギリス大学院留学"
+        elsif input_word == "イギリス大学院留学" then
             tasks = generate_graduate_england()
         elsif input_word == "就活" then
             tasks = generate_recruit_tasks()
@@ -94,6 +102,12 @@ class Task < ApplicationRecord
         return tc_recruit
     end
 
+    # 論文
+    def generate_article_tasks()
+        tc_article = generate_public_taskcollection("schedule/lifeevent/school/article.json")
+        return tc_article
+    end
+
     # 大学院留学　アメリカ
     def generate_graduate_america()
         tc_graduate_america = generate_public_taskcollection("schedule/lifeevent/school/study_graduateschool_america.json")
@@ -124,6 +138,12 @@ class Task < ApplicationRecord
         return tc_gassyuku
     end
 
+    # 中古マンション
+    def generate_old_mansion()
+        tc_old_mansion = generate_public_taskcollection("schedule/lifeevent/house/old_mansion.json")
+        return tc_old_mansion
+    end
+
     # マンション修繕
     def generate_repair_mansion()
         tc_repair_mansion = generate_public_taskcollection("schedule/work/real_estate/mansion_repair.json")
@@ -142,14 +162,28 @@ class Task < ApplicationRecord
         return tc_itsub      
     end
 
+    # オフィス移転
+    def generate_new_office_tasks()
+        tc_new_office = generate_public_taskcollection("schedule/work/office/new_office.json")
+        return tc_new_office
+    end
+
     # デイサービス事業所開設
     def generate_open_daycare_tasks()
         tc_daycare = generate_public_taskcollection("schedule/work/entrepreneur/daycare.json")
+        return tc_daycare
     end
 
     # レストラン開業
     def generate_open_restrant_tasks()
         tc_open_restaurant = generate_public_taskcollection("schedule/work/entrepreneur/open_restaurant.json")
+        return tc_open_restaurant
+    end
+
+    # 医院開業
+    def generate_open_doctor_tasks()
+        tc_open_doctor = generate_public_taskcollection("schedule/work/entrepreneur/open_doctor.json")
+        return tc_open_doctor
     end
     
     # 合宿
