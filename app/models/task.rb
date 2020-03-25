@@ -15,16 +15,20 @@ class Task < ApplicationRecord
             tasks = generate_gassyuku_tasks()
         elsif input_word == "飲み会" then
             tasks = generate_nomikai_tasks()
-        elsif input_word == "IT補助金" then
-            tasks = generate_it_subsidy_tasks()
+        elsif input_word == "赤ちゃん予防接種"
+            tasks = generate_baby_vaccination_tasks()
         elsif input_word == "結婚" then
             tasks = generate_wedding_tasks()
         elsif input_word == "相続" then
             tasks = generate_inheritance_tasks()
-        elsif input_word == "マイホーム購入"
+        elsif input_word == "マイホーム購入" then
             tasks = generate_myhome_tasks()
-        elsif input_word == "赤ちゃん予防接種"
-            tasks = generate_baby_vaccination_tasks()
+        elsif input_word == "IT補助金" then
+            tasks = generate_it_subsidy_tasks()
+        elsif input_word == "飲食店開業" then
+            tasks = generate_open_restrant_tasks()
+        elsif input_word == "就活" then
+            tasks = generate_recruit_tasks()
         else
             tasks = generate_normal_tasks()
         end
@@ -52,10 +56,10 @@ class Task < ApplicationRecord
         return tc_normal
     end
 
-    # 合宿
-    def generate_gassyuku_tasks()
-        tc_gassyuku = generate_public_taskcollection("schedule/lifeevent/school/gassuku.json")
-        return tc_gassyuku
+    # 結婚
+    def generate_wedding_tasks()
+        tc_itsub = generate_public_taskcollection("schedule/lifeevent/wedding/wedding.json")
+        return tc_itsub      
     end
 
     # 赤ちゃん予防接種
@@ -64,10 +68,22 @@ class Task < ApplicationRecord
         return tc_babyv
     end
 
+    # 就活
+    def generate_recruit_tasks()
+        tc_recruit = generate_public_taskcollection("schedule/work/job_hunting/recruit.json")
+        return tc_recruit
+    end
+
     # マイホーム
     def generate_myhome_tasks()
         tc_gassyuku = generate_public_taskcollection("schedule/lifeevent/house/myhome.json")
         return tc_gassyuku
+    end
+
+    # 相続
+    def generate_inheritance_tasks()
+        tc_itsub = generate_public_taskcollection("schedule/lifeevent/disease/inheritance.json")
+        return tc_itsub
     end
 
     # IT補助金
@@ -76,16 +92,14 @@ class Task < ApplicationRecord
         return tc_itsub      
     end
 
-    # 結婚
-    def generate_wedding_tasks()
-        tc_itsub = generate_public_taskcollection("schedule/lifeevent/wedding/wedding.json")
-        return tc_itsub      
+    def generate_open_restrant_tasks()
+        tc_open_restaurant = generate_public_taskcollection("schedule/work/entrepreneur/open_restaurant.json")
     end
-
-    # 
-    def generate_inheritance_tasks()
-        tc_itsub = generate_public_taskcollection("schedule/lifeevent/disease/inheritance.json")
-        return tc_itsub
+    
+    # 合宿
+    def generate_gassyuku_tasks()
+        tc_gassyuku = generate_public_taskcollection("schedule/lifeevent/school/gassuku.json")
+        return tc_gassyuku
     end
 
     # 飲み会

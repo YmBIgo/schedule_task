@@ -1,0 +1,102 @@
+[
+	{
+		"t_name": "就活準備",
+		"role": "幹事1",
+		"parent_task_id": 0,
+		"before_date": 540,
+		"date_duration": 330,
+		"t_number": 1
+	},
+	{
+		"t_name": "自己分析",
+		"role": "幹事1",
+		"parent_task_id": 1,
+		"before_date": 540,
+		"date_duration": 240,
+		"t_number": 1,
+		"reference_url": "https://kenjasyukatsu.com/archives/993||||https://job.rikunabi.com/contents/howto/4143/||||https://www.onecareer.jp/articles/1178",
+		"reference_title": "【就活】自己分析のやり方はこれで完璧！自己分析を完成するステップ5 ...||||Stepで解説！ 「自己分析」の方法 - リクナビ就活準備ガイド||||自己分析のやり方16本まとめ！就活で本当に内定へ近づく方法とは ...",
+		"reference_text": "2019年5月31日 ... 就活に必須と言われる自己分析。でも、やり方がわからず、困っていませんか？そこで、\nそんな就活生のために、自己分析シートつきで、自己分析のやり方を解説いたします！\nシートを埋めるだけで、内定レベルの自己分析が完了します。||||2017年9月19日 ... 「就活には自己分析が大事」とわかっているけれど、具体的にどうやってやればいい\nのかわからない。そんな人のために、リクルートキャリアが運営する『リクナビ就職\nエージェント』で、新卒学生の就職活動支援を行っているキャリアアドバイザー ...||||就活における自己分析とは、過去の経験・出来事をもとに自分の強み、弱みを整理し\nたり、どのような仕事であれば自分に適性があるかを探ったりすること。つまり、企業へ\n行う自己PRと、企業・職種選びの根本となる役割を担います。 自己分析は就活の方向\nを ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1hnGji08A375NhRVy2tGsmTRwT1MzctL8ZAt-_KldOisreJuXlf4npM2l||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3eX1su6jxeJa7MGUvwMPdxWkcETm1yKVcLVm4sLbEd1TVcsMuWqzOaZM||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoMZGl9wU81tNjeMQ-4qViPWONVAXMUA_IH7-G0FG2pCZ4Yfsj7QrgF1YU"
+	},
+	{
+		"t_name": "業界研究・企業研究",
+		"role": "幹事1",
+		"parent_task_id": 1,
+		"before_date": 540,
+		"date_duration": 330,
+		"t_number": 1,
+		"reference_url": "https://job.rikunabi.com/contents/industry/2489/||||https://www.onecareer.jp/articles/790||||https://job.mynavi.jp/conts/2021/zukan/",
+		"reference_title": "業界研究のやり方・ポイントを徹底解説！ - リクナビ就活準備ガイド||||【最新版：業界研究】めんどくさい業界研究は全て任せろ！業界ごとの ...||||「業界研究大図鑑」 HYPER - 就活支援 - マイナビ2021",
+		"reference_text": "2017年6月29日 ... 業界研究は、自己分析や企業研究と同様に、就活においてとても重要なものです。業界\n研究を行うことで、業界や業種への理解が深まり、自分が行きたいと思う業界を\n見つけるヒントになります。今回は業界研究のやり方やポイントについてご ...||||業界研究しないとダメ。でも、めんどくさい」 就活生のみなさん、こう思っている方も多い\nのではないでしょうか？ そんな声にお答えし ... 就職活動も本格化し忙しくなると思い\nますが、業界研究はワンキャリアをフル活用してください。 ＜目次＞ ・【コンサル】 ・【\n金融】||||業界研究大図鑑ページ。株式会社マイナビが運営する新卒・既卒向けインターンシップ・\n就職・採用情報サイト。企業検索や無料適職診断、就活Ｑ＆Ａなど。",
+		"reference_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgao0g47HLvWtdyMjdL_KBHY5CXCtlgQi64zenEnhF6V01HWh1innu1W3Y||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRA6S7LcWTRl-0yK3hrs1rQgL2yq4P51CDXmPTwwFL_VbaA6WWqD9tdeWg||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFmACnb2FFssyj8J7zBMEuoQ5VwwUwWbVRBV64dSugzVy4jwLGiOKIVAY"
+	},
+	{
+		"t_name": "インターンシップエントリー参加",
+		"role": "幹事1",
+		"parent_task_id": 1,
+		"before_date": 480,
+		"date_duration": 270,
+		"t_number": 1,
+		"reference_url": "https://job.rikunabi.com/contents/internship/3340/||||https://www.j-cast.com/kaisha/2020/03/12381966.html?p=all||||https://job.rikunabi.com/contents/internship/9249/",
+		"reference_title": "インターンシップいつから始める？参加時期・申し込み時期は？【先輩 ...||||インターンシップで選考落ち 8割の就活生が「本番」を受けない理由とは ...||||【例文付き】「インターンシップで学びたいこと」の書き方をプロが解説 ...",
+		"reference_text": "就活のスケジュールを確認した上で、自分の予定に照らして、いつ参加するのが良いか\nを検討してみましょう。 就活手帳の写真. （4）インターンシップへの参加にあたって準備し\nておくと良いことは？||||2020年3月12日 ... インターンシップめぐり、就活生と企業のあいだで、その理解に温度差があるようだ――\n。2020年卒の就職希望者を対象にした調査で、インターンシップの選考に落ちた学生の\n約8割が、本番の選考を避けていたことがわかった。多くの企業 ...||||2019年3月27日 ... 続いて「就活の予行演習になった」（42.8％）、「自己分析が深まった」（32.6％）という\n結果になりました。 それぞれ ... インターンシップのプログラムとして自己分析のワークを\nする企業があり、それを参考にした（インターネット業界内定／女性）",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWWIwcWbMs7B95jEyN-SkvHP4y18AtZsSx-TjKjr8t0UkbNmcYN_JA6ew||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVLRxBJJZmnbB5Qfir-Zt-btBo7py1kb1i5vMjjnVa0sWeG3zR7q_BvhBx||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuH7SfcScifhqZocFgVqRvCCcHZFAayHcJeWYdu2AzRSj9vu02WAcmJMI"
+	},
+	{
+		"t_name": "OB・OG訪問",
+		"role": "幹事1",
+		"parent_task_id": 1,
+		"before_date": 540,
+		"date_duration": 300,
+		"t_number": 1,
+		"reference_url": "https://toyokeizai.net/articles/-/192570||||https://www.onecareer.jp/articles/85||||https://jobrass.com/magazine/research/14591/",
+		"reference_title": "OB・OG訪問で｢好感を持たれない学生｣の3特徴 | 就職・転職 | 東洋経済 ...||||OB・OG訪問をすべき人、しなくていい人｜就活サイト【ONE CAREER】||||OB・OG訪問のやり方を完璧にするために学生が知っておくべき手順の全て",
+		"reference_text": "2017年10月17日 ... サマーインターンが終了し、これからいよいよ本格化する大学3年生の「OB・OG訪問」は\n、まさに「就職活動」の第2章の開幕だ。 昨年までと様変わりしている就活環境の中、OB\n・OG訪問が真に就活に役立つ人がいる一方、残念 ...||||（※1）リクルーター制度：人事から依頼されて社員が採用を支援する制度のことで、学生\nをカフェなどに呼び出して優秀者の絞り込みを行います。OB・OG訪問を兼ねた面接とも\nいえるでしょう。 OB・OG訪問の有無を重視する業界を受ける人.||||2016年12月7日 ... JOBRASSマガジンでは、就活生なら誰もが気になる、様々な就活お役立ち情報を発信\nしています。 ... OB・OG訪問のやり方を探している学生の方の多くは、OB・OG訪問に\n行けば内定に近づく一番の近道だと思っているかもしれませんが、 ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLpP0xnKN2VDe_3Ha9uyYfUKHEaNVoS4CiffIrj5zUXbeIzY6PcdmBZPQ||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBcF1fvHcS5y39zwI3J4byJMJQ-hpvJxKvrI7MSZ9UyYfUwHTOwu0UNSw||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTC5EHUVCDe3-syWxCcoWk7rojEKsgv1OppZ-CSIGTMxWoi3odidy5jwhPW"
+	},
+	{
+		"t_name": "エントリー開始後",
+		"role": "幹事1",
+		"parent_task_id": 0,
+		"before_date": 210,
+		"date_duration": 210,
+		"t_number": 2
+	},
+	{
+		"t_name": "企業エントリー・説明会参加",
+		"role": "幹事1",
+		"parent_task_id": 2,
+		"before_date": 210,
+		"date_duration": 90,
+		"t_number": 2,
+		"reference_url": "https://www.nikkei.com/article/DGXMZO83940430U5A300C1000000/||||https://kenjasyukatsu.com/setsumeikai||||https://www.gosetsu.com/2021/",
+		"reference_title": "人事が説明会で見た「採りたくない学生」: 日本経済新聞||||就活生必見！会社説明会で必ず押さえておくべき7つのルール | 賢者の ...||||【合説どっとこむ2021】合同企業説明会・就活イベント・就活セミナー情報",
+		"reference_text": "2015年3月5日 ... 3月1日に就活が本格解禁となり、多くの就活生は企業の説明会に足を運んでいるころだ\nろう。後ろ倒しで選考期間が短くなった今シーズンの就活は説明会 ...||||就活のスタートである会社説明会。志望企業の企業研究を進めるためにも、参加は必須\nです。しかし、「説明会はどんな点に注意して参加すればいいの？」「服装はどうすれば\nいいの？」「どんな質問をすればいいの？」「持ち物は？」など、わからないことばかりだ ...||||日本最大級！全国の合同説明会・就活イベントをナビゲートする2021年新卒のための\n就職情報ポータルサイト。エントリーシート講座、履歴書写真無料撮影会、面接講座など\nの情報も満載！ トップページ.",
+		"reference_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfrHBJqk2r7m3xraOxRF5TcS31UToU688-Yl4L4_EjgDR7BalmlIJ8ZNGk||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo_-AxYieBknQekbmmCT4lMPu0kaGdZ8kGQdNW_2K7fzbpRPGO3EFNIJHF||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToM99G3mR9QdZoLM1xHkooRHwTNOP95aq6nLpEKzt7t_-XeKeehiTH5Kk"
+	},
+	{
+		"t_name": "エントリーシート提出",
+		"role": "幹事1",
+		"parent_task_id": 2,
+		"before_date": 210,
+		"date_duration": 90,
+		"t_number": 2,
+		"reference_url": "https://job.rikunabi.com/contents/entrysheet/4570/||||https://job.mynavi.jp/conts/2021/es_perfect/||||https://job.rikunabi.com/contents/entrysheet/9060/",
+		"reference_title": "プロが教えるエントリーシート書き方のコツ - リクナビ就活準備ガイド||||エントリーシート書き方まるわかり - 就活支援 - マイナビ2021||||エントリーシートと履歴書の違いは？書くときに気をつけるポイントは ...",
+		"reference_text": "2017年9月27日 ... エントリーシート（ES）とは、就活において学生が企業に提出する「応募書類」の一つ。\n企業に対して最初に自分をアピールする場となります。面接時の参考資料として使\nわれるとともに、大手企業などでは選考の第1段階になることも多いです。||||インターンシップや就活本番で提出するエントリーシート（ES）では、応募者の強みや\n志望動機などがチェックされます。ここでは、ESの書き方の基本と応用、そして、自己\nPRや志望動機の文章を書くのに便利な作成ツールを紹介します。 まずはここから始め\nよう ...||||2019年3月1日 ... エントリーシート（ES）とは、就活において学生が企業に提出する「応募書類」の一つ。\n面接時の参考資料や、大手企業などでは選考の第1段階として使われたりします。一方\n、履歴書は個人の学業や職業の経歴、人となりを表す個人の特徴や ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRogP1kxdG2RJArBT2VsDWhiBQX78RatjMhCaZj0yTPRbnycppn5rStdkE||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc0UhAkAD91wDFy-kMP9mJ1y2NfuaSwwoZsRKOlmeYruU_opsAHvNvl7U||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNKw-jOzKrOO86e_IS1Qo6MMkga3oL52K9T1Z3L5tYdYbdBuc66TEb9M0"
+	},
+	{
+		"t_name": "選考・面接",
+		"role": "幹事1",
+		"parent_task_id": 2,
+		"before_date": 120,
+		"date_duration": 120,
+		"t_number": 2,
+		"reference_url": "https://job.rikunabi.com/contents/interview/8084/||||https://kenjasyukatsu.com/mensetsu_situmon||||https://matcher.jp/dictionary/articles/62",
+		"reference_title": "【就活面接で準備しておくことは？】面接マナーとよく聞かれる質問を確認 ...||||【面接でよく聞かれる質問BEST50】質問の的確な答え方と回答例50選 ...||||就活の面接でよくある「24」の質問と面接官の意図 | MatcherDictionary",
+		"reference_text": "2018年9月28日 ... 就職活動（就活）の面接前にやるべき準備は？今からでもできることは？と焦っている人\nへ。面接の流れと受付から退室までのマナー、よく聞かれる質問とその意図、答えを\n準備するときのポイントを解説します。また、面接前日に準備しておく ...||||そこで、日経就職ナビが就活生に調査したデータをもとに「面接でよく聞かれる質問\nランキング50」を作成しました。さらに、それぞれの質問の答え方も回答例つきで解説\nいたします！ 回答例を参考に、採用担当に響く ...||||就活で決して避けては通れない面接。この記事では面接で頻繁に問われる質問の意図\nを解説します。面接官の質問の意図を把握し、ポイントを押さえた回答で面接を突破しま\nしょう。",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtWCtsNXZ1hWLil7QOOWfjy_6fw_C_731SKBqN6DMYC_Top6zdZBPqB2o||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToBciSmxB4HjAb4lAMjQcdkG4Q4ASbgZJRMft4lqNyOWp1GNOCvXqWCQ||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScbYe93vyeTLMLxITkzW3dTINKuPmwzJenKhhUhX87aq4fFAE5O2Y6ohQ"
+	}
+]
