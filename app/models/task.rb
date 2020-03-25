@@ -31,6 +31,10 @@ class Task < ApplicationRecord
             tasks = generate_it_subsidy_tasks()
         elsif input_word == "飲食店開業" then
             tasks = generate_open_restrant_tasks()
+        elsif input_word == "アメリカ大学院留学"
+            tasks = generate_graduate_america()
+        elsif input_word == "イギリス大学院留学"
+            tasks = generate_graduate_england()
         elsif input_word == "就活" then
             tasks = generate_recruit_tasks()
         else
@@ -72,6 +76,7 @@ class Task < ApplicationRecord
         return tc_babyv
     end
 
+    # 子供イベント　運営
     def generate_kids_event_basic_tasks()
         tc_kids_event_basic = generate_public_taskcollection("schedule/lifeevent/school/kids_event.json")
         return tc_kids_event_basic
@@ -81,6 +86,18 @@ class Task < ApplicationRecord
     def generate_recruit_tasks()
         tc_recruit = generate_public_taskcollection("schedule/work/job_hunting/recruit.json")
         return tc_recruit
+    end
+
+    # 大学院留学　アメリカ
+    def generate_graduate_america()
+        tc_graduate_america = generate_public_taskcollection("schedule/lifeevent/school/study_graduateschool_america.json")
+        return tc_graduate_america
+    end
+
+    # 大学院留学　イギリス
+    def generate_graduate_england()
+        tc_graduate_america = generate_public_taskcollection("schedule/lifeevent/school/study_graduateschool_england.json")
+        return tc_graduate_america
     end
 
     # 引越し

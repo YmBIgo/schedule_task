@@ -1,0 +1,250 @@
+[
+	{
+		"t_name": "１〜４月",
+		"role": "幹事1",
+		"parent_task_id": 0,
+		"before_date": 640,
+		"date_duration": 125,
+		"t_number": 1
+	},
+	{
+		"t_name": "英語対策",
+		"role": "幹事1",
+		"parent_task_id": 1,
+		"before_date": 640,
+		"date_duration": 125,
+		"t_number": 1,
+		"reference_url": "https://www.youtube.com/watch?v=SNwMMEGMnGA||||https://mysuki.jp/english-study-knowhow-4563||||https://app-flamingo.com/blog/english-study-10step/",
+		"reference_title": "超短期間で上達した英語勉強法！ - YouTube||||英語の勉強法で確実に上達する人としない人9つの違い||||英語は勉強法次第！ 無理なく上達する勉強法10のステップ | フラミンゴ ...",
+		"reference_text": "2017年11月14日 ... 【Q&A前編】リクエスト多数により この動画を元に作った英会話勉強法動画 ▶︎ https://\nyoutu.be/YGO37W1uLKw -------------------------------- 本当に効果的な英語勉強法・\n英語上達法・英語発音上達法って？ でも、バイリンガル帰国子女、 ...||||2015年6月27日 ... 英語を楽しく勉強して上達するのに、初心者などという現時点の英語力、忙しくて時間が\nない社会人の方でも関係ありません。 少しの時間を活用して、しかも短期間で、英会話・\n発音・英文法・英単語・TOEICや英検対策など ...||||2017年5月13日 ... 英語の勉強法を中学高校レベルの英語はできる人向けにご紹介します。独学で、\nマイペースに英語を勉強しようという方、ぜひ読んでみてください。",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6po-YuWMOiCklorFzO64AbgOTAnhy79z2SJAKlOZDUhPOqrYXWF4bQw0j||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj_jGNcw_E2fELPhqp0GVg0mZQF829XdEfl5a3AecJ8bshdlO6xyff60Tp||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdzGB-RyHa2jNyPU8fgLk7DEKq2pTOgo9-KPgQIeH_YLlrL0rk9gKJe5jL"
+	},
+	{
+		"t_name": "将来のキャリアゴール目標を明確",
+		"role": "幹事1",
+		"parent_task_id": 1,
+		"before_date": 640,
+		"date_duration": 135,
+		"t_number": 1,
+		"reference_url": "https://www.bbt757.com/bond/post-events-archive/post-2340/||||https://www.roberthalf.jp/.../5-questions-help-you-refresh-your-career-goals- year||||https://woman-type.jp/wt/feature/12319",
+		"reference_title": "5年後・10年後の自分の姿 ～キャリアゴール||||キャリアゴールを見つけよう：キャリア目標設定のための5つの質問 ...||||キャリアのゴールはどこにある？ 岩瀬大輔さん×仲暁子さん流「仕事と ...",
+		"reference_text": "Bond-BBT MBA2期生で、キャリアカウンセラーもされている藤野祐美さんの記事。 第\n10回目は「キャリアゴール」についてお話します。 こうありたい自分の姿 5年後・10年後\n、 ...||||2016年1月27日 ... ダラダラと時間を無駄に過ごすのは止めにして、効率よく仕事ができるよう、環境を整え\nていきましょう。旧正月を目前に控えた今、新年の抱負を改めて確認し、キャリアゴール\nを見直してみると良いでしょう。年の ...||||2013年7月2日 ... キャリアのゴールはどこにある？ 岩瀬大輔さん×仲暁子さん流「. 10年先のキャリア\nなんて「想像もつかない」。そのせいで、少し先のキャリア選択に思い悩んだり、不安を\n感じている人も決して少なくない。しかし、将来のキャリアを思い描き、それ ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiQcCOEOO0mJlIvn79O6tQncsjgT3lsgHei1niED7KSMFck1pFNToQ4kbo||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8vBGdNa3trt2y8FgPGJg5Z_fJ7yZcTfZ1tA18gaajc9vgv-SawXgJgNM||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3U6nY7A2Y5aDwsPEZw9N5enFj6SSIcNg-wv7NwZ-C3pChshhpuNByvZVP"
+	},
+	{
+		"t_name": "専攻・学校のリサーチ　出願条件（書類締切）確認",
+		"role": "幹事1",
+		"parent_task_id": 1,
+		"before_date": 640,
+		"date_duration": 260,
+		"t_number": 1,
+		"reference_url": "https://www.beo.jp/program/faq/undergraduate/application.html||||www.ic.keio.ac.jp/keio_student/exchange/qualifications.html||||https://www.sophia.ac.jp/jpn/global/...haken/exchange_procedure.html",
+		"reference_title": "大学留学 Q.出願審査・入学条件を教えてください｜イギリス留学サポート||||出願資格 | 慶應義塾大学国際センター||||留学期間・出願方法・単位換算について | グローバル教育・留学 | 上智 ...",
+		"reference_text": "イギリス大学留学 Q.出願審査・入学条件を教えてください 小学生から大学、語学留学\nまで、もちろん費用のこともご相談ください。イギリス留学のサポートならbeo（\nビーイーオー）。まずはぜひ無料カウンセリングを。||||留学先大学で履修した科目の単位認定は、学部ごとに規程（通年科目の取り扱いや\n単位認定・進級・卒業などに関する事項）が異なります。出願前に履修案内を熟読し、\n必ず各学部の学事担当者または学習指導担当教員などに確認・相談してください。||||交換留学の期間、出願資格、単位換算について、以下に簡単に説明します。 詳細は、「\n留学 ... 交換留学の出願は1年次でもよいが、留学は2年次より可能となります） ②全\n科目 ... 下記の条件がすべて満たされた場合に、正式に留学が決定されます。 留学先\n大学 ...",
+		"reference_image": ""
+	},
+	{
+		"t_name": "４〜８月",
+		"role": "幹事1",
+		"parent_task_id": 0,
+		"before_date": 515,
+		"date_duration": 125,
+		"t_number": 2
+	},
+	{
+		"t_name": "TOEFL iBT または IELTSスコア取得",
+		"role": "幹事1",
+		"parent_task_id": 2,
+		"before_date": 520,
+		"date_duration": 30,
+		"t_number": 2,
+		"reference_url": "https://www.ets.org/jp/toefl/ibt/about||||www.ets.org/jp/toefl/ibt/prepare/toefl_interactive_sampler||||https://www.ets.org/jp/toefl",
+		"reference_title": "TOEFL iBT: テストについて||||TOEFL iBT: テストの準備||||TOEFL: ホーム",
+		"reference_text": "TOEFL iBT ® テストは、大学レベルの英語を使用および理解する能力を測定します。\nさらに、Reading、Listening、Speaking、Writingの各スキルを組み合わせて、学術的\nな課題を遂行する能力も評価します。||||TOEFL iBT ® テストの準備. ETS ではTOEFL iBT ®テスト対策および英語スキルの\n向上に役立つ各種の教材を用意しています。教材には、無料の問題集や\nインタラクティブなスキル構築プログラム、詳細なヒント、 テストの理解を促す詳細情報\nなどが含まれます ...||||TOEFL ® ペーパー版テスト. ペーパー版テストは、インターネットによるテストが実施\nできない地域でのみ実施されています。テストは、TOEFL iBT ® テストと密接に連携し\nていますが、対話の応答をキャプチャする技術を必要とするため、Speaking セクション\nは ...",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJAWoBsF1HHcBWlxHeak39Mmn3dHvX3Ez89OlNcAiPA3Eovhjb9r-gNL_X||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHU8mQZmCJ7qt0Qq3vYqRISk35PHtnN5KducDzoepJojvmVMykym3sT2uG"
+	},
+	{
+		"t_name": "専攻・学校のリサーチ　出願条件（書類締切）確認",
+		"role": "幹事1",
+		"parent_task_id": 2,
+		"before_date": 515,
+		"date_duration": 260,
+		"t_number": 2,
+		"reference_url": "https://www.beo.jp/program/faq/undergraduate/application.html||||www.ic.keio.ac.jp/keio_student/exchange/qualifications.html||||https://www.sophia.ac.jp/jpn/global/...haken/exchange_procedure.html",
+		"reference_title": "大学留学 Q.出願審査・入学条件を教えてください｜イギリス留学サポート||||出願資格 | 慶應義塾大学国際センター||||留学期間・出願方法・単位換算について | グローバル教育・留学 | 上智 ...",
+		"reference_text": "イギリス大学留学 Q.出願審査・入学条件を教えてください 小学生から大学、語学留学\nまで、もちろん費用のこともご相談ください。イギリス留学のサポートならbeo（\nビーイーオー）。まずはぜひ無料カウンセリングを。||||留学先大学で履修した科目の単位認定は、学部ごとに規程（通年科目の取り扱いや\n単位認定・進級・卒業などに関する事項）が異なります。出願前に履修案内を熟読し、\n必ず各学部の学事担当者または学習指導担当教員などに確認・相談してください。||||交換留学の期間、出願資格、単位換算について、以下に簡単に説明します。 詳細は、「\n留学 ... 交換留学の出願は1年次でもよいが、留学は2年次より可能となります） ②全\n科目 ... 下記の条件がすべて満たされた場合に、正式に留学が決定されます。 留学先\n大学 ...",
+		"reference_image": ""
+	},
+	{
+		"t_name": "GRE / GMAT 対策",
+		"role": "幹事1",
+		"parent_task_id": 2,
+		"before_date": 490,
+		"date_duration": 185,
+		"t_number": 2,
+		"reference_url": "https://www.amazon.com/GRE-Practicing-Take-General.../0886852129||||https://docs.citrix.com/en-us/netscaler-sd-wan/10/gre-tunnel.html||||https://www.amazon.com/Essential-Vocabulary-flashcards.../0375429654",
+		"reference_title": "GRE: Practicing to Take the General Test 10th Edition (Practicing to ...||||GRE tunnel||||Essential GRE Vocabulary (flashcards): 500 Flashcards with Need ...",
+		"reference_text": "GRE: Practicing to Take the General Test 10th Edition (Practicing to Take the Gre \nGeneral Test) [Educational Testing Service] on Amazon.com. *FREE* shipping \non qualifying offers. The Graduate Record Examinations (GRE) General Test ...||||Sep 11, 2018 ... The SD-WAN GRE tunnel settings enable you to configure SD-WAN Appliances \nto terminate GRE tunnels on the LAN. If you do not want to configure site as a \nGRE Tunnel termination node, you can skip this step, and proceed ...||||Essential GRE Vocabulary (flashcards): 500 Flashcards with Need-to-Know GRE \nWords, Definitions, and Terms in Context (Graduate School Test Preparation) [\nPrinceton Review] on Amazon.com. *FREE* shipping on qualifying offers.",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT17ZFd0khOEOGEJ57PwPLBdSfxrgK74GCAlfEpgfD1gE_mthIErnXkoF8||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4mwgntdtBe8cs6bqNAkKHLd_P3tmV9pEGv8aANSfx0YA0yhk39vaSrFs"
+	},
+	{
+		"t_name": "９〜３月",
+		"role": "幹事1",
+		"parent_task_id": 0,
+		"before_date": 390,
+		"date_duration": 210,
+		"t_number": 3
+	},
+	{
+		"t_name": "履歴書作成",
+		"role": "幹事1",
+		"parent_task_id": 3,
+		"before_date": 390,
+		"date_duration": 45,
+		"t_number": 3
+	},
+	{
+		"t_name": "エッセイ作成",
+		"role": "幹事1",
+		"parent_task_id": 3,
+		"before_date": 375,
+		"date_duration": 65,
+		"t_number": 3,
+		"reference_url": "https://www.englishpedia.jp/blog/america-study-abroad-essay||||https://schoolwith.me/columns/33087||||https://www.path-to-success.net/how-to-write-college-essays",
+		"reference_title": "知らないと損をする！アメリカ留学経験者が語る英文エッセイ書き方 ...||||すぐに使える留学エッセイの書き方・例文まとめ！おすすめな参考書や ...||||アメリカ大学留学に欠かせないパーソナルエッセイ、10つのヒント | There ...",
+		"reference_text": "2019年10月7日 ... アメリカ留学する前にエッセイについて悩んでいませんか？実体験をもとに、英文\nエッセイの書き方や注意点についてまとめました。 これから、アメリカに留学する予定、\nもしくは今アメリカに留学中でエッセイに悩んでいる人は、必見の内容です。||||2019年9月19日 ... 留学をすると応募書類や大学でのテストなど、「エッセイ」の提出を求められる場面が\nあります。私も留学中は、エッセイを書く機会がよくありました。実際に留学を考えていて\nも、日本で英語のエッセイを書くことはあまりありません。そのため、 ...||||2019年5月23日 ... アメリカ大学留学のエッセイの書き方、10のヒントを解説。 ... そして、この3つの中でも\n特に重要なものが、合否を左右するとまで言われているパーソナルエッセイ（Personal \nEssay）。 今回のこちらの記事では、アメリカの大学へ出願する全ての ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0-4H-9MrRb2wSH1BTgnLYZUvDeCyHH86smNQ2Wy2sXVy7B9UgyA2jWIE||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZPZfByalYN4QLutFSRXRzY6ShWjl8zCR6osWLiYi3Zk0lidAOWyHfm57s||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4nyb6v13vhOiVpDhYg1o_HhYR8g9esCnwcf_DG1NT53b-tsMWDMIbutHH"
+	},
+	{
+		"t_name": "推薦状",
+		"role": "幹事1",
+		"parent_task_id": 3,
+		"before_date": 330,
+		"date_duration": 65,
+		"t_number": 3,
+		"reference_url": "https://schoolwith.me/columns/33098||||https://www.ryugaku.com/sakaecolumn/sontaku.html||||https://www.path-to-success.net/recommendation-letter-for-graduate-schools",
+		"reference_title": "海外大学・大学院留学で必要な推薦状とは？日本語例文やポイントを ...||||推薦状を書きたくない?!アメリカ留学を妨げる日本の「忖度」 | アメリカ留学 ...||||海外大学・大学院留学に必要な推薦状 作成依頼から提出まで | There is ...",
+		"reference_text": "2019年9月12日 ... アメリカやイギリスを始めその他多くの国々で、推薦状は受験者の人柄を知る手段\nとして、大きな影響力を与えています。そのため推薦状が合格を左右するといっても過言\nではありません。 そこで今回は主に、大学や大学院への留学に役立つ ...||||アメリカの大学や大学院などへ留学する際に必要な推薦状。どういうものなのかを詳しく\n解説しています。||||2020年3月8日 ... 推薦状は海外大学院出願に必要な重要書類の一つ。日本だとあまり一般的出ないので\n、依頼された方も何を書いて良いかわからないこともあるよね。 にゃんこ先生. 今日は、\nイギリスの大学院へ進学したうりぼーが、推薦状を乗り切るための ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT90mt1HbSAO9PLpDFXX7gwzouD4ickHpD2NyWUdiy6NCwNk9Q8VxIiQwE||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOZTen7SMnNH6v0rJW0hw3UOwxCmNTN1WhRFIoB9cayBMOrCX2XmtQ_ZM||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmp6JmGS-nFIgYyg_8MvL62vMj2iDe3QHfYGVyJoegb1ggwftgjvh8kgzQ"
+	},
+	{
+		"t_name": "GRE / GMAT 対策",
+		"role": "幹事1",
+		"parent_task_id": 3,
+		"before_date": 390,
+		"date_duration": 85,
+		"t_number": 3,
+		"reference_url": "https://www.amazon.com/GRE-Practicing-Take-General.../0886852129||||https://docs.citrix.com/en-us/netscaler-sd-wan/10/gre-tunnel.html||||https://www.amazon.com/Essential-Vocabulary-flashcards.../0375429654",
+		"reference_title": "GRE: Practicing to Take the General Test 10th Edition (Practicing to ...||||GRE tunnel||||Essential GRE Vocabulary (flashcards): 500 Flashcards with Need ...",
+		"reference_text": "GRE: Practicing to Take the General Test 10th Edition (Practicing to Take the Gre \nGeneral Test) [Educational Testing Service] on Amazon.com. *FREE* shipping \non qualifying offers. The Graduate Record Examinations (GRE) General Test ...||||Sep 11, 2018 ... The SD-WAN GRE tunnel settings enable you to configure SD-WAN Appliances \nto terminate GRE tunnels on the LAN. If you do not want to configure site as a \nGRE Tunnel termination node, you can skip this step, and proceed ...||||Essential GRE Vocabulary (flashcards): 500 Flashcards with Need-to-Know GRE \nWords, Definitions, and Terms in Context (Graduate School Test Preparation) [\nPrinceton Review] on Amazon.com. *FREE* shipping on qualifying offers.",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT17ZFd0khOEOGEJ57PwPLBdSfxrgK74GCAlfEpgfD1gE_mthIErnXkoF8||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4mwgntdtBe8cs6bqNAkKHLd_P3tmV9pEGv8aANSfx0YA0yhk39vaSrFs"
+    },
+	{
+		"t_name": "GRE / GMAT スコア取得",
+		"role": "幹事1",
+		"parent_task_id": 3,
+		"before_date": 315,
+		"date_duration": 25,
+		"t_number": 3,
+		"reference_url": "https://www.amazon.com/GRE-Practicing-Take-General.../0886852129||||https://docs.citrix.com/en-us/netscaler-sd-wan/10/gre-tunnel.html||||https://www.amazon.com/Essential-Vocabulary-flashcards.../0375429654",
+		"reference_title": "GRE: Practicing to Take the General Test 10th Edition (Practicing to ...||||GRE tunnel||||Essential GRE Vocabulary (flashcards): 500 Flashcards with Need ...",
+		"reference_text": "GRE: Practicing to Take the General Test 10th Edition (Practicing to Take the Gre \nGeneral Test) [Educational Testing Service] on Amazon.com. *FREE* shipping \non qualifying offers. The Graduate Record Examinations (GRE) General Test ...||||Sep 11, 2018 ... The SD-WAN GRE tunnel settings enable you to configure SD-WAN Appliances \nto terminate GRE tunnels on the LAN. If you do not want to configure site as a \nGRE Tunnel termination node, you can skip this step, and proceed ...||||Essential GRE Vocabulary (flashcards): 500 Flashcards with Need-to-Know GRE \nWords, Definitions, and Terms in Context (Graduate School Test Preparation) [\nPrinceton Review] on Amazon.com. *FREE* shipping on qualifying offers.",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT17ZFd0khOEOGEJ57PwPLBdSfxrgK74GCAlfEpgfD1gE_mthIErnXkoF8||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4mwgntdtBe8cs6bqNAkKHLd_P3tmV9pEGv8aANSfx0YA0yhk39vaSrFs"
+    },
+	{
+		"t_name": "出願期間",
+		"role": "幹事1",
+		"parent_task_id": 3,
+		"before_date": 290,
+		"date_duration": 120,
+		"t_number": 3
+	},
+	{
+		"t_name": "４〜９月",
+		"role": "幹事1",
+		"parent_task_id": 0,
+		"before_date": 175,
+		"date_duration": 175,
+		"t_number": 4
+	},
+	{
+		"t_name": "合格通知",
+		"role": "幹事1",
+		"parent_task_id": 4,
+		"before_date": 135,
+		"date_duration": 40,
+		"t_number": 4,
+		"reference_url": "https://www.jasso.go.jp/ryugaku/study_j/eju/.../score_report_soufu.html||||https://www.ryugaku.com/blog/entry/yuko-college-accepted.html||||https://www.ryugaku.ne.jp/knowledge/flow/after-admittance",
+		"reference_title": "2020年度日本留学試験 成績の通知 - JASSO||||アメリカの大学から合格通知が届いた！ さぁどうする？ | アメリカ留学なら ...||||アメリカ留学のための大学情報サイト：合格通知が届いたら",
+		"reference_text": "成績通知書は、再発行しません。 しかしながら、日本留学試験を受験し、機構から送付\nされる成績通知書が発行された後で、自分の成績を証明 ...||||2018年4月4日 ... 栄スタッフの留学ブログ「こんにちは！ アメリカのウィスコンシン州にあるベロイト大学（\nBeloit College）に留学中の平沢 優子です。前回の記事では、アメリカ留学にあたって\nの大学選びについてお話ししました。計6校の...」||||Congratulations! あなたはいま、アメリカの大学からの合格通知を受け取ったところ\nです。いよいよ留学の夢が実現します。アメリカのキャンパスがあなたを待っています。 \nこのページでは、「アメリカの大学から合格通知をもらってから渡米するまで」にしなけれ\nば ...",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0dwJHIfYv_dUcoyz7BwtvGfpxDLNb_SCYPKzj57TLdkap2IC4ZyEkJ44||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8nqPkojeC7eEEoVf5y59VWDNADWNC2B3OKR_JzvwrUgtrtHimLdYkX7p7||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtszLuH9pzW_WQgwaYX2ou_F8a-EiR133Kav9OmXv3-1uei6vKRzcqWpo"
+	},
+	{
+		"t_name": "入学手続き",
+		"role": "幹事1",
+		"parent_task_id": 4,
+		"before_date": 115,
+		"date_duration": 60,
+		"t_number": 4,
+		"reference_url": "https://www.studyabroad.co.jp/siru/koza/formalities.html||||https://www.ynu.ac.jp/international/accept/int_enroll_procedure.html||||https://knowledge-plus.com/study-abroad-procedure/",
+		"reference_title": "学校の入学手続きをする｜留学基礎講座【成功する留学】||||外国人留学生が入学するまでに必要な手続きについて - YNUに留学をお ...||||留学の流れ5つのステップ！留学の準備や手続きは1年～半年前から ...",
+		"reference_text": "【留学基礎講座】学校の入学手続きをする｜語学留学やワーキングホリデーなど、あなた\nの留学の成功を累計25万人の利用数を誇る【成功する留学】が親身にサポート。経験\n豊富なカウンセラーが、17か国289都市と28種類のプログラムの中から、ご希望に合う\n ...||||入学試験を受験し合格する 2．学生寮に入寮申請を行う 3．入学手続きを完了する 4．\n在留資格認定証明書を取得する 5．「留学」査証（ビザ）を取得する 6．フライトを手配\nする 7．健康診断を受診する 8．渡日する 9．学内で手続きを行う 10．区役所で手続きを\n ...||||語学学校への留学は、英語力がゼロでも入学が可能で、開始時期も期間も好きに\n選べるのが特徴です。 2. 留学先の日本人の割合について. 渡航シーズンによっては、「\nせっかく語学留学したのにクラス ...",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9OCVxgGYxo-3iA2DjKsRCL9K7wala-IRa0EJ7HwG4lVGCT2bD_B_f-x_Y"
+	},
+	{
+		"t_name": "ビザ申請",
+		"role": "幹事1",
+		"parent_task_id": 4,
+		"before_date": 120,
+		"date_duration": 30,
+		"t_number": 4,
+		"reference_url": "https://www.iae-ryugaku.net/column/passport-visa/||||https://www.ustraveldocs.com/jp_jp/jp-niv-typefandm.asp||||https://www.mofa.go.jp/mofaj/toko/visa/chouki/visa6.html",
+		"reference_title": "留学前に、パスポートとビザの違いを改めて理解しておこう – 留学コラム ...||||米国ビザ申請 | 学生ビザ - 日本 (日本語)||||一般ビザ：留学｜外務省",
+		"reference_text": "2019年2月15日 ... 留学したり旅行したりする場合は、必ず取得して置かなければなりません。海外で\nパスポートを紛失したらもう大変ですし、ビザが切れたら出国も入国もややこしくなって\nしまいます（まあないでしょうけど ...||||F-1ビザは公立高等学校（9年生から12年生）への入学には発給されますが、在学期間\nは最長12カ月間に制限されます。また、学校側は、学生が学費および留学費用を自費\nで支払い済みであることを、I-20 フォームに記載しなけれ ...||||2015年8月6日 ... ビザ. 就労や長期滞在を目的とする場合. 一般ビザ：留学. 平成27 ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGe3qo9RJApPJMk7wGGIoZZXzeSCf17ZqhUJ2gObuyAMBNycXzlISmvmpS||||https://1.bp.blogspot.com/-jkjWb2M6Vr8/XQtdnTiGS4I/AAAAAAAAEz8/105R2yFvC34TsA6uISvG5OvvO3ktLKQKwCLcBGAs/s1600/l_e_others_501.png"
+	},
+	{
+		"t_name": "航空機・保険の手配",
+		"role": "幹事1",
+		"parent_task_id": 4,
+		"before_date": 90,
+		"date_duration": 60,
+		"t_number": 4
+	},
+	{
+		"t_name": "現地生活情報の確認",
+		"role": "幹事1",
+		"parent_task_id": 4,
+		"before_date": 120,
+		"date_duration": 120,
+		"t_number": 4,
+		"reference_url": "https://www.huffingtonpost.jp/satoshi-onodera/28_312_b_17761128.html||||https://eikaiwa.dmm.com/blog/4696/||||https://nano-trends.net/living-in-the-us-is-not-that-bad/",
+		"reference_title": "28歳、アメリカで3ヶ月暮らし始めて感じる12のこと | ハフポスト||||アメリカで生活をするなら覚悟しておくべき8つのポイント | DMM英会話 ...||||「アメリカ生活が辛い！」アメリカの田舎がキツイ15の理由とその時に始め ...",
+		"reference_text": "2017年8月21日 ... 3ヶ月こちらで生活して感じた事を書いてみようと思う。 僕は小さい頃からアメリカ文化に\n憧れを持ち、学生時代に留学したり、アメリカのニュースばかり見ていた、 ...||||アメリカは日本とは多くの違いがある外国です。今回は、留学や就職が決まった人、また\n移住して生活をしてみたいと考えている人へ、アメリカで暮らし始める前に覚悟をしておく\nべき事柄をまとめました。楽しいアメリカ生活の準備に活かしてもらえればと思い ...||||2018年3月27日 ... アメリカ生活や暮らしのホンネ。いざアメリカのど田舎に移住したら、「こんなはずじゃ\nなかったのに」と思うことばかり。アメリカのど田舎生活の辛い理由を数えたら１５個も！\n移住したばかりの辛かった時に海外生活を少しでも楽しく、自分に自信 ...",
+		"reference_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1uXbcvX1u9Vhx7YC3fPmTJ07ZfcMI4xJ9_yCPDoa_Z6uM6br9VBPvWJ1z||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJ8wXtdOSpfFPdPoOh_R67rleV8kqKvyH7m7_NxKb9-nVicTVdJNxX0b0||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDLv7ZQWIeJZ33E0dkGIos62fk_JD4sLhF3umQYzanSjrYdbKE3-pldnOO"
+	},
+	{
+		"t_name": "クレジットカード取得",
+		"role": "幹事1",
+		"parent_task_id": 4,
+		"before_date": 120,
+		"date_duration": 120,
+		"t_number": 4,
+		"reference_url": "https://kakaku.com/card/ranking/||||https://ja.wikipedia.org/wiki/クレジットカード||||https://kakaku.com/card/",
+		"reference_title": "クレジットカード 人気ランキング【2020年3月人気クレカ】 - 価格.com||||クレジットカード - Wikipedia||||クレジットカード比較｜注目・定番クレカ530枚【2020年3月更新】 - 価格 ...",
+		"reference_text": "5 日前 ... 定番クレジットカードの人気ランキングを掲載！毎日更新なので旬のランキングがわかり\nます。上位のカードは一見の価値あり！クレカ選びに迷ったら価格.comで人気\nランキングを確認しましょう！お得なクレジットカードを比較・検討できます。||||クレジットカード（英: credit card 略語（俗語）：クレカ）とは、商品を購入する際の後払い\n決済（支払）する手段の一つ。又は、契約者の番号その他が記載され、及び記録された\nカードである。顧客のクレジット（信用）により後払いが可能な手段である。 分割払い機能\n ...||||2 日前 ... 上位グレードの「ゴールドカード」「プラチナカード」に比べると、保険の補償額などは少額\nになりますが、基本的な支払い手段のほか、ポイント還元やキャッシュバックといった\nサービスは備わっており、クレジットカード保有者の多くが利用している ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeiv7xOPdvDq9kSpRnDQu7ORNj4Yn-hEcaJZ48aWVIgBCFX2FXzFZR7k8||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRz6lPg_RYv8XVix5cF7DhGeyD2VT3f6WEDO77KcJATatZKaldy5bayxM"
+	},
+	{
+		"t_name": "大学院入学",
+		"role": "幹事1",
+		"parent_task_id": 4,
+		"before_date": 0,
+		"date_duration": 0,
+		"t_number": 4,
+		"reference_url": "https://www.ryugaku.com/faq/question/entry/id/105||||https://www.kyushu-u.ac.jp/ja/topics/view/1401||||https://www.ryugaku.com/sakaecolumn/nyugakujiki.html",
+		"reference_title": "留学した大学の入学式に||||平成30年度秋季入学式・外国人短期留学プログラム開講式を挙行 ...||||あなたはいつ留学する?年に4回のチャンス | アメリカ留学なら栄 陽子留学 ...",
+		"reference_text": "アメリカの大学では、入学することより学位を取得して卒業することに意味があるわけで\n、卒業式はたいへん盛大ですが、入学式というものはまずありません。スタンフォード\n大学やハーバード大学など、ほんの一握りの大学では新入生に対して”Convocation” ...||||2018年10月17日 ... 式は、10月入学者の約9割が外国人留学生であるため、すべて英語で執り行いました。 \nまず始めに、久保総長より、「九州大学で学ぶことを誇りに思いながら、グローバル社会\nを牽引する国際的なリーダー ...||||アメリカの大学の入学式と卒業式. アメリカの大学では、入学式はありません。2、3日の\nオリエンテーションが終われば、すぐに授業が始まります。これは9月・1月いずれの学期\nでも同じです。 当研究所からアメリカの大学に留学した人のうち、1月に入学した人 ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVGkw9U6vpAGiYpIRvgKBsPvzvhpLumm0vZb452IVP3Q9faLMrKiNF0Xs||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgn7pUXeezprB7CfblSlo1JC_NaBKUIoQispl0JZalOGCD7kMhHd2fGJk||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvii-HSMmS4ZShT6kgY9qaT6mzxYDJVosef3zfpX9DprtJMZ6JK80E1vo"
+	}
+]
