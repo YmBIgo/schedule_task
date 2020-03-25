@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_23_033630) do
+ActiveRecord::Schema.define(version: 2020_03_25_045453) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "checklists", force: :cascade do |t|
+    t.integer "task_id", default: 1, null: false
+    t.string "c_name", default: "", null: false
+    t.boolean "checked", default: false, null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "people", force: :cascade do |t|
     t.string "p_name", default: "", null: false
@@ -33,6 +41,9 @@ ActiveRecord::Schema.define(version: 2020_03_23_033630) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "line_id", default: "", null: false
+    t.boolean "is_line_friend", default: false, null: false
+    t.integer "line_push_period", default: 7, null: false
     t.index ["reset_password_token"], name: "index_roles_on_reset_password_token", unique: true
     t.index ["work_id"], name: "index_roles_on_work_id", unique: true
     t.index ["workurl"], name: "index_roles_on_workurl", unique: true
@@ -62,6 +73,10 @@ ActiveRecord::Schema.define(version: 2020_03_23_033630) do
     t.integer "type_id", default: 1, null: false
     t.string "reference_title", default: "", null: false
     t.integer "role_id", default: 0, null: false
+    t.boolean "is_line_pushed", default: false, null: false
+    t.integer "line_push_before", default: 0, null: false
+    t.date "line_push_date"
+    t.integer "t_percent", default: 0, null: false
   end
 
   create_table "works", force: :cascade do |t|

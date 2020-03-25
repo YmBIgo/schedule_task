@@ -25,17 +25,9 @@
                     </a>
                 <% end %>
             </div>
-        </div>
-        <div class="col-sm-5">
-            <h3><i class="fas fa-angle-double-right"></i><%= @work.w_name %>の進捗</h3>
-            <br>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="<%= @work.w_percent %>" aria-valuemin="0" aria-valuemax="100" style="width:<%= @work.w_percent %>%;"></div>
-                <span class="ml-1"><%= @work.w_percent %>%</span>
-            </div>
             <br>
             <hr>
-            <h3><i class="fas fa-angle-double-right"></i>明日期限のタスク</h3>
+            <h4><i class="fas fa-angle-double-right"></i>明日期限のタスク</h4>
             <br>
             <% unless @late_tasks == [] then %>
                 <div class="list-group">
@@ -50,8 +42,31 @@
                 <p>明日期限のタスクはありません。</p>
             <% end %>
             <br>
+        </div>
+        <div class="col-sm-5">
+            <h4><i class="fas fa-angle-double-right"></i>LINE連携</h4>
+            <br>
+            <% if Role.find_by(:work_id => @work.id).is_line_friend == false then %>
+                <p style="margin-left:10px">フレンド登録して、LINE ID を入力すれば、ToDoリストの通知を受け取れます
+                <img src="https://scheduletask.s3-ap-northeast-1.amazonaws.com/images/line/883eedhr.png" style="width:85%">
+                <input type="text" name="line_id" class="form-control" style="width:150px;display:inline-block;margin-left:20px;" placeholder="例 @8833eedhr">
+                　<button type="submit" class="btn btn-success" style="display:inline-block;">登録する</button></p>
+            <% else %>
+                <p>ToDoリストを何日前に受け取るか決めましょう</p>
+                <input type="number" name="line_push_before" class="form-control" style="width:150px;display:inline-block;">　日前
+                <br>
+                <button type="submit" class="btn btn-success" style="margin-top:10px;">登録する</button>
+            <% end %>
             <hr>
-            <h3><i class="fas fa-angle-double-right"></i>役割</h3>
+            <h3><i class="fas fa-angle-double-right"></i><%= @work.w_name %>の進捗</h3>
+            <br>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="<%= @work.w_percent %>" aria-valuemin="0" aria-valuemax="100" style="width:<%= @work.w_percent %>%;"></div>
+                <span class="ml-1"><%= @work.w_percent %>%</span>
+            </div>
+            <br>
+            <hr>
+            <h4><i class="fas fa-angle-double-right"></i>役割</h4>
             <br>
             <div class="list-group">
             <% @work.tasks.select(:role).distinct.each do |t_role| %>

@@ -6,9 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-w1 = Work.new(:w_name => "合宿1", :content => "", :w_percent => 0, :w_url => "qlZ2p5uPs2A", :email => "coffeecup_japan@icloud.com")
-
+w1 = Work.new(:w_name => "合宿1", :content => "", :w_percent => 0, :w_url => "e4376c18a4f27ef0bd5f", :email => "coffeecup_japan@icloud.com")
 w1.save!
+
+role1 = Role.new(:workurl => w1.w_url, :work_id => w1.id, :password => "kz48", :line_id => "igymb0218", :is_line_friend => true)
+role1.save!
 
 p1 = Person.new(:p_name => "たろお", :role => "幹部1")
 p2 = Person.new(:p_name => "二郎", :role => "幹部2")
