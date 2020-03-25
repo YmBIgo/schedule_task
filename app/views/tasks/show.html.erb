@@ -12,7 +12,8 @@
     <% end %>
     </span>
     <% if @parent_task != nil then %>
-        <small style="margin-left:40px;font-size:14px;"><a href="/tasks/<%= @parent_task.id %>"><%= @parent_task.t_name %></a>の用事</small>
+    <span class="btn btn-sm btn-warning" style="color:white;margin-left:40px;"><%= @task.line_push_date %>にLine通知</span>
+        <small style="margin-left:20px;font-size:14px;"><a href="/tasks/<%= @parent_task.id %>"><%= @parent_task.t_name %></a>の用事</small>
     <% end %>
     </h4>
     <hr>

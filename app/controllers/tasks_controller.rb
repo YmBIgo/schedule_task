@@ -44,9 +44,20 @@ class TasksController < ApplicationController
         task_percent = (finished_tasks_length.to_f / task_length.to_f)*100
         @task.work.update(:w_percent => task_percent)
     end
+    def pushdate
+        current_work = Work.find(current_role.work_id)
+        tasks = current_work.tasks
+        before_date = params["task"]["line_push_before"].to_i
+        if before_date == 1 then
+            tasks.update_all("line_push_date = start_date - INTERVAL '1 DAY', line_push_before = #{before_date}")
+        elsif before_date > 1
+            tasks.update_all("line_push_date = start_date - INTERVAL '#{before_date} DAYS', line_push_before = #{before_date}")
+        else
+        end
+    end
 
     private
     def update_params
-        params.require(:task).permit(:t_name, :start_date, :end_date, :role, :reference_url, :reference_image, :reference_text, :reference_title, :details)
+        params.require(:task).permit(:t_name, :start_date, :end_date, :role, :reference_url, :reference_image, :reference_text, :reference_title, :details, :line_push_before)
     end
 end

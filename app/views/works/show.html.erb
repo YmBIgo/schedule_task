@@ -2,7 +2,7 @@
     <h1><%= @work.w_name %> のスケジュール</h1>
     <hr>
     <div class="row">
-        <div class="col-sm-7">
+        <div class="col-sm-7" style="padding-right:30px;">
             <h4><i class="fas fa-angle-double-right"></i>直近のタスク</h4>
             <br>
             <div class="list-group">
@@ -13,7 +13,7 @@
                     </div>
                 </a>
                 <% @recent_tasks.each do |r_task| %>
-                    <a href="/tasks/<%= r_task.id %>" class="list-group-item list-group-item-action">
+                    <a href="/tasks/<%= r_task.id %>" class="list-group-item list-group-item-action" style="padding:20px">
                         <%= r_task.t_name %>
                         <br>
                         <small>
@@ -21,7 +21,15 @@
                         <br>
                         <i class="fas fa-clock"></i>　<%= r_task.end_date %>まで
                         </small>
-                        <span class="btn btn-sm btn-<%= r_task.task_status[1] %>" style="color:white;float:right;"><%= r_task.task_status[0] %></span>
+                        <% if @role.is_line_friend == true then %>
+                            <div style="float:right;margin-top:-40px;">
+                            <span class="btn btn-warning btn-sm" style="margin-bottom:5px;color:white;"><%= r_task.line_push_date %>にLine通知</span>
+                            <br>
+                        <% else %>
+                            <div style="float:right;margin-top:-10px;">
+                        <% end %>
+                            <span class="btn btn-sm btn-<%= r_task.task_status[1] %>" style="color:white;float:right;"><%= r_task.task_status[0] %></span>
+                        </div>
                     </a>
                 <% end %>
             </div>
@@ -46,16 +54,24 @@
         <div class="col-sm-5">
             <h4><i class="fas fa-angle-double-right"></i>LINE連携</h4>
             <br>
-            <% if Role.find_by(:work_id => @work.id).is_line_friend == false then %>
-                <p style="margin-left:10px">フレンド登録して、LINE ID を入力すれば、ToDoリストの通知を受け取れます
-                <img src="https://scheduletask.s3-ap-northeast-1.amazonaws.com/images/line/883eedhr.png" style="width:85%">
-                <input type="text" name="line_id" class="form-control" style="width:150px;display:inline-block;margin-left:20px;" placeholder="例 @8833eedhr">
-                　<button type="submit" class="btn btn-success" style="display:inline-block;">登録する</button></p>
+            <% if @role.is_line_friend == false then %>
+                <div id="line-friend-register">
+                    <p style="margin-left:10px">フレンド登録して、LINE ID を入力すれば、ToDoリストの通知を受け取れます
+                    <img src="https://scheduletask.s3-ap-northeast-1.amazonaws.com/images/line/883eedhr.png" style="width:85%">
+                    <%= form_for @role, method: :post, remote: true, :style => "display:inline-block;" do |f| %>
+                        <%= f.label :line_id, :style => "margin-left:10px;margin-right:10px;" %>
+                        @ <%= f.text_field :line_id, :class => "form-control", :style => "width:150px;display:inline-block;", :placeholder => "例 8833eedhr" %>
+                        <%= f.submit "保存する", :class => "btn btn-sm btn-success", :style => "display:inline-block;margin-left:10px;margin-top:5px;margin-bottom:5px;" %>
+                    <% end %>
+                </div>
             <% else %>
                 <p>ToDoリストを何日前に受け取るか決めましょう</p>
-                <input type="number" name="line_push_before" class="form-control" style="width:150px;display:inline-block;">　日前
-                <br>
-                <button type="submit" class="btn btn-success" style="margin-top:10px;">登録する</button>
+                <img src="https://scheduletask.s3-ap-northeast-1.amazonaws.com/images/line/883eedhr.png" style="width:85%">
+                <%= form_for @work.tasks.first, :url => {:controller => :tasks, :action => :pushdate}, method: :post, remote: true, :style => "display:inline-block;" do |f| %>
+                    <%= f.label :line_push_before, :style => "margin-left:10px;margin-right:5px;", :value => "用事の" %>
+                    <%= f.number_field :line_push_before, :class => "form-control", :style => "width:100px;display:inline-block;" %> 日前に通知
+                    <%= f.submit "保存する", :class => "btn btn-sm btn-success", :style => "margin-left:10px;margin-top:5px;margin-bottom:5px;" %>
+                <% end %>
             <% end %>
             <hr>
             <h3><i class="fas fa-angle-double-right"></i><%= @work.w_name %>の進捗</h3>
