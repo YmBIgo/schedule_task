@@ -1,0 +1,186 @@
+[
+	{
+		"t_name": "計画",
+		"role": "購入者",
+		"parent_task_id": 0,
+		"before_date": 120,
+		"date_duration": 20,
+		"t_number": 1
+	},
+	{
+		"t_name": "不動産購入計画",
+		"role": "購入者",
+		"parent_task_id": 1,
+		"before_date": 120,
+		"date_duration": 10,
+		"t_number": 1,
+		"reference_url": "https://www.mizuho-re.co.jp/buyers/buyguide/order_02.html||||https://suumo.jp/article/jukatsu/money/money_category/check/||||https://www.nomu.com/buyer/flowstep03.html",
+		"reference_title": "資金計画｜不動産購入の手順：みずほ不動産販売||||住宅に関する資金計画の立て方 | お金・制度編マニュアル | SUUMO||||不動産購入ガイド｜不動産ご購入の流れ STEP3 資金計画 - nomu.com ...",
+		"reference_text": "お客さまのご希望やご収入に応じて適切な資金計画をご提案します。 いくらくらいの\n物件が購入できるのか？どれくらいの住宅ローンが組めるのか？ また、月々の返済額\nや諸費用についてもご説明いたします。||||SUUMO(スーモ)は、全国の賃貸住宅のお部屋探しや不動産購入をサポートする情報\nサイトです。 SUUMO(スーモ). 借りる. 賃貸 · マンションを買う.||||不動産購入をお考えなら野村不動産アーバンネットのノムコム。不動産ご購入の\nSTEP3資金計画についてご説明します。 ... 不動産購入には物件の価格以外にも、仲介\n手数料や登記費用等の諸経費がかかります。また、引越し費用なども見込んでおく必要\nが ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_ti9V1kKCggWDVodI2JCtwJH3nGd8uf6vSI_-O44n6gdf6lyqci_T||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJtuRiclCoOTwAzPWFg6HVBqtlqsXQBjylTrCYkHZgU12FRleynNweUHws"
+	},
+	{
+		"t_name": "不動産会社選び",
+		"role": "購入者",
+		"parent_task_id": 1,
+		"before_date": 110,
+		"date_duration": 10,
+		"t_number": 1,
+		"reference_url": "https://www.anest.net/study/seller-realestate201909.html||||https://www.wing-yokohama.co.jp/||||https://o-uccino.com/front/articles/44393",
+		"reference_title": "売主が不動産会社である中古住宅の注意点とメリット||||ウイングコーポレーション | 横浜の中古マンション専門不動産会社 ...||||住宅購入は「信頼できる不動産会社選びで8割決まる」はホント？",
+		"reference_text": "購入希望の中古住宅の売主が不動産会社であるときに買主が知っておきたい注意点と\nメリット。既存住宅売買瑕疵保険やリフォームのこと。||||横浜の中古マンション専門不動産会社です。自己資金10万円から購入出来る中古\nマンションも多数取り扱っております。中古マンション・団地の買取りも随時募集中！。\n中古マンションの事なら、購入も売却もぜひ弊社にご相談ください。||||2019年4月3日 ... 中古住宅の場合、売主の多くは我々と同じ一個人です。 となると、不動産会社選びの\n基準は「どんな物件を紹介してくれるか」になります。 その会社でしか紹介 ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqoT7592KmXyjAlIixfFj12o6_lob5TYuo8juX6abgAsLyBO1zvgbn40w||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiImghPP5sBmkZF4jDAquM1KJoCf3z0zBniDTU6z_H1JdmhQcDAjZpxYQ||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBtS6EJ8VR_BwrX_QWpTJtsRvMtNNKxHqlE3ufJRezal6wUpFmhHvgDukW"
+	},
+	{
+		"t_name": "リフォーム・リノベーション工事会社選び",
+		"role": "購入者",
+		"parent_task_id": 1,
+		"before_date": 110,
+		"date_duration": 10,
+		"t_number": 1
+	},
+	{
+		"t_name": "物件探し〜審査",
+		"role": "購入者",
+		"parent_task_id": 0,
+		"before_date": 100,
+		"date_duration": 60,
+		"t_number": 2
+	},
+	{
+		"t_name": "物件探し",
+		"role": "購入者",
+		"parent_task_id": 2,
+		"before_date": 100,
+		"date_duration": 10,
+		"t_number": 2,
+		"reference_url": "https://www.athome.co.jp/kodate/chuko/||||https://www.homes.co.jp/kodate/chuko/||||https://suumo.jp/chukoikkodate/",
+		"reference_title": "【アットホーム】中古住宅を探す｜中古一戸建て・一軒家の購入||||【ホームズ】中古住宅・中古一戸建ての購入・物件情報の検索||||【SUUMO】中古住宅・中古一戸建て購入情報サイト",
+		"reference_text": "中古一戸建ての不動産情報サイトアットホームなら、ご希望にぴったりのマイホーム＜\n中古住宅・中古物件・中古戸建て 購入の情報＞が簡単に検索できます。その他、家探し\nに役立つ相場情報など中古一戸建てや中古一軒家の情報が盛りだくさん。マイホーム ...||||中古住宅・中古一戸建て[中古一軒家]の物件検索、購入のための情報なら【LIFULL \nHOME'S】豊富な全国の中古住宅から、間取りや価格で絞り込み、簡単に比較・資料\n請求！リノベーション済みやDINKS・ファミリー向けの物件も探せます。価格相場情報\nから ...||||【SUUMO(スーモ)中古一戸建て】全国の中古住宅・中古一戸建て物件を検索できる\n中古戸建てのポータルサイトです。中古一軒家販売の最新情報やお役立ち知識が満載\n！中古物件のマイホーム探しはお任せください。",
+		"reference_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxoTnLryo8DR8sP8WLK074lZ-RpPeMX8GnTRNLNjfccVvjeJBIdH-2ew"
+	},
+	{
+		"t_name": "内見（物件見学）",
+		"role": "購入者",
+		"parent_task_id": 2,
+		"before_date": 100,
+		"date_duration": 25,
+		"t_number": 2,
+		"reference_url": "https://o-uccino.com/front/articles/48365||||https://www.rehouse.co.jp/minnano_rehouse/article/7052/||||https://colal.net/index.php? 内覧時の売主様ご対応について（売却現場から。）",
+		"reference_title": "見逃しやすいポイントは？中古住宅内見時のチェック、ポイント10選||||中古住宅内見のチェックポイントを解説！不動産のプロと同行するメリット ...||||マンション売却時の内覧・内見こそ戦略と戦術が必要です！",
+		"reference_text": "2019年3月14日 ... 中古住宅を決める際は、実際に物件を訪れる「内見」が大切。しかし、ついつい間取りや\nデザインなどの目に入りやすいところにばかり気を取られがちです。ここでは内見でぜひ\nチェックしてほしいポイントをご紹介します。||||2019年12月5日 ... 「内覧」と表現することもありますが、内覧は新築マンションをご購入される方が完成前に\nチェックする機会を意味する場合もあります。 しかしながら、内見も内覧も物件を見学\nするという意味では同じことを指していると考えてよいでしょう。 内 ...||||マンションを高く売る内覧とは⇒ 売れない原因を取り除くこと! 居住中の内覧・内見の\n方法などの対応について. 住まい系の中古住宅の売買には必ずある内覧; 売主 ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRK13lPJgil8R9Ghw8CZLh__N0umxFrXNKS8KOH5Lz2AL9z-uS4ZcfqLJhW||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgUESeT-jZUAgPLkR-fSkVqNB_lCR8p4py6Fft_2jnja12hMlcQHp0q0-t||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0iGbkLJF1BxXQ3AJLslRVDw0hp3jaOko-rqIazcRbK9Tgi7f7ZG06WVew"
+	},
+	{
+		"t_name": "事前審査",
+		"role": "購入者",
+		"parent_task_id": 2,
+		"before_date": 80,
+		"date_duration": 10,
+		"t_number": 2
+	},
+	{
+		"t_name": "買付証明書の提出",
+		"role": "購入者",
+		"parent_task_id": 2,
+		"before_date": 70,
+		"date_duration": 10,
+		"t_number": 2,
+		"reference_url": "https://ieul.jp/column/articles/342/||||https://www.zennichi.or.jp/law_faq/買付証明書の法的性格/||||https://h-shoken.com/.../summary-of-certfication-about-buying-real-estate",
+		"reference_title": "不動産売買での買付証明書とは？提出したら契約になるのか「イエウール ...||||公益社団法人 全日本不動産協会 | 買付証明書の法的性格||||買付証明書まとめ｜買付証明とは・法的効力・手付金・書き方",
+		"reference_text": "買付申込書、買受証明書、購入申込書などと名称が違っていることもありますが、意味\nあいは同じです。私は「この物件が気にいったので、この金額で買います」という購入の\n意思を仲介業者や売り主に伝えるものです。||||当社所有の土地を売却するため、買受希望者を探したところ、Ａ社から購入の意向が示\nされ、売買代金6,400万円で購入する旨の買付証明書も提出されました。ところが、\nその後、売買契約書を作成する前に、Ａ社は態度を翻し、購入をしないといってきました。||||2015年6月15日 ... 不動産取引においての買付証明書とは。 もし、あなたが、新築一戸建てや中古物件、\n土地などの不動産売り物件を気に入ったとしましょう。 売主と買主の間に住宅・不動産\n業者などを介する取引の場合、まずは自分のほうから、不動産物件の ...",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzKjQA81tJVc331sgrdJKGX0DI7e1vig0bu_TLWHYWIJjO6dVTgnU8t6Y||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTurb4D--1i5dDxDdJucN1vfWsSIEohgkMapHChdXguVcMxoo9cTXOcF_s"
+	},
+	{
+		"t_name": "工事会社に事前審査提出",
+		"role": "購入者",
+		"parent_task_id": 2,
+		"before_date": 70,
+		"date_duration": 10,
+		"t_number": 2,
+		"reference_url": "https://finance.recruit.co.jp/article/k029/||||https://www.aeonbank.co.jp/aeonbank/loan/housing/||||https://suumo.jp/article/oyakudachi/oyaku/sumai.../jyutakuloan_shinsa/",
+		"reference_title": "住宅ローンの事前審査・仮審査とは？―審査基準、落ちないための ...||||住宅ローン事前審査｜イオン銀行||||住宅ローンの事前審査・本審査の流れと銀行の審査基準のポイント ...",
+		"reference_text": "2018年12月25日 ... しかし、住宅ローンは誰でも、どんな条件でも借りられる訳ではありません。借りるには各\n金融機関が設定している基準を満たす必要があります。今回は住宅ローンの事前審査・\n仮審査について、 ...||||インターネットで住宅ローン・セカンドハウスローン事前審査のお申込みが可能。住宅\nローン・セカンドハウスローンの新規お借入れ、お借換え、お買替えならイオン銀行へ。||||2017年9月21日 ... 住宅ローンを借りる場合、最も気になるのは審査に通るか。事前審査・本審査の流れ、\n銀行の審査基準、審査に通りやすくするポイントはあるのか解説します。不動産・住宅\nに関する総合情報サイトSUUMO(スーモ)。",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGa2BiS6XQJ3X5kQfQY8BtP2TOpaez8nMSVGkLKcTs52Wp3kQLy3OktoXy||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPflcUI4z9FORMb8VhF6CfnPcwy6wOLuSuOKlDfD-IniC-x4fxBMTvQDpA"
+	},
+	{
+		"t_name": "本審査",
+		"role": "購入者",
+		"parent_task_id": 2,
+		"before_date": 60,
+		"date_duration": 15,
+		"t_number": 2,
+		"reference_url": "https://finance.recruit.co.jp/article/k030/||||https://www.homes.co.jp/cont/money/money_00212/||||https://magazine.aruhi-corp.co.jp/0000-1359/",
+		"reference_title": "住宅ローンの本審査とは？―審査基準、落ちないためのポイント、落ちた ...||||【ホームズ】住宅ローンの事前審査（仮審査）と本審査、何が違う？ポイント ...||||住宅ローンの事前審査に通ったのに、本審査に落ちた！ その理由とは ...",
+		"reference_text": "2018年12月25日 ... 事前審査は銀行などの金融機関が行い、本審査は信用保証会社が行います。 事前\n審査にかかる期間は、一般的には3～4営業日ほどで、最近ではインターネットで事前\n審査の申し込みができる ...||||2019年4月25日 ... これから住宅を購入する方に向けて、住宅ローンの事前審査（仮審査）と本審査の違い\nから審査で見られるポイント、対策、本審査で落ちたときの対応まで解説します。また\n審査に必要な書類や申し込みから融資が下りるまでの流れも併せてご ...||||2018年2月24日 ... 住宅ローンの借り入れ審査には事前審査と本審査の2つがあって、事前審査に通っても\n本審査が通らず、融資を受けられない場合があります。事前審査と本審査の目的や\n内容の違いを確認すると同時に、もし本審査で落ちてしまった場合には ...",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpXnEwsaKwxSIwpPFQqlr6y9FCziwuwbpa4vA0cQEOvHLg2Tye0qd8dRs||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpf4GbSYoVMjH--YlEjYLFLG8pC0id0KMZiu23Z-QQVTHmBX_dToWOPOk||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToWMhkUVb-O5b4LqHNTertFb1BDaFnOhbzaXmtGvvOswlt0s8_Hhz3Qjk"
+	},
+	{
+		"t_name": "契約",
+		"role": "購入者",
+		"parent_task_id": 0,
+		"before_date": 40,
+		"date_duration": 40,
+		"t_number": 3
+	},
+	{
+		"t_name": "不動産売買契約",
+		"role": "購入者",
+		"parent_task_id": 3,
+		"before_date": 40,
+		"date_duration": 10,
+		"t_number": 3,
+		"reference_url": "https://www.fudousan.or.jp/kiso/buy/9_1.html||||https://suumo.jp/article/jukatsu/baikyaku/baikyaku.../baibaikeiyaku/||||https://www.nta.go.jp/law/shitsugi/inshi/08/10.htm",
+		"reference_title": "売買契約を結ぶ～不動産基礎知識：買うときに知っておきたいこと ...||||不動産 売買契約の流れと注意点|SUUMO||||不動産売買契約書の印紙税の軽減措置｜国税庁",
+		"reference_text": "不動産会社（宅地建物取引業者）が売り主となる場合には、買い主に不利益な契約が\n結ばれることのないよう、宅地建物取引業法により、不動産会社に対して、契約内容に\n一定の制限が設けられています。これによって、不動産取引の専門家である不動産\n会社と ...||||売買契約の流れと注意点. 自分の物件を売るときに、必要な契約とその注意点はなにか\n。契約にかかわる注意ポイントを知ろう ...||||不動産売買契約書について印紙税が軽減されていると聞きましたが、具体的な取扱い\nについて説明してください。 【回答要旨】. 租税特別措置法により、不動産の譲渡\nに関する契約書について、印紙税の軽減措置が講じられ、税率が引き下げられています\n。",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9z6FA1FT15ErVx-4f72J1LecVFPaNCGpMPtEQ5Fqc4XAhyzzY3DIFbYs||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGaDArgTar-MyfUd1kZ6tS2oR7KKbpKFW4OjIWBwCrWL_TXZ7YM4ngNQ"
+	},
+	{
+		"t_name": "住宅ローンの契約",
+		"role": "購入者",
+		"parent_task_id": 3,
+		"before_date": 40,
+		"date_duration": 10,
+		"t_number": 3,
+		"reference_url": "https://www.jibunbank.co.jp/products/homeloan/simulator/||||https://kakaku.com/housing-loan/ranking.asp?hl_ltype=2||||https://www.bk.mufg.jp/kariru/jutaku/index.html",
+		"reference_title": "住宅ローンシミュレーション | 住宅ローン | auじぶん銀行||||住宅ローン人気ランキング 【2020年3月更新】 - 価格.com||||住宅ローン | 三菱UFJ銀行",
+		"reference_text": "auじぶん銀行の住宅ローンシミュレーション. シミュレーターを選ぶ. 「どれくらいまで借り\nられる？」「毎月の返済 ...||||2020年3月2日 ... がん診断保障（50％）」の保障内容は“そのまま”で、すべてのけが・病気をカバーする「全\n疾病保障」を追加. 詳細を見る. 1位. 住信SBIネット銀行 ネット専用全疾病保障付住宅\nローン＜通期引下げ. 住信SBIネット銀行 ...||||三菱ＵＦＪ銀行の住宅ローンは、選ばれてご利用額12年連続No.1!住まいと家族を守る７\n大疾病保障付住宅ローンに、ATM利用手数料も0円と金利の他にもサービスが充実！",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRC3-hXSpk3fZj8Pkq4oAZu7xepJQIZi2-RuO75SDtxVOQuR4qJZTm_vXqU||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCezvNrfgpFrpN94Gz7YVaJc2Z27U78Uog0Ak_t5H5koMs1xWmpako0dlr"
+	},
+	{
+		"t_name": "工事プランの打ち合わせ",
+		"role": "購入者",
+		"parent_task_id": 3,
+		"before_date": 30,
+		"date_duration": 10,
+		"t_number": 3,
+		"reference_url": "reest.jp/||||www.checkreform.jp/||||https://rehome-navi.com/articles/65",
+		"reference_title": "リフォームかんたん見積り「Re:estリエスト」無料でたった1分||||住宅リフォーム見積チェックシステム||||リフォーム見積もりで失敗しない！上手に比較するために気をつけたい ...",
+		"reference_text": "ニッカホームのカンタン見積り「リエスト」。キッチン、ユニットバス、トイレなど家全体の\nリフォーム費用が簡単にシミュレーションして把握できるサービスが個人情報入力なしで\n利用できます。リフォームの概算価格が知りたい、予算に合ったリフォーム料金が知り ...||||ここでは、消費者の皆様が安心してリフォーム工事にのぞめるように、ご自分で\nリフォーム費用を調べたり、予定するリフォームに応じた見積書式を作ったりできます。 \nまた、住まいるダイヤルでは、実際に見積書をお送りいただき、チェックするサービスを\n行ってい ...||||2019年6月12日 ... リフォームやリノベーションの依頼先を決める際に気になる、提案内容や費用は、\nリフォーム業者によって差があります。より希望に近いプランにできたり、リフォーム費用\nが安く済んだりする場合もあるため、複数社から見積もりをとって比較を ...",
+		"reference_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuVscbKBQpxz6ht2bQIRLqAsypeyzfNok7CC6CMVzgD-oK-bLqsOCEu-k"
+	},
+	{
+		"t_name": "決済・引き渡し",
+		"role": "購入者",
+		"parent_task_id": 3,
+		"before_date": 20,
+		"date_duration": 10,
+		"t_number": 3,
+		"reference_url": "https://mansion-jicl.net/sale-contract-the-day/||||https://www.youtube.com/watch?v=WG2NtFxA1zc||||https://www.rakumachi.jp/news/column/222204",
+		"reference_title": "不動産の売買契約当日の流れをわかりやすく解説！準備するものについて||||不動産売買契約当日は、何をするのか？ 具体的な流れ - YouTube||||売買契約当日までに依頼すべき「4つの書類」 ｜楽待不動産投資新聞",
+		"reference_text": "2019年9月10日 ... 契約が成立すれば売主は物件を引き渡す義務を、買主はそれに対してお金を支払う\n義務を負うことになります。 売買契約を結ぶことでお互いの権利が守られ、安心・安全に\n取引を進められるのです。 不動産売買契約当日 ...||||2015年12月4日 ... さあ、ついに売買契約を締結する日がやってきました。 多くの人は人生で１度あるかない\nかでしょう。 この動画では、当日の流れを具体的に説明しています。 契約に臨む前に、\n予習としてご覧下さい。 千葉県市川市宮久保の不動産会社、『Ｙん ...||||2018年6月2日 ... 前回は、不動産売買契約直前に必要な調査と心構えについてお話しました。 要約すると\n、類似物件の相場を調査し、 購入物件に諸経費をプラスした総投資額が相場と同等\n以下であったなら、 取引を予定通りに進め、相場よりも高い総投資額 ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOIuDDgFRP8ERsT2ocOqL59dHCJom9depiIEDXIJoleyxRkQ9h5PuGoAE||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAXHBWZTa-2W2u1J6a4opWJc9t7uAfkXj3zGF7BvqZBh_4lofCptm18ax6||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvVOxNV9mZr7hsdaeWPjDPHE6CQe_DCgpII56h8-onQdoKnT6n5FAVF1Y"
+	},
+	{
+		"t_name": "工事開始",
+		"role": "購入者",
+		"parent_task_id": 3,
+		"before_date": 10,
+		"date_duration": 10,
+		"t_number": 3,
+		"reference_url": "https://suumo.jp/library/tf_13/sc_13104/to_0008782826/||||https://handyman.jp/seko/bath/41933||||https://curama.jp/magazine/753/",
+		"reference_title": "【SUUMO】【リフォーム・当日見学可】=マンションヴィップ北新宿=/東京都 ...||||驚いたのは当日見積り。 お風呂のリフォーム：LIXIL リノビオV | お風呂や ...||||マンションのトイレリフォームの費用と注意するべき点を徹底解説 ...",
+		"reference_text": "2018年12月23日 ... 【リフォーム・当日見学可】=マンションヴィップ北新宿=/東京都新宿区の新築マンション、\n中古マンション、賃貸のSUUMO掲載情報がまとめて探せます。所在地は東京都新宿区\n北新宿4（JR山手線「高田馬場」歩13分）。物件情報をまとめて探す ...||||2017年11月4日 ... 驚いたのは当日見積り。 お風呂のリフォーム：LIXIL リノビオV のページです。東京・\n千葉・神奈川・埼玉でトップクラスの実績 住宅リフォームのスペシャリスト「Handyman（\nハンディマン）」 住宅リフォームから住生活サポートなど住まいのことなら ...||||リフォーム当日は、作業がしやすいように、トイレ内に置いてある雑貨などは片付けてお\nきましょう。 リフォーム中はつきっきりになる必要はありませんが、作業状況を確認して\nおくとよいです。少しでもおかしいなと思った時 ...",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTesXqtVciSN0pS-SGN8tlIX6MoAuV3ypKmfjkHe_xo-j2f6k3Aa1p||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAK2jQYFd7E970d4KlFVcXomKDNXIX1-vT5NlfWUgnDNuTJ8AdyVBh5WrN||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgMAE1SvGJrm2PZ6NeD8rBVqEXDvYnGai94ckUjyJRge9eeDYV8Cnrmi9l"
+	}
+]

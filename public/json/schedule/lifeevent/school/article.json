@@ -1,0 +1,130 @@
+[
+	{
+		"t_name": "１〜３月",
+		"role": "生徒",
+		"parent_task_id": 0,
+		"before_date": 420,
+		"date_duration": 90,
+		"t_number": 1
+	},
+	{
+		"t_name": "着想、発想",
+		"role": "生徒",
+		"parent_task_id": 1,
+		"before_date": 420,
+		"date_duration": 30,
+		"t_number": 1,
+		"reference_url": "https://www.nttdata.com/jp/ja/news/services_info/2020/020500/||||www.agril.kais.kyoto-u.ac.jp/event/lesson/.../agrtea2011.12.12.pdf||||https://thinkscience.co.jp/ja/research_support",
+		"reference_title": "AIファイナンス応用研究所と量子コンピュータに着想を得た新しい ...||||農学研究科森林科学専攻 久住亮介助教(pdf)||||着想から・研究・論文執筆・再校正・出版までサポート｜医学・技術工学 ...",
+		"reference_text": "2020年2月5日 ... 論文では、パッシブ・ポートフォリオ戦略の代表的手法であるインデックス運用に対して、量子コンピュータの並べ替え機能にヒントを得た新しい手法によって、リスク・リターンを改善することを提示しています。 NTTデータとAIファイナンス応用研究所 ...||||テーマ着想. 原著論文ができるまで – 引用すべき文献 –. 実験. 結果の解釈・考察 論文執筆・投稿. 論文出版. テーマ着想から原著論文までのスキーム. テーマ着想時の文献収集. 前例の探索. 既報の内容か, 類似の研究あるか. 大テーマにおける位置付け.||||研究結果を最大限に活かすために、論文の投稿から査読者への回答、受理（アクセプト）、出版まで全ての段階でThinkSCIENCEがお手伝いします。経験豊富な専門翻訳者、エディター、ライターが行うe-ラーニングやコンサルテーション、学習セッションもご ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4HKP_QlKSaGi6f-I12-QNl8i10oyeTga9khV0VPXYpebwcqixF-hNFpDb||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyaTQYKeIhxpTtzPWQV_16BTVcg1JeMPvajHHAPZvkAJXyrI3cyk8KP3-A||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfwtiPEaTMsJuBZYWlu1HUsFZqjFxR8Pm5MgtGN9OYNU20f79Z08Ndxg"
+	},
+	{
+		"t_name": "構想",
+		"role": "生徒",
+		"parent_task_id": 1,
+		"before_date": 390,
+		"date_duration": 30,
+		"t_number": 1,
+		"reference_url": "https://share-study.net/important-of-research-question/||||www.kansai-u.ac.jp/Fc_com/pdf/H27_kakikata.pdf||||https://www.h.kobe-u.ac.jp/ja/node/1425",
+		"reference_title": "研究入門 論文構想攻略法！||||論文の書き方ガイド||||[博士課程後期課程] 書類ダウンロード（博士論文構想内容の要旨，基礎 ...",
+		"reference_text": "2017年7月21日 ... 今回は書き方ではなく、あくまでも構想の仕方について焦点を合わせて解説しよう！ 論文構想を発展させるために必要なこと. 既に調査・実験を行い分析が進んでいる場合はそれなりの ...||||第 2 節 文献や資料の収集と論文の構想. 研究テーマに関する文献や資料をできるだけ多く、幅広く集める。テーマに直接かかわ. る文献だけでなく、そのテーマを含んだ基礎的な文献にも収集範囲を広げるとよい。理論. の枠組みを参考にするもの、過去の研究 ...||||タイトル. 博士論文構想内容の要旨, PDFファイル （131KB）, Wordファイル （33KB）. 基礎論文内容の要旨, PDFファイル （41KB）, Wordファイル （26KB）. 予備審査論文審査願, PDFファイル （96KB）, Wordファイル （28KB）. 予備審査論文内容の要旨, PDF ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRLbxh7ynzIIYLY8dwS1caWHxTMXbC_Xl68zVZWTDTcJnScEUST7pKxyo"
+	},
+	{
+		"t_name": "計画",
+		"role": "生徒",
+		"parent_task_id": 1,
+		"before_date": 360,
+		"date_duration": 30,
+		"t_number": 1,
+		"reference_url": "https://www.jstage.jst.go.jp/browse/journalcpij/-char/ja/||||https://www.cpij.or.jp/paperretrieval/||||https://www.aij.or.jp/paper.html",
+		"reference_title": "都市計画論文集||||論文検索｜公益社団法人 日本都市計画学会||||日本建築学会論文集",
+		"reference_text": "都市計画論文集. 公益社団法人 日本都市計画学会 が発行. 収録数 4,712本 (更新日 2020/02/12). Online ISSN : 2185-0593. Print ISSN : 0916- ... 一楽照雄が提唱した農住都市構想と農林省による農村住宅団地建設計画の関係性に関する研究 原 洪太.||||論文検索. 都市計画学会発行の以下の文献の目次、著者名検索が行えます. 雑誌「都市計画」; 学術研究発表会論文(査読付き); 一般研究論文(査読付き); 都市計画報告(査読なし). btn_paperretrieval01.jpg ...||||【購読】 □購読はこちら 【検索】 https://www.aij.or.jp/jpn/transaction/ J-STAGE上公式ホームページにて毎月30日（2月に限り28日）に最新号情報を公開しています。 □構造系論文集ホームページ □計画系論文集ホームページ □環境系論文集ホームページ",
+		"reference_image": "https://1.bp.blogspot.com/-jkjWb2M6Vr8/XQtdnTiGS4I/AAAAAAAAEz8/105R2yFvC34TsA6uISvG5OvvO3ktLKQKwCLcBGAs/s1600/l_e_others_501.png||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbHyYwgEQKy6uPHBg-QeGIwfBqWJkJr1BVe98-otWApE9z3QNVZf8wRy4"
+	},
+	{
+		"t_name": "４〜６月",
+		"role": "生徒",
+		"parent_task_id": 0,
+		"before_date": 330,
+		"date_duration": 90,
+		"t_number": 2
+	},
+	{
+		"t_name": "着手段階　データ収集",
+		"role": "生徒",
+		"parent_task_id": 2,
+		"before_date": 330,
+		"date_duration": 45,
+		"t_number": 2,
+		"reference_url": "https://www.amazon.co.jp/ 心理学研究法―データ収集・分析から論文作成まで.../4781911080||||https://www.cit.t.kyoto-u.ac.jp/ja/services/systems/re-db/db-syuusyuu||||https://ci.nii.ac.jp/naid/130005103687/",
+		"reference_title": "心理学研究法―データ収集・分析から論文作成まで (コンパクト新心理学 ...||||論文書誌データ収集作業 — 京都大学大学院工学研究科 附属情報センター||||CiNii 論文 - インターネット調査によるデータ収集の課題—不良回答，回答 ...",
+		"reference_text": "Amazonで大山 正, 宮埜 壽夫, 岩脇 三良の心理学研究法―データ収集・分析から論文作成まで (コンパクト新心理学ライブラリ)。アマゾンならポイント還元本が多数。大山 正, 宮埜 壽夫, 岩脇 三良作品ほか、お急ぎ便対象商品は当日お届けも可能。また心理学 ...||||論文書誌データ収集作業. 工学研究科附属情報センターでは、プロジェクトの一つとして工学研究成果データベースの構築を進めています。平成17年度から昨年度に至るまで、皆様にご協力いただいたおかげで、約30,000 件のデータを集めることができました。||||インターネット調査によるデータ収集の課題—不良回答，回答時間，および地理的特性に注目した分析— Challenges of Data Collection through Internet Research: Analysis of 'Frivolous' Responses, Response Time, and Geographical Pattern.",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTePBnWeUnWePoUvF7mvsmi3BUH7OeFvwjjsTm_JUaXnf_O-P6hEugSjO8||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4dhPLc4fHLMuIndByc1pH89EkuYbRx1AGcRLspsddhH9ZgyzlAYBYIX8"
+	},
+	{
+		"t_name": "フィルードワーク段階",
+		"role": "生徒",
+		"parent_task_id": 2,
+		"before_date": 285,
+		"date_duration": 45,
+		"t_number": 2
+	},
+	{
+		"t_name": "７〜１１月",
+		"role": "生徒",
+		"parent_task_id": 0,
+		"before_date": 240,
+		"date_duration": 150,
+		"t_number": 3
+	},
+	{
+		"t_name": "分析への着手段階",
+		"role": "生徒",
+		"parent_task_id": 3,
+		"before_date": 240,
+		"date_duration": 90,
+		"t_number": 3,
+		"reference_url": "www.nistep.go.jp/wp/wp-content/uploads/NISTEP-RM262-FullJ.pdf||||https://www.nistep.go.jp/research/science-and-technology.../benchmark||||https://www.jsac.or.jp/~wabnsk/",
+		"reference_title": "科学研究のベンチマーキング 2017 -論文分析でみる世界の研究活動の ...||||論文ベンチマーキング調査専用ページ | 科学技術・学術政策研究所 ...||||「分析化学」 （日本分析化学会学会誌）",
+		"reference_text": "論文分析でみる世界の研究活動の変化と日本の状況―. 文部科学省 科学技術・学術政策研究所 科学技術・学術基盤調査研究室. 村上 昭義、伊神 正貫. 要旨. 科学研究活動の主な成果公表媒体である論文に着目し、日本及び主要国の科学研究のベンチ.||||個別指標（①論文数、②Top10％・Top1％補正論文数）と、複合指標（③論文数に占めるTop10％補正論文数の割合(Q値)）により、分野比較を含め、多角的に主要国の論文分析を行っています。また、日本国内の論文産出構造の時系列変化をより詳細に分析 ...||||分析化学は日本分析化学会の論文誌として，報文，技術論文，ノート，速報その他の 論文を掲載し，年8 回発行しています。 『分析化学』誌への投稿、過去の「分析化学」記事の閲覧、「分析化学」誌論文賞、年間・月間 ランキングなど、左のメニューより詳細な ...",
+		"reference_image": "https://1.bp.blogspot.com/-jkjWb2M6Vr8/XQtdnTiGS4I/AAAAAAAAEz8/105R2yFvC34TsA6uISvG5OvvO3ktLKQKwCLcBGAs/s1600/l_e_others_501.png||||https://1.bp.blogspot.com/-jkjWb2M6Vr8/XQtdnTiGS4I/AAAAAAAAEz8/105R2yFvC34TsA6uISvG5OvvO3ktLKQKwCLcBGAs/s1600/l_e_others_501.png"
+	},
+	{
+		"t_name": "本格的分析段階",
+		"role": "生徒",
+		"parent_task_id": 3,
+		"before_date": 150,
+		"date_duration": 60,
+		"t_number": 3
+	},
+	{
+		"t_name": "１１月〜１月",
+		"role": "生徒",
+		"parent_task_id": 0,
+		"before_date": 90,
+		"date_duration": 90,
+		"t_number": 4
+	},
+	{
+		"t_name": "構成・執筆の最終段階",
+		"role": "生徒",
+		"parent_task_id": 4,
+		"before_date": 60,
+		"date_duration": 60,
+		"t_number": 4,
+		"reference_url": "https://www.editage.jp/.../5-practical-tips-for-writing-your-first-scientific- paper-download-publication-schedule-planner||||https://www.ajcp.info/?page_id=249||||https://member.ipmu.jp/yuji.tachikawa/misc/dron.html",
+		"reference_title": "初めての論文執筆のための実践的アドバイス5選 | エディテージ・インサイト||||論文執筆ガイド | 一般社団法人 日本心理臨床学会||||博士論文執筆の際にお願いしたいこと",
+		"reference_text": "2018年11月30日 ... 何ヶ月も研究に没頭してデータが揃ってきたら、初めての論文執筆に着手しても良い時期に差し掛かっていると言えるでしょう。しかし、何をどう始めればいいのか見当もつかず、執筆の開始に二の足を踏んでいる人はいませんか？初めての ...||||心理臨床学研究の論文執筆ガイドです.||||2019年1月11日 ... 博士論文提出の半年ぐらい前の時点で、既出版論文があるなら、それをもとに博士論文を書いてください。その時点で arXiv にで ... じゃあ、博士論文をさっさと書いてしまってから、別個にレビュー論文でも執筆してください。今後の研究の方向性 ...",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTe7gozp1qQXSoMJUS_Wt-CEgsH2nWUDVH1KpCL8Re0mtekYOM6RqOzlEl"
+	},
+	{
+		"t_name": "卒論・修論提出",
+		"role": "生徒",
+		"parent_task_id": 4,
+		"before_date": 30,
+		"date_duration": 30,
+		"t_number": 4
+	}
+]
