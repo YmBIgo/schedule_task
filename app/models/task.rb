@@ -17,10 +17,14 @@ class Task < ApplicationRecord
             tasks = generate_nomikai_tasks()
         elsif input_word == "赤ちゃん予防接種"
             tasks = generate_baby_vaccination_tasks()
+        elsif input_word == "子供イベント運営"
+            tasks = generate_kids_event_basic_tasks()
         elsif input_word == "結婚" then
             tasks = generate_wedding_tasks()
         elsif input_word == "相続" then
             tasks = generate_inheritance_tasks()
+        elsif input_word == "引越し" then
+            tasks = generate_housemoving_tasks()
         elsif input_word == "マイホーム購入" then
             tasks = generate_myhome_tasks()
         elsif input_word == "IT補助金" then
@@ -68,10 +72,21 @@ class Task < ApplicationRecord
         return tc_babyv
     end
 
+    def generate_kids_event_basic_tasks()
+        tc_kids_event_basic = generate_public_taskcollection("schedule/lifeevent/school/kids_event.json")
+        return tc_kids_event_basic
+    end
+
     # 就活
     def generate_recruit_tasks()
         tc_recruit = generate_public_taskcollection("schedule/work/job_hunting/recruit.json")
         return tc_recruit
+    end
+
+    # 引越し
+    def generate_housemoving_tasks()
+        tc_house_moving = generate_public_taskcollection("schedule/lifeevent/house/house_moving.json")
+        return tc_house_moving
     end
 
     # マイホーム

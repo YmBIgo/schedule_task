@@ -35,7 +35,7 @@ namespace :line_push_task do
             # line_tasks.each do |l_task|
             #     task_message += l_task.t_name + " @" + l_task.start_date.to_s + " \n"
             # end
-            send_line_message(role.line_id, task_message)
+            send_line_message(role.first.line_id, task_message)
         # end
     end
 end
