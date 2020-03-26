@@ -19,8 +19,12 @@ class Task < ApplicationRecord
             tasks = generate_baby_vaccination_tasks()
         elsif input_word == "子供イベント運営" then
             tasks = generate_kids_event_basic_tasks()
+        elsif input_word == "幼稚園バザー運営" then
+            tasks = generate_kids_bazaar_tasks()
         elsif input_word == "結婚" then
             tasks = generate_wedding_tasks()
+        elsif input_word == "離婚" then
+            tasks = generate_divorce_tasks()
         elsif input_word == "相続" then
             tasks = generate_inheritance_tasks()
         elsif input_word == "引越し" then
@@ -37,6 +41,8 @@ class Task < ApplicationRecord
             tasks = generate_open_daycare_tasks()
         elsif input_word == "IT補助金" then
             tasks = generate_it_subsidy_tasks()
+        elsif input_word == "IT導入" then
+            tasks = generate_it_application_tasks()
         elsif input_word == "オフィス移転" then
             tasks = generate_new_office_tasks()
         elsif input_word == "医院開業"
@@ -51,6 +57,10 @@ class Task < ApplicationRecord
             tasks = generate_graduate_england()
         elsif input_word == "就活" then
             tasks = generate_recruit_tasks()
+        elsif input_word == "会社就活準備" then
+            tasks = generate_company_recruit_tasks()
+        elsif input_word == "会社高卒採用準備" then
+            tasks = generate_kosotsu_recruit_tasks()
         else
             tasks = generate_normal_tasks()
         end
@@ -84,16 +94,40 @@ class Task < ApplicationRecord
         return tc_itsub      
     end
 
+    # 離婚
+    def generate_divorce_tasks()
+        tc_divorce = generate_public_taskcollection("schedule/lifeevent/wedding/divorce.json")
+        return tc_divorce
+    end
+
     # 赤ちゃん予防接種
     def generate_baby_vaccination_tasks()
         tc_babyv = generate_public_taskcollection("schedule/lifeevent/baby/vaccination.json")
         return tc_babyv
     end
 
+    # バザー
+    def generate_kids_bazaar_tasks()
+        tc_bazaar = generate_public_taskcollection("schedule/lifeevent/baby/bazaar.json")
+        return tc_bazaar
+    end
+
     # 子供イベント　運営
     def generate_kids_event_basic_tasks()
         tc_kids_event_basic = generate_public_taskcollection("schedule/lifeevent/school/kids_event.json")
         return tc_kids_event_basic
+    end
+
+    # 会社採用
+    def generate_company_recruit_tasks()
+        tc_company_recruit = generate_public_taskcollection("schedule/work/job_hunting/company_recruit.json")
+        return tc_company_recruit
+    end
+
+    # 会社高卒採用
+    def generate_kosotsu_recruit_tasks()
+        tc_kosotsu_recruit = generate_public_taskcollection("schedule/work/job_hunting/kosotsu_recruit.json")
+        return tc_kosotsu_recruit
     end
 
     # 就活
@@ -154,6 +188,12 @@ class Task < ApplicationRecord
     def generate_inheritance_tasks()
         tc_itsub = generate_public_taskcollection("schedule/lifeevent/disease/inheritance.json")
         return tc_itsub
+    end
+
+    # IT導入
+    def generate_it_application_tasks()
+        tc_it_application = generate_public_taskcollection("schedule/work/company/application_it.json")
+        return tc_it_application
     end
 
     # IT補助金

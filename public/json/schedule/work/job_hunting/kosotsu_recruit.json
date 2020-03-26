@@ -1,0 +1,190 @@
+[
+	{
+		"t_name": "準備段階",
+		"role": "企業採用担当者",
+		"parent_task_id": 0,
+		"before_date": 455,
+		"date_duration": 180,
+		"t_number": 1
+	},
+	{
+		"t_name": "内部方針決定",
+		"role": "企業採用担当者",
+		"parent_task_id": 1,
+		"before_date": 455,
+		"date_duration": 60,
+		"t_number": 1,
+		"reference_url": "https://www.palsystem-kanagawa.coop/about/naibu||||https://corp.shiseido.com/jp/ir/governance/inner.html||||https://www.marubeni.com/jp/company/governance/.../internal_control/",
+		"reference_title": "内部統制基本方針 パルシステム神奈川ゆめコープ||||内部統制システムの基本方針 | コーポレートガバナンス | 投資家情報 ...||||内部統制の基本方針 | 会社情報 | 丸紅株式会社",
+		"reference_text": "内部統制基本方針. 生活協同組合パルシステム神奈川ゆめコープは、「生命を愛しみ\n自立と協同の力で心豊かな地域社会を創り出します」という基本理念に基づき、組合員\nのくらしに役立つ事業と活動に取り組みます。また、その実践を通して社会的責任を ...||||INTERNAL CONTROL 内部統制システムの基本方針. 1. 当社およびグループ各社の\n取締役および使用人の職務の執行が法令および定款に適合することを確保するための\n体制、グループ全体における業務の適正性を確保するための体制 当社およびグループ\n ...||||丸紅は、執行役員制を採用し、業務執行の効率化を図るとともに、グループCEOが会社\nの全般的経営に参画するとともに、会社の経営方針を体して担当営業グループの業務\n全般を統轄する体制とする. ⅱ. 監査役及び監査役会. 監査役は、法令の定める権限を ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUtaAaEWSSG8cRI17sjfs_Lpf74zXaSiMnxD0J1Lkh0plcO1fd9E3BxHg||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGYomC7VLRjQ5WqCt75baTlcYw-Clz9BE3k4kSEgBocxqb68H6QU1ryOS3||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQWEpZ_QU_pKZ_qRgPofXhuJ40993VzhbQp4lH-svYkKMNvrrg1VV3jZGw"
+	},
+	{
+		"t_name": "採用ツール作成",
+		"role": "企業採用担当者",
+		"parent_task_id": 1,
+		"before_date": 425,
+		"date_duration": 60,
+		"t_number": 1,
+		"reference_url": "https://saiyo-kakaricho.com/wp/webma/introduction-of-recruitment-tool/||||https://www.neo-career.co.jp/.../a-contents-rpo-saiyotoolsyurui-20181019/||||https://listen-web.com/blog/listenBlog/8612",
+		"reference_title": "効果の出やすい採用ツール10種類を紹介｜ツールを上手に活かして採用 ...||||8種類の採用ツールとその活用方法をご紹介！ | ネオキャリア｜採用支援 ...||||採用ツール制作｜全12種類を比較してみた",
+		"reference_text": "2019年10月25日 ... 求職者に自社の選考へ参加してもらい、入社してもらうためのコミュニケーションツール\nとも言えます。 具体的には、求人情報サイトや動画、SNSなど形式は多岐にわたります\n。 今、採用ツールや手段は多様化し ...||||2018年10月19日 ... 求人を出すだけではなかなか母集団を形成も見込めないため、これからはいかに効率\nよく優秀な人材を確保するかがポイントになります。 そこで、鍵となるのが「採用ツールの\n活用」です。本記事では、「採用ツールとはどのようなものな ...||||2019年7月18日 ... そこで今回の記事では、採用ツールの役割と機能について網羅的に解説しました。 ぜひ\n一度、「自社にマッチする採用ツールはどれなのだろう？」という視点で、この記事をご覧\nくださいますと ...",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSapRpyCrJPyQeqeB_0VLuChK6538CoYK2DfvQQxWZk1OjTAFWDaEBvKoY||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqttQ5vPCSsFwbDKodzoiSLIgZRATMx9cm5yRwut947dI9HZBaecZhhldj||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Fk0LDSGhRV5ARgEvIRWxX_NZg4fqrRupj47fywfD8Mf-2XZ3CqI-Ou8N"
+	},
+	{
+		"t_name": "学校訪問５〜６月",
+		"role": "企業採用担当者",
+		"parent_task_id": 1,
+		"before_date": 335,
+		"date_duration": 60,
+		"t_number": 1,
+		"reference_url": "https://lab.jinjib.co.jp/archives/427||||https://kousotsu-saiyou.com/.../ 高校新卒者採用を成功させるためのシンプルな方/||||https://lab.jinjib.co.jp/archives/108",
+		"reference_title": "高卒採用に高校訪問って必須なの？何校くらい高校回りしなきゃダメ ...||||高校新卒者採用を成功させるためのシンプルな方法||||高卒採用を始める前に必ず知っておくべきポイント ～活動スケジュールを ...",
+		"reference_text": "2018年6月22日 ... ７月２日求人情報公開！ 「高卒採用には高校訪問が必須なの？」「高校回りしなきゃダメ\n？」この声は本当によく聞きます。 私たちは「JOBドラフト」という、高校生向け求人\nメディアの中では、一番利用されている媒体を運営していますが、掲載 ...||||2018年12月15日 ... ... 採用広報チーム！」は、（株）セールスアドベンチャーが提供する独自のPR手法で「\n高校新卒者採用」を支援するプロモーションサービスです。 ... それもそのはず、例年\n企業による学校への求人の申込、訪問開始は7月1日以降と決められているためです。 \nここで皆さんに気づい ... これに関しては、実際に高卒の若手社員がいれば、その社員に\n「高校生のときにどんな軸で応募先企業を選んだか？」をヒアリングされると ...||||2018年5月9日 ... ７月１日 企業による学校への求人申込及び学校訪問開始. ９月５日 学校から企業への\n生徒の応募書類提出開始（沖縄県は８月30日）. ９月16日 企業による選考開始及び\n採用内定開始. ※高校生を対象とした求人は、ハローワークにおいて ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQiEFgowMtlvioy2EuC2RisSKfMoks-3Pe8LSYm0FoczNw0wRbvDrNzDto||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKBsWiqTB8RQH6mT5Zov_klQ-mNuLtEqJOUAv7D_tKulBq1tHZUZzIwXoK"
+	},
+	{
+		"t_name": "一次応募獲得時期",
+		"role": "企業採用担当者",
+		"parent_task_id": 0,
+		"before_date": 275,
+		"date_duration": 60,
+		"t_number": 2
+	},
+	{
+		"t_name": "学校訪問",
+		"role": "企業採用担当者",
+		"parent_task_id": 2,
+		"before_date": 275,
+		"date_duration": 30,
+		"t_number": 2,
+		"reference_url": "https://lab.jinjib.co.jp/archives/427||||https://kousotsu-saiyou.com/.../ 高校新卒者採用を成功させるためのシンプルな方/||||https://lab.jinjib.co.jp/archives/108",
+		"reference_title": "高卒採用に高校訪問って必須なの？何校くらい高校回りしなきゃダメ ...||||高校新卒者採用を成功させるためのシンプルな方法||||高卒採用を始める前に必ず知っておくべきポイント ～活動スケジュールを ...",
+		"reference_text": "2018年6月22日 ... ７月２日求人情報公開！ 「高卒採用には高校訪問が必須なの？」「高校回りしなきゃダメ\n？」この声は本当によく聞きます。 私たちは「JOBドラフト」という、高校生向け求人\nメディアの中では、一番利用されている媒体を運営していますが、掲載 ...||||2018年12月15日 ... ... 採用広報チーム！」は、（株）セールスアドベンチャーが提供する独自のPR手法で「\n高校新卒者採用」を支援するプロモーションサービスです。 ... それもそのはず、例年\n企業による学校への求人の申込、訪問開始は7月1日以降と決められているためです。 \nここで皆さんに気づい ... これに関しては、実際に高卒の若手社員がいれば、その社員に\n「高校生のときにどんな軸で応募先企業を選んだか？」をヒアリングされると ...||||2018年5月9日 ... ７月１日 企業による学校への求人申込及び学校訪問開始. ９月５日 学校から企業への\n生徒の応募書類提出開始（沖縄県は８月30日）. ９月16日 企業による選考開始及び\n採用内定開始. ※高校生を対象とした求人は、ハローワークにおいて ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQiEFgowMtlvioy2EuC2RisSKfMoks-3Pe8LSYm0FoczNw0wRbvDrNzDto||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKBsWiqTB8RQH6mT5Zov_klQ-mNuLtEqJOUAv7D_tKulBq1tHZUZzIwXoK"
+	},
+	{
+		"t_name": "求人票発送",
+		"role": "企業採用担当者",
+		"parent_task_id": 2,
+		"before_date": 275,
+		"date_duration": 30,
+		"t_number": 2,
+		"reference_url": "https://lab.jinjib.co.jp/archives/89||||https://jsite.mhlw.go.jp/tokyo-roudoukyoku/hourei.../_121483.html||||https://lab.jinjib.co.jp/archives/108",
+		"reference_title": "高卒採用準備編 ~まずはハローワークへ求人票登録を！~ – 高卒採用 ...||||新規学校卒業者の採用について | 東京労働局||||高卒採用を始める前に必ず知っておくべきポイント ～活動スケジュールを ...",
+		"reference_text": "2018年5月11日 ... 高校の紹介を受けて高卒採用をするには、まず「ハローワーク（職業安定所）」への求人\n票の登録が必要です。求人票の登録は一般（中途やアルバイト）の枠とは違い、高卒\n新卒専門の求人票があります。 ＜ ...||||2020年1月にハローワークのシステムの変更に伴い、ハローワークの大卒・高卒求人の\n様式が変更になりました。 求人票の項目には新設のほか、削除及び表示される文字数\nが変更する箇所がありますので、以下の各種リーフレット ...||||2018年5月9日 ... 学校とハローワークの分担・連携により企業の求人票の提出、学校を通じての応募\nフロー、応募解禁日の9月から一定の期日までは1人1社のみ受験する「一人一社制」\nなどが決められています。 押さえるべきルール「一人一社制」. 「一人一社 ...",
+		"reference_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcxiMcc7r_L-ExXenAr7UBz5otWwhucXjm0HeCMo5-RF3HuapG_mOixSw||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKBsWiqTB8RQH6mT5Zov_klQ-mNuLtEqJOUAv7D_tKulBq1tHZUZzIwXoK"
+	},
+	{
+		"t_name": "職場見学対応",
+		"role": "企業採用担当者",
+		"parent_task_id": 2,
+		"before_date": 265,
+		"date_duration": 50,
+		"t_number": 2,
+		"reference_url": "https://lab.jinjib.co.jp/archives/627||||https://jsite.mhlw.go.jp/tokyo-roudoukyoku/.../20100517_kousotu.html||||https://lab.jinjib.co.jp/archives/472",
+		"reference_title": "高卒採用の“職場見学”で応募につなげるポイント3つ – 高卒採用Lab ...||||新規高等学校卒業者を募集する事業主の皆さまへ～職場見学受け入れ ...||||「高卒採用で”職場見学”って重要なの？」高校生と先生が見ているポイント ...",
+		"reference_text": "2018年10月5日 ... 高卒採用では「職場見学」がとても重要. 高卒採用は大卒採用と比べると生徒と企業間\nの接点の機会が限られており、少ないコミュニケーションの中で採用活動を行わなけれ\nばいけません。 生徒が応募前の職場見学を行うことは、職業や職場 ...||||2010年5月17日 ... 1. 高卒用求人票の「12補足事項」欄にある 「応募前職場見学可(随時・別紙のとおり)・\n不可」の該当項目に手書きの場合は○を付け、データ作成の場合は該当項目を次のよう\nに表示する. (「応募前職場見学可(随時)」または「応募前職場見学可( ...||||2018年7月31日 ... 私たちが運営しているJOBドラフトにも「職場見学をしたい」、「求人票を見たい」という\n生徒からの声を受けることが多くなります。 それもそのはず。この夏休みの間に高校生\nは、気になる会社に一斉に職場見学をするからです。",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5cWggjAjDIzIv6LdRrNZIpaQkryvwwq7lDDkkzpEoBlhC9pmdrTOtNLw||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvBF6ILW9cmvypYKTFqKBJWVwMnV_URifmo4uWFqa03NzOt2RE55gCios||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTf8kyA3ehW9ede9m0suRbtvuU7l9OQErfP26VbzwFbBFM_pxEBGuXjshLl"
+	},
+	{
+		"t_name": "２次募集準備",
+		"role": "企業採用担当者",
+		"parent_task_id": 2,
+		"before_date": 240,
+		"date_duration": 55,
+		"t_number": 2,
+		"reference_url": "https://lab.jinjib.co.jp/archives/559||||https://www.cydnet.com/2020年4月　高卒採用情報/||||https://lab.jinjib.co.jp/archives/970",
+		"reference_title": "知ってますか？高卒採用の“二次募集”の正しい戦い方 – 高卒採用Lab ...||||2020年4月 高卒採用情報(二次募集）－終了しました | 千代田工業株式 ...||||高卒採用の“二次募集”正しい戦い方 ～実践編～ – 高卒採用Lab 高校生 ...",
+		"reference_text": "2018年8月24日 ... 一次募集”“二次募集”高卒採用にこのような時期があることをご存知ですか？ 高校生は\n夏休み期間を利用して、求人票から企業を選び職場見学し、自分が応募したい企業を\n決めます。 夏休みが明けた9月5日から先生を通じて企業へ応募書類 ...||||千代田工業のトピックス、新着情報や組織変更、採用情報、行事等の様々なお知らせを\n掲載しています。 2019年12月1日. 2020年4月 高卒採用情報(二次募集）－終了しま\nした. 2020年（令和2年）4月高校生採用情報！ 終了しました. このページの先頭へ.||||高卒採用の“二次募集”正しい戦い方 ～実践編～. 高卒採用の基本. 2019年09月02日. \n高卒採用のポイントの日である9月5日は、応募開始日です。 9月5日、企業には高校の\n推薦状と内申書が同封された応募書類が届きます。 また、応募前に職場見学に ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCqA-GFgg68bWfgvyYczNTHzHyFsCAQ0YsEUbrw0py2xY0F_alZ1Ew5Tdp||||https://1.bp.blogspot.com/-jkjWb2M6Vr8/XQtdnTiGS4I/AAAAAAAAEz8/105R2yFvC34TsA6uISvG5OvvO3ktLKQKwCLcBGAs/s1600/l_e_others_501.png||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC2Ft_QN_LP_Tktc0_El5hArjAeAe-MZAUGCXo9PsuW-qm1E5EljFAMq8"
+	},
+	{
+		"t_name": "二次応募獲得〜最終追込期",
+		"role": "企業採用担当者",
+		"parent_task_id": 0,
+		"before_date": 215,
+		"date_duration": 120,
+		"t_number": 4
+	},
+	{
+		"t_name": "学校訪問２",
+		"role": "企業採用担当者",
+		"parent_task_id": 3,
+		"before_date": 195,
+		"date_duration": 65,
+		"t_number": 3,
+		"reference_url": "https://lab.jinjib.co.jp/archives/427||||https://kousotsu-saiyou.com/.../ 高校新卒者採用を成功させるためのシンプルな方/||||https://lab.jinjib.co.jp/archives/108",
+		"reference_title": "高卒採用に高校訪問って必須なの？何校くらい高校回りしなきゃダメ ...||||高校新卒者採用を成功させるためのシンプルな方法||||高卒採用を始める前に必ず知っておくべきポイント ～活動スケジュールを ...",
+		"reference_text": "2018年6月22日 ... ７月２日求人情報公開！ 「高卒採用には高校訪問が必須なの？」「高校回りしなきゃダメ\n？」この声は本当によく聞きます。 私たちは「JOBドラフト」という、高校生向け求人\nメディアの中では、一番利用されている媒体を運営していますが、掲載 ...||||2018年12月15日 ... ... 採用広報チーム！」は、（株）セールスアドベンチャーが提供する独自のPR手法で「\n高校新卒者採用」を支援するプロモーションサービスです。 ... それもそのはず、例年\n企業による学校への求人の申込、訪問開始は7月1日以降と決められているためです。 \nここで皆さんに気づい ... これに関しては、実際に高卒の若手社員がいれば、その社員に\n「高校生のときにどんな軸で応募先企業を選んだか？」をヒアリングされると ...||||2018年5月9日 ... ７月１日 企業による学校への求人申込及び学校訪問開始. ９月５日 学校から企業への\n生徒の応募書類提出開始（沖縄県は８月30日）. ９月16日 企業による選考開始及び\n採用内定開始. ※高校生を対象とした求人は、ハローワークにおいて ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQiEFgowMtlvioy2EuC2RisSKfMoks-3Pe8LSYm0FoczNw0wRbvDrNzDto||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKBsWiqTB8RQH6mT5Zov_klQ-mNuLtEqJOUAv7D_tKulBq1tHZUZzIwXoK"
+	},
+	{
+		"t_name": "求人票発送２",
+		"role": "企業採用担当者",
+		"parent_task_id": 3,
+		"before_date": 195,
+		"date_duration": 65,
+		"t_number": 3,
+		"reference_url": "https://lab.jinjib.co.jp/archives/89||||https://jsite.mhlw.go.jp/tokyo-roudoukyoku/hourei.../_121483.html||||https://lab.jinjib.co.jp/archives/108",
+		"reference_title": "高卒採用準備編 ~まずはハローワークへ求人票登録を！~ – 高卒採用 ...||||新規学校卒業者の採用について | 東京労働局||||高卒採用を始める前に必ず知っておくべきポイント ～活動スケジュールを ...",
+		"reference_text": "2018年5月11日 ... 高校の紹介を受けて高卒採用をするには、まず「ハローワーク（職業安定所）」への求人\n票の登録が必要です。求人票の登録は一般（中途やアルバイト）の枠とは違い、高卒\n新卒専門の求人票があります。 ＜ ...||||2020年1月にハローワークのシステムの変更に伴い、ハローワークの大卒・高卒求人の\n様式が変更になりました。 求人票の項目には新設のほか、削除及び表示される文字数\nが変更する箇所がありますので、以下の各種リーフレット ...||||2018年5月9日 ... 学校とハローワークの分担・連携により企業の求人票の提出、学校を通じての応募\nフロー、応募解禁日の9月から一定の期日までは1人1社のみ受験する「一人一社制」\nなどが決められています。 押さえるべきルール「一人一社制」. 「一人一社 ...",
+		"reference_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcxiMcc7r_L-ExXenAr7UBz5otWwhucXjm0HeCMo5-RF3HuapG_mOixSw||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKBsWiqTB8RQH6mT5Zov_klQ-mNuLtEqJOUAv7D_tKulBq1tHZUZzIwXoK"
+	},
+	{
+		"t_name": "応募対応・面接",
+		"role": "企業採用担当者",
+		"parent_task_id": 3,
+		"before_date": 200,
+		"date_duration": 105,
+		"t_number": 3,
+		"reference_url": "https://lab.jinjib.co.jp/archives/572||||https://highschoolcareer.net/third-grader/1289/||||https://lab.jinjib.co.jp/archives/599",
+		"reference_title": "高卒採用は面接のルールが厳しいというのは本当？ 人事の気になる ...||||高卒生の就職面接、 絶対に押さえておきたい想定問答集 | 高卒就職 ...||||高卒採用の面接でNG質問をしたらどうなる？ ＃人事の気になる調査 ...",
+		"reference_text": "2018年8月31日 ... といった声が高卒の面接では多く聞こえてきます。 なぜでしょうか。高卒採用では、応募\n管理を高校の先生が、求人票の管理をハローワークが行うため、高校生に公平 ...||||2017年9月4日 ... Tweet 最終更新日:2019.10.09 「就職面接うまくできるかな‥」高校生にとってはほぼ\n初めての経験！心配になりますよね。就職面接本番で堂々と、自分らしさを発揮する\nためには準備・練習がとても大切です。そこで、よくある質問のやりとりと.||||2018年9月18日 ... これに基づき面接時に配慮すべき事項として、厚生労働省HP上に「公正な採用選考の\n基本」に就職差別につながる可能性のあるNG質問を掲載しています。もし、質問が就職\n差別に繋がると判断された場合はハローワークから指導の連絡が入り ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPHGdDWDO45OPz-x-DxTI6G6x-DoNgb04UcmSi64D52r6xRjSc_DZG_Nc||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTN-shkhfc4ucGXDJ8lQF7dQ780P_9XEz8Vzjqh9YfyXMLzHsVwYd_KlXM||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSExJp1I0tmV7QaNOh5Vq4CfswcwcRdpebb7FxZ0zpoJzHJaSb-E1zU0Ew"
+	},
+	{
+		"t_name": "受入準備等",
+		"role": "企業採用担当者",
+		"parent_task_id": 0,
+		"before_date": 95,
+		"date_duration": 95,
+		"t_number": 4
+	},
+	{
+		"t_name": "来期採用計画",
+		"role": "企業採用担当者",
+		"parent_task_id": 4,
+		"before_date": 95,
+		"date_duration": 95,
+		"t_number": 4,
+		"reference_url": "https://jinjibu.jp/qa/detl/17438/1/||||https://lab.jinjib.co.jp/archives/991||||https://www.honda.co.jp/news/2018/c180312b.html",
+		"reference_title": "採用人員数の決め方の基本につきまして - 『日本の人事部』||||【2019年10月時点】高卒採用市場の「これから」はどうなる？ – 高卒採用 ...||||2019年度定期採用計画および2018年度中途採用計画について - Honda",
+		"reference_text": "2009年9月11日 ... 採用計画の基本的考え方ですが、短期的な人員計画（中途採用）としては各部署からの\n人員要請をまずヒアリングし、採用 ... 同時に来期の売上目標からくる、人件費予算の\n策定 ステップ5:年収レベル・期待スキルに応じた中途採用対象者か、 ...||||2019年10月9日 ... 令和２年３月に高校を卒業する生徒への求人数は厚生労働省発表によると、約44万3千\n人で年々高卒採用の人気が高まっ ... 大卒、高卒を総合的に「新卒採用」として捉えて\n採用計画を作る、これまでよりも高卒採用人数を増やすことで充足を ...||||2018年3月12日 ... 本田技研工業の広報発表ニュース - 2019年度定期採用計画および2018年度中途\n採用計画についてご案内いたします。 ... 大卒計, 595人, 561人. 高卒, 290人, 265人. \n合計, 885人, 826人 ... 電動化・自動運転・人工知能をはじめとする新領域の強化に向け\n、定期採用・中途採用を積極的に行います。また、モノづくりの現場力 ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhs5jflKat0OJvdCs8ystyZOdHqnVupETaLNGSgXkDmW2Ou6pdPO0UsamT||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJta2flqAxGfGvKnxPwEEO6S1dr9Vf0VN-5HnfaPLmtHGCd8Fx5KeieOCO||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRzDy9b3pQjPtJTmExitZ766ZwClL3ggtP2s7KaxFtGJO2mOsENqd36EV4"
+	},
+	{
+		"t_name": "入社書類準備・生徒への連絡",
+		"role": "企業採用担当者",
+		"parent_task_id": 4,
+		"before_date": 95,
+		"date_duration": 95,
+		"t_number": 4,
+		"reference_url": "https://highschoolcareer.net/news/488/||||https://lab.jinjib.co.jp/archives/661||||https://job.rikunabi.com/kw/高卒　採用者　入社　提出　書類/",
+		"reference_title": "「高卒採用」で押さえておきたい4つのポイント（2）選考・内定から入社まで||||高卒生の内定者フォローってどんなことをしたらいいの？ #人事の気に ...||||【リクナビ】高卒 採用者 入社 提出 書類の新卒採用・インターンシップ情報",
+		"reference_text": "2016年10月9日 ... 高卒採用」で押さえておきたい4つのポイント（1）ルール・実務」 高校生の新卒採用に\n注目が集まっています。新たに高卒就職者をターゲットに採用 ... 不採用者の提出書類\nは速やかに学校長宛に返信してください。 不採用理由を明示する義務は ...||||2018年10月31日 ... 東京労働局ハローワークで新規学卒説明会の際に配布される「'１９新卒者募集のために\n」という冊子によると、次のように表記されています。 内定後の提出書類及び連絡\nについて. 求人者は、入社日までは「就職承諾書」以外の書類提出を ...||||高卒 採用者 入社 提出 書類に関する新卒採用情報が満載！2021年卒業予定の方に、\n企業情報・インターンシップ情報・自己分析や業界研究に役立つ情報をご紹介！就職\n活動にリクナビを活用しよう！",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvhk-TqIiC-DfwEsUeEbBrBrxIv0C1LCHlKrqQn_ox99erR5e2wZcRdp8G||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlptIIV-OpElksKlBxu2lCB8kUuWQvH4hnGUKPaCZDV6aVZ3-y9ypH8Yo"
+	},
+	{
+		"t_name": "入社",
+		"role": "企業採用担当者",
+		"parent_task_id": 4,
+		"before_date": 10,
+		"date_duration": 10,
+		"t_number": 4,
+		"reference_url": "https://lab.jinjib.co.jp/archives/1416||||https://highschoolcareer.net/news/488/||||https://lab.jinjib.co.jp/archives/661",
+		"reference_title": "高卒採用受入編：4月入社式までの準備チェック – 高卒採用Lab 高校生 ...||||「高卒採用」で押さえておきたい4つのポイント（2）選考・内定から入社まで||||高卒生の内定者フォローってどんなことをしたらいいの？ #人事の気に ...",
+		"reference_text": "2020年1月28日 ... 高卒採用が初めての企業人事の方・入社受入について見直しをしたい人事の方は、\n準備のチェックとしてご覧ください。 目次. １．入社までの内定者フォローを考える２．入社\n式の連絡・準備物リスト３．入社後の研修 ...||||2016年10月9日 ... 高校生の新卒採用に注目が集まっています。新たに高卒就職者をターゲットに採用活動\nを始める企業も増えていますが、高卒者採用を行うにあたっては、大学卒求人と ...||||2018年10月31日 ... 東京労働局ハローワークで新規学卒説明会の際に配布される「'１９新卒者募集のために\n」という冊子によると、次のように表記されています。 内定後の提出書類及び連絡\nについて. 求人者は、入社日までは「就職承諾書」以外の書類提出を ...",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSwH3Y3ffVqlyF1nGZQiEe4W2oxVE_LI9QJzkcO7XISvXs0uz9zDG_QDXH||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvhk-TqIiC-DfwEsUeEbBrBrxIv0C1LCHlKrqQn_ox99erR5e2wZcRdp8G||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlptIIV-OpElksKlBxu2lCB8kUuWQvH4hnGUKPaCZDV6aVZ3-y9ypH8Yo"
+	}
+]
