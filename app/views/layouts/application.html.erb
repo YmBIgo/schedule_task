@@ -12,13 +12,13 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
     <script src="https://scheduletask.s3-ap-northeast-1.amazonaws.com/common/js/jkanban.js"></script>
-    <link href="https://scheduletask.s3-ap-northeast-1.amazonaws.com/common/css/jkanban.css" rel="stylesheet">
+    <%= stylesheet_link_tag 'dhtmlxgantt', media: 'all', 'data-turbolinks-track' => true %>
 
     <meta name="viewport" content="width=device-width,initial-scale=0.5">
 
     <link href="https://scheduletask.s3-ap-northeast-1.amazonaws.com/common/css/dhtmlxgantt.css" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <script src="https://scheduletask.s3-ap-northeast-1.amazonaws.com/common/js/dhtmlxgantt.js"></script>
+    <%= javascript_include_tag 'dhtmlxgantt', 'data-turbolinks-track' => true %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     
   </head>
