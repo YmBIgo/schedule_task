@@ -1,6 +1,55 @@
 <div style="margin:20px 60px;">
     <h1><%= @work.w_name %> のスケジュール</h1>
     <hr>
+    <div style="margin-top:40px;">
+        <div class="btn-group btn-group-justified" role="group" style="width:100%;margin-bottom:30px;">
+            <% @work.tasks.where(:parent_task_id => 0).order(:t_number).each do |p_t| %>
+                <a class="btn btn-sm btn-info" href="javascript:change_calendar(<%= p_t.t_number %>)"><%= p_t.t_name %></a>
+            <% end %>
+        </div>
+        <% @work.tasks.where(:parent_task_id => 0).each do |p_t| %>
+            <% w_start_date = @work.tasks.find_by(:t_number => p_t.t_number, :parent_task_id => 0).start_date %>
+            <% w_end_date = @work.tasks.find_by(:t_number => p_t.t_number, :parent_task_id => 0).end_date %>
+            <% w_diff_date = ((w_end_date - w_start_date+2).to_i/4).ceil %>
+            <% if p_t.t_number == 1 then %>
+                <div id="calendar-<%= p_t.t_number %>" class="visible-calendar">
+            <% else %>
+                <div id="calendar-<%= p_t.t_number %>" style="display:none">
+            <% end %>
+                <h4><%= p_t.t_name %>　<%= w_start_date %>〜<%= w_end_date %></h4>
+                <br>
+                <table class="table table-borderless">
+                    <thead>
+                    <% if p_t.before_date != 0 then %>
+                    <tr style='font-size:12px;'>
+                        <td>タスク</td>
+                        <td><%= "#{w_start_date.to_s} 〜 #{(w_start_date + w_diff_date).to_s}" %></td>
+                        <td><%= "#{w_start_date + w_diff_date+1} 〜 #{w_start_date + w_diff_date*2}" %></td>
+                        <td><%= "#{w_start_date + w_diff_date*2+1} 〜 #{w_start_date + w_diff_date*3}" %></td>
+                        <td><%= "#{w_start_date + w_diff_date*3+1} 〜 #{w_end_date}" %></td>
+                    </tr>
+                    <% else %>
+                    <tr style='font-size:12px;'>
+                        <td width="20%">タスク</td>
+                        <td width="20%"></td>
+                        <td width="40%"><%= "#{w_start_date.to_s} 当日" %></td>
+                        <td width="20%"></td>
+                    </tr>
+                    <% end %>
+                    </thead>
+                    <% Task.where(:t_number => p_t.t_number, :work_id => @work.id).where.not(:parent_task_id => 0).each do |w_task| %>
+                        <% if w_task.before_date != 0 then %>
+                            <%= task_schedule_to_task_calendar(w_task, w_start_date, w_end_date, w_diff_date, true, false, 0) %>
+                        <% else %>
+                            <%= task_schedule_to_task_calendar(w_task, w_start_date, w_end_date, w_diff_date, true, true, 0) %>
+                        <% end %>
+                    <% end %>
+                </table>
+            </div>
+        <% end %>
+        <br>
+    </div>
+    <hr>
     <div class="row">
         <div class="col-sm-7" style="padding-right:30px;">
             <h4><i class="fas fa-angle-double-right"></i>直近のタスク</h4>
@@ -96,62 +145,15 @@
         </div>
     </div>
     <br>
-    <hr>
-    <div class="" style="margin-top:40px;">
-        <h4><i class="fas fa-angle-double-right"></i>内容</h4>
-        <br>
-        <p>（未実装）</p>
-        <br>
-    </div>
-    <hr>
-    <div style="margin-top:40px;">
-        <div class="btn-group btn-group-justified" role="group" style="width:100%;margin-bottom:30px;">
-            <% @work.tasks.where(:parent_task_id => 0).order(:t_number).each do |p_t| %>
-                <a class="btn btn-sm btn-info" href="javascript:change_calendar(<%= p_t.t_number %>)"><%= p_t.t_name %></a>
-            <% end %>
+    <!--
+        <hr>
+        <div class="" style="margin-top:40px;">
+            <h4><i class="fas fa-angle-double-right"></i>内容</h4>
+            <br>
+            <p>（未実装）</p>
+            <br>
         </div>
-        <% @work.tasks.where(:parent_task_id => 0).each do |p_t| %>
-            <% w_start_date = @work.tasks.find_by(:t_number => p_t.t_number, :parent_task_id => 0).start_date %>
-            <% w_end_date = @work.tasks.find_by(:t_number => p_t.t_number, :parent_task_id => 0).end_date %>
-            <% w_diff_date = ((w_end_date - w_start_date+2).to_i/4).ceil %>
-            <% if p_t.t_number == 1 then %>
-                <div id="calendar-<%= p_t.t_number %>" class="visible-calendar">
-            <% else %>
-                <div id="calendar-<%= p_t.t_number %>" style="display:none">
-            <% end %>
-                <h4><%= p_t.t_name %>　<%= w_start_date %>〜<%= w_end_date %></h4>
-                <br>
-                <table class="table table-borderless">
-                    <thead>
-                    <% if p_t.before_date != 0 then %>
-                    <tr style='font-size:12px;'>
-                        <td>タスク</td>
-                        <td><%= "#{w_start_date.to_s} 〜 #{(w_start_date + w_diff_date).to_s}" %></td>
-                        <td><%= "#{w_start_date + w_diff_date+1} 〜 #{w_start_date + w_diff_date*2}" %></td>
-                        <td><%= "#{w_start_date + w_diff_date*2+1} 〜 #{w_start_date + w_diff_date*3}" %></td>
-                        <td><%= "#{w_start_date + w_diff_date*3+1} 〜 #{w_end_date}" %></td>
-                    </tr>
-                    <% else %>
-                    <tr style='font-size:12px;'>
-                        <td width="20%">タスク</td>
-                        <td width="20%"></td>
-                        <td width="40%"><%= "#{w_start_date.to_s} 当日" %></td>
-                        <td width="20%"></td>
-                    </tr>
-                    <% end %>
-                    </thead>
-                    <% Task.where(:t_number => p_t.t_number, :work_id => @work.id).where.not(:parent_task_id => 0).each do |w_task| %>
-                        <% if w_task.before_date != 0 then %>
-                            <%= task_schedule_to_task_calendar(w_task, w_start_date, w_end_date, w_diff_date, true, false, 0) %>
-                        <% else %>
-                            <%= task_schedule_to_task_calendar(w_task, w_start_date, w_end_date, w_diff_date, true, true, 0) %>
-                        <% end %>
-                    <% end %>
-                </table>
-            </div>
-        <% end %>
-        <br>
-    </div>
+    -->
 
 <script type="text/javascript">
     function change_calendar(number){
