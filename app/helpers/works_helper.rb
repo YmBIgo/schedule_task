@@ -3,6 +3,11 @@ module WorksHelper
         r_date = d_date.strftime("%Y-%m-%d")
         return r_date
     end
+    def dhx_start_date(d_date)
+        g_before_date = d_date.split("-")
+        g_after_date = g_before_date[2] + "-" + g_before_date[1] + "-" + g_before_date[0]
+        return g_after_date
+    end
     def task_schedule_to_task_calendar(task, start_date, end_date, diff_date, href_flag, on_the_day_flag, t_counter)
         t_start_date = task.start_date
         t_end_date   = task.end_date

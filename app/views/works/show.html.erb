@@ -1,7 +1,30 @@
 <div style="margin:20px 60px;">
     <h1><%= @work.w_name %> のスケジュール</h1>
     <hr>
+    <h4><i class="fas fa-angle-double-right"></i>　スケジュール</h4>
+    <br>
+    <div id="gantt_here" style='width:100%; height:300px;'></div>
     <div style="margin-top:40px;">
+        <script>
+            var tasks = {
+                data:[
+                    <% @work.tasks.each do |c_task| %>
+                        <% t_start_date = year_month_date(c_task.start_date); %>
+                        <% g_start_date = dhx_start_date(t_start_date) %>
+                        <% if c_task.parent_task_id == 0 then %>
+                            {id:<%= c_task.t_number %>, text:"<%= c_task.t_name %>", start_date:"<%= g_start_date %>", duration:<%= c_task.date_duration %>, parent:<%= c_task.parent_task_id %>},
+                        <% else %>
+                            {text:"<%= c_task.t_name %>", start_date:"<%= g_start_date %>", duration:<%= c_task.date_duration %>, parent:<%= c_task.parent_task_id %>},
+                        <% end %>
+                <% end %>
+                ]
+            };
+            gantt.init("gantt_here");
+            gantt.config.scales = [
+                {unit: "week", step: 1, format: "%j, %Y"}
+            ];
+            gantt.parse(tasks);
+        </script>
         <div class="btn-group btn-group-justified" role="group" style="width:100%;margin-bottom:30px;">
             <% @work.tasks.where(:parent_task_id => 0).order(:t_number).each do |p_t| %>
                 <a class="btn btn-sm btn-info" href="javascript:change_calendar(<%= p_t.t_number %>)"><%= p_t.t_name %></a>
@@ -16,7 +39,7 @@
             <% else %>
                 <div id="calendar-<%= p_t.t_number %>" style="display:none">
             <% end %>
-                <h4><%= p_t.t_name %>　<%= w_start_date %>〜<%= w_end_date %></h4>
+                <h4><a class="btn btn-lg btn-primary" style="color:white"><%= p_t.t_name %>　<%= w_start_date %>〜<%= w_end_date %></a></h4>
                 <br>
                 <table class="table table-borderless">
                     <thead>
@@ -48,7 +71,37 @@
             </div>
         <% end %>
         <br>
+        <div>
+            <br>
+            <h4><i class="fas fa-user-circle"></i>　各人のスケジュール</h4>
+            <br>
+            <table class="table table-borderless">
+                <% @persons.each do |person| %>
+                    <tr>
+                    <td><%= person %></td>
+                    <% alert_array = ["danger", "primary", "warning", "success"]; %>
+                    <% p_tasks = Task.where(:role => person, :work_id => @work.id).select('t_number, t_name, end_date') %>
+                    <% p_number_tasks = [] %>
+                    <% p_tasks.map do |p_t| p_number_tasks << p_t.t_number end %>
+                    <% (1..4).each do |p_num| %>
+                        <td>
+                        <% if p_number_tasks.include?(p_num) %>
+                            <div class="alert-<%= alert_array[p_num-1] %> text-center">
+                                <a href="/tasks/<%= Task.find_by(:work_id => @work.id, :parent_task_id => 0, :t_number => p_num).id %>">
+                                    <%= Task.find_by(:work_id => @work.id, :parent_task_id => 0, :t_number => p_num).t_name %>
+                                    <br>
+                                    <small><%= Task.find_by(:work_id => @work.id, :parent_task_id => 0, :t_number => p_num).end_date %>まで</small>
+                                </a>
+                            </div>
+                        <% end %>
+                        </td>
+                    <% end %>
+                </tr>
+            <% end %>
+            </table>
+        </div>
     </div>
+    <br>
     <hr>
     <div class="row">
         <div class="col-sm-7" style="padding-right:30px;">
@@ -164,36 +217,6 @@
 </script>
 
     <hr>
-    <div>
-        <br>
-        <h4><i class="fas fa-angle-double-right"></i>スケジュール</h4>
-        <br>
-        <table class="table table-borderless">
-            <% @persons.each do |person| %>
-                <tr>
-                <td><%= person %></td>
-                <% alert_array = ["danger", "primary", "warning", "success"]; %>
-                <% p_tasks = Task.where(:role => person, :work_id => @work.id).select('t_number, t_name, end_date') %>
-                <% p_number_tasks = [] %>
-                <% p_tasks.map do |p_t| p_number_tasks << p_t.t_number end %>
-                <% (1..4).each do |p_num| %>
-                    <td>
-                    <% if p_number_tasks.include?(p_num) %>
-                        <div class="alert-<%= alert_array[p_num-1] %> text-center">
-                            <a href="/tasks/<%= Task.find_by(:work_id => @work.id, :parent_task_id => 0, :t_number => p_num).id %>">
-                                <%= Task.find_by(:work_id => @work.id, :parent_task_id => 0, :t_number => p_num).t_name %>
-                                <br>
-                                <small><%= Task.find_by(:work_id => @work.id, :parent_task_id => 0, :t_number => p_num).end_date %>まで</small>
-                            </a>
-                        </div>
-                    <% end %>
-                    </td>
-                <% end %>
-            </tr>
-        <% end %>
-        </table>
-    </div>
-        <br>
     <div>
         <h4><i class="fas fa-angle-double-right"></i>全タスク表</h4>
         <br>
