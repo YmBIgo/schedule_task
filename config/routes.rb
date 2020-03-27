@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   # work
   resources :works, :only => [:new, :show, :create]
   get '/welcome', to: "works#welcome"
+  get '/works_new_confirm', to: "works#confirm"
 
   # tasks
   resources :tasks, :only => [:show, :update]

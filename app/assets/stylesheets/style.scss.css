@@ -1,3 +1,11 @@
+/* navbar */
+
+.navbar .nav-link{
+  color:rgb(234, 234, 234,1) !important;
+}
+
+/* top page */
+
 .top-search-section{
   min-height:400px;
   padding-top:150px;

@@ -64,6 +64,11 @@ class WorksController < ApplicationController
     def welcome
     end
 
+    def confirm
+        @templates = Template.all
+        @template_name = params["schedule-type"]
+    end
+
     private
 
     def generate_password()

@@ -1,17 +1,14 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#1e90ff;color:white;">
   <% if role_signed_in? then %>
-    <a class="navbar-brand" href="/works/<%= current_role.workurl %>"><%= Work.find(current_role.work_id).w_name %></a>
+    <a href="/" class="navbar-brand" style="color:rgb(234, 234, 234,1); href="/works/<%= current_role.workurl %>">Taskuri（というドメイン名） - <%= Work.find(current_role.work_id).w_name %> - </a>
   <% else %>
-    <a class="navbar-brand" style="color:rgb(234, 234, 234,1);" href="/top">タイトル</a>
+    <a href="/" class="navbar-brand" style="color:rgb(234, 234, 234,1);" href="/top">Taskuri（というドメイン名）</a>
   <% end %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="/">トップ <span class="sr-only">(current)</span></a>
-      </li>
+    <ul class="navbar-nav ml-auto">
       <% if @work != nil %>
         <li class="nav-item">
             <a class="nav-link" href="/works/<%= @work.w_url %>"><%= @work.w_name %></a>
@@ -19,11 +16,8 @@
       <% end %>
       <li class="nav-item">
         <% if role_signed_in? %>
-          <%= link_to "ログアウト", destroy_role_session_path, method: :delete %>
+          <%= link_to "ログアウト", destroy_role_session_path, :class => "nav-link", :style => "color:rgb(234, 234, 234,1);", method: :delete %>
         <% end %>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
       </li>
     </ul>
   </div>
