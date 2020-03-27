@@ -1,6 +1,11 @@
 .top-search-section{
   min-height:400px;
   padding-top:150px;
+  background-image: url('https://scheduletask.s3-ap-northeast-1.amazonaws.com/images/common/backgroundimage.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 400px;
+  width:100%;
+  color:white;
 }
 
 .task {

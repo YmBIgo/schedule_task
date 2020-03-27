@@ -16,8 +16,9 @@
     <div class="col-sm-9">
         <div id="search-plan1" style="margin-left:5%">
             <%= form_for(@work) do |f| %>
-                <h3>
-                    <%= f.label :w_name, :value => params["schedule-type"] %>　<%= f.text_field :w_name, :value => params["schedule-type"], :class => "form-control", :style => "width:200px;display:inline-block;margin-bottom:5px;" %>
+                <h3 style="font-size:15px;">
+                    <%= f.text_field :w_name, :value => params["schedule-type"], :class => "form-control", :style => "width:300px;height:70px;font-size:24px;display:inline-block;margin-bottom:5px;margin-left:-20px;" %>
+                    <input type="date" class="form-control" style="width:200px;display:inline-block;margin-left:20px;" value="<%= year_month_date(@today) %>"> までのスケジュール（JS未実装）
                 </h3>
                 <input type="hidden" name="template" value="<%= params["schedule-type"] %>">
                 <div class="row">
