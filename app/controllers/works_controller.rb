@@ -6,8 +6,11 @@ class WorksController < ApplicationController
     before_action :authenticate_role_page!, :only => [:show, :welcome]
 
     def new
-        # binding.pry
-        @today = Time.parse(params["start-date"])
+        if params["start-date"] == nil then
+            @today = Time.now.next_day(200)
+        else
+            @today = Time.parse(params["start-date"])
+        end
         @tasks = Task.new.default_input(params["schedule-type"])
         @task = TaskCollection.new
         @work  = Work.new

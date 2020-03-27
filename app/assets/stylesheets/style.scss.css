@@ -1,3 +1,8 @@
+.top-search-section{
+  min-height:400px;
+  padding-top:150px;
+}
+
 .task {
     background-color: #F4CE46;
   }
@@ -12,6 +17,9 @@
     margin-bottom:20px;
   }
 
+.top-category-card{
+  margin-bottom:30px;
+}
 
 .schedule-detail-section{
   margin-top:20px;

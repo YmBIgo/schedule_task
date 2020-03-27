@@ -4,29 +4,9 @@
         <h3><i class="fas fa-calendar"></i>　ToDoリストを登録しよう</h3>
         </div>
         <br>
-        <!-- <form action="/newthird" method="get" > -->
+        <!--
         <form action="/works/new" method="get" >
         <div class="row">
-        <!--
-        <div class="col-sm-6">
-            <div class="top-page-input">
-            <label name="name1">幹部1</label>
-            <input type="text" name="name1" class="form-control" style="width:200px;" value="太郎"></input>
-            </div>
-            <div class="top-page-input">
-            <label name="name2">幹部2</label>
-            <input type="text" name="name2" class="form-control" style="width:200px;" value="二郎"></input>
-            </div>
-            <div class="top-page-input">
-            <label name="name3">飲み会</label>
-            <input type="text" name="name3" class="form-control" style="width:200px;" value="三田"></input>
-            </div>
-            <div class="top-page-input">
-            <label name="name4">予算</label>
-            <input type="text" name="name4" class="form-control" style="width:200px;" value="四谷"></input>
-            </div>
-        </div>
-        -->
         <div class="col-sm-3">
         </div>
         <div class="col-sm-6 text-center">
@@ -35,43 +15,7 @@
                 <input type="date" name="start-date" class="form-control" style="width:200px;margin:0 auto;" value="2020-11-11"></input>
                 <label name="schedule-type">目的</label>
                 <select  name="schedule-type" class="form-control" style="width:200px;margin:0 auto;">
-                    <option name="baby-vaccination">赤ちゃん予防接種</option>
-                    <option name="kids-event-basic">子供イベント運営</option>
-                    <option name="kids-bazaar">幼稚園バザー運営</option>
-                    <option name="divorce">離婚</option>
-                    <option name="wedding">結婚</option>
-                    <option name="house_moving">引越し</option>
-                    <option name="interior">新居インテリア</option>
-                    <option name="myhome">マイホーム購入</option>
-                    <option name="old-mansion">中古マンション購入</option>
-                    <option name="repair-mansion">マンション修繕工事</option>
-                    <option name="inheritance">相続</option>
-                    <option name="new-office">オフィス移転</option>
-                    <option name="event-operation">イベント運営</option>
-                    <option name="foreign-exhibition">海外展示会</option>
-                    <option name="us-company">法人米国進出</option>
-                    <option name="german-company">法人ドイツ進出</option>
-                    <option name="china-company">法人中国進出</option>
-                    <option name="thai-company">法人タイ進出</option>
-                    <option name="philippine-company">法人フィリピン進出</option>
-                    <option name="labor-quater1">労務業務１〜３月</option>
-                    <option name="labor-quater2">労務業務４〜６月</option>
-                    <option name="it-application">IT導入</option>
-                    <option name="it_subsidy">IT補助金</option>
-                    <option name="open_restaurant">飲食店開業</option>
-                    <option name="open_salon">サロン開業</option>
-                    <option name="open_daycare">デイサービス事業所開設</option>
-                    <option name="open_doctor">医院開業</option>
-                    <option name="nomikai">飲み会</option>
-                    <option name="gassyuku">合宿</option>
-                    <option name="article">論文</option>
-                    <option name="graduate-america">アメリカ大学院留学</option>
-                    <option name="graduate-england">イギリス大学院留学</option>
-                    <option name="company-recruit">会社就活準備</option>
-                    <option name="kosotsu-recruit">会社高卒採用準備</option>
-                    <option name="recruit">就活</option>
                     <option name="normal">自分で作る</option>
-                    <!-- <option name=""></option> -->
                 </select>
                 <div>
                 <label name="email">代表者メールアドレス</input>
@@ -85,7 +29,236 @@
             <input type="submit" value="送信する" class="btn btn-success">
         </div>
         </form>
+        -->
         <br>
+    </div>
+    <hr>
+    <div class="top-category-area text-center">
+        <div><h3><i class="fas fa-align-left"></i>　カテゴリーごと</h3></div>
+        <br><br>
+        <div class="row">
+            <div class="top-category-card col-sm-3">
+                <h6><i class="fas fa-home"></i>　すまい</h6>
+                <form action="/works/new" method="get" class="text-left" style="margin-top:20px;" >
+                    <label name="start-date">　予定終了日</label>
+                    <input type="date" name="start-date" class="form-control" style="width:90%;margin:0 5%;" value="2020-11-11"></input>
+                    <label name="schedule-type">　目的</label>
+                    <select  name="schedule-type" class="form-control" style="width:90%;margin:0 5%;">
+                    <option name="house_moving">引越し</option>
+                    <option name="interior">新居インテリア</option>
+                    <option name="myhome">マイホーム購入</option>
+                    </select>
+                    <!--
+                    <label name="email">　代表者メールアドレス</input>
+                    <input type="email" name="email" class="form-control" style="width:90%;margin: 5px 5%;" placeholder="example@example.com"></input>
+                    -->
+                    <div style="margin-left:7%;margin-top:10px;">
+                        <input type="submit" value="送信する" class="btn btn-warning" style="color:white;">
+                    </div>
+                </form>
+            </div>
+            <div class="top-category-card col-sm-3">
+                <h6><i class="fas fa-ring"></i>　結婚</h6>
+                <form action="/works/new" method="get" class="text-left" style="margin-top:20px;" >
+                    <label name="start-date">　予定終了日</label>
+                    <input type="date" name="start-date" class="form-control" style="width:90%;margin:0 5%;" value="2020-11-11"></input>
+                    <label name="schedule-type">　目的</label>
+                    <select  name="schedule-type" class="form-control" style="width:90%;margin:0 5%;">
+                    <option name="divorce">離婚</option>
+                    <option name="wedding">結婚</option>
+                    </select>
+                    <div style="margin-left:7%;margin-top:10px;">
+                        <input type="submit" value="送信する" class="btn btn-warning" style="color:white;">
+                    </div>
+                </form>
+            </div>
+            <div class="top-category-card col-sm-3">
+                <h6><i class="fas fa-baby-carriage"></i>　子供</h6>
+                <form action="/works/new" method="get" class="text-left" style="margin-top:20px;" >
+                    <label name="start-date">　予定終了日</label>
+                    <input type="date" name="start-date" class="form-control" style="width:90%;margin:0 5%;" value="2020-11-11"></input>
+                    <label name="schedule-type">　目的</label>
+                    <select  name="schedule-type" class="form-control" style="width:90%;margin:0 5%;">
+                    <option name="baby-vaccination">赤ちゃん予防接種</option>
+                    <option name="kids-event-basic">子供イベント運営</option>
+                    <option name="kids-bazaar">幼稚園バザー運営</option>
+                    </select>
+                    <div style="margin-left:7%;margin-top:10px;">
+                        <input type="submit" value="送信する" class="btn btn-warning" style="color:white;">
+                    </div>
+                </form>
+            </div>
+            <div class="top-category-card col-sm-3">
+                <h6><i class="fas fa-graduation-cap"></i>　学校</h6>
+                <form action="/works/new" method="get" class="text-left" style="margin-top:20px;" >
+                    <label name="start-date">　予定終了日</label>
+                    <input type="date" name="start-date" class="form-control" style="width:90%;margin:0 5%;" value="2020-11-11"></input>
+                    <label name="schedule-type">　目的</label>
+                    <select  name="schedule-type" class="form-control" style="width:90%;margin:0 5%;">
+                    <option name="graduate-america">アメリカ大学院留学</option>
+                    <option name="graduate-england">イギリス大学院留学</option>
+                    </select>
+                    <div style="margin-left:7%;margin-top:10px;">
+                        <input type="submit" value="送信する" class="btn btn-warning" style="color:white;">
+                    </div>
+                </form>
+            </div>
+            <div class="top-category-card col-sm-3">
+                <h6><i class="fas fa-briefcase"></i>　開業</h6>
+                <form action="/works/new" method="get" class="text-left" style="margin-top:20px;" >
+                    <label name="start-date">　予定終了日</label>
+                    <input type="date" name="start-date" class="form-control" style="width:90%;margin:0 5%;" value="2020-11-11"></input>
+                    <label name="schedule-type">　目的</label>
+                    <select  name="schedule-type" class="form-control" style="width:90%;margin:0 5%;">
+                        <option name="open_restaurant">飲食店開業</option>
+                        <option name="open_salon">サロン開業</option>
+                        <option name="open_daycare">デイサービス事業所開設</option>
+                        <option name="open_doctor">医院開業</option>
+                    </select>
+                    <div style="margin-left:7%;margin-top:10px;">
+                        <input type="submit" value="送信する" class="btn btn-warning" style="color:white;">
+                    </div>
+                </form>
+            </div>
+            <div class="top-category-card col-sm-3">
+                <h6><i class="fas fa-school"></i>　学校生活</h6>
+                <form action="/works/new" method="get" class="text-left" style="margin-top:20px;" >
+                    <label name="start-date">　予定終了日</label>
+                    <input type="date" name="start-date" class="form-control" style="width:90%;margin:0 5%;" value="2020-11-11"></input>
+                    <label name="schedule-type">　目的</label>
+                    <select  name="schedule-type" class="form-control" style="width:90%;margin:0 5%;">
+                    <option name="nomikai">飲み会</option>
+                    <option name="gassyuku">合宿</option>
+                    <option name="article">論文</option>
+                    <option name="recruit">就活</option>
+                    </select>
+                    <div style="margin-left:7%;margin-top:10px;">
+                        <input type="submit" value="送信する" class="btn btn-warning" style="color:white;">
+                    </div>
+                </form>
+            </div>
+            <div class="top-category-card col-sm-3">
+                <h6><i class="fas fa-book"></i>　法律</h6>
+                <form action="/works/new" method="get" class="text-left" style="margin-top:20px;" >
+                    <label name="start-date">　予定終了日</label>
+                    <input type="date" name="start-date" class="form-control" style="width:90%;margin:0 5%;" value="2020-11-11"></input>
+                    <label name="schedule-type">　目的</label>
+                    <select  name="schedule-type" class="form-control" style="width:90%;margin:0 5%;">
+                    <option name="inheritance">相続</option>
+                    </select>
+                    <div style="margin-left:7%;margin-top:10px;">
+                        <input type="submit" value="送信する" class="btn btn-warning" style="color:white;">
+                    </div>
+                </form>
+            </div>
+            <div class="top-category-card col-sm-3">
+                <h6><i class="fas fa-building"></i>　不動産</h6>
+                <form action="/works/new" method="get" class="text-left" style="margin-top:20px;" >
+                    <label name="start-date">　予定終了日</label>
+                    <input type="date" name="start-date" class="form-control" style="width:90%;margin:0 5%;" value="2020-11-11"></input>
+                    <label name="schedule-type">　目的</label>
+                    <select  name="schedule-type" class="form-control" style="width:90%;margin:0 5%;">
+                    <option name="old-mansion">中古マンション購入</option>
+                    <option name="repair-mansion">マンション修繕工事</option>
+                    <option name="new-office">オフィス移転</option>
+                    </select>
+                    <div style="margin-left:7%;margin-top:10px;">
+                        <input type="submit" value="送信する" class="btn btn-warning" style="color:white;">
+                    </div>
+                </form>
+            </div>
+            <div class="top-category-card col-sm-3">
+                <h6><i class="fas fa-calendar-week"></i>　イベント運営</h6>
+                <form action="/works/new" method="get" class="text-left" style="margin-top:20px;" >
+                    <label name="start-date">　予定終了日</label>
+                    <input type="date" name="start-date" class="form-control" style="width:90%;margin:0 5%;" value="2020-11-11"></input>
+                    <label name="schedule-type">　目的</label>
+                    <select  name="schedule-type" class="form-control" style="width:90%;margin:0 5%;">
+                    <option name="event-operation">イベント運営</option>
+                    <option name="foreign-exhibition">海外展示会</option>
+                    </select>
+                    <div style="margin-left:7%;margin-top:10px;">
+                        <input type="submit" value="送信する" class="btn btn-warning" style="color:white;">
+                    </div>
+                </form>
+            </div>
+            <div class="top-category-card col-sm-3">
+                <h6><i class="fas fa-water"></i>　海外進出</h6>
+                <form action="/works/new" method="get" class="text-left" style="margin-top:20px;" >
+                    <label name="start-date">　予定終了日</label>
+                    <input type="date" name="start-date" class="form-control" style="width:90%;margin:0 5%;" value="2020-11-11"></input>
+                    <label name="schedule-type">　目的</label>
+                    <select  name="schedule-type" class="form-control" style="width:90%;margin:0 5%;">
+                    <option name="us-company">法人米国進出</option>
+                    <option name="german-company">法人ドイツ進出</option>
+                    <option name="china-company">法人中国進出</option>
+                    <option name="thai-company">法人タイ進出</option>
+                    <option name="philippine-company">法人フィリピン進出</option>
+                    </select>
+                    <div style="margin-left:7%;margin-top:10px;">
+                        <input type="submit" value="送信する" class="btn btn-warning" style="color:white;">
+                    </div>
+                </form>
+            </div>
+            <div class="top-category-card col-sm-3">
+                <h6><i class="fas fa-user-edit"></i>　採用</h6>
+                <form action="/works/new" method="get" class="text-left" style="margin-top:20px;" >
+                    <label name="start-date">　予定終了日</label>
+                    <input type="date" name="start-date" class="form-control" style="width:90%;margin:0 5%;" value="2020-11-11"></input>
+                    <label name="schedule-type">　目的</label>
+                    <select  name="schedule-type" class="form-control" style="width:90%;margin:0 5%;">
+                    <option name="company-recruit">会社就活準備</option>
+                    <option name="kosotsu-recruit">会社高卒採用準備</option>
+                    </select>
+                    <div style="margin-left:7%;margin-top:10px;">
+                        <input type="submit" value="送信する" class="btn btn-warning" style="color:white;">
+                    </div>
+                </form>
+            </div>
+            <div class="top-category-card col-sm-3">
+                <h6><i class="fas fa-hand-holding-usd"></i>　助成金</h6>
+                <form action="/works/new" method="get" class="text-left" style="margin-top:20px;" >
+                    <label name="start-date">　予定終了日</label>
+                    <input type="date" name="start-date" class="form-control" style="width:90%;margin:0 5%;" value="2020-11-11"></input>
+                    <label name="schedule-type">　目的</label>
+                    <select  name="schedule-type" class="form-control" style="width:90%;margin:0 5%;">
+                    <option name="it_subsidy">IT補助金</option>
+                    </select>
+                    <div style="margin-left:7%;margin-top:10px;">
+                        <input type="submit" value="送信する" class="btn btn-warning" style="color:white;">
+                    </div>
+                </form>
+            </div>
+            <div class="top-category-card col-sm-3">
+                <h6><i class="fas fa-person-booth"></i>　労務業務</h6>
+                <form action="/works/new" method="get" class="text-left" style="margin-top:20px;" >
+                    <label name="start-date">　予定終了日</label>
+                    <input type="date" name="start-date" class="form-control" style="width:90%;margin:0 5%;" value="2020-11-11"></input>
+                    <label name="schedule-type">　目的</label>
+                    <select  name="schedule-type" class="form-control" style="width:90%;margin:0 5%;">
+                    <option name="labor-quater1">労務業務１〜３月</option>
+                    <option name="labor-quater2">労務業務４〜６月</option>
+                    </select>
+                    <div style="margin-left:7%;margin-top:10px;">
+                        <input type="submit" value="送信する" class="btn btn-warning" style="color:white;">
+                    </div>
+                </form>
+            </div>
+            <div class="top-category-card col-sm-3">
+                <h6><i class="fab fa-windows"></i>　ITシステム</h6>
+                <form action="/works/new" method="get" class="text-left" style="margin-top:20px;" >
+                    <label name="start-date">　予定終了日</label>
+                    <input type="date" name="start-date" class="form-control" style="width:90%;margin:0 5%;" value="2020-11-11"></input>
+                    <label name="schedule-type">　目的</label>
+                    <select  name="schedule-type" class="form-control" style="width:90%;margin:0 5%;">
+                    <option name="it-application">IT導入</option>
+                    </select>
+                    <div style="margin-left:7%;margin-top:10px;">
+                        <input type="submit" value="送信する" class="btn btn-warning" style="color:white;">
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
     <hr>
     <div class="explanation-area">
