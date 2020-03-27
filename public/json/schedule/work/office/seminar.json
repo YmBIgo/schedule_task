@@ -1,0 +1,166 @@
+[
+	{
+		"t_name": "内容決定",
+		"role": "担当者",
+		"parent_task_id": 0,
+		"before_date": 120,
+		"date_duration": 30,
+		"t_number": 1
+	},
+	{
+		"t_name": "会場予約",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 120,
+		"date_duration": 30,
+		"t_number": 1,
+		"reference_url": "https://www.spacemarket.com/features/seminar/cities/tokyo||||https://www.instabase.jp/guides/seminar||||https://www.kaigishitu.com/",
+		"reference_title": "東京都の格安セミナールーム・研修会場まとめ | スペースマーケット||||少人数のセミナーにおススメ！格安のセミナー会場｜インスタベース||||会議室.COM - 国内最大級の貸し会議室検索サイト",
+		"reference_text": "セミナーや研修の目的でご利用いただけるレンタルスペース・セミナー会場・研修会場も\nあります。プロジェクターや電源が完備されていて、1時間単位で格安料金でご予約\nいただけます。講演会や企業セミナー、トークイベント、 ...||||格安のセミナー会場. プロジェクター・マイクあり！ 大人数会場あり！ 駅近！ 飲食OK！ \nセミナールームや研修会場をお探しならインスタベース。講習会やイベント、講演会、\n社員研修などの会場としておススメの貸し会場・イベントスペースを、格安でレンタルでき\n ...||||貸しホール、ホテル・パーティ、イベント会場やスタジオ、セミナー会場、ギャラリーを探す\nなら会議室.COMで！駅近や・宿泊可能の施設をはじめ、人気の展示会場や、\nおしゃれなイベントスペースなどご希望の条件に合わせた施設・会議室をお探しいただけ\nます。",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgaSPXmUh72e71U7ePR6HmWT-VkHnjm5W6FjKzS0felJ4vh7YQaaMxIWkQ||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWCFobxSkIfyPKxaKerpv-w7k2UfJfGXOtv4ebz-bmpVT8NaIhjlWiEw"
+	},
+	{
+		"t_name": "企画・講師調整",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 120,
+		"date_duration": 30,
+		"t_number": 1,
+		"reference_url": "shimozaki.jp/.../2018117-三水会勉強会セミナー講師　「調整区域の雑種/||||https://liginc.co.jp/404093||||www.azdem.org/s6nthm/yr8qxyo67v04u3q.biz",
+		"reference_title": "2018/1/17 三水会勉強会セミナー講師 「調整区域の雑種地の評価」 | 下 ...||||これを決めればスムーズに進む！ 講演・セミナー依頼のポイント | 東京の ...||||4段階高さ調節折れ脚こたつ カクタス 80×80cm+国産こたつ布団 2点 ...",
+		"reference_text": "2018/1/17 三水会勉強会セミナー講師 「調整区域の雑種地の評価」. 2018.8.16. 一覧\nへ戻る. 活動報告. 2019年; 2018年; 2017年. 会計・税務に関するお問い合わせ. 各種\nご相談は下記よりお気軽にご相談ください。 03-5348-4631. 電話受付｜ ...||||2018年7月3日 ... こんにちは、経営企画室で役員秘書を担当しているららです。 秘書業務の一つとして、\n弊社代表取締役 吉原ゴウ（以下、ゴウさん）にいただく講演やセミナー依頼の調整・資料\n作成・事後対応をおこなっています。ちなみにゴウさんには、 ...||||4段階高さ調節折れ脚こたつ カクタス 80×80cm+国産こたつ布団 2点セット こたつ \n正方形 日本製 セット. ... 整理収納アドバイザー2級認定講師の方専用のセミナー（\nベーシック）です。 一般の方はお申し込みいただけません。 HK２級認定講師専用\nセミナー（協会 ...",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTF_tUCBqxsNUtRc7koh6Q83obJ4W6bZQ4aKO4tH_3skhRu9MJj5rkbRPE||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDirqQPomdU2XyYrh3e-uTEsw4frSM3rHPWE_f7-_vW6T2lXQZPbF26Uc"
+	},
+	{
+		"t_name": "広報",
+		"role": "担当者",
+		"parent_task_id": 0,
+		"before_date": 120,
+		"date_duration": 90,
+		"t_number": 2
+	},
+	{
+		"t_name": "チラシ作成",
+		"role": "担当者",
+		"parent_task_id": 2,
+		"before_date": 120,
+		"date_duration": 60,
+		"t_number": 2,
+		"reference_url": "https://ppon.askul.co.jp/category/scene/seminar||||https://kingprinters.com/user_guide/templates/design/chirasi_seminar||||https://ppon.askul.co.jp/keyword/search/チラシ",
+		"reference_title": "セミナー、講演会でつかえるチラシテンプレート-パワポンbyアスクル||||セミナーチラシデザインテンプレート | ネット印刷のキングプリンターズ||||チラシ292",
+		"reference_text": "セミナー、講演会のチラシがパワーポイントでつくれる！チラシのテンプレートがログイン\n不要、無料でダウンロードできます。パワポでだれでもかんたん、素早く、本格的な\nデザイン。全119点。||||2019年1月7日 ... セミナーのチラシを簡単に作成することができるデザインテンプレートが無料。子育てや\n相続などの家庭向けセミナー、販促や集客をテーマとしたビジネスセミナーのチラシ作成\nにオススメです。||||パワーポイントでつくれるチラシテンプレートが無料しかもログイン不要でダウンロード\n可能イベントやセール、求人など様々なシーンに ... セミナー. 保険セミナー. ワークライフ\nバランス. 法律セミナー. 夏フェス. 終活セミナー. セミナー. シングルマザー. ガーデニング.",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxQ0IPpY3fxRvdU-V2_DYFXAikzRBxozqYK_BoyJG9oqxIk86vRay0MxAv||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKpuwZBgLVGb141GWEZkDatxC_cG-rD5Ac9Hyxi0ij68Vln1D6Xt1Ei2lV||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxQ0IPpY3fxRvdU-V2_DYFXAikzRBxozqYK_BoyJG9oqxIk86vRay0MxAv"
+	},
+	{
+		"t_name": "PR活動（チラシ配布/HP・月刊紙・新聞掲載）",
+		"role": "担当者",
+		"parent_task_id": 2,
+		"before_date": 90,
+		"date_duration": 89,
+		"t_number": 2,
+		"reference_url": "https://www.bil.jp/seminar/||||https://netamoto.co.jp/seminar/||||https://www.v-pr.net/pr-seminar/",
+		"reference_title": "セミナー情報｜PR会社 | ビルコム株式会社||||広報PRセミナー – 株式会社ネタもと||||【無料】PRセミナー 4.17 - 広報担当者必見！はじめてのオンライン記者会見",
+		"reference_text": "ビルコムでは毎月、広報・PRに関する最新情報やノウハウをお届けする無料セミナーを\n開催しています。マーケティング・広報担当者は、お気軽にご参加ください。||||SEMINAR広報PRセミナー. 経営者限定「PR戦略セミナー」. ファンづくりで “企業・団体\nの価値” を高める ...||||2020.4.17 無料・PRセミナー - 広報初心者のためのオンラインサロン「ゼロイチ広報」\n主宰の野澤直人です。新型コロナウイルス感染拡大の影響で、マスコミ関係者を特定の\n場所に集めて行う従来型記者会見の実施が難しくなっています。そんな中、ローソンなど\n ...",
+		"reference_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSML02NtMFk1r0HCa8yRavTZcYHn-wUE-xZ7qyDMioB7Y-B7tH-h8n3tyE||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xFSSc0MPa0r1sg-nzF55AAV-UydF9De6jFHZFrPwb2v1Mno2d23Or40l"
+	},
+	{
+		"t_name": "PR活動（ダイレクトメール発送）",
+		"role": "担当者",
+		"parent_task_id": 2,
+		"before_date": 50,
+		"date_duration": 20,
+		"t_number": 2,
+		"reference_url": "https://www.jdma.or.jp/seminar/success.php||||https://www.parachute.co.jp/news/20190520_dmseminor/||||https://www.jdma.or.jp/seminar/",
+		"reference_title": "DM成功事例セミナー | JDMA 日本DM協会||||日本郵便主催「DMセミナー」 2019年春 – パラシュート株式会社 ...||||セミナー | JDMA 日本DM協会",
+		"reference_text": "DM成功事例セミナー2019 福岡（5/30）. 第33回全日本DM大賞入賞作品からみる最新\nトレンドや、入賞作品の制作の裏側を聞くことができます。||||2019年5月20日 ... 本年度も、日本郵便様が主催する「DMセミナー」に弊社代表の田中が、セミナー講師\nとして各会場を回りますのでご案内いたします。 販売促進施策についてお悩みの企業様\nによい解決策をご紹介させていただきます。 先週より、今シーズンの ...||||セミナー. 認定資格. DMアドバイザー. DMづくりのヒントなどのDM制作の基礎全般を ...",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkaT9CjuJRY57h0yGYVPtEUGBZY_Sbnmqck7O66K7YCZaxDNp-Jhicd5M||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWE_lJXbMbYK2gEz97efmE6T3qOyz3AnajL_arckHEaj_6khqye-PhP9zR"
+	},
+	{
+		"t_name": "資料作成",
+		"role": "担当者",
+		"parent_task_id": 0,
+		"before_date": 60,
+		"date_duration": 45,
+		"t_number": 3
+	},
+	{
+		"t_name": "受付票・アンケート作成",
+		"role": "担当者",
+		"parent_task_id": 3,
+		"before_date": 60,
+		"date_duration": 30,
+		"t_number": 3,
+		"reference_url": "https://www.newsbase.co.jp/blog/event-idea/reception-template-seminar/||||https://hinagata-journal.com/special/members-list-019||||https://www.isp.co.jp/recruit/graduate/seminar/seminarrecpt.pdf",
+		"reference_title": "セミナーの受付表に使える！テンプレート紹介 – イベント会社のニューズ ...||||セミナー 受付表のテンプレート 40名分 A4縦（エクセル,ナンバーズ ...||||セミナー受付票（PDF）",
+		"reference_text": "セミナー受付表を作成する際に、記載するべき必須項目としては、セミナー参加者の氏名\n、会社名、役職、部署、連絡先の電話番号、メールアドレスなどがあります。それぞれ見\nていきましょう。 ・氏名. まずはセミナー参加者の氏名を記載します。氏名はフルネーム\nで ...||||セミナー 受付表のテンプレート 40名分 A4縦（Numbers,Excel）です。会社名、氏名、\n連絡先、メールアドレスの記入欄があります！Mac,Windows,(iPhone,Android)に対応\n！自由に編集することが可能です。無料でひな形をダウンロードしてお使いください。||||◇Ａ４でプリントし、太枠内をご記入のうえ、セミナー当日にご持参ください。 このシート\nによる選考は一切行いませんので、お気軽にご記入ください。 セミナー受付票. ◇訪問日\nレイアウトをいいます。勉強会や講演会、セミナーなど1人が複数人に対して授業を行う\n際にこの形式をとります。他に資格や検定試験、筆記テストの際にも使用され ...||||成功するセミナーは会場のレイアウトが違う！目的別レイアウト法のページです。貸し\n会議室・レンタルスペース・イベントスペースをお探しならフクラシアへ。格安料金で各種\nミーティング・会議・研修に最適です。セミナー・カンファレンスのみならず試験会場・展示\n ...||||レイアウト 間取り図 図面 配置図 秋葉原 ハンドレッドスクエア倶楽部 秋葉原 ハンド\nレッドスクエア倶楽部 の レイアウト 間取り図 図面 配置図 をご案内します。 レイアウト \nは 研修会、会議室、講習会、展示会,セミナー,講演会,パーティーで自由自在です。 ロの\n字 ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyYfrbembPwPEqMbSZz08TwcEyzFY1mKre-wP9x3Zhzrrt91JHpZLSa9Y||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQCbSW3pHBfcuaPw3811Gu-62wIn1T2SCAMQbGH_LCYA4EUjhy4XUy3I7G||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvALI1oZdM39JDLzitTLMCZJXtNhZbcgO9dEZoYmhEFecnOHTtIMtmMqU"
+	},
+	{
+		"t_name": "プレゼン資料・進行マニュアル作成",
+		"role": "担当者",
+		"parent_task_id": 3,
+		"before_date": 30,
+		"date_duration": 15,
+		"t_number": 3,
+		"reference_url": "https://www.nitenichi.biz/seminar/||||https://www.businesscoach.co.jp/seminar/s160920.html||||https://www.science.co.jp/seminar/document.html",
+		"reference_title": "セミナー | マニュアル整備の2.1 | 株式会社2.1 | Nitenichi. INC.||||現場力を高める『業務マニュアル作成・活用』セミナー - セミナーのご案内 ...||||マニュアル作成セミナー | セミナー・研修 | ヒューマンサイエンス",
+		"reference_text": "【大好評につき増枠決定！】 皆様のリクエストにお答えして開催日程を増加しました！\n業務の可視化や整理する力が身につくため、研修としてもご利用いただいております。 \nマニュアル職人を育成する「マニュアル作成講座」. 本研修では、企業がマニュアルを\n整備 ...||||マニュアルの作成は、 「業務の見える化＝洗い出し」からスタートします。 洗い出した\n業務を標準化することで、新人育成も含めたスムーズな引き継ぎ、業務の改善効果\nによる残業削減が実現します。 本セミナーでは、 「マニュアル作成の目的」を理解した上\nで、 ...||||マニュアル作成セミナー. 「開発担当が取説を作成しているがわかりにくい」; 「業務\nマニュアル複数の担当者で作成。ルールがなく、書き方がバラバラ・・・」; 「問題があるの\nは自覚しているが、どう改善したらいいのかわからない」. 現役のテクニカルライターが\nこの ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTXRdJuQSpxYlCSbjbMt5nVN0TU_8RoCj-MQerYJvEws--k-QWPNeHtA||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0M8fx2kPaCqCAWQolsE8kW3UyWJkfA5Suuyj1qnHeqW7EdBGE7S2GmagS"
+	},
+	{
+		"t_name": "当日準備",
+		"role": "担当者",
+		"parent_task_id": 0,
+		"before_date": 15,
+		"date_duration": 15,
+		"t_number": 4
+	},
+	{
+		"t_name": "申し込み名簿共有",
+		"role": "担当者",
+		"parent_task_id": 4,
+		"before_date": 15,
+		"date_duration": 5,
+		"t_number": 4,
+		"reference_url": "https://kintone-sol.cybozu.co.jp/apps/011-seminar.html||||https://www.waseda.jp/student/kosei/seminar-house/nagare.html||||https://www.meiji.ac.jp/campus/seminar_house/riyoumoushikomi.html",
+		"reference_title": "セミナー参加者名簿 セミナーの申込者を管理するアプリです。||||利用手続きの流れ｜早稲田大学 セミナーハウス｜学生生活支援 ...||||厚生施設利用申込・各種書類書式について | 明治大学",
+		"reference_text": "開催日ごとの申込数をすばやく確認. 開催日ごとに絞り込めるので、それぞれの開催日\nの申込数がチェックできます。追加集客や応募締切など、必要な対応をすぐに行えます\n。 ワンクリックで歩留まりの集計. 出欠状況を記載しておけば、セミナーごとの歩留まりが\n ...||||抽選申込み. MyWaseda の「学生生活」―「セミナーハウス」―「利用申込み」 へと入る。 \n1)利用するセミナーハウスと、利用希望日を選択する。（予約状況画面） ... 随時先着順\n申込期間より前は、支払方法の選択や名簿提出方法の選択はできません。 5)宿泊者 ...||||厚生施設の利用申込み・手続きはOh-o!Meijiアンケート機能およびグループ機能を使用\nし行います。 ※申込受付は利用日の1カ月前の原則1日から利用開始日の10日前（土・\n日・祝日除く）まで。 「厚生施設の申込み～利用までの手続き手順」は以下の ...",
+		"reference_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmEFR951wq442k3s0eQ6u09-5Wgc8Ftq9PP1no7ZrLEmHZIPwRcNVr||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYS9H2zf8WdOSvKaNAhyC9YSuilskC5B9wE1hUJERNQeQAxLuIaMDUTCgT"
+	},
+	{
+		"t_name": "当日配布準備",
+		"role": "担当者",
+		"parent_task_id": 4,
+		"before_date": 15,
+		"date_duration": 5,
+		"t_number": 4,
+		"reference_url": "https://www.mhlw.go.jp/content/12600000/000361937.pdf||||www.aigo.or.jp/archives/2019/post-195.html||||https://www.powerweb.co.jp/marketing-qa/seminar-resume-distribution.php",
+		"reference_title": "01 当日配布プログラム（第136回市町村セミナー）||||令和元年度相談支援・就業支援セミナー 当日配布資料の販売について ...||||セミナー資料は当日配布せず、マーケティングオートメーション（MA）を ...",
+		"reference_text": "2018年9月21日 ... 二 【行政説明】. 「平成 29 年度介護予防・日常生活支援総合事業及び生活支援体制\n整備. 事業実施状況調査について～概要と今後の課題～」. 厚生労働省老健局振興課. \n課長補佐 桜井 宏充. 三 【自治体事例紹介】. ～地域のニーズ把握や ...||||2019年10月24日 ... 令和元年度相談支援・就業支援セミナー 当日配布資料の販売について. 「令和元年度\n相談支援・就業支援セミナー（10月15日・16日）」の当日資料を１部1,300円（送料・税込\n）で販売しております。 （販売部数に限りがありますで、売り切れとなり ...||||2017年12月21日 ... さらには、当日都合によりセミナーに参加できなかった方に対して、別のメールにより\n資料ダウンロードをインセンティブに活用することも可能です。 セミナーに集中して\nいただくために、あえて当日資料は配布しない. セミナー当日に資料を配布しない ...",
+		"reference_image": ""
+	},
+	{
+		"t_name": "荷物発送",
+		"role": "担当者",
+		"parent_task_id": 4,
+		"before_date": 1,
+		"date_duration": 1,
+		"t_number": 4,
+		"reference_url": "https://webtan.impress.co.jp/e/2010/08/19/6169||||https://t-ap.jp/room/fixture.html||||https://www.trabox.ne.jp/corporate/seminar_kaisai.html",
+		"reference_title": "失敗しないセミナー当日運営（持ち物リスト＆司会台本サンプル付き ...||||備品リスト／荷物お預かり | 貸し会議室・レンタルセミナールーム TAP高田 ...||||トラボックスセミナー開催・企画のお問い合わせ：物流・運送・荷物の配送 ...",
+		"reference_text": "2010年8月19日 ... 【Web担】2つの便利なサンプルを活用してセミナー当日のオペレーションを乗り切ろう。||||高田馬場駅徒歩3分の貸し会議室・セミナールーム・ ミーティングルーム【TAP高田馬場】\n少人数の打合せや社内会議から大人数でのセミナーや研修会まで、幅広い目的で利用\nできるレンタルスペースです。||||トラボックスの取材・講演」をご検討いただきまして、ありがとうございます！ トラボックス\nはこれまでに数多くのセミナーで講演させていただいてきました。 ◇これまでの実績や、\nこれからの予定などはこちらです。 また、実際の現場の写真はこちらでご確認 ...",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSslwsiBw2_NxinB0nkunXt3k0pVYLmDBOs3TsdJvbW2un66k56WydeKLVC||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9u-eAmnEc3ISFRfAkyFcPfaE-01g1Bj4uC8UUA6wm-8q8oElYcd1M8eg||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfhV9rK-nIkGTTzytomAVr2NvpgI1-rzMxQ-wNeImpGEI0iLRI66Uu_cRg"
+	},
+	{
+		"t_name": "当日",
+		"role": "担当者",
+		"parent_task_id": 4,
+		"before_date": 0,
+		"date_duration": 0,
+		"t_number": 4,
+		"reference_url": "https://webtan.impress.co.jp/e/2010/08/19/6169||||https://www.webtanguide.jp/column/matome0005/||||https://www.innovation.co.jp/urumo/seminar_checklist/",
+		"reference_title": "失敗しないセミナー当日運営（持ち物リスト＆司会台本サンプル付き ...||||初心者必見！自社セミナーの企画・運営ノウハウ参考記事9選！：2017 ...||||セミナー開催当日の運営をスムーズに進める事前準備とチェックリスト ...",
+		"reference_text": "2010年8月19日 ... 【Web担】2つの便利なサンプルを活用してセミナー当日のオペレーションを乗り切ろう。||||今回は、はじめて自社セミナーの企画運営をおこなう担当者を対象に、自社セミナーの\n企画から集客、当日の運営、セミナー後のフォローアップにかけて、知っておくべき\nノウハウ ...||||2016年10月13日 ... 配布物（資料やノベルティ等）は何をお渡しするか事前に決めておき、当日は1セットずつ\nクリアファイルに入れるなど、お持ち帰りいただきやすいよう準備しておきましょう。 会場\n案内. お客様が入口や通路で迷わないよう、「○○セミナー 受付は ...",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSslwsiBw2_NxinB0nkunXt3k0pVYLmDBOs3TsdJvbW2un66k56WydeKLVC||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRC-HYH_oXKd_ge6tkvgAwMCOoGgpF_vwLjpkWW0GqcT0htw7D7eWovDM"
+	}
+]

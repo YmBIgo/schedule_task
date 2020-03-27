@@ -45,6 +45,16 @@ class Task < ApplicationRecord
             tasks = generate_it_application_tasks()
         elsif input_word == "オフィス移転" then
             tasks = generate_new_office_tasks()
+        elsif input_word == "法人米国進出" then
+            tasks = generate_us_company_tasks()
+        elsif input_word == "法人ドイツ進出" then
+            tasks = generate_german_company_tasks()
+        elsif input_word == "法人中国進出" then
+            tasks = generate_china_company_tasks()
+        elsif input_word == "法人タイ進出" then
+            tasks = generate_thai_company_tasks()
+        elsif input_word == "法人フィリピン進出" then
+            tasks = generate_philippine_company_tasks()
         elsif input_word == "医院開業"
             tasks = generate_open_doctor_tasks()
         elsif input_word == "飲食店開業" then
@@ -152,6 +162,36 @@ class Task < ApplicationRecord
     def generate_graduate_england()
         tc_graduate_america = generate_public_taskcollection("schedule/lifeevent/school/study_graduateschool_england.json")
         return tc_graduate_america
+    end
+
+    # 米国進出
+    def generate_us_company_tasks()
+        tc_us_company = generate_public_taskcollection("schedule/work/office/foreign/us.json")
+        return tc_us_company
+    end
+
+    # ドイツ進出
+    def generate_german_company_tasks()
+        tc_german_company = generate_public_taskcollection("schedule/work/office/foreign/german.json")
+        return tc_german_company
+    end
+    
+    # 中国進出
+    def generate_china_company_tasks()
+        tc_china_company = generate_public_taskcollection("schedule/work/office/foreign/china.json")
+        return tc_china_company
+    end
+
+    # タイ進出
+    def generate_thai_company_tasks()
+        tc_thai_company = generate_public_taskcollection("schedule/work/office/foreign/thai.json")
+        return tc_thai_company
+    end
+
+    # フィリピン進出
+    def generate_philippine_company_tasks()
+        tc_philippine_company = generate_public_taskcollection("schedule/work/office/foreign/philippine.json")
+        return tc_philippine_company
     end
 
     # 引越し
