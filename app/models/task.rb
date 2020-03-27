@@ -1,6 +1,7 @@
 class Task < ApplicationRecord
     belongs_to :work
     belongs_to :person
+    has_many :checklists
 
     def task_status
         if self.done == true then

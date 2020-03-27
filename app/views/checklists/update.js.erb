@@ -1,0 +1,5 @@
+<% if @checklist != nil %>
+    $("#checklist-form-<%= @checklist.id %>").css("display", "none");
+    $("#checklist-<%= @checklist.id %>").css("display", "block");
+    $("#checklist-<%= @checklist.id %> span").text("<%= @checklist.c_name %>");
+<% end %>

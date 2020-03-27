@@ -5,7 +5,9 @@ class TasksController < ApplicationController
 
     def show
         @task = Task.find(params[:id])
+        @new_checklist = Checklist.new(:task_id => @task.id)
         @work = @task.work
+        @checklists = @task.checklists
         if @task.parent_task_id != 0 then
             @parent_task = Task.find_by(:parent_task_id => 0, :work_id => @work.id, :t_number => @task.t_number)
         end

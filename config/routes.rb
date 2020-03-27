@@ -29,6 +29,10 @@ Rails.application.routes.draw do
   resources :roles, :only => [:show]
   post '/roles/:id' => 'roles#update', as: 'r_update'
 
+  # checklist
+  resources :checklists, :only => [:create, :update]
+  post '/checklists/:id/' => 'checklists#update', as: 'c_update'
+
   # templates
   resources :templates, :only => [:show]
 

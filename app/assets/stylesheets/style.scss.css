@@ -62,3 +62,21 @@
 .d-hour{ display:inline-block; }
 .d-min{ display:inline-block; }
 .d-sec{ display:inline-block; }
+
+/*  */
+
+.checklist-item{
+  padding:7px 20px;;
+}
+
+.checklist-item:hover{
+  background:rgb(234, 234, 234);
+}
+
+/* checkbox @tasks-show */
+
+input[type=checkbox] {
+  -ms-transform: scale(1.7, 1.7);
+  -webkit-transform: scale(1.7, 1.7);
+  transform: scale(1.7, 1.7);
+}

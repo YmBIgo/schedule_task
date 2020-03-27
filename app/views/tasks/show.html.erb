@@ -53,6 +53,67 @@
                     <i class="fas fa-stopwatch" style="margin-left:-30px;"></i><p id="sd-days" style="display:inline-block;text-align:left;margin-top:10px;margin-left:20px;"></p>
                 </div>
             </span>
+            <div class="generate-checklist-section" style="margin-top:20px;">
+                <p><i class="fas fa-pen"></i>　チェックリスト</p><small>名前実装済み, チェックリストバグと格闘</small>
+                <div id="checklist-inner">
+                    <div id="checklist-update-section">
+                        <% @checklists.each do |check_l| %>
+                            <div id="checklist-<%= check_l.id %>">
+                                <p style="width:90%;margin-bottom:0px;" class="checklist-item" onclick="javascript:showUpdateChecklistForm(<%= check_l.id %>)">
+                                    <input type="checkbox">　<span><%= check_l.c_name %></span>
+                                </p>
+                            </div>
+                            <div id="checklist-form-<%= check_l.id %>" style="display:none;">
+                                <%= form_for check_l, method: :post, remote: true do |f| %>
+                                    <p onClick="javascript:unshowUpdateChecklistForm(<%= check_l.id %>, event)" class="checklist-item"><%= f.check_box :checked %>
+                                        <%= f.text_area :c_name, :class => "form-control", :style => "width:70%;display:inline-block;vertical-align:middle;margin-left:10px;" %>
+                                        <br>
+                                        <%= f.submit "保存する", :class => "btn btn-sm btn-success", :style => "margin-top:7px;margin-left:30px;" %>
+                                    </p>
+                                <% end %>
+                            </div>
+                        <% end %>
+                    </div>
+                    <div style="margin-top:20px;">
+                    <%= form_for @new_checklist, method: :post, remote: true do |f| %>
+                        <div id="checklist-new-card" style="display:none;margin-left:50px;" >
+                            <%= f.text_area :c_name, :class => "form-control", :style => "width:70%; display:inline-block;" %>
+                            <%= f.hidden_field :task_id, :value => @task.id %>
+                            <br>
+                            <%= f.submit "保存する", :class => "btn btn-success btn-sm" %>　<a href="javascript:deleteChecklistForm()" style="color:black;vertical-align:middle;"><i class="fas fa-times"></i></a>
+                        </div>
+                    <% end %>
+                    <a href="javascript:appendChecklistForm();" id="checklist_adding_btn" class="btn btn-sm btn-outline-info" style="margin-top:7px;margin-left:50px;">追加する</a>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    var checklist_form_counter = 1;
+                    function appendChecklistForm() {
+                        $("#checklist-new-card").css("display", "block");
+                        $("#checklist_adding_btn").css("display", "none");
+                    }
+                    function deleteChecklistForm() {
+                        $("#checklist-new-card").css("display", "none");
+                        $("#checklist_adding_btn").css({"display": "block", "width": "70px"});       
+                    }
+                    function showUpdateChecklistForm(id){
+                        update_div = "#checklist-form-"+id;
+                        show_div = "#checklist-"+id;
+                        $(update_div).css("display", "block");
+                        $(show_div).css("display", "none");
+                    }
+                    function unshowUpdateChecklistForm(id, event){
+                        var event_id = event.target.id;
+                        console.log(event_id=="checklist_c_name" || event_id=="checklist_checked");
+                        if (event_id!="checklist_c_name"){
+                            update_div = "#checklist-form-"+id;
+                            show_div = "#checklist-"+id;
+                            $(update_div).css("display", "none");
+                            $(show_div).css("display", "block");
+                        }
+                    }
+                </script>
+            </div>
             <div class="schdule-detail-section" style="background-color:#eee;padding:15px;margin-top:20px">
                 <% if @task.reference_url != "" then %>
                     <h5>参考ページ</h5>
