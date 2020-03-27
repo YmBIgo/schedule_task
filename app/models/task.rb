@@ -45,6 +45,10 @@ class Task < ApplicationRecord
             tasks = generate_it_application_tasks()
         elsif input_word == "オフィス移転" then
             tasks = generate_new_office_tasks()
+        elsif input_word == "イベント運営" then
+            tasks = generate_event_operation_tasks()
+        elsif input_word == "海外展示会" then
+            tasks = generate_foreign_exhibition_tasks()
         elsif input_word == "法人米国進出" then
             tasks = generate_us_company_tasks()
         elsif input_word == "法人ドイツ進出" then
@@ -59,6 +63,12 @@ class Task < ApplicationRecord
             tasks = generate_open_doctor_tasks()
         elsif input_word == "飲食店開業" then
             tasks = generate_open_restrant_tasks()
+        elsif input_word == "サロン開業" then
+            tasks = generate_open_salon_tasks()     
+        elsif input_word == "労務業務１〜３月" then
+            tasks = generate_labor_quater1_tasks()
+        elsif input_word == "労務業務４〜６月" then
+            tasks = generate_labor_quater2_tasks()       
         elsif input_word == "論文" then
             tasks = generate_article_tasks()
         elsif input_word == "アメリカ大学院留学" then
@@ -128,6 +138,12 @@ class Task < ApplicationRecord
         return tc_kids_event_basic
     end
 
+    # イベント　運営
+    def generate_event_operation_tasks()
+        tc_event_basic = generate_public_taskcollection("schedule/work/company/event_operation.json")
+        return tc_event_basic
+    end
+
     # 会社採用
     def generate_company_recruit_tasks()
         tc_company_recruit = generate_public_taskcollection("schedule/work/job_hunting/company_recruit.json")
@@ -162,6 +178,12 @@ class Task < ApplicationRecord
     def generate_graduate_england()
         tc_graduate_america = generate_public_taskcollection("schedule/lifeevent/school/study_graduateschool_england.json")
         return tc_graduate_america
+    end
+
+    # 海外展示会
+    def generate_foreign_exhibition_tasks()
+        tc_foreign_exhibition = generate_public_taskcollection("schedule/work/company/foreign_exhibition.json")
+        return tc_foreign_exhibition
     end
 
     # 米国進出
@@ -248,6 +270,18 @@ class Task < ApplicationRecord
         return tc_new_office
     end
 
+    # 労務１
+    def generate_labor_quater1_tasks()
+        tc_labor_quater1 = generate_public_taskcollection("schedule/work/company/workflow/labor/labor_quater1.json")
+        return tc_labor_quater1
+    end
+
+    # 労務２
+    def generate_labor_quater2_tasks()
+        tc_labor_quater2 = generate_public_taskcollection("schedule/work/company/workflow/labor/labor_quater2.json")
+        return tc_labor_quater2
+    end
+
     # デイサービス事業所開設
     def generate_open_daycare_tasks()
         tc_daycare = generate_public_taskcollection("schedule/work/entrepreneur/daycare.json")
@@ -264,6 +298,12 @@ class Task < ApplicationRecord
     def generate_open_doctor_tasks()
         tc_open_doctor = generate_public_taskcollection("schedule/work/entrepreneur/open_doctor.json")
         return tc_open_doctor
+    end
+
+    # サロン開業
+    def generate_open_salon_tasks()
+        tc_open_salon = generate_public_taskcollection("schedule/work/entrepreneur/open_salon.json")
+        return tc_open_salon
     end
     
     # 合宿

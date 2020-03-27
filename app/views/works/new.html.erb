@@ -1,14 +1,10 @@
 <% list_count = 0 %>
-<div style="margin:50px 60px;">
-    <a class="btn btn-primary" href="#search-plan1">デザイン案1</a>　　
-    <a class="btn btn-warning" href="#search-plan2">デザイン案2(バグあり & デザインのみで未実装...)</a>
-</div>
-<hr>
 
-<div id="search-plan1" style="margin:0 60px;">
+<div id="search-plan1" style="margin:50px 60px 20px 60px;">
     <%= form_for(@work) do |f| %>
-        <h3><%= f.label :w_name, :value => "タイトル" %>　<small><span id="start-date"><%= params["start-date"] %></span>から<span id="end-date"><%= params["end-date"] %></span>まで</small></h3>
-        <%= f.text_field :w_name, :value => "合宿1", :class => "form-control", :style => "width:200px;" %>
+        <h3>
+            <%= f.label :w_name, :value => params["schedule-type"] %>　<%= f.text_field :w_name, :value => params["schedule-type"], :class => "form-control", :style => "width:200px;display:inline-block;margin-bottom:5px;" %>
+        </h3>
         <br>
         <div class="row">
             <% d_task_count = 10; d_task_duration_sum = 0; d_task_duration_average = 0; d_task_parent_count = 0; %>
@@ -85,7 +81,7 @@
                                 scale_height: 27,
                                 min_column_width:80,
                                 scales:[
-                                    {unit: "day", step: 1, format: "%d %M"}
+                                    {unit: "day", step: 1, format: "%M%d日"}
                                 ]
                             },
                             {
@@ -93,13 +89,7 @@
                                 scale_height: 50,
                                 min_column_width:50,
                                 scales:[
-                                    {unit: "week", step: 1, format: function (date) {
-                                        var dateToStr = gantt.date.date_to_str("%d %M");
-                                        var endDate = gantt.date.add(date, -6, "day");
-                                        var weekNum = gantt.date.date_to_str("%W")(date);
-                                        return "#" + weekNum + ", " + dateToStr(date) + " - " + dateToStr(endDate);
-                                    }},
-                                    {unit: "day", step: 1, format: "%j %D"}
+                                    {unit: "week", step: 1, format: "%M%d日"}
                                 ]
                             },
                             {
@@ -107,13 +97,7 @@
                                 scale_height: 50,
                                 min_column_width:50,
                                 scales:[
-                                    {unit: "week", step: 2, format: function (date) {
-                                        var dateToStr = gantt.date.date_to_str("%d %M");
-                                        var endDate = gantt.date.add(date, -6, "day");
-                                        var weekNum = gantt.date.date_to_str("%W")(date);
-                                        return "#" + weekNum + ", " + dateToStr(date) + " - " + dateToStr(endDate);
-                                    }},
-                                    {unit: "day", step: 1, format: "%j %D"}
+                                    {unit: "week", step: 2, format: "%M%d日"}
                                 ]
                             },
                             {
@@ -122,7 +106,6 @@
                                 min_column_width:120,
                                 scales:[
                                     {unit: "month", format: "%F, %Y"},
-                                    {unit: "month", format: ""}
                                 ]
                             },
                             {
@@ -200,6 +183,7 @@
     </div>
 </div>
 <% end %>
+<hr>
 <div id="search-plan2" style="margin:40px 60px;">
     <% t_start_date = Date.new; t_end_date = Date.new; t_diff_date = Date.new %>
     <% task_count = 0; %>
