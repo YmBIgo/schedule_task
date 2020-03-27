@@ -1,272 +1,286 @@
 <% list_count = 0 %>
 
-<div id="search-plan1" style="margin:50px 60px 20px 60px;">
-    <%= form_for(@work) do |f| %>
-        <h3>
-            <%= f.label :w_name, :value => params["schedule-type"] %>　<%= f.text_field :w_name, :value => params["schedule-type"], :class => "form-control", :style => "width:200px;display:inline-block;margin-bottom:5px;" %>
-        </h3>
-        <br>
-        <div class="row">
-            <% d_task_count = 10; d_task_duration_sum = 0; d_task_duration_average = 0; d_task_parent_count = 0; %>
-            <%= fields_for 'tasks[]', @tasks do |task| %>
-                <p style="margin-left:20px">
-                <a class="btn btn-success" href="javascript:zoomIn()">拡大する</a>　<a href="javascript:zoomOut()" class="btn btn-info">縮小する</a>
-                </p>
-                <br>
-                <div id="gantt_here" style='width:90%; height:400px;margin-left:5%;margin-bottom:30px;'></div>
-                <script>
-                    var tasks = {
-                        data:[
-                            <% task.object.collection.each do |c_task| %>
-                                <% t_start_date = year_month_date(@today.prev_day(c_task.before_date)); %>
-                                <% g_start_date = dhx_start_date(t_start_date) %>
-                                <% if c_task.parent_task_id == 0 then %>
-                                    <% d_task_parent_count += 1; %>
-                                    <% d_task_duration_sum += c_task.date_duration; %>
-                                    {id:<%= c_task.t_number %>, text:"<%= c_task.t_name %>", start_date:"<%= g_start_date %>", duration:<%= c_task.date_duration %>, parent:<%= c_task.parent_task_id %>},
-                                <% else %>
-                                    <% d_task_count += 1; %>
-                                    {id:<%= d_task_count %>, text:"<%= c_task.t_name %>", start_date:"<%= g_start_date %>", duration:<%= c_task.date_duration %>, parent:<%= c_task.parent_task_id %>},
-                                <% end %>
-                            <% end %>
-                            <% d_task_duration_average = d_task_duration_sum / d_task_parent_count %>
-                        ]
-                    };
-                    gantt.init("gantt_here");
-                    gantt.parse(tasks);
+<div class="row" style="margin:50px 30px 30px 30px;">
+    <div class="col-sm-3">
+        <h6><i class="fas fa-align-center" style="margin-bottom:24px;"></i>　テンプレート</h6>
+        <ul class="nav flex-column nav-pills nav-stacked">
+            <% @templates.each do |template| %>
+                <% if template.te_work_names.split(",").include?(params["schedule-type"]) %>
+                    <li class="nav-item"><a class="nav-link active" href="/templaes/<%= template.id %>"><%= template.te_name %></a></li>
+                <% else %>
+                    <li class="nav-item"><a class="nav-link" href="/templates/<%= template.id %>"><%= template.te_name %></a></li>
+                <% end %>
+            <% end %>
+        </ul>
+    </div>
+    <div class="col-sm-9">
+        <div id="search-plan1" style="margin-left:5%">
+            <%= form_for(@work) do |f| %>
+                <h3>
+                    <%= f.label :w_name, :value => params["schedule-type"] %>　<%= f.text_field :w_name, :value => params["schedule-type"], :class => "form-control", :style => "width:200px;display:inline-block;margin-bottom:5px;" %>
+                </h3>
+                <input type="hidden" name="template" value="<%= params["schedule-type"] %>">
+                <div class="row">
+                    <% d_task_count = 10; d_task_duration_sum = 0; d_task_duration_average = 0; d_task_parent_count = 0; %>
+                    <%= fields_for 'tasks[]', @tasks do |task| %>
+                        <p>
+                        <a class="btn btn-success" href="javascript:zoomIn()">拡大する</a>　<a href="javascript:zoomOut()" class="btn btn-info">縮小する</a>
+                        </p>
+                        <br>
+                        <div id="gantt_here" style='width:90%; height:400px;margin-bottom:30px;'></div>
+                        <script>
+                            var tasks = {
+                                data:[
+                                    <% task.object.collection.each do |c_task| %>
+                                        <% t_start_date = year_month_date(@today.prev_day(c_task.before_date)); %>
+                                        <% g_start_date = dhx_start_date(t_start_date) %>
+                                        <% if c_task.parent_task_id == 0 then %>
+                                            <% d_task_parent_count += 1; %>
+                                            <% d_task_duration_sum += c_task.date_duration; %>
+                                            {id:<%= c_task.t_number %>, text:"<%= c_task.t_name %>", start_date:"<%= g_start_date %>", duration:<%= c_task.date_duration %>, parent:<%= c_task.parent_task_id %>},
+                                        <% else %>
+                                            <% d_task_count += 1; %>
+                                            {id:<%= d_task_count %>, text:"<%= c_task.t_name %>", start_date:"<%= g_start_date %>", duration:<%= c_task.date_duration %>, parent:<%= c_task.parent_task_id %>},
+                                        <% end %>
+                                    <% end %>
+                                    <% d_task_duration_average = d_task_duration_sum / d_task_parent_count %>
+                                ]
+                            };
+                            gantt.init("gantt_here");
+                            gantt.parse(tasks);
 
-                    gantt.attachEvent("onAfterTaskAdd", function(id,item){
-                        console.log(item);
-                        console.log(id);
-                        end_date = item.start_date;
-                        end_date.setDate(end_date.getDate()+item.duration);
-                        before_date = Math.floor((item.start_date - new Date)/86400000)
-                        before_date = Math.abs(before_date)
-                        if (parent == 0) { d_task_count ++; parent = d_task_count; }
-                        // 
-                        // t_name / date_duration / start_date / parent / end_date / t_number / t_number
-                        // role
-                        // 
-                        $("#hidden_tasks_section").append('<input value="'+ item.text +'" type="hidden" name="tasks[][t_name]" id="tasks_t_name">');
-                        $("#hidden_tasks_section").append('<input value="'+ item.duration +'" type="hidden" name="tasks[][date_duration]" id="tasks__date_duration">');
-                        $("#hidden_tasks_section").append('<input value="'+ item.start_date.getFullYear() + '-' + (item.start_date.getMonth()+1) + '-' + item.start_date.getDate() +'" type="hidden" name="tasks[][start_date]" id="tasks__start_date">');
-                        $("#hidden_tasks_section").append('<input value="'+ item.end_date.getFullYear() + '-' + (item.end_date.getMonth()+1) + '-' + item.end_date.getDate() +'" type="hidden" name="tasks[][end_date]" id="tasks__end_date">');
-                        $("#hidden_tasks_section").append('<input value="'+ before_date +'" type="hidden" name="tasks[][before_date]" id="tasks__before_date">');
-                        $("#hidden_tasks_section").append('<input value="'+ item.parent +'" type="hidden" name="tasks[][parent_task_id]" id="tasks__parent_task_id">');
-                        $("#hidden_tasks_section").append('<input value="'+ item.parent +'" type="hidden" name="tasks[][t_number]" id="tasks__t_number">');
-                        $("#hidden_tasks_section").append('<input value="'+ '幹事' +'" type="hidden" name="tasks[][role]" id="tasks__role">');
+                            gantt.attachEvent("onAfterTaskAdd", function(id,item){
+                                console.log(item);
+                                console.log(id);
+                                end_date = item.start_date;
+                                end_date.setDate(end_date.getDate()+item.duration);
+                                before_date = Math.floor((item.start_date - new Date)/86400000)
+                                before_date = Math.abs(before_date)
+                                if (parent == 0) { d_task_count ++; parent = d_task_count; }
+                                // 
+                                // t_name / date_duration / start_date / parent / end_date / t_number / t_number
+                                // role
+                                // 
+                                $("#hidden_tasks_section").append('<input value="'+ item.text +'" type="hidden" name="tasks[][t_name]" id="tasks_t_name">');
+                                $("#hidden_tasks_section").append('<input value="'+ item.duration +'" type="hidden" name="tasks[][date_duration]" id="tasks__date_duration">');
+                                $("#hidden_tasks_section").append('<input value="'+ item.start_date.getFullYear() + '-' + (item.start_date.getMonth()+1) + '-' + item.start_date.getDate() +'" type="hidden" name="tasks[][start_date]" id="tasks__start_date">');
+                                $("#hidden_tasks_section").append('<input value="'+ item.end_date.getFullYear() + '-' + (item.end_date.getMonth()+1) + '-' + item.end_date.getDate() +'" type="hidden" name="tasks[][end_date]" id="tasks__end_date">');
+                                $("#hidden_tasks_section").append('<input value="'+ before_date +'" type="hidden" name="tasks[][before_date]" id="tasks__before_date">');
+                                $("#hidden_tasks_section").append('<input value="'+ item.parent +'" type="hidden" name="tasks[][parent_task_id]" id="tasks__parent_task_id">');
+                                $("#hidden_tasks_section").append('<input value="'+ item.parent +'" type="hidden" name="tasks[][t_number]" id="tasks__t_number">');
+                                $("#hidden_tasks_section").append('<input value="'+ '幹事' +'" type="hidden" name="tasks[][role]" id="tasks__role">');
 
-                        $("#hidden_tasks_section").append('<input type="hidden" name="tasks[][reference_url]" id="tasks__reference_url">');
-                        $("#hidden_tasks_section").append('<input type="hidden" name="tasks[][reference_image]" id="tasks__reference_image">');
-                        $("#hidden_tasks_section").append('<input type="hidden" name="tasks[][reference_title]" id="tasks__reference_title">');
-                        $("#hidden_tasks_section").append('<input type="hidden" name="tasks[][reference_text]" id="tasks_reference_text">');
-                    });
-                    gantt.attachEvent("onBeforeLinkAdd", function(id,link){ return false; });
-                    gantt.attachEvent("onAfterTaskDrag", function(id, mode, e){
-                        console.log("#task__start_date_" + id);
-                        start_date_input = $("#task__start_date_"+id)
-                        end_date_input = $("#task__end_date_"+id)
-                        dragged_date_array = $("div[task_id=" + id + "]")[0].getAttribute("aria-label").split(":");
-                        end_date_val = dragged_date_array[dragged_date_array.length-1];
-                        start_date_val = dragged_date_array[dragged_date_array.length-2].replace(" End date", "");
-                        start_date_input.val(start_date_val);
-                        end_date_input.val(end_date_val);
-                    });
-                
+                                $("#hidden_tasks_section").append('<input type="hidden" name="tasks[][reference_url]" id="tasks__reference_url">');
+                                $("#hidden_tasks_section").append('<input type="hidden" name="tasks[][reference_image]" id="tasks__reference_image">');
+                                $("#hidden_tasks_section").append('<input type="hidden" name="tasks[][reference_title]" id="tasks__reference_title">');
+                                $("#hidden_tasks_section").append('<input type="hidden" name="tasks[][reference_text]" id="tasks_reference_text">');
+                            });
+                            gantt.attachEvent("onBeforeLinkAdd", function(id,link){ return false; });
+                            gantt.attachEvent("onAfterTaskDrag", function(id, mode, e){
+                                console.log("#task__start_date_" + id);
+                                start_date_input = $("#task__start_date_"+id)
+                                end_date_input = $("#task__end_date_"+id)
+                                dragged_date_array = $("div[task_id=" + id + "]")[0].getAttribute("aria-label").split(":");
+                                end_date_val = dragged_date_array[dragged_date_array.length-1];
+                                start_date_val = dragged_date_array[dragged_date_array.length-2].replace(" End date", "");
+                                start_date_input.val(start_date_val);
+                                end_date_input.val(end_date_val);
+                            });
+                        
 
-                    var zoomConfig = {
-                        levels: [
-                            {
-                                name:"day",
-                                scale_height: 27,
-                                min_column_width:80,
-                                scales:[
-                                    {unit: "day", step: 1, format: "%M%d日"}
-                                ]
-                            },
-                            {
-                                name:"week",
-                                scale_height: 50,
-                                min_column_width:50,
-                                scales:[
-                                    {unit: "week", step: 1, format: "%M%d日"}
-                                ]
-                            },
-                            {
-                                name:"week2",
-                                scale_height: 50,
-                                min_column_width:50,
-                                scales:[
-                                    {unit: "week", step: 2, format: "%M%d日"}
-                                ]
-                            },
-                            {
-                                name:"month",
-                                scale_height: 50,
-                                min_column_width:120,
-                                scales:[
-                                    {unit: "month", format: "%F, %Y"},
-                                ]
-                            },
-                            {
-                                name:"quarter",
-                                height: 50,
-                                min_column_width:90,
-                                scales:[
-                                    {unit: "month", step: 1, format: "%M"},
+                            var zoomConfig = {
+                                levels: [
                                     {
-                                        unit: "quarter", step: 1, format: function (date) {
-                                            var dateToStr = gantt.date.date_to_str("%M");
-                                            var endDate = gantt.date.add(gantt.date.add(date, 3, "month"), -1, "day");
-                                            return dateToStr(date) + " - " + dateToStr(endDate);
-                                        }
+                                        name:"day",
+                                        scale_height: 27,
+                                        min_column_width:80,
+                                        scales:[
+                                            {unit: "day", step: 1, format: "%M%d日"}
+                                        ]
+                                    },
+                                    {
+                                        name:"week",
+                                        scale_height: 50,
+                                        min_column_width:50,
+                                        scales:[
+                                            {unit: "week", step: 1, format: "%M%d日"}
+                                        ]
+                                    },
+                                    {
+                                        name:"week2",
+                                        scale_height: 50,
+                                        min_column_width:50,
+                                        scales:[
+                                            {unit: "week", step: 2, format: "%M%d日"}
+                                        ]
+                                    },
+                                    {
+                                        name:"month",
+                                        scale_height: 50,
+                                        min_column_width:120,
+                                        scales:[
+                                            {unit: "month", format: "%F, %Y"},
+                                        ]
+                                    },
+                                    {
+                                        name:"quarter",
+                                        height: 50,
+                                        min_column_width:90,
+                                        scales:[
+                                            {unit: "month", step: 1, format: "%M"},
+                                            {
+                                                unit: "quarter", step: 1, format: function (date) {
+                                                    var dateToStr = gantt.date.date_to_str("%M");
+                                                    var endDate = gantt.date.add(gantt.date.add(date, 3, "month"), -1, "day");
+                                                    return dateToStr(date) + " - " + dateToStr(endDate);
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        name:"year",
+                                        scale_height: 50,
+                                        min_column_width: 30,
+                                        scales:[
+                                            {unit: "year", step: 1, format: "%Y"}
+                                        ]
                                     }
                                 ]
-                            },
-                            {
-                                name:"year",
-                                scale_height: 50,
-                                min_column_width: 30,
-                                scales:[
-                                    {unit: "year", step: 1, format: "%Y"}
-                                ]
+                            };
+
+                            gantt.ext.zoom.init(zoomConfig);
+                            gantt.ext.zoom.setLevel("month");
+                            function zoomIn(){
+                                gantt.ext.zoom.zoomIn();
                             }
-                        ]
-                    };
+                            function zoomOut(){
+                                gantt.ext.zoom.zoomOut()
+                            }
 
-                    gantt.ext.zoom.init(zoomConfig);
-                    gantt.ext.zoom.setLevel("month");
-                    function zoomIn(){
-                        gantt.ext.zoom.zoomIn();
-                    }
-                    function zoomOut(){
-                        gantt.ext.zoom.zoomOut()
-                    }
+                        </script>
+                        <br>
+                        <div id="hidden_tasks_section">
+                        <% # ここの -1 , 9 は、バグかも？ %>
+                        <% t_task_id_count = 9; t_parent_id_count = -1; t_id_count = 0; %>
+                        <% task.object.collection.each do |task_collection_data| %>
+                            <% if task_collection_data.parent_task_id == 0 then %>
+                                <% t_parent_id_count += 1; t_id_count = t_parent_id_count; %>
+                            <% else %>
+                                <% t_task_id_count += 1; t_id_count = t_task_id_count; %>
+                            <% end %>
+                            <% t_start_date = year_month_date(@today.prev_day(task_collection_data.before_date)); %>
+                            <% t_end_date   = year_month_date(@today.prev_day(task_collection_data.before_date).next_day(task_collection_data.date_duration))  %>
+                            <% t_id_count += 1; %>
+                            <!-- -->
+                            <%= task.hidden_field :t_name, :value => task_collection_data.t_name, :id => "task__t_name_#{t_id_count.to_s}" %>
+                            <%= task.hidden_field :role,   :value => task_collection_data.role, :id => "task__role_#{t_id_count.to_s}" %>
+                            <%= task.hidden_field :t_number, :value => task_collection_data.t_number, :id => "task__t_number_#{t_id_count.to_s}" %>
+                            <%= task.hidden_field :before_date,   :value => task_collection_data.before_date, :id => "task__before_date_#{t_id_count.to_s}" %>
+                            <%= task.hidden_field :date_duration,   :value => task_collection_data.date_duration, :id => "task__date_duration_#{t_id_count.to_s}" %>
+                            <%= task.hidden_field :parent_task_id, :value => task_collection_data.parent_task_id, :id => "task__parent_task_id_#{t_id_count.to_s}" %>
+                            
+                            <%= task.hidden_field :reference_url, :value => task_collection_data.reference_url, :id => "task__reference_url_#{t_id_count.to_s}" %>
+                            <%= task.hidden_field :reference_image, :value => task_collection_data.reference_image, :id => "task__reference_image_#{t_id_count.to_s}" %>
+                            <%= task.hidden_field :reference_text, :value => task_collection_data.reference_text, :id => "task__reference_text_#{t_id_count.to_s}" %>
+                            <%= task.hidden_field :reference_title, :value => task_collection_data.reference_title, :id => "task__reference_title_#{t_id_count.to_s}" %>
 
-                </script>
-                <br>
-                <div id="hidden_tasks_section">
-                <% # ここの -1 , 9 は、バグかも？ %>
-                <% t_task_id_count = 9; t_parent_id_count = -1; t_id_count = 0; %>
-                <% task.object.collection.each do |task_collection_data| %>
-                    <% if task_collection_data.parent_task_id == 0 then %>
-                        <% t_parent_id_count += 1; t_id_count = t_parent_id_count; %>
-                    <% else %>
-                        <% t_task_id_count += 1; t_id_count = t_task_id_count; %>
+                            <%= task.hidden_field :start_date, :value => t_start_date, :id => "task__start_date_#{t_id_count.to_s}" %>
+                            <%= task.hidden_field :end_date, :value => t_end_date, :id => "task__end_date_#{t_id_count.to_s}" %>
+                        <% end %>
+                        </div>
                     <% end %>
-                    <% t_start_date = year_month_date(@today.prev_day(task_collection_data.before_date)); %>
-                    <% t_end_date   = year_month_date(@today.prev_day(task_collection_data.before_date).next_day(task_collection_data.date_duration))  %>
-                    <% t_id_count += 1; %>
-                    <!-- -->
-                    <%= task.hidden_field :t_name, :value => task_collection_data.t_name, :id => "task__t_name_#{t_id_count.to_s}" %>
-                    <%= task.hidden_field :role,   :value => task_collection_data.role, :id => "task__role_#{t_id_count.to_s}" %>
-                    <%= task.hidden_field :t_number, :value => task_collection_data.t_number, :id => "task__t_number_#{t_id_count.to_s}" %>
-                    <%= task.hidden_field :before_date,   :value => task_collection_data.before_date, :id => "task__before_date_#{t_id_count.to_s}" %>
-                    <%= task.hidden_field :date_duration,   :value => task_collection_data.date_duration, :id => "task__date_duration_#{t_id_count.to_s}" %>
-                    <%= task.hidden_field :parent_task_id, :value => task_collection_data.parent_task_id, :id => "task__parent_task_id_#{t_id_count.to_s}" %>
-                    
-                    <%= task.hidden_field :reference_url, :value => task_collection_data.reference_url, :id => "task__reference_url_#{t_id_count.to_s}" %>
-                    <%= task.hidden_field :reference_image, :value => task_collection_data.reference_image, :id => "task__reference_image_#{t_id_count.to_s}" %>
-                    <%= task.hidden_field :reference_text, :value => task_collection_data.reference_text, :id => "task__reference_text_#{t_id_count.to_s}" %>
-                    <%= task.hidden_field :reference_title, :value => task_collection_data.reference_title, :id => "task__reference_title_#{t_id_count.to_s}" %>
-
-                    <%= task.hidden_field :start_date, :value => t_start_date, :id => "task__start_date_#{t_id_count.to_s}" %>
-                    <%= task.hidden_field :end_date, :value => t_end_date, :id => "task__end_date_#{t_id_count.to_s}" %>
-                <% end %>
                 </div>
-            <% end %>
-        </div>
-        <div class="text-center" style="margin:0 auto;">
-            <%= f.submit "スケジュール作成する", :class => "btn btn-warning btn-lg", :style => "color:white;" %>
-        </div>
-        <br>
-    </div>
-</div>
-<% end %>
-<hr>
-<div id="search-plan2" style="margin:40px 60px;">
-    <% t_start_date = Date.new; t_end_date = Date.new; t_diff_date = Date.new %>
-    <% task_count = 0; %>
-    <%= fields_for 'tasks[]', @tasks do |task| %>
-        <% task.object.collection.each do |task_collection_data| %>
-            <% task_count += 1 %>
-            <% if task_collection_data.parent_task_id == 0 then %>
-                <% if task_collection_data.t_number != 1  then %>
-                    </tr></table>
-                    <br><hr><br>
-                <% end %>
-                <table class="table table-borderless">
-                <!-- parent の場合 thead 作成 -->
-                <% t_start_date = Date.parse(year_month_date(@today.prev_day(task_collection_data.before_date))); %>
-                <% t_end_date   = Date.parse(year_month_date(@today.prev_day(task_collection_data.before_date).next_day(task_collection_data.date_duration))) %>
-                <% t_diff_date = ((t_end_date - t_start_date + 2).to_i/4).ceil %>
-                <h4>
-                    <%= task_collection_data.t_name %>　<%= t_start_date %>〜<%= t_end_date %>　<a href="" class="btn btn-success btn-sm">タスク追加</a>
-                </h4>
+                <div class="text-center" style="margin:0 auto;">
+                    <%= f.submit "スケジュール作成する", :class => "btn btn-warning btn-lg", :style => "color:white;" %>
+                </div>
                 <br>
-
-                <thead>
-                    <% if task_collection_data.before_date != 0 then %>
-                    <tr style='font-size:12px;'>
-                        <td>タスク</td>
-                        <td><%= "#{t_start_date.to_s} 〜 #{(t_start_date + t_diff_date).to_s}" %></td>
-                        <td><%= "#{t_start_date + t_diff_date+1} から #{t_start_date + t_diff_date*2}" %></td>
-                        <td><%= "#{t_start_date + t_diff_date*2+1} から #{t_start_date + t_diff_date*3}" %></td>
-                        <td><%= "#{t_start_date + t_diff_date*3+1} から #{t_end_date}" %></td>
-                    </tr>
-                    <% else %>
-                    <tr style='font-size:12px;'>
-                        <td width="20%">タスク</td>
-                        <td width="20%"></td>
-                        <td width="40%"><%= "#{t_start_date.to_s} 当日" %></td>
-                        <td width="20%"></td>
-                    </tr>
-                    <% end %>
-                </thead>
-            <% else %>
-                <!-- parent の場合 thead 作成 -->
-                <% tc_start_date = Date.parse(year_month_date(@today.prev_day(task_collection_data.before_date))); %>
-                <% tc_end_date   = Date.parse(year_month_date(@today.prev_day(task_collection_data.before_date).next_day(task_collection_data.date_duration))) %>
-                <% task_collection_data.start_date = tc_start_date; task_collection_data.end_date = tc_end_date; %>
-                <% if task_collection_data.before_date == 0 then %>
-                    <%= task_schedule_to_task_calendar(task_collection_data, t_start_date, t_end_date, t_diff_date, false, true, task_count) %>
-                <% else %>
-                    <%= task_schedule_to_task_calendar(task_collection_data, t_start_date, t_end_date, t_diff_date, false, false, task_count) %>
-                <% end %>
-            <% end %>
+            </div>
         <% end %>
-        </table>
-    <input type="hidden" name="email" value="<%= params[:email] %>">
-</div>
-    <% end %>
-<hr>
-<!-- Modal -->
+        <hr>
+        <div id="search-plan2" style="margin:40px 10px;">
+            <% t_start_date = Date.new; t_end_date = Date.new; t_diff_date = Date.new %>
+            <% task_count = 0; %>
+            <%= fields_for 'tasks[]', @tasks do |task| %>
+                <% task.object.collection.each do |task_collection_data| %>
+                    <% task_count += 1 %>
+                    <% if task_collection_data.parent_task_id == 0 then %>
+                        <% if task_collection_data.t_number != 1  then %>
+                            </tr></table>
+                            <br><hr><br>
+                        <% end %>
+                        <table class="table table-borderless">
+                        <!-- parent の場合 thead 作成 -->
+                        <% t_start_date = Date.parse(year_month_date(@today.prev_day(task_collection_data.before_date))); %>
+                        <% t_end_date   = Date.parse(year_month_date(@today.prev_day(task_collection_data.before_date).next_day(task_collection_data.date_duration))) %>
+                        <% t_diff_date = ((t_end_date - t_start_date + 2).to_i/4).ceil %>
+                        <h4>
+                            <%= task_collection_data.t_name %>　<%= t_start_date %>〜<%= t_end_date %>　<a href="" class="btn btn-success btn-sm">タスク追加</a>
+                        </h4>
+                        <br>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">
-        タイトル　<input type="text" name="t_name" id="m-title" class="form-control" style="width:300px;display:inline-block;">
-        </h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
+                        <thead>
+                            <% if task_collection_data.before_date != 0 then %>
+                            <tr style='font-size:12px;'>
+                                <td>タスク</td>
+                                <td><%= "#{t_start_date.to_s} 〜 #{(t_start_date + t_diff_date).to_s}" %></td>
+                                <td><%= "#{t_start_date + t_diff_date+1} から #{t_start_date + t_diff_date*2}" %></td>
+                                <td><%= "#{t_start_date + t_diff_date*2+1} から #{t_start_date + t_diff_date*3}" %></td>
+                                <td><%= "#{t_start_date + t_diff_date*3+1} から #{t_end_date}" %></td>
+                            </tr>
+                            <% else %>
+                            <tr style='font-size:12px;'>
+                                <td width="20%">タスク</td>
+                                <td width="20%"></td>
+                                <td width="40%"><%= "#{t_start_date.to_s} 当日" %></td>
+                                <td width="20%"></td>
+                            </tr>
+                            <% end %>
+                        </thead>
+                    <% else %>
+                        <!-- parent の場合 thead 作成 -->
+                        <% tc_start_date = Date.parse(year_month_date(@today.prev_day(task_collection_data.before_date))); %>
+                        <% tc_end_date   = Date.parse(year_month_date(@today.prev_day(task_collection_data.before_date).next_day(task_collection_data.date_duration))) %>
+                        <% task_collection_data.start_date = tc_start_date; task_collection_data.end_date = tc_end_date; %>
+                        <% if task_collection_data.before_date == 0 then %>
+                            <%= task_schedule_to_task_calendar(task_collection_data, t_start_date, t_end_date, t_diff_date, false, true, task_count) %>
+                        <% else %>
+                            <%= task_schedule_to_task_calendar(task_collection_data, t_start_date, t_end_date, t_diff_date, false, false, task_count) %>
+                        <% end %>
+                    <% end %>
+                <% end %>
+                </table>
+            <input type="hidden" name="email" value="<%= params[:email] %>">
         </div>
-        <div class="modal-body">
-            <label name="start-date" style="display:inline-block;margin-right:50px;">開始日</label><input type="date" id="m-start-date" class="form-control" style="width:200px;display:inline-block">
-            <br>
-            <label name="end-date" style="display:inline-block;margin-right:50px;">終了日</label><input type="date" id="m-end-date" class="form-control" style="width:200px;display:inline-block">
-        </div>
-        <div class="modal-footer">
-        <a id="edit-button"></a>
-        <a id="delete-button"></a>
-        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">閉じる</button>
+            <% end %>
+        <hr>
+        <!-- Modal -->
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                タイトル　<input type="text" name="t_name" id="m-title" class="form-control" style="width:300px;display:inline-block;">
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <label name="start-date" style="display:inline-block;margin-right:50px;">開始日</label><input type="date" id="m-start-date" class="form-control" style="width:200px;display:inline-block">
+                    <br>
+                    <label name="end-date" style="display:inline-block;margin-right:50px;">終了日</label><input type="date" id="m-end-date" class="form-control" style="width:200px;display:inline-block">
+                </div>
+                <div class="modal-footer">
+                <a id="edit-button"></a>
+                <a id="delete-button"></a>
+                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">閉じる</button>
+                </div>
+            </div>
+            </div>
         </div>
     </div>
-    </div>
 </div>
-
 <script type="text/javascript">
     $('#exampleModal').on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget);

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_25_045453) do
+ActiveRecord::Schema.define(version: 2020_03_27_143615) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -79,6 +79,13 @@ ActiveRecord::Schema.define(version: 2020_03_25_045453) do
     t.integer "t_percent", default: 0, null: false
   end
 
+  create_table "templates", force: :cascade do |t|
+    t.string "te_name", default: "", null: false
+    t.text "te_work_names", default: "", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "works", force: :cascade do |t|
     t.string "w_name", default: "", null: false
     t.text "content", default: "", null: false
@@ -87,6 +94,7 @@ ActiveRecord::Schema.define(version: 2020_03_25_045453) do
     t.string "email", default: "", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "template_id", default: 1, null: false
   end
 
 end

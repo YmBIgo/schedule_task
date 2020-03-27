@@ -11,6 +11,7 @@ class WorksController < ApplicationController
         else
             @today = Time.parse(params["start-date"])
         end
+        @templates = Template.all
         @tasks = Task.new.default_input(params["schedule-type"])
         @task = TaskCollection.new
         @work  = Work.new
@@ -34,9 +35,11 @@ class WorksController < ApplicationController
         @work = Work.new(work_params)
         @tasks = TaskCollection.new(task_params)
         email = params[:email]
+        template_name = params[:template]
         while (work_url = SecureRandom.hex(10))
             if Work.find_by(:w_url => work_url) == nil then
-                @work.update(:w_url => work_url, :w_percent => 0)
+                template_id = @work.template_name_id(template_name)
+                @work.update(:w_url => work_url, :w_percent => 0, :template_id => template_id)
                 break
             end
         end

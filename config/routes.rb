@@ -28,4 +28,7 @@ Rails.application.routes.draw do
   resources :roles, :only => [:show]
   post '/roles/:id' => 'roles#update', as: 'r_update'
 
+  # templates
+  resources :templates, :only => [:show]
+
 end
