@@ -20,7 +20,10 @@
         </div>
         <div class="col-sm-5" style="margin-left:-20px;">
             <div style="margin-top:0px;">
-            <p style="margin-bottom:20px;font-size:21px;"><strong>開始する日を入力しましょう。<br><small>or 終了する日(条件分岐させる)</small></strong></p>
+            <p style="margin-bottom:20px;font-size:21px;">
+            <strong>開始する日を入力しましょう。<br>
+            <small><固定日 or 終了する日><br>を条件分岐させる</small></strong>
+            </p>
             <form action="/works/new" method="get">
                 <label name="start-date" style="margin-bottom:20px;">開始日</label>
                 <input type="date" name="start-date" class="form-control" value="<%= year_month_date(Time.now) %>">

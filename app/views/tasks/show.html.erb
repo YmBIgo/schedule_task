@@ -84,7 +84,7 @@
                             <%= f.submit "保存する", :class => "btn btn-success btn-sm" %>　<a href="javascript:deleteChecklistForm()" style="color:black;vertical-align:middle;"><i class="fas fa-times"></i></a>
                         </div>
                     <% end %>
-                    <a href="javascript:appendChecklistForm();" id="checklist_adding_btn" class="btn btn-sm btn-outline-info" style="margin-top:7px;margin-left:50px;">追加する</a>
+                    <a href="javascript:appendChecklistForm();" id="checklist_adding_btn" class="btn btn-sm btn-outline-info" style="margin-top:7px;margin-left:50px;">小タスクを追加する</a>
                     </div>
                 </div>
                 <script type="text/javascript">
@@ -95,7 +95,7 @@
                     }
                     function deleteChecklistForm() {
                         $("#checklist-new-card").css("display", "none");
-                        $("#checklist_adding_btn").css({"display": "block", "width": "70px"});       
+                        $("#checklist_adding_btn").css({"display": "block", "width": "140px"});       
                     }
                     function showUpdateChecklistForm(id){
                         update_div = "#checklist-form-"+id;

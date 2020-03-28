@@ -1,9 +1,9 @@
-$("#checklist_adding_btn").css({"display": "block", "width": "70px" });
+$("#checklist_adding_btn").css({"display": "block", "width": "140px" });
 $("#checklist-new-card").css({"display": "none"})
 <% if @checklist != nil %>
     var checklist_show_update_html = '<div id="checklist-<%= @checklist.id %>" style="display: block;">\
     <p style="width:90%;margin-bottom:0px;" class="checklist-item" onclick="javascript:showUpdateChecklistForm(<%= @checklist.id %>)">\
-        <input type="checkbox">　<%= @checklist.c_name %></p></div>';
+        <input id="checklist-show-<%= @checklist.id %>-checked" type="checkbox">　<span><%= @checklist.c_name %></span></p></div>';
     var checklist_form_update_html = '<div id="checklist-form-<%= @checklist.id %>" style="display: none;">\
     <form class="edit_checklist" id="edit_checklist_<%= @checklist.id %>" action="/checklists/<%= @checklist.id %>" accept-charset="UTF-8" data-remote="true" method="post">\
     <p onclick="javascript:unshowUpdateChecklistForm(<%= @checklist.id %>)" class="checklist-item"><input name="checklist[checked]" type="hidden" value="0"><input type="checkbox" value="1" name="checklist[checked]" id="checklist_checked">\

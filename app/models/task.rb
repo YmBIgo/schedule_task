@@ -69,7 +69,11 @@ class Task < ApplicationRecord
         elsif input_word == "労務業務１〜３月" then
             tasks = generate_labor_quater1_tasks()
         elsif input_word == "労務業務４〜６月" then
-            tasks = generate_labor_quater2_tasks()       
+            tasks = generate_labor_quater2_tasks()  
+        elsif input_word == "労務業務７〜９月" then
+            tasks = generate_labor_quater3_tasks()  
+        elsif input_word == "労務業務１０〜１２月" then
+            tasks = generate_labor_quater4_tasks()       
         elsif input_word == "論文" then
             tasks = generate_article_tasks()
         elsif input_word == "アメリカ大学院留学" then
@@ -281,6 +285,18 @@ class Task < ApplicationRecord
     def generate_labor_quater2_tasks()
         tc_labor_quater2 = generate_public_taskcollection("schedule/work/company/workflow/labor/labor_quater2.json")
         return tc_labor_quater2
+    end
+
+    # 労務３
+    def generate_labor_quater3_tasks()
+        tc_labor_quater3= generate_public_taskcollection("schedule/work/company/workflow/labor/labor_quater3.json")
+        return tc_labor_quater3
+    end
+
+    # 労務４
+    def generate_labor_quater4_tasks()
+        tc_labor_quater4 = generate_public_taskcollection("schedule/work/company/workflow/labor/labor_quater4.json")
+        return tc_labor_quater4
     end
 
     # デイサービス事業所開設
