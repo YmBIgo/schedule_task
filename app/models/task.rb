@@ -73,7 +73,19 @@ class Task < ApplicationRecord
         elsif input_word == "労務業務７〜９月" then
             tasks = generate_labor_quater3_tasks()  
         elsif input_word == "労務業務１０〜１２月" then
-            tasks = generate_labor_quater4_tasks()       
+            tasks = generate_labor_quater4_tasks()  
+        elsif input_word == "経理業務１〜２月" then
+            tasks = generate_accounting_1_2_tasks()  
+        elsif input_word == "経理業務３〜４月" then
+            tasks = generate_accounting_3_4_tasks()  
+        elsif input_word == "経理業務５〜６月" then
+            tasks = generate_accounting_5_6_tasks()  
+        elsif input_word == "経理業務７〜８月" then
+            tasks = generate_accounting_7_8_tasks()  
+        elsif input_word == "経理業務９〜１０月" then
+            tasks = generate_accounting_9_10_tasks()  
+        elsif input_word == "経理業務１１〜１２月" then
+            tasks = generate_accounting_11_12_tasks()  
         elsif input_word == "論文" then
             tasks = generate_article_tasks()
         elsif input_word == "アメリカ大学院留学" then
@@ -297,6 +309,42 @@ class Task < ApplicationRecord
     def generate_labor_quater4_tasks()
         tc_labor_quater4 = generate_public_taskcollection("schedule/work/company/workflow/labor/labor_quater4.json")
         return tc_labor_quater4
+    end
+
+    # 経理１
+    def generate_accounting_1_2_tasks()
+        tc_accouting_1_2 = generate_public_taskcollection("schedule/work/company/workflow/accounting/accounting_1_2.json")
+        return tc_accouting_1_2
+    end
+
+    # 経理２
+    def generate_accounting_3_4_tasks()
+        tc_accouting_3_4 = generate_public_taskcollection("schedule/work/company/workflow/accounting/accounting_3_4.json")
+        return tc_accouting_3_4
+    end
+
+     # 経理３
+     def generate_accounting_5_6_tasks()
+        tc_accouting_5_6 = generate_public_taskcollection("schedule/work/company/workflow/accounting/accounting_5_6.json")
+        return tc_accouting_5_6
+    end   
+
+    # 経理４
+    def generate_accounting_7_8_tasks()
+        tc_accouting_7_8 = generate_public_taskcollection("schedule/work/company/workflow/accounting/accounting_7_8.json")
+        return tc_accouting_7_8
+    end
+
+    # 経理５
+    def generate_accounting_9_10_tasks()
+        tc_accouting_9_10 = generate_public_taskcollection("schedule/work/company/workflow/accounting/accounting_9_10.json")
+        return tc_accouting_9_10
+    end
+
+    # 経理６
+    def generate_accounting_11_12_tasks()
+        tc_accouting_11_12 = generate_public_taskcollection("schedule/work/company/workflow/accounting/accounting_11_12.json")
+        return tc_accouting_11_12
     end
 
     # デイサービス事業所開設
