@@ -54,13 +54,14 @@
                 </div>
             </span>
             <div class="generate-checklist-section" style="margin-top:20px;">
-                <p><i class="fas fa-pen"></i>　チェックリスト</p><small>名前実装済み, チェックリストバグと格闘</small>
+                <p><i class="fas fa-pen"></i>　チェックリスト</p>
                 <div id="checklist-inner">
                     <div id="checklist-update-section">
                         <% @checklists.each do |check_l| %>
                             <div id="checklist-<%= check_l.id %>">
                                 <p style="width:90%;margin-bottom:0px;" class="checklist-item" onclick="javascript:showUpdateChecklistForm(<%= check_l.id %>)">
-                                    <input type="checkbox">　<span><%= check_l.c_name %></span>
+                                    <input type="checkbox" id="checklist-show-<%= check_l.id %>-checked" <% if check_l.checked == true %> checked <% end %>>　
+                                    <span style="<% if check_l.checked == true %> text-decoration:line-through; <% end %>"><%= check_l.c_name %></span>
                                 </p>
                             </div>
                             <div id="checklist-form-<%= check_l.id %>" style="display:none;">
@@ -74,7 +75,7 @@
                             </div>
                         <% end %>
                     </div>
-                    <div style="margin-top:20px;">
+                    <div style="margin-bottom:40px;">
                     <%= form_for @new_checklist, method: :post, remote: true do |f| %>
                         <div id="checklist-new-card" style="display:none;margin-left:50px;" >
                             <%= f.text_area :c_name, :class => "form-control", :style => "width:70%; display:inline-block;" %>
@@ -104,12 +105,13 @@
                     }
                     function unshowUpdateChecklistForm(id, event){
                         var event_id = event.target.id;
-                        console.log(event_id=="checklist_c_name" || event_id=="checklist_checked");
                         if (event_id!="checklist_c_name"){
-                            update_div = "#checklist-form-"+id;
-                            show_div = "#checklist-"+id;
-                            $(update_div).css("display", "none");
-                            $(show_div).css("display", "block");
+                            if(event_id!="checklist_checked"){
+                                update_div = "#checklist-form-"+id;
+                                show_div = "#checklist-"+id;
+                                $(update_div).css("display", "none");
+                                $(show_div).css("display", "block");
+                            }
                         }
                     }
                 </script>

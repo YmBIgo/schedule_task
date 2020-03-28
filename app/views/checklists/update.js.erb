@@ -2,4 +2,11 @@
     $("#checklist-form-<%= @checklist.id %>").css("display", "none");
     $("#checklist-<%= @checklist.id %>").css("display", "block");
     $("#checklist-<%= @checklist.id %> span").text("<%= @checklist.c_name %>");
+    console.log("#checklist-show-<%= @checklist.id %>-checked");
+    $("#checklist-show-<%= @checklist.id %>-checked").prop('checked', <%= @checklist.checked %>);
+    if (<%= @checklist.checked %> == true){
+        $("#checklist-<%= @checklist.id %> span").css("text-decoration", "line-through");
+    }else{
+        $("#checklist-<%= @checklist.id %> span").css("text-decoration", "");
+    }
 <% end %>
