@@ -1,0 +1,30 @@
+<div class="row" style="margin:50px 30px 30px 30px;">
+    <div class="col-sm-3">
+        <h6><i class="fas fa-align-center" style="margin-bottom:24px;"></i>　テンプレート</h6>
+        <ul class="nav flex-column nav-pills nav-stacked">
+            <% @templates.each do |template| %>
+                <% if template.te_name == @template.te_name then %>
+                    <li class="nav-item"><a class="nav-link active" href="/templates/<%= template.id %>"><%= template.te_name %></a></li>
+                <% else %>
+                    <li class="nav-item"><a class="nav-link" href="/templates/<%= template.id %>"><%= template.te_name %></a></li>
+                <% end %>
+            <% end %>
+        </ul>
+    </div>
+    <div class="col-sm-9" style="padding-left:40px;">
+        <div class="">
+            <div class="text-center"><h3><i class="fas fa-align-left"></i>　カテゴリーごと</h3></div>
+            <br><br>
+            <div class="row">
+                <% @templates.each do |template| %>
+                <div class="top-category-card col-sm-3">
+                    <a href="/templates/<%= template.id %>" style="color:black;">
+                    <h6 style="margin-left:20px;"><i class="fas fa-angle-double-right"></i>　<%= template.te_name %></h6>
+                    <img src="https://scheduletask.s3-ap-northeast-1.amazonaws.com/images/common/image<%= template.id %>.png" width="90%" style="margin-left:5%">
+                    </a>
+                </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>

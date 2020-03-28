@@ -12,7 +12,9 @@
         </ul>
     </div>
     <div class="col-sm-9" style="padding-left:40px;">
-        <h3>「<%= @template.te_name %>」の ToDoリスト</h3>
+        <div class="text-center">
+            <h3><i class="fas fa-align-left"></i>　「<%= @template.te_name %>」の ToDoリスト</h3>
+        </div>
         <br>
         <div class="row">
         <% @template_cards.each do |t_card| %>

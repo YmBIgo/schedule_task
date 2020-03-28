@@ -1,0 +1,37 @@
+<div class="row" style="margin:50px 30px 30px 30px;">
+    <div class="col-sm-3">
+        <h6><i class="fas fa-align-center" style="margin-bottom:24px;"></i>　テンプレート</h6>
+        <ul class="nav flex-column nav-pills nav-stacked">
+            <% @templates.each do |template| %>
+                <% if template.te_name == @template.te_name then %>
+                    <li class="nav-item"><a class="nav-link active" href="/templates/<%= template.id %>"><%= template.te_name %></a></li>
+                <% else %>
+                    <li class="nav-item"><a class="nav-link" href="/templates/<%= template.id %>"><%= template.te_name %></a></li>
+                <% end %>
+            <% end %>
+        </ul>
+    </div>
+    <div class="col-sm-9" style="padding-left:40px;">
+        <div class="text-center">
+        <h3><i class="fas fa-align-left"></i>「やらかしたらヤバイ！！！」用事一覧</h3>
+        </div>
+        <br>
+        <div class="row">
+        <% @templates.each do |t_template| %>
+            <% template_cards = t_template.te_work_names.split(",") %>
+            <% template_cards.each do |t_card| %>
+                <div class="col-sm-4" style="padding:15px 10px;">
+                    <a href="/works_new_confirm?schedule-type=<%= t_card %>">
+                    <!-- <a href="/works/new?schedule-type=<%= t_card %>"> -->
+                    <p style="color:black;"><i class="fas fa-angle-double-right"></i>　<%= t_card %></p>
+                    <img src="https://scheduletask.s3-ap-northeast-1.amazonaws.com/images/common/image<%= (rand(28)+1).to_s %>.png" style="width:90%;opacity:0.87;">
+                    </a>
+                    <div style="margin-top:20px;margin-left:5px;">
+                    <a class="btn btn-sm btn-success" style="color:white" href="/works_new_confirm?schedule-type=<%= t_card %>">ToDoリストを作る</a>
+                    <!-- <a class="btn btn-sm btn-success" style="color:white" href="/works/new?schedule-type=<%= t_card %>">ToDoリストを作る</a> -->
+                    </div>
+                </div>
+            <% end %>
+        <% end %>
+    </div>
+</div>

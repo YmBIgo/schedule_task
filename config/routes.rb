@@ -34,6 +34,7 @@ Rails.application.routes.draw do
   post '/checklists/:id/' => 'checklists#update', as: 'c_update'
 
   # templates
-  resources :templates, :only => [:show]
+  resources :templates, :only => [:show, :index]
+  get '/templates_category', to: 'templates#category'
 
 end
