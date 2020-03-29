@@ -15,12 +15,12 @@ te6 = Template.new(:id => 6,:te_name => "学校生活", :te_work_names => "飲�
 te7 = Template.new(:id => 7,:te_name => "法律", :te_work_names => "相続")
 te8 = Template.new(:id => 8,:te_name => "海外進出", :te_work_names => "法人米国進出,法人ドイツ進出,法人中国進出,法人タイ進出,法人フィリピン進出")
 te9 = Template.new(:id => 9,:te_name => "イベント運営", :te_work_names => "オフィス移転,イベント運営,海外展示会")
-te10 = Template.new(:id => 10,:te_name => "採用", :te_work_names => "会社就活準備,会社高卒採用準備")
+te10 = Template.new(:id => 10,:te_name => "採用", :te_work_names => "会社就活準備,会社高卒採用準備,人事評価４〜７月,人事評価８〜１１月,人事評価１２〜３月,人事教育研修４〜９月,人事教育研修１０〜３月,人事労務管理４月〜３月,人事法定業務４〜６月,人事法定業務７〜９月,人事法定業務１０〜１２月,人事法定業務１〜３月")
 te11 = Template.new(:id => 11,:te_name => "助成金", :te_work_names => "IT補助金")
 te12 = Template.new(:id => 12,:te_name => "ITシステム", :te_work_names => "IT導入")
-te13 = Template.new(:id => 13,:te_name => "労務業務", :te_work_names => "労務業務１〜３月,労務業務４〜６月")
-# te14 = Template.new(:id => ,:te_name => "経理業務", :te_work_names => "")
+te13 = Template.new(:id => 13,:te_name => "労務業務", :te_work_names => "労務業務１〜３月,労務業務４〜６月,労務業務７〜９月,労務業務１０〜１２月")
 te14 = Template.new(:id => 14,:te_name => "不動産", :te_work_names => "中古マンション購入,マンション購入")
+te15 = Template.new(:id => 15,:te_name => "経理業務", :te_work_names => "経理業務１〜２月,経理業務３〜４月,経理業務５〜６月,経理業務７〜８月,経理業務９〜１０月,経理業務１１〜１２月")
 te100 = Template.new(:id => 100,:te_name => "不明", :te_work_names => "")
 
 te1.save; te2.save; te3.save; te4.save; te5.save;
@@ -30,7 +30,7 @@ te11.save; te12.save; te13.save; te14.save; te100.save
 w1 = Work.new(:w_name => "合宿1", :content => "", :w_percent => 0, :w_url => "e4376c18a4f27ef0bd5f", :email => "coffeecup_japan@icloud.com", :template_id => te6.id)
 w1.save
 
-role1 = Role.new(:workurl => w1.w_url, :work_id => w1.id, :password => "kz48", :line_id => "igymb0218", :is_line_friend => true)
+role1 = Role.new(:workurl => w1.w_url, :email => "coffeecup_japan@icloud.com", :password => "kz48", :line_id => "igymb0218", :is_line_friend => true)
 role1.save
 
 p1 = Person.new(:p_name => "たろお", :role => "幹部1")

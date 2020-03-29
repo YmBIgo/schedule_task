@@ -1,9 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#4682b4;color:white;">
   <h1>
     <% if role_signed_in? then %>
-      <a href="/" class="navbar-brand" style="color:rgb(234, 234, 234,1);" href="/works/<%= current_role.workurl %>">Taskuri（というドメイン名） - <%= Work.find(current_role.work_id).w_name %> - </a>
+      <a class="navbar-brand" style="color:rgb(234, 234, 234,1);" href="/roles/<%= current_role.id %>">Taskuri（というドメイン名）</a>
     <% else %>
-      <a href="/" class="navbar-brand" style="color:rgb(234, 234, 234,1);" href="/top">Taskuri（というドメイン名）</a>
+      <a class="navbar-brand" style="color:rgb(234, 234, 234,1);" href="/top">Taskuri（というドメイン名）</a>
     <% end %>
   </h1>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,9 +17,10 @@
       <li class="nav-item">
           <a class="nav-link" href="/templates">「やらかす」カテゴリー一覧</a>
       </li>
-      <% if @work != nil %>
+      <% if current_role != nil then %>
         <li class="nav-item">
-            <a class="nav-link" href="/works/<%= @work.w_url %>"><%= @work.w_name %></a>
+            <a class="nav-link" href="/works/<%= current_role.works.first.w_url %>"><%= current_role.works.first.w_name %></a>
+            <a class="nav-link" href="/roles/<%= current_role.id %> %>">マイページ</a>
         </li>
       <% end %>
       <li class="nav-item">

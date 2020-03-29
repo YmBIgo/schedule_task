@@ -1,6 +1,7 @@
 class Work < ApplicationRecord
     has_many :tasks
     belongs_to :template
+    belongs_to :role
 
     def template_name_id(work_name)
         if ["マイホーム購入", "新居インテリア", "引越し"].include?(work_name) then

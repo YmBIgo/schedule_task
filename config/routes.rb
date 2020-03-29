@@ -18,7 +18,8 @@ Rails.application.routes.draw do
   get '/welcome', to: "works#welcome"
   get '/works_new_confirm', to: "works#confirm"
 
-  # tasks
+  # task
+  # :create も実装
   resources :tasks, :only => [:show, :update]
   post '/tasks/:id/done' => 'tasks#done',   as: 'done'
   post '/tasks/:id/undone' => 'tasks#undone',   as: 'undone'

@@ -34,7 +34,6 @@ ActiveRecord::Schema.define(version: 2020_03_29_153047) do
   create_table "roles", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
-    t.integer "work_id", default: 1, null: false
     t.string "workurl", default: "", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
@@ -46,7 +45,6 @@ ActiveRecord::Schema.define(version: 2020_03_29_153047) do
     t.integer "line_push_period", default: 7, null: false
     t.integer "work_limit", default: 10, null: false
     t.index ["reset_password_token"], name: "index_roles_on_reset_password_token", unique: true
-    t.index ["work_id"], name: "index_roles_on_work_id", unique: true
     t.index ["workurl"], name: "index_roles_on_workurl", unique: true
   end
 

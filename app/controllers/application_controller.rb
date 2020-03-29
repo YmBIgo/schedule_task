@@ -4,22 +4,66 @@ class ApplicationController < ActionController::Base
 
     protected
     def configure_permitted_parameters
-        devise_parameter_sanitizer.permit(:sign_up) { |u| u.permit(:work_id, :workurl, :password, :password_confirmation) }
-        devise_parameter_sanitizer.permit(:login) { |u| u.permit(:work_id, :workurl, :password, :password_confirmation) }
+        devise_parameter_sanitizer.permit(:sign_up) { |u| u.permit(:workurl, :email, :password, :password_confirmation) }
+        devise_parameter_sanitizer.permit(:login) { |u| u.permit(:workurl, :email, :password, :password_confirmation) }
     end
     
     def authenticate_role_page!
+        # binding.pry
         if role_signed_in?
-            current_work_url = current_role.workurl
-            current_params = params[:id]
-            if current_params != nil
-                if controller_name == "tasks" then
-                    t_task = Task.find_by(:id => current_params)
-                    unless t_task.work.w_url == current_work_url then redirect_to work_path(current_role.workurl) end
-                elsif controller_name == "works" then
-                    w_work = Work.find_by(:w_url => current_params)
-                    unless w_work.w_url == current_work_url then redirect_to work_path(current_role.workurl) end
+            # 
+            # [redirect 先 を変更する]
+            # 
+            # 原始的だが、action / controller で分ける？
+            # 
+            # tasks     id付き  -> done / undone / pushdate / update
+            #           idなし  ->
+            # checklist id付き  -> update
+            #           idなし  -> create 必要なし？
+            # role      id付き  -> r_update / show
+            # works     idなし  -> 
+            #           id付き  -> show
+            # 
+            # controller_name / action_name で分岐
+            # 
+            if controller_name == "tasks" then
+                if ["done", "undone", "pushdate", "update", "show"].include?(action_name) then
+                    current_task = Task.find(params[:id])
+                    if current_task == nil then
+                        redirect_to "/roles/#{current_role.id}"
+                    else
+                        task_parent = current_task.work.role
+                        unless task_parent == current_role then redirect_to "/roles/#{current_role.id}" end
+                    end
                 end
+            elsif controller_name == "works" then
+                if action_name == "show" then
+                    current_work = Work.find_by(:w_url => params[:id])
+                    if current_work == nil then
+                        redirect_to "/roles/#{current_role.id}"
+                    else
+                        work_parent  = current_work.role
+                        unless work_parent == current_role then redirect_to "/roles/#{current_role.id}" end
+                    end
+                elsif action_name == "welcome" then
+                end
+            elsif controller_name == "checklists" then
+                if action_name == "update" then
+                    current_checklist = Checklist.find(params[:id])
+                    if current_checklist == nil then 
+                        redirect_to "/roles/#{current_role.id}"
+                    else
+                        checklist_parent = current_checklist.task.work.role
+                        unless checklist_parent == current_role then redirect_to "/roles/#{current_role.id}" end
+                    end
+                end
+            elsif controller_name == "roles" then
+                if action_name == "show" then
+                    current_id_role = Role.find(params[:id])
+                    unless current_id_role == current_role then redirect_to "/roles/#{current_role.id}" end
+                end
+            else
+                redirect_to "/roles/#{current_role.id}"
             end
         end
     end

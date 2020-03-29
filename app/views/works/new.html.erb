@@ -266,9 +266,12 @@
             </button>
             </div>
             <div class="modal-body">
-                <label>メールアドレスを入力して下さい</label>
-                <%= f.email_field :email, :class => "form-control", :style => "width:300px;margin-bottom:14px;" %>
-                <%= f.submit "スケジュール作成する", :class => "btn btn-success", :style => "color:white;" %>
+                <p>用事を作成します</p>
+                <% if current_role == nil %>
+                    <label>メールアドレスを入力して下さい</label>
+                    <%= f.email_field :email, :class => "form-control", :style => "width:300px;" %>
+                <% end %>
+                <%= f.submit "スケジュール作成する", :class => "btn btn-success", :style => "color:white;margin-top:14px;" %>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" class="close" data-dismiss="modal" onclick="modalUnZoom()">閉じる</button>

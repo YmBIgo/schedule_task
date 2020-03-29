@@ -19,7 +19,7 @@ class WorksController < ApplicationController
 
     def show
         @work = Work.find_by(:w_url => params[:id])
-        @role = Role.find_by(:work_id => @work.id)
+        @role = @work.role
         @tasks = @work.tasks.order(:id)
         # @recent_tasks = @work.tasks.where.not(:parent_task_id => 0).where('end_date <= ?', Date.today+7).limit(4)
         @recent_tasks = @work.tasks.where.not(:parent_task_id => 0).order(end_date: "ASC").limit(4)
@@ -43,17 +43,26 @@ class WorksController < ApplicationController
                 break
             end
         end
+        
+        if current_role == nil then
+            g_password = generate_password()
+            role = Role.new(:workurl => @work.w_url, :password => g_password, :email => params[:work][:email])
+            if role.save then sign_in role else redirect_to "/works/new"; return end
+        else
+            role = current_role
+        end
+        @work.role_id = role.id
         if @work.save then
             if @tasks.save(@work.id) then
-                g_password = generate_password()
-                role = Role.create(:workurl => @work.w_url, :work_id => @work.id, :password => g_password)
-                if role.save then
-                    works_url = request.url.gsub("/works", "/") + "login?guijhw=" + @work.w_url
-                    # NotificationMailer.send_confirm_to_user(role, g_password, email, works_url).deliver
-                    # NotificationMailer.send_confirm_to_admin(role, g_password, email, works_url).deliver
-                    sign_in role
-                    # ユーザー名とパスワードのページに飛ばせたい
+                works_url = request.url.gsub("/works", "/") + "login?guijhw=" + @work.w_url
+                # NotificationMailer.send_confirm_to_user(role, g_password, email, works_url).deliver
+                # NotificationMailer.send_confirm_to_admin(role, g_password, email, works_url).deliver
+                # ユーザー名とパスワードのページに飛ばせたい
+                if role.works.length == 1 then
                     redirect_to "/welcome?g_password=#{g_password}"
+                    return
+                else
+                    redirect_to "/roles/#{role.id}"
                     return
                 end
             end
@@ -72,12 +81,12 @@ class WorksController < ApplicationController
     private
 
     def generate_password()
-        new_password = SecureRandom.hex(10)[0..3]
+        new_password = SecureRandom.hex(10)[0..8]
         return new_password
     end
 
     def work_params
-        params.require(:work).permit(:w_name)
+        params.require(:work).permit(:w_name, :email)
     end
     def task_params
         params.require(:tasks)

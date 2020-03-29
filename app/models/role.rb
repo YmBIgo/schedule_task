@@ -4,14 +4,16 @@ class Role < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  validates :workurl, presence: true, uniqueness: true, length: {maximum: 24}
-  
-  def email_required?
-    false
-  end
+  has_many :works
 
-  def email_changed?
-    false
-  end
+  # validates :workurl, presence: true, uniqueness: true, length: {maximum: 24}
+  
+  # def email_required?
+  #   false
+  # end
+
+  # def email_changed?
+  #   false
+  # end
 
 end
