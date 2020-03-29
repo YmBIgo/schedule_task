@@ -1,0 +1,122 @@
+[
+	{
+		"t_name": "１２月〜１月",
+		"role": "担当者",
+		"parent_task_id": 0,
+		"before_date": 120,
+		"date_duration": 60,
+		"t_number": 1,
+		"reference_url": "",
+		"reference_title": "",
+		"reference_text": "",
+		"reference_image": ""
+	},
+	{
+		"t_name": "冬季賞与決定",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 120,
+		"date_duration": 15,
+		"t_number": 1,
+		"reference_url": "https://www.weblio.jp/content/冬季賞与||||https://partners.en-japan.com/qanda/desc_607||||https://www.keidanren.or.jp/policy/2017/023.pdf",
+		"reference_title": "「冬季賞与」の意味や使い方 Weblio辞書||||退職意向者の「冬季賞与を減額」してもよい？（人事労務Q&A）｜人事 ...||||2016年 夏季・冬季 賞与・一時金調査結果",
+		"reference_text": "2013年3月22日 ... 「冬季賞与」の意味は企業が従業員に対して、冬季に支払う賞与のこと。Weblio辞書\nでは「冬季賞与」の意味や使い方、用例、類似表現などを解説しています。||||人事労務Q&Aには、「退職意向者の「冬季賞与を減額」してもよい？」など業務の悩みを\n解決する情報が満載！エン人事のミカタは【エンジャパン】が運営する、人事のための\n総合サイトです。||||「2016 年 夏季・冬季 賞与・一時金調査結果」. 2017 年３月 30 日. （一社）日本経済\n団体連合会. （一社）東京経営者協会. Ⅰ．調査の基本事項. 調査目的：企業における\n賞与・一時金の支給実態を把握し、今後の対策の参考と. するため、1953 年から毎年\n実施（ ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIcYhzWgnvrNf63gbyx38iOiq1V6V797KpqLmzEcNP28KAv-leeLt7_cU"
+	},
+	{
+		"t_name": "上期評価フィードバック面談",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 115,
+		"date_duration": 15,
+		"t_number": 1,
+		"reference_url": "https://www.ajs.co.jp/solutionnavigator/column/10012.html||||https://www.insource.co.jp/contents/calendar_table.html||||https://www.kaonavi.jp/dictionary/how-to-interview/",
+		"reference_title": "人事評価のフィードバック面談の方法｜AJS ソリューション・サービス ...||||人事の歳時記||||人事評価の面談方法やポイント、質問、フィードバックとは？ - カオナビ ...",
+		"reference_text": "2018年6月18日 ... 人事評価（人事考課）サイクルの中でも、重要度が高いとされるフィードバック面談です\nが、現実には「結果と処遇を伝える場」にとどまっているケースがあり、面談自体を実施し\nていない企業も存在するようです。 今回は、フィードバック面談の ...||||人事制度, ※等級制度、賃金制度、評価制度、育成制度を関連させて随時再設計→\n規程化. 要員計画 ... 下期評価面談の実施, 夏季賞与の査定, 下期評価フィードバック\n面談 · 上期評価面談の実施, 冬季賞与の査定, 上期評価フィードバック面談 · 上期目標\nの ...||||2017年8月4日 ... 人事評価におけるフィードバック面談. business_img07. 人事評価のフィードバックは\n人材育成の観点からも大変重要なプロセスといえます。 中小 ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlYl6ZDDH4fd_9EcTQ0cNMLBCeG-JRTHuZgN-a6mGX2mBFoY20QJe_8ss||||https://1.bp.blogspot.com/-jkjWb2M6Vr8/XQtdnTiGS4I/AAAAAAAAEz8/105R2yFvC34TsA6uISvG5OvvO3ktLKQKwCLcBGAs/s1600/l_e_others_501.png"
+	},
+	{
+		"t_name": "評価者訓練の企画",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 90,
+		"date_duration": 30,
+		"t_number": 1,
+		"reference_url": "https://www.insource.co.jp/kanrisyoku/hyokasyakokasya_top.html||||https://www.city.kyoto.lg.jp/gyozai/page/0000209350.html||||https://www.insource.co.jp/ken2007/hyoukasya-3h.html",
+		"reference_title": "評価者研修 人材育成に資する評価を実現する:現場で使える研修ならイン ...||||「新任課長級職員研修「マネジメント」」及び「人事評価制度に係る評価者 ...||||（官公庁・自治体向け）評価者研修 ～訓練編（半日間）:現場で使える研修 ...",
+		"reference_text": "2 日前 ... 人事評価制度の意義、目的を理解し、評価者としての役割を認識をする。 評価者研修 \n～基本編（１日間）. ②目標管理. 目標設定方法や目標達成に向けた計画の立て ...||||2016年11月10日 ... 平成29年度「改革・創造を目指すリーダー研修」，「新任課長級職員研修「マネジメント」」\n及び「人事評価制度に係る評価者研修」に関する研修の企画提案に係る業務委託先の\n選定を，公募型プロポーザルにより実施しますので，次のとおり募集 ...||||研修内で評価をすることへの不安の洗い出し、その改善策の検討、評価をする\nにあたってキーになる目標設定の方法について学んでいただきます。 ... 人事評価制度\n導入に際して必要となる、評価に対する考え方や評価の流れ、評価者が陥りやすい\nポイントについて改めて認識し、円滑な評価制度 ... 官公庁・自治体向け評価者・考課者\n研修 · 官公庁・自治体向けリーダーシップ研修 · 官公庁・自治体向け企画力・政策形成\n研修 · 官公庁・ ...",
+		"reference_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1btEaywmhnnw4bs_ZBhqUdxQel3Yvx17yWV7kdg5nnkxenNPkXY1TZOKo||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSI_L7o9gI0lY3u5vkXdf8mlnbzL5JAG3gUUswtOfxpkaUtSByvA5bNIg||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1btEaywmhnnw4bs_ZBhqUdxQel3Yvx17yWV7kdg5nnkxenNPkXY1TZOKo"
+	},
+	{
+		"t_name": "２月",
+		"role": "担当者",
+		"parent_task_id": 0,
+		"before_date": 60,
+		"date_duration": 30,
+		"t_number": 2,
+		"reference_url": "",
+		"reference_title": "",
+		"reference_text": "",
+		"reference_image": ""
+	},
+	{
+		"t_name": "評価者訓練の実施",
+		"role": "担当者",
+		"parent_task_id": 2,
+		"before_date": 55,
+		"date_duration": 15,
+		"t_number": 2,
+		"reference_url": "kyotofilmpitching.jp/judges/h31/||||https://www.city.kyoto.lg.jp/gyozai/page/0000209350.html||||kyotofilmpitching.jp/judges/h28/",
+		"reference_title": "2019年度 評価者 ｜ 京都映画企画市||||「新任課長級職員研修「マネジメント」」及び「人事評価制度に係る評価者 ...||||2016年度 評価者 ｜ 京都映画企画市",
+		"reference_text": "【 2019年度 評価者 】（敬称略）. 掛尾 良夫（かけお よしお） 城西国際大学メディア学部\n招聘教授・学部長早稲田大学卒業 ...||||2016年11月10日 ... 平成29年度「改革・創造を目指すリーダー研修」，「新任課長級職員研修「マネジメント」」\n及び「人事評価制度に係る評価者研修」に関する研修の企画提案に係る業務委託先の\n選定を，公募型プロポーザルにより実施しますので，次のとおり募集 ...||||【 2016年度 評価者 】（順不同、敬称略）. 掛尾 良夫城西国際大学メディア学部客員\n教授、キネマ旬報社顧問 1950年生まれ。早稲田 ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQP6MEyyumBOcX1MHnTJyuiGAA_-DuU1eCfYn2FexGX3Eg1rmrLfMZ4yrGG||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSI_L7o9gI0lY3u5vkXdf8mlnbzL5JAG3gUUswtOfxpkaUtSByvA5bNIg||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQP6MEyyumBOcX1MHnTJyuiGAA_-DuU1eCfYn2FexGX3Eg1rmrLfMZ4yrGG"
+	},
+	{
+		"t_name": "４月人事異動の準備",
+		"role": "担当者",
+		"parent_task_id": 2,
+		"before_date": 50,
+		"date_duration": 20,
+		"t_number": 2,
+		"reference_url": "https://allabout.co.jp/gm/gc/463141/||||https://www.lifehacker.jp/2019/02/personnel_change.html||||https://b-zone-s.com/entry/.../人事異動の「内示」が出たら、必ずやりたい５",
+		"reference_title": "異動が決まったらやること……異動先への挨拶・準備やマナーとは ...||||わかってから動くのは遅い？ 人事異動前にやるべきこと | ライフハッカー ...||||人事異動の「内示」が出たら、必ずやりたい5つのこと",
+		"reference_text": "2019年10月28日 ... 突然の人事異動や転勤の内示。後任者や取引先の担当者、会社や周囲の人に迷惑を\n掛けないように、異動が決まったらやることを把握しておきましょう。異動・転勤の内示後\nから着任するまでにやること・必要な準備・初日の挨拶のマナーなど ...||||2019年2月4日 ... 目端の利く人は、まだ何も決まっていない時から準備に入っています。スタートダッシュ\nの遅れが、次の計画を達成するためのリスクとなることを知っているからです。 この春が\n人事異動のタイミングの人も少なくないでしょう。そこで今回は、 ...||||2016年9月7日 ... 人事異動の「内示」が出たときの心構えと必ずやるべきことを５つご紹介しています。 \nこれを知って ... また、自分が仕事の引き継ぎを受ける前任者に対しては、引継資料の\n作成等について、上述のものを準備するよう依頼しておきましょう。",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlSwzk7HqjbV2oQ7R6ZjfsFXRGb0aO1z244D3yHTwhBWNjLjl9LyZ2PhA||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAdXJeiEoI8BFsRY9YFiWjs_0jobvA4RVC6oG0VHh0L9WQ1NNagNN3gVw||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXC2JDOW_pzuHi3_U0xecdqsdxgjJvdnkMOkmZ7_3_CTE4KZgn8KzWLWs"
+	},
+	{
+		"t_name": "３月",
+		"role": "担当者",
+		"parent_task_id": 0,
+		"before_date": 30,
+		"date_duration": 30,
+		"t_number": 3,
+		"reference_url": "",
+		"reference_title": "",
+		"reference_text": "",
+		"reference_image": ""
+	},
+	{
+		"t_name": "人事評価の準備",
+		"role": "担当者",
+		"parent_task_id": 3,
+		"before_date": 30,
+		"date_duration": 30,
+		"t_number": 3,
+		"reference_url": "https://jinjiseido.com/column/jinjihyoukaseido-junbi/||||https://hrtech.rikunabi.com/media/article4331/||||https://www.insource.co.jp/common/pdf/180801_1-01.pdf",
+		"reference_title": "その評価基準、伝わってますか？人事評価制度を機能させる為に必要な ...||||人事考課における評価面談はどう進める？事前準備や注意点、成功する ...||||人事評価制度導入準備にあたっての 支援策のご提案について",
+		"reference_text": "そこで本記事では、新しい人事評価制度を十分に機能させるために、絶対に必要な3\nつの準備について解説します。自社の人事評価制度の見直し、改革の際にお役立て\nいただければ幸いです。 本文中で紹介している各種シートは ...||||2019年6月28日 ... 事前準備や注意点、成功する面談のポイントをまとめて紹介します. 取材協力・ 監修／\n株式会社人材研究所 曽和利光. 人事評価制度を運用する上で欠かせないの ...||||人事評価制度構築に際して準備すること. ３－１ 評価制度の設計①評価基準・評価方法\nの策定支援. ３－２ 評価制度の設計②評価ツールの準備・作成支援. ３－３ 評価制度の\n設計③スケジュール策定支援. ４．導入支援～円滑な導入. ５．導入後フォロー支援～ ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQini6uiLER9f0w4Zug0CR-mXPZ6mYIV-WV80P7sNXkWN9fj0JxPZJ0fDQ_||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYuEww-AL2X543CsNSvLtbZVsEFz92YoiVFRO2BduWe8NCy-HD4oTmBWU||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEp9Z3gqgqSlSV9gd9kUk-AwPFwiwj9RWE88YLH4OwkixPVIMZG_kc1zrM"
+	},
+	{
+		"t_name": "４月人事異動の内示",
+		"role": "担当者",
+		"parent_task_id": 3,
+		"before_date": 30,
+		"date_duration": 30,
+		"t_number": 3,
+		"reference_url": "ikikatadatabase.com/archives/4610||||https://mynavi.agentsearch.jp/useful/agent_times/vo1||||https://b-zone-s.com/entry/.../人事異動の「内示」が出たら、必ずやりたい５",
+		"reference_title": "内示の意味とは？人事異動の時期と対応方法を具体的に解説 ...||||望まない人事異動の内示が出たら…… やってみるべき？転職も視野に ...||||人事異動の「内示」が出たら、必ずやりたい5つのこと",
+		"reference_text": "2018年3月8日 ... 人事異動の「内示」には、どのような意味・定義があるのでしょうか？ また、人事異動で\n内示が出されることの効力には、どのようなものがあるのでしょうか？ 今回は、人事\n異動やその他のビジネス現場でも活用される「内示」という概念 ...||||2017年5月30日 ... 会社員である以上、人事異動は付きものですが、異動が理由で転職や退職を考える人\nも少なくありません。配置転換や地方転勤など、異動にも種類がありますが、内示を\n拒否することはできるのでしょうか？今回は望まない人事異動を受けた ...||||2016年9月7日 ... 人事異動の「内示」。それが良い話であれ悪い話であれ、自分の会社生活を大きく\n変えるだけに、冷静に落ち着いて対処したいもの。こちらでは、そもそも内示とは何かの\n解説と、内示を受けたら、必ずやるべき５つのことを紹介しています。",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLkdn91_6EHxU4uCccnJpp7OWCFjW-UC-YrebKSbLaFFFTIo0l5P7b1_Oy||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4kBfSBd5PmdbHkYt9kcrxsf7xTf6wEbB9viwfqh3u5Uv1Qararm7f_Hkh||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXC2JDOW_pzuHi3_U0xecdqsdxgjJvdnkMOkmZ7_3_CTE4KZgn8KzWLWs"
+	}
+]

@@ -1,0 +1,122 @@
+[
+	{
+		"t_name": "７〜８月",
+		"role": "担当者",
+		"parent_task_id": 0,
+		"before_date": 90,
+		"date_duration": 60,
+		"t_number": 1,
+		"reference_url": "",
+		"reference_title": "",
+		"reference_text": "",
+		"reference_image": ""
+	},
+	{
+		"t_name": "被保険者賞与支払届提出",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 90,
+		"date_duration": 25,
+		"t_number": 1,
+		"reference_url": "https://www.nenkin.go.jp/service/kounen/hokenryo.../20141203.html||||https://www.obc.co.jp/360/list/post69||||https://www.nenkin.go.jp/service/kounen/.../0000018634IO4fCzsBO1.pdf",
+		"reference_title": "従業員に賞与を支給したときの手続き｜日本年金機構||||賞与支払届の手続きの流れと、担当者が注意しておきたいポイント ...||||健康保険・厚生年金保険 被保険者賞与支払届",
+		"reference_text": "2014年12月3日 ... 被保険者へ賞与を支給した事業主が賞与支払額等について「被保険者賞与支払届」等\nを日本年金機構へ提出します。 区分, 内容. 提出時期, 賞与支払日から5日以内. 提出\n先, 郵送で事業所 ...||||2019年5月27日 ... 企業は、賞与を従業員に対して支給した際に、「被保険者賞与支払届」と「被保険者賞与\n支払届総括表」を管轄の年金事務所または事務センターへ賞与支給後５日以内に提出\nしなければなりません。 賞与は法律で支給が義務づけられている ...||||2014年8月21日 ... ・年間4回以上支払われる賞与について、標準報酬月額の対象となっている場合は、\nこの届書を提出する必要はありません。 ・70歳以上の方について提出する場合は、「⑧\n備考」欄の「1.70歳以上被用者」を○で囲み ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS-rYmrXYs0ZeykByvyTEJc1wIpjyYpPMV0QgNwPHHUcJcNGfAxx4aevk||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVWNqsx7flaNcX_W9Obtzt0Lz1HygXJRFbcNyOOFKvvwY8JT0qjulc85s"
+	},
+	{
+		"t_name": "高齢者雇用状況報告書提出",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 90,
+		"date_duration": 25,
+		"t_number": 1,
+		"reference_url": "https://www.mhlw.go.jp/bunya/koyou/koureisha-koyou/index.html||||https://jsite.mhlw.go.jp/tokyo-hellowork/list/.../simakyuuzinn_00017.html||||https://www.rosei.jp/jinjour/article.php?entry_no=65326",
+		"reference_title": "高年齢者・障害者雇用状況報告の電子申請による提出について｜厚生 ...||||高年齢者・障害者雇用状況報告書（令和元年6月1日現在）の提出 ...||||高年齢者雇用状況報告書",
+		"reference_text": "「高年齢者等の雇用の安定等に関する法律第52条第１項」、「障害者の雇用の促進等\nに関する法律第43条第７項」において、事業主は、毎年６月１日現在の高年齢者および\n障害者の雇用状況を、管轄のハローワーク（一部地域では労働局）を経由して厚生労働\n大臣 ...||||2019年6月1日 ... 高年齢者・障害者雇用状況報告書（令和元年6月1日現在）の提出について 「高年齢者\nの雇用の安定等に関する法律第52条第1項」、「障害者の雇用の促進等に 関する法律\n第43条第7項」において、事業主は、毎年6月1日現在の高年齢者 ...||||2015年5月1日 ... 高年齢者雇用状況報告書」「障害者雇用状況報告書」とはともに、その報告に用いる\n所定の様式を指す。提出義務者に該当する事業主［図表1］には、毎年5月下旬ごろに\n報告用紙が郵送されてくる。 これらの報告書により把握される情報は、 ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHAUuCVxle35Lz5jn3ymHKftfiFF7KNm4c_HHZ6WHqEJZq6OIc4C_NusY||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtAJ9nW5hlFUnZs_LqAsQsiyrjH3ZP1AAOimFiBBbpI61uIbEqsYVoeJA"
+	},
+	{
+		"t_name": "障害者雇用状況報告提出",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 90,
+		"date_duration": 25,
+		"t_number": 1,
+		"reference_url": "https://www.mhlw.go.jp/bunya/koyou/koureisha-koyou/index.html||||https://jsite.mhlw.go.jp/tokyo-hellowork/list/.../simakyuuzinn_00017.html||||https://www.mhlw.go.jp/bunya/koyou/koureisha.../shougaisha-koyou.html",
+		"reference_title": "高年齢者・障害者雇用状況報告の電子申請による提出について｜厚生 ...||||高年齢者・障害者雇用状況報告書（令和元年6月1日現在）の提出 ...||||障害者雇用状況報告の電子申請による提出｜厚生労働省",
+		"reference_text": "「高年齢者等の雇用の安定等に関する法律第52条第１項」、「障害者の雇用の促進等\nに関する法律第43条第７項」において、事業主は、毎年６月１日現在の高年齢者および\n障害者の雇用状況を、管轄のハローワーク（一部地域では労働局）を経由して厚生労働\n大臣 ...||||2019年6月1日 ... 高年齢者・障害者雇用状況報告書（令和元年6月1日現在）の提出について 「高年齢者\nの雇用の安定等に関する法律第52条第1項」、「障害者の雇用の促進等に 関する法律\n第43条第7項」において、事業主は、毎年6月1日現在の高年齢者 ...||||障害者雇用状況報告の電子申請による提出. 総務省のe-Gov電子申請システムを使用\nして申請します。以下のリンクから手続きをはじめてください。 手続きの手順については\n以下の「申請の手続き解説（PDF）」をご覧ください。 障害者雇用状況報告の申請手続き\n ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHAUuCVxle35Lz5jn3ymHKftfiFF7KNm4c_HHZ6WHqEJZq6OIc4C_NusY"
+	},
+	{
+		"t_name": "算定基礎届提出",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 90,
+		"date_duration": 25,
+		"t_number": 1,
+		"reference_url": "https://www.nenkin.go.jp/service/kounen/hokenryo.../20141104-01.html||||https://www.somu-lier.jp/goodstory/notification/||||https://www.nenkin.go.jp/oshirase/taisetu/2019/201905/2019053102.html",
+		"reference_title": "算定基礎届の提出｜日本年金機構||||算定基礎届って何？ 書き方と提出方法をマスターしましょう||||令和元年度の算定基礎届の提出について｜日本年金機構",
+		"reference_text": "2014年11月4日 ... 算定基礎届の提出の対象となるのは、7月1日現在の全ての被保険者及び70歳以上\n被用者です。ただし、以下の（1）～（4）のいずれかに該当する方は算定基礎届の提出が\n不要です。 （ ...||||2018年5月31日 ... 社会保険は個人の報酬に応じて保険料や年金額が決定されます。この計算は標準報酬\n月額を基になされますが、その標準報酬月額を年ごとに計算し直すために提出するのが\n算定基礎届です。従って、特に事業主は基礎算定届の書き方を ...||||2019年5月31日 ... 算定基礎届に関する主な変更内容＞ 8月または9月に随時改定が予定されている被\n保険者にかかる算定基礎届について、事業主から申出をいただいた場合は、7月提出時\nにおいて、算定基礎届の届出を省略することが可能です。",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS-rYmrXYs0ZeykByvyTEJc1wIpjyYpPMV0QgNwPHHUcJcNGfAxx4aevk||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScRd8l3w-ORMk2TWKpA9v7Ap9EP-xMZieD9mNrGLjOZBz6Xd3PcYK4yy6I||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS-rYmrXYs0ZeykByvyTEJc1wIpjyYpPMV0QgNwPHHUcJcNGfAxx4aevk"
+	},
+	{
+		"t_name": "労働者死傷病報告（４〜６月分）",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 75,
+		"date_duration": 15,
+		"t_number": 1,
+		"reference_url": "https://www.mhlw.go.jp/bunya/roudoukijun/.../17-download.html||||https://romsearch.officestation.jp/jinjiroumu/tetsuzuki/3208||||https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/.../12.html",
+		"reference_title": "労働者死傷病報告（休業4日以上）様式｜厚生労働省||||労働者死傷病報告の提出はどんなときに必要か知っていますか？ | 労務 ...||||労働者死傷病報告の提出の仕方を教えて下さい。｜厚生労働省",
+		"reference_text": "労働者死傷病報告（休業4日以上）様式. ※機械で読み取りを行うため、印刷に使用する\n用紙については、 白色度80％以上 の用紙をご使用願います。また、印刷した用紙を\nコピーして使用しないで下さい。||||2019年12月10日 ... 「労働者死傷病報告」はどのようなときに提出する必要があるでしょうか？また、提出\n期限や提出先はどこででしょうか？もし、提出を怠ると、刑事責任が問われることもある「\n労働者死傷病報告」について確認しましょう。||||労働者死傷病報告の提出の仕方を教えて下さい。について紹介しています。 ... 労働\n災害が発生したら、遅滞なく労働基準監督署に報告書を提出しなければなりません。 \n申請様式はこちら; なお、労働者が被災した事故現場が建設現場等で、会社の事務所\nがある ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhPTQ27TbmPYkUv9wRchQcHG2pPdvLIMAOJaeZXnb7RXQH16MwEAgHU28"
+	},
+	{
+		"t_name": "安全衛生委員会",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 90,
+		"date_duration": 60,
+		"t_number": 1,
+		"reference_url": "",
+		"reference_title": "",
+		"reference_text": "",
+		"reference_image": ""
+	},
+	{
+		"t_name": "９月",
+		"role": "担当者",
+		"parent_task_id": 0,
+		"before_date": 30,
+		"date_duration": 30,
+		"t_number": 2,
+		"reference_url": "",
+		"reference_title": "",
+		"reference_text": "",
+		"reference_image": ""
+	},
+	{
+		"t_name": "厚生年金保険料変更",
+		"role": "担当者",
+		"parent_task_id": 2,
+		"before_date": 30,
+		"date_duration": 15,
+		"t_number": 2,
+		"reference_url": "https://www.nenkin.go.jp/service/kounen/hokenryo.../20150515-01.html||||https://www.mhlw.go.jp/stf/houdou/0000175945.html||||https://www.nenkin.go.jp/jigyonushi/",
+		"reference_title": "厚生年金保険の保険料｜日本年金機構||||厚生年金保険料率の引上げが終了します ｜報道発表資料｜厚生労働省||||事業主の方｜日本年金機構",
+		"reference_text": "2015年5月15日 ... 報酬月額は、通勤手当等を含めた報酬に加え、事業所が提供する宿舎費や食事代等の\n現物給与（全国現物給与価額一覧表）の額も含めて決定されます。 また、毎年9月に、4\n月から6月の報酬月額を基に、標準報酬月額の改定が行われます（ ...||||2017年8月31日 ... 厚生年金の保険料率は、年金制度改正に基づき平成16年から段階的に引き上げられ\nてきましたが、今年９月を最後に引上げが終了します。また、以降の厚生年金保険料率\nは、18.3％で固定されることになります。なお、国民年金の保険料 ...||||健康保険・厚生年金保険の保険料関係について. 健康保険・厚生年金保険の保険料の\n納付は、便利な口座振替納付をご利用ください。 健康保険・厚生年金保険 保険料口座\n振替納付（変更）申出書は こちら からダウンロードし、作成できます。 現在の厚生年金 ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS-rYmrXYs0ZeykByvyTEJc1wIpjyYpPMV0QgNwPHHUcJcNGfAxx4aevk||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS-rYmrXYs0ZeykByvyTEJc1wIpjyYpPMV0QgNwPHHUcJcNGfAxx4aevk"
+	},
+	{
+		"t_name": "ストレスチェック受診対象者への周知",
+		"role": "担当者",
+		"parent_task_id": 2,
+		"before_date": 30,
+		"date_duration": 15,
+		"t_number": 2,
+		"reference_url": "https://akita-stresscheck.jp/||||https://kenko-akita.jp/smarts/index/109/||||https://www.mhlw.go.jp/bunya/roudoukijun/anzeneisei12/.../150507-1.pdf",
+		"reference_title": "秋田県総合保健事業団 ストレスチェック受診||||ストレスチェック｜公益財団法人秋田県総合保健事業団（公式 ...||||労働安全衛生法に基づく ストレスチェック制度 実施マニュアル",
+		"reference_text": "秋田県総合保健事業団. ストレスチェック. 受診者用ID/パスワードを入力して下さい。 \n受診者用ID. パスワード.||||ストレスチェックを受診する方へ. 受診案内をお持ちの方は、こちらから受診サイトへ\n移動できます。 ここを ...||||2015年5月1日 ... ストレスチェック制度の実施が義務付けられている労働者数 50 人以上の事業場. \nにおいて、産業医、保健師、衛生 ... クの調査票及び健康診断の問診票を区別する等、\n労働者が受診・受検義務の有無. 及び結果の取扱いがそれぞれ異なること ...",
+		"reference_image": ""
+	}
+]

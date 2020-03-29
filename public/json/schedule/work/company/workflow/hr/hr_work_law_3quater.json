@@ -1,0 +1,110 @@
+[
+	{
+		"t_name": "１０月",
+		"role": "担当者",
+		"parent_task_id": 0,
+		"before_date": 90,
+		"date_duration": 30,
+		"t_number": 1,
+		"reference_url": "",
+		"reference_title": "",
+		"reference_text": "",
+		"reference_image": ""
+	},
+	{
+		"t_name": "標準報酬月額の決定",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 90,
+		"date_duration": 20,
+		"t_number": 1,
+		"reference_url": "https://www.kyoukaikenpo.or.jp/g3/cat320/sb3160/sbb3165/1962-231||||https://www.nenkin.go.jp/faq/nteikibin/.../nofujokyo/20140602-02.html||||https://www.kyoukaikenpo.or.jp/g3/cat320/sb3160/sbb3165/1963-232",
+		"reference_title": "標準報酬月額・標準賞与額とは？ | 健康保険ガイド | 全国健康保険協会||||標準報酬月額は、いつどのように決まるのですか。｜日本年金機構||||標準報酬月額の決め方 | 健康保険ガイド | 全国健康保険協会",
+		"reference_text": "平成31年03月13日. 標準報酬月額・標準賞与額とは？ 健康保険・厚生年金保険では、\n被保険者が事業主から受ける毎月の給料などの報酬の月額を区切りのよい幅で区分\nした標準報酬月額と税引前の賞与総額から千円未満を切り捨てた標準賞与額（健康 ...||||2014年6月2日 ... 報酬月額を保険料額表の1等級（8万8千円）から31等級（62万円）までの31等級に分け\n、その等級に該当する金額のことを「標準報酬月額」といいます。 被保険者の「標準報酬\n月額」は、事業主から提出された届書に基づき日本年金機構（年金 ...||||2009年8月17日 ... 新規に被保険者の資格を取得した人の標準報酬月額は、次の方法によって決めます。 \n月給・週給など一定の期間によって定められている報酬については、その報酬の額を\n月額に換算した額; 日給 ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS-rYmrXYs0ZeykByvyTEJc1wIpjyYpPMV0QgNwPHHUcJcNGfAxx4aevk"
+	},
+	{
+		"t_name": "労働者死傷病報告（７〜９月分）",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 85,
+		"date_duration": 15,
+		"t_number": 1,
+		"reference_url": "https://www.mhlw.go.jp/bunya/roudoukijun/.../17-download.html||||https://romsearch.officestation.jp/jinjiroumu/tetsuzuki/3208||||https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/.../12.html",
+		"reference_title": "労働者死傷病報告（休業4日以上）様式｜厚生労働省||||労働者死傷病報告の提出はどんなときに必要か知っていますか？ | 労務 ...||||労働者死傷病報告の提出の仕方を教えて下さい。｜厚生労働省",
+		"reference_text": "労働者死傷病報告（休業4日以上）様式. ※機械で読み取りを行うため、印刷に使用する\n用紙については、 白色度80％以上 の用紙をご使用願います。また、印刷した用紙を\nコピーして使用しないで下さい。||||2019年12月10日 ... 「労働者死傷病報告」はどのようなときに提出する必要があるでしょうか？また、提出\n期限や提出先はどこででしょうか？もし、提出を怠ると、刑事責任が問われることもある「\n労働者死傷病報告」について確認しましょう。||||労働者死傷病報告の提出の仕方を教えて下さい。について紹介しています。 ... 労働\n災害が発生したら、遅滞なく労働基準監督署に報告書を提出しなければなりません。 \n申請様式はこちら; なお、労働者が被災した事故現場が建設現場等で、会社の事務所\nがある ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhPTQ27TbmPYkUv9wRchQcHG2pPdvLIMAOJaeZXnb7RXQH16MwEAgHU28"
+	},
+	{
+		"t_name": "年末調整準備",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 75,
+		"date_duration": 15,
+		"t_number": 1,
+		"reference_url": "https://www.sumoviva.jp/trend-tips/20171006_1395.html||||https://www.obc.co.jp/360/list/hatarakikata11||||https://www.somu-lier.jp/column/year-end-tax-adjustment/",
+		"reference_title": "どこから始めたらいい？ 年末調整の準備 ｜スモビバ！||||多忙な年末調整時期に慌てない！ 年末調整の準備業務に費やしている ...||||年末調整の準備は万全ですか？ 流れを把握して早めの行動を心がけま ...",
+		"reference_text": "2017年10月6日 ... ※平成29年の税制改正で、平成30年分以降の年末調整における配偶者控除及び配偶\n者特別控除の取扱いが大きく見直されました。 それに伴い、平成30年分では、扶養\n控除等（異動）申告書の記載事項、「給与所得者の保険料控除 ...||||2017年6月11日 ... 年末調整の準備として、年末調整書類の「配付回収」「内容確認」「給与システムへの\nデータ入力」の3つの工程が必要となります。 ＜準備に必要な年末調整書類＞ ・給与\n所得者の扶養控除等（異動）申告書・給与所得者の配偶 ...||||2019年11月15日 ... 毎月の給与や賞与を支払う際に、事業主が所得税額を天引きする制度を、源泉徴収\n制度といいます。年末にはその年に収めるべき税額を正しく計算し、源泉徴収した額と\n調整しなくてはなりません。この年末調整は、10月から準備を始めて翌年 ...",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1o1MYEaT-Uvtwj-O_c7gvRJHjbRsAwLAQV6xHZT1fAEEY1ap9N3-uDG8||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsLmOe5p-YU5qn104SbFmtAk0iWHkXpG7cYXizYPoJRRr20FAfgYvuXEI"
+	},
+	{
+		"t_name": "ストレスチェック実施",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 85,
+		"date_duration": 15,
+		"t_number": 1,
+		"reference_url": "https://www.mhlw.go.jp/bunya/roudoukijun/anzeneisei12/.../150507-1.pdf||||https://stresscheck.mhlw.go.jp/||||https://sangyoui-navi.jp/blog/197",
+		"reference_title": "労働安全衛生法に基づく ストレスチェック制度 実施マニュアル||||ストレスチェック実施プログラム||||ストレスチェックの「実施者」になれるのは誰？どんな役割があるの ...",
+		"reference_text": "2015年5月1日 ... このマニュアルには、改正労働安全衛生法に基づくストレスチェック制度に関す. る労働\n安全衛生規則の規定、「心理的な負担の程度を把握するための検査及び面接. 指導の\n実施並びに面接指導結果に基づき事業者が講ずべき措置に関する ...||||厚生労働省版ストレスチェック実施プログラム」ダウンロードサイトは、改正労働安全\n衛生法に基づき、平成27年12月より施行されたストレスチェック制度が事業者にて円滑\nに導入できるよう、ストレスチェックの受検、ストレスチェックの結果出力、集団分析等が\n ...||||2019年3月22日 ... 労働安全衛生法で、従業員50人以上の事業場（本社、支社、営業所など）で実施が\n義務付けられているストレスチェック。事業者は、ストレスチェックを実施する上で、「実施\n者」を選任する必要があります。実施者にはどのような人がなれるの ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4HL9hxN-5LCcBimJPsTrOz5OUY8B1K7mXAgJiuIYdt4TVhtTFKOIRXEEN||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIv4vPj3RAYCY66Nmgu-I7sLeZrX5sqpEwTje1vEs_W-vVM0_SgSb8W30"
+	},
+	{
+		"t_name": "１１月〜１２月",
+		"role": "担当者",
+		"parent_task_id": 0,
+		"before_date": 60,
+		"date_duration": 60,
+		"t_number": 2,
+		"reference_url": "",
+		"reference_title": "",
+		"reference_text": "",
+		"reference_image": ""
+	},
+	{
+		"t_name": "年末調整資料の回収",
+		"role": "担当者",
+		"parent_task_id": 2,
+		"before_date": 60,
+		"date_duration": 30,
+		"t_number": 2,
+		"reference_url": "https://www.nta.go.jp/publication/pamph/gensen/nencho2019/01.htm||||https://www.freee.co.jp/kb/kb-payroll/yearend-knowledge/||||https://www.officestation.jp/nencho/article/519/",
+		"reference_title": "令和元年分 年末調整のしかた｜国税庁||||年末調整まとめ | 扶養控除・保険料控除、計算方法や源泉徴収票まで ...||||年末調整で必要な提出書類には、どのようなものがある？ | クラウド型 ...",
+		"reference_text": "Ⅱ 年末調整とは, 7から8, PDF/645KB. Ⅲ 年末 ... 6 年末調整後に給与の追加払や\n扶養親族等の異動があった場合の再調整. Ⅳ 令和2年 ... 令和元年分の年末調整等の\nための給与所得控除後の給与等の金額の表, 84から92, PDF/1,882KB ... 各種税金の\n資料（ポイント・図解）など（財務省ホームページ） · 税制改正の概要（財務省\nホームページ） ...||||2019年12月3日 ... 企業の担当者は、従業員から年末調整に必要な書類を集め、税額を計算し、税務署へ\n提出する書類を作成します。 ... 図るための国外送金等に係る調書の提出等に関する\n法律」の規定により、税務署に提出が義務づけられている資料のこと。||||2018年8月2日 ... 年末調整の計算に使った給与所得者の扶養控除等（異動）申告書などの書類は、\n税務署に提出する必要がありません。しかし、給与所得の源泉徴収票等の法定調書\n合計表や源泉徴収票、支払調書、給与支払報告書は、税務署や市区町村 ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXMeVAiKiV8Biun2tBH4Aqge7nLjExO-W4SMwPO33OQq2_f_N_jVdJaavN||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTue8u3VqjEOcntWRo8Vkor2M1zIeuUJREeVsyhTJczFOEHuFp_ffQ24-A"
+	},
+	{
+		"t_name": "被保険者賞与支払届",
+		"role": "担当者",
+		"parent_task_id": 2,
+		"before_date": 60,
+		"date_duration": 20,
+		"t_number": 2,
+		"reference_url": "https://www.nenkin.go.jp/service/kounen/hokenryo.../20141203.html||||https://www.obc.co.jp/360/list/post69||||https://www.nenkin.go.jp/service/kounen/kenpo-todoke/.../20140821.html",
+		"reference_title": "従業員に賞与を支給したときの手続き｜日本年金機構||||賞与支払届の手続きの流れと、担当者が注意しておきたいポイント ...||||賞与を支給したとき｜日本年金機構",
+		"reference_text": "2014年12月3日 ... 事業主が被保険者及び70歳以上被用者へ賞与を支給した場合には、支給日より5日\n以内に「被保険者賞与支払届」により支給額等を届出します。 この届出内容により標準\n賞与額が決定され、これにより賞与の保険料額が決定されるとともに、被 ...||||2019年5月27日 ... 賞与支払届は、賞与における社会保険料を算出し保険料を納付するために必要な届出\n書類です。企業は、賞与を従業員に対して支給した際に、「被保険者賞与支払届」と「被\n保険者賞与支払届総括表」を管轄の年金事務所または事務センター ...||||2014年8月21日 ... 健康保険・厚生年金保険 被保険者賞与支払届 総括表（記入例）（PDF 570KB）. PDF\n形式のファイルを開くには、Adobe Acrobat Reader DC（旧Adobe Reader）が必要\nです。お持ちでない方は、Adobe社から無償でダウンロードできます。",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS-rYmrXYs0ZeykByvyTEJc1wIpjyYpPMV0QgNwPHHUcJcNGfAxx4aevk||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVWNqsx7flaNcX_W9Obtzt0Lz1HygXJRFbcNyOOFKvvwY8JT0qjulc85s||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS-rYmrXYs0ZeykByvyTEJc1wIpjyYpPMV0QgNwPHHUcJcNGfAxx4aevk"
+	},
+	{
+		"t_name": "源泉徴収票作成",
+		"role": "担当者",
+		"parent_task_id": 2,
+		"before_date": 60,
+		"date_duration": 15,
+		"t_number": 2,
+		"reference_url": "https://www.e-tax.nta.go.jp/download/gensen-manual.htm||||https://www.kaonavi.jp/dictionary/withholding-slip/||||https://www.e-tax.nta.go.jp/download/gensensoft-download.htm",
+		"reference_title": "源泉徴収票等作成ソフト利用手順｜e-Tax||||【2019年度】源泉徴収票とは？ 作成・発行の方法やタイミング、確認や ...||||源泉徴収票等作成ソフトダウンロードコーナー｜e-Tax",
+		"reference_text": "表示された初期画面の内容をご確認いただき、作成年分及び作成帳票を選択し、「次へ\n」をクリックしますと帳票の入力画面が表示されますので、交付用ファイルの入力を行い\nます。 次のステップへ. (例1) 「給与所得の源泉徴収票（平成19年以降用） ...||||2019年2月6日 ... 企業に勤めていても、生活のいくつかの場面で源泉徴収票の添付や提出を求められる\nことがあるかもしれません。 ここでは、. 源泉徴収票の見方や作成方法、作成時期; 源泉\n所得税の計算方法や再発行; 年末調整や支払調書といったの書類と ...||||源泉徴収義務者等が、e-Taxで受付可能なデータ形式で電子署名の付与された源泉\n徴収票等を作成するためのソフトをダウンロードにより取得できます。",
+		"reference_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmJ9RmxaRFXE6ve32bcPQYozciL4aa2aD2CwvnJOBBCAas1-00mvmNNlU"
+	}
+]

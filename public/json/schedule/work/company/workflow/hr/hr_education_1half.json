@@ -1,0 +1,122 @@
+[
+	{
+		"t_name": "４月〜５月",
+		"role": "担当者",
+		"parent_task_id": 0,
+		"before_date": 180,
+		"date_duration": 60,
+		"t_number": 1,
+		"reference_url": "",
+		"reference_title": "",
+		"reference_text": "",
+		"reference_image": ""
+	},
+	{
+		"t_name": "新入社員研修",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 180,
+		"date_duration": 20,
+		"t_number": 1,
+		"reference_url": "https://www.insource.co.jp/newcomer/newcomer_top.html||||https://www.smbcc-education.jp/training_detail/新入社員研修-2/?c=1...||||https://www.itmedia.co.jp/business/articles/2003/05/news082.html",
+		"reference_title": "新入社員研修－内容や特徴など:現場で使える研修ならインソース||||新入社員研修（3日コースなど） | SMBCコンサルティング||||新型コロナで大手企業、新入社員研修を次々取りやめ・検討も データで ...",
+		"reference_text": "3 日前 ... 「導入時の研修は講師派遣、配属後のフォロー研修は配属先近くで開催されている公開\n講座」など、組み合わせてのご受講もおすすめです。 また、ベースとなる「ビジネス基礎」\n「ビジネス文書」に加え、多様なテーマ別に新人研修をご用意しており ...||||新入社員研修（3日コース）. プログラム; 階層別に選ぶ; 新人・若手. 社会人マインドを\n醸成し、ビジネスマナー・コンプライアンス・コミュニケーション ...||||2020年3月5日 ... 4月以降に予定されている新入社員研修への影響について、カレイドソリューションズ（\n東京・新宿）が企業の人材開発担当者を中心に行ったアンケート調査によると、企業の\n採用人数により対応に差があることが明らかになった。採用人数10人 ...",
+		"reference_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1btEaywmhnnw4bs_ZBhqUdxQel3Yvx17yWV7kdg5nnkxenNPkXY1TZOKo||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTi_57kg2PNuDF4UYebc6M6SsHyreWuPE0JYsXkRhzHe58cltI0644h7Xc"
+	},
+	{
+		"t_name": "OJT指導者向け研修",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 180,
+		"date_duration": 60,
+		"t_number": 1,
+		"reference_url": "https://www.insource.co.jp/bup/bup_kanrishoku2.html||||https://www.sk-consul.co.jp/trainings/business-skills/2334/||||https://www.insource.co.jp/kanrisyoku/ojt_top.html",
+		"reference_title": "【研修セミナー公開講座】OJT指導者研修～新人・後輩指導の基本スキル ...||||OJT指導者研修 - 株式会社総合教育コンサルティング||||OJT研修 効果的なOJTの進め方・手法と現場指導のポイントとは:現場で ...",
+		"reference_text": "2020年3月18日 ... 【公開講座】「新人がうまく育たない」「自分の業務で手一杯で指導が負担」というお悩み\nをよく耳にします。計画的なOJTによる新人・若手の早期育成は、新人・若手本人の自立\n、指導担当者の教育にかける時間の削減につながり全体の生産性 ...||||指導・育成担当者としての心構えや、具体的な指導法を実践的に学習します。また、\nワークショップでは、即、実践できるコーチングスキルの習得も目指します。 研修日数 ...||||インソースのOJT研修でも、この考えをもとに、実際に新人が配属されてから３カ月の\n育成計画を立てていただきます。 □OJTの目的は「実務能力」の習得と「考え方の軸」の\n確立. 新人指導の担当者 ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcmcmkWY-U8frBVVGUFWsEB9v5EElNrqO4sc2IPyQgRnvKKRIDf-q17yE||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkMowxkrC2MBmDp8314zDfVvi5MhZ8zeDAtvSMrUZUJkf4JWCQITSmbe-i||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1btEaywmhnnw4bs_ZBhqUdxQel3Yvx17yWV7kdg5nnkxenNPkXY1TZOKo"
+	},
+	{
+		"t_name": "メンター向け研修",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 180,
+		"date_duration": 60,
+		"t_number": 1,
+		"reference_url": "https://www.insource.co.jp/bup/bup_menter.html||||https://www.mentor-kyoukai.jp/セミナースケジュール/||||https://www.insource.co.jp/kanrisyoku/mentor_top.html",
+		"reference_title": "【研修セミナー公開講座】メンター研修- 株式会社インソース||||セミナースケジュール - 日本メンター協会-公式サイト・1999年創設 ...||||メンター研修:現場で使える研修ならインソース",
+		"reference_text": "2020年2月25日 ... 新入社員や後輩のよき相談相手となるべく、メンターとしての役割や心構えを認識し、\n必要なコミュニケーションスキルを習得していただきます。 ＜研修のポイント＞. ・ＯＪＴ、\nコーチングとの違いを踏まえ、メンターの役割と心構え学ぶ; ・メンティと ...||||メンター制度などでメンターの養成研修やメンター・メンティーが合同で受けるメンタリング\n・スキル研修の講師を担当する方のための講座です。 □ 22日（金） ...||||2019年6月10日 ... 年間3893名が受講！メンター研修では、若手・新人の公私にわたって相談にのるなど、\n後輩のキャリア形成の支援を行うメンターの役割を認識し、実際の場面で必要な\nコミュニケーションスキルや関わり方を、演習を通して習得します。",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdrGk3tfNP4nzGfZJcR8VhaXrzKRWnQuUpOO9FFh61sb-KtPzxTbLcblQ||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJNuE71UFgl6Zmqbe5dMGs42iE415KQHcZ07eOnvjaIcikUD3_CZ2hSw||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1btEaywmhnnw4bs_ZBhqUdxQel3Yvx17yWV7kdg5nnkxenNPkXY1TZOKo"
+	},
+	{
+		"t_name": "６月",
+		"role": "担当者",
+		"parent_task_id": 0,
+		"before_date": 120,
+		"date_duration": 30,
+		"t_number": 2,
+		"reference_url": "",
+		"reference_title": "",
+		"reference_text": "",
+		"reference_image": ""
+	},
+	{
+		"t_name": "昇格者向け研修（春）",
+		"role": "担当者",
+		"parent_task_id": 2,
+		"before_date": 120,
+		"date_duration": 60,
+		"t_number": 2,
+		"reference_url": "https://www.insource.co.jp/kanrisyoku/kakaricho_kouho.html||||https://www.knowledgewing.com/kw/blog/2012/09/201209060640.html||||https://www.recruit-ms.co.jp/open-course/dtl/K1199/",
+		"reference_title": "係長候補者向け昇格前研修:現場で使える研修ならインソース||||階層別研修のあり方・考え方 リーダーを育てる上司とは？ : 富士通 ...||||昇進・昇格者アセスメント・育成研修セミナー | 社員研修・社員教育の ...",
+		"reference_text": "職場の係長に求められる役割を理解し、職場リーダーとして期待されるリーダーシップの\n認識と組織として成果を出すには何をすべきかを意識していただくための研修です。\nリーダーとしての「人間力」や、部下に対して有効なコミュニケーションやコーチングが\nできる ...||||2012年9月6日 ... 研修の内容が、「経営層からの期待の伝達」、「対象となる階層の役割（および\nコンピテンシー）の周知」、「人事上の処遇の説明」などにとどまっている; 研修受講が\n昇格要件であることのみがクローズアップされ、受講対象者も上司も研修の意義 ...||||リクルートマネジメントスクールが提供する、昇進・昇格者アセスメント・育成研修です。\nリーダーに欠かせない資質を世間の管理職クラスと比較しての絶対評価で定量的に\n把握し、能力開発を行うことを目的とした研修です。",
+		"reference_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1btEaywmhnnw4bs_ZBhqUdxQel3Yvx17yWV7kdg5nnkxenNPkXY1TZOKo||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3WUPSF2U0JWJEj_Zc4BVPJX-gXAkEeOzMQEUgEB8fk4ICnWAwseCsBeqq"
+	},
+	{
+		"t_name": "営業職向け研修",
+		"role": "担当者",
+		"parent_task_id": 2,
+		"before_date": 120,
+		"date_duration": 60,
+		"t_number": 2,
+		"reference_url": "https://www.recruit-ms.co.jp/open-course/live/category/6/||||https://www.insource.co.jp/sales/sa_kisoryokukoujou.html||||https://www.rri.co.jp/kenshu/t-jirei-05.html",
+		"reference_title": "営業職 | 社員研修・社員教育のリクルートマネジメントスクール||||営業研修 ～はじめて営業職に就く方編（2日間）:現場で使える研修なら ...||||営業職向け",
+		"reference_text": "社員研修・社員教育をご提供するリクルートマネジメントスクールの、トレーナーからの\nメッセージ、事務局からの現場の様子、受講者の声など、リクルートマネジメント\nスクール研修現場からのメッセージをお伝えします。||||他職種から営業職になった方に、営業としての考え方や行動の仕方を分かりやすく\nお伝えする研修です。 具体的には、以下の３点を目指します。 １．営業の原理原則を\n理解し、実践できるようになる２．お客さまに魅力の伝わる話し方ができるようになる３．||||営業基本研修（2日間カリキュラム）. 営業職として成功する心構え; 商品知識はなぜ\n必要か; 購買心理を学ぶ; セールストークの基本; 訪問準備と時間管理; お客様が納得\nする技法; 反論の克服; 成約率を高めるクロージング; ロールプレイング（営業マン・\nお客様役 ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8jx_b2qNRPNJyBkVFyuQI3ox7lZrb3Uj_fCleuYsOWRfTgXBSMx1QkVA||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1btEaywmhnnw4bs_ZBhqUdxQel3Yvx17yWV7kdg5nnkxenNPkXY1TZOKo"
+	},
+	{
+		"t_name": "７月〜９月",
+		"role": "担当者",
+		"parent_task_id": 0,
+		"before_date": 90,
+		"date_duration": 90,
+		"t_number": 3,
+		"reference_url": "",
+		"reference_title": "",
+		"reference_text": "",
+		"reference_image": ""
+	},
+	{
+		"t_name": "コールセンター向け研修",
+		"role": "担当者",
+		"parent_task_id": 3,
+		"before_date": 90,
+		"date_duration": 90,
+		"t_number": 3,
+		"reference_url": "https://callnavi.jp/contents/saiyou/training||||https://www.insource.co.jp/call/call_lineup.html||||https://www.evojob.com/column/102",
+		"reference_title": "【コールセンター体験談！】コールセンターで実際に研修を受けてみた ...||||コールセンター向け研修ラインナップ - 株式会社インソース||||コールセンター研修で学ぶ5つの技術。応対の基本からテクニックまで ...",
+		"reference_text": "2019年2月16日 ... コールセンターでのお仕事を始めるに辺り、どのような研修があなたを待ちわびているか\n気になりますよね。本日は、実際に私がコールセンターで働き始める前に受けた、2日間\nの新人研修体験談をご紹介します。もちろんコールセンター ...||||コールセンターやＣＳ部門での教育のご支援実績が豊富なインソースより、\nコールセンターの教育研修ラインナップをご紹介させていただきます！||||多くのコールセンターでは、実際のお仕事に入る前に研修を行います。仕事内容によって\n実施期間は異なり、3日間から、場合によっては数週間などと幅があります。どんなこと\nを学ぶ研修なのでしょうか？今回は多くのオペレーターが業務に入る前に受講する、 ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfxS_-9a7YlaJuPe8IA3Y5fbxgys_yaHlxB3OHZOtI2pgqaXqOhJqzATI||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1btEaywmhnnw4bs_ZBhqUdxQel3Yvx17yWV7kdg5nnkxenNPkXY1TZOKo||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTICLsR_wZDAtzRxzHLjqBh8shyh3Fe7bGI30jEPUYs5HK9h1yqbEvkLRE"
+	},
+	{
+		"t_name": "新入社員フォロー研修",
+		"role": "担当者",
+		"parent_task_id": 3,
+		"before_date": 30,
+		"date_duration": 60,
+		"t_number": 3,
+		"reference_url": "https://www.recruit-ms.co.jp/issue/feature/0000000175/1/||||https://www.insource.co.jp/shinjin/shinjinfollow_top.html||||https://www.hrpro.co.jp/research_detail.php?r_no=166",
+		"reference_title": "効果的な新人フォロー研修をデザインするポイント | 人材・組織開発の ...||||新入社員フォロー研修:現場で使える研修ならインソース||||定着してきた「新入社員フォロー研修」、実施時期の最多は「入社半年後 ...",
+		"reference_text": "2007年6月2日 ... 人材育成・研修のリクルートマネジメントソリューションズが提供する特集、「効果的な\n新人フォロー研修をデザインするポイント」です。リクルートマネジメントソリューションズ\nは人材育成、組織開発から営業力強化まで、経営・人事課題解決を ...||||4 日前 ... 年間5652名が受講！研修会社インソースの新入社員フォロー研修一覧です。当社では\n入社後の振り返りに加えて、仕事の進め方（PDCA）、報連相、タイムマネジメント等、\n各種能力アップを図るためのプログラムを多数ご用意しております。||||新入社員研修は、階層別研修のなかで最も実施されている研修で、実に9割以上の\n企業で行われている。今回のHR総研の調査は、新入社員研修とそれに続く、メンター\n制度、新入社員フォロー研修について、3月に実施したアンケート調査の結果を報告する\n。",
+		"reference_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR11RfZ2q1IVNkftsdfby38bCzPEzyAzrkuVF6zaSWiZYbE6llC9-Vi2Pk||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1btEaywmhnnw4bs_ZBhqUdxQel3Yvx17yWV7kdg5nnkxenNPkXY1TZOKo||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSX7O3VNfwaanmg-C4xU_aW6cRxOhDQQ1aboVQNrQKw3e5qQJxpOWMYmIg"
+	}
+]

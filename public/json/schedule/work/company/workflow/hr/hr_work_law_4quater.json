@@ -1,0 +1,86 @@
+[
+	{
+		"t_name": "１〜２月",
+		"role": "担当者",
+		"parent_task_id": 0,
+		"before_date": 90,
+		"date_duration": 60,
+		"t_number": 0,
+		"reference_url": "",
+		"reference_title": "",
+		"reference_text": "",
+		"reference_image": ""
+	},
+	{
+		"t_name": "法定調書の提出",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 90,
+		"date_duration": 20,
+		"t_number": 1,
+		"reference_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hotei/houtei301.htm||||https://biz.moneyforward.com/accounting/basic/204/||||https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hotei/mokuji.htm",
+		"reference_title": "法定調書｜国税庁||||法定調書とは？||||法定調書関係｜国税庁",
+		"reference_text": "分類コード, 内容. 7400 · 法定調書の提出義務者 · 7401 · 法定調書の種類 · 7411 · 「\n給与所得の源泉徴収票」の提出範囲と提出枚数等 · 7421 · 「退職所得の源泉徴収票」\nの提出範囲と提出枚数等 · 7431 · 「報酬、料金、契約金及び賞金の支払調書」の提出 ...||||そうすると、A社はBさんに100万円の報酬を払ったとする支払調書を税務署に提出し\nます。 このとき、Bさんが100万円の事業所得があったと確定申告すれば、両者の数値\nは一致し適正に申告 ...||||法定調書. 平成28年中に支払った給与等に係る給与所得の源泉徴収票など、平成28\n年1月以後の金銭等の支払等に係る法定調書には、個人番号又は法人番号の記載が\n必要となります。 なお、番号の記載が必要となる法定調書の提出期限等の一覧\nについて ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRulkLH0e84KBU6MVPJ4HhjHlJuqRKIrCndDNMAomUUS8Xxt_LB8ilyxssR"
+	},
+	{
+		"t_name": "給与支払報告書の提出",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 85,
+		"date_duration": 15,
+		"t_number": 1,
+		"reference_url": "https://keiriplus.jp/tips/kyuyoshiharai_toha/||||https://www.city.osaka.lg.jp/zaisei/page/0000098160.html||||https://www.city.shinagawa.tokyo.jp/PC/.../hpg000015646.html",
+		"reference_title": "「給与支払報告書」とは？ちゃんと提出していますか？ | 経理プラス||||大阪市：給与支払報告書の提出について （…>市税について>個人市民税）||||令和2年度(令和元年分)「給与支払報告書」の提出｜品川区",
+		"reference_text": "2014年12月18日 ... そのため、従業員が住んでいる市区町村の数だけ総括表と個人別明細書が組み合わ\nされた「給与支払報告書」が作成されることになります。 いつまでに提出しなければ\nならないのか？ 給与支払報告書の提出期限. 1月31日までに市区 ...||||は、法人・個人を問わず、前年中に支払った（支払いの確定した）給与について、給与\n支払額の多少にかかわらず、アルバイト・パート、役員等を含むすべての従業員の給与\n支払報告書（総括表および個人別明細書）を作成し、従業員の1月1日現在（退職の場合\n ...||||2019年10月18日 ... 給与支払報告書」とは、「総括表(表紙)」と「個人別明細書(給与受給者ごとに作成)」から\nなり、事業所の連絡先や給与受給者の前年中(1月～12月)の給与支払金額等を記載し\n、市区町村に提出いただく書類です。 住民税は、保険料や保育料等 ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZJLoFFa8_bvXqqV8t8f8FrYbxvbnrMqUpUUNG4KPNFEeIUZD0W3SaVN6k||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHv-dAAm8bCezjI5FKEGt2PYVTtQPZNoZ_ZjDNNGq8zNR4mbjOxmyJ88kn||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuuN1_W8IDYTOQ9LAjnwf54aekw8I0pnq7CB1v505JKsjpgJCAzND_J88"
+	},
+	{
+		"t_name": "労働者死傷病報告（１０月〜１２月分）",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 75,
+		"date_duration": 15,
+		"t_number": 1,
+		"reference_url": "https://www.mhlw.go.jp/bunya/roudoukijun/.../17-download.html||||https://romsearch.officestation.jp/jinjiroumu/tetsuzuki/3208||||https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/.../12.html",
+		"reference_title": "労働者死傷病報告（休業4日以上）様式｜厚生労働省||||労働者死傷病報告の提出はどんなときに必要か知っていますか？ | 労務 ...||||労働者死傷病報告の提出の仕方を教えて下さい。｜厚生労働省",
+		"reference_text": "労働者死傷病報告（休業4日以上）様式. ※機械で読み取りを行うため、印刷に使用する\n用紙については、 白色度80％以上 の用紙をご使用願います。また、印刷した用紙を\nコピーして使用しないで下さい。||||2019年12月10日 ... 「労働者死傷病報告」はどのようなときに提出する必要があるでしょうか？また、提出\n期限や提出先はどこででしょうか？もし、提出を怠ると、刑事責任が問われることもある「\n労働者死傷病報告」について確認しましょう。||||労働者死傷病報告の提出の仕方を教えて下さい。について紹介しています。 ... 労働\n災害が発生したら、遅滞なく労働基準監督署に報告書を提出しなければなりません。 \n申請様式はこちら; なお、労働者が被災した事故現場が建設現場等で、会社の事務所\nがある ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhPTQ27TbmPYkUv9wRchQcHG2pPdvLIMAOJaeZXnb7RXQH16MwEAgHU28"
+	},
+	{
+		"t_name": "３月",
+		"role": "担当者",
+		"parent_task_id": 0,
+		"before_date": 30,
+		"date_duration": 30,
+		"t_number": 2,
+		"reference_url": "",
+		"reference_title": "",
+		"reference_text": "",
+		"reference_image": ""
+	},
+	{
+		"t_name": "労働保険の年度更新準備",
+		"role": "担当者",
+		"parent_task_id": 2,
+		"before_date": 30,
+		"date_duration": 15,
+		"t_number": 2,
+		"reference_url": "https://www.mhlw.go.jp/bunya/roudoukijun/roudouhoken01/kousin.html||||https://www.freee.co.jp/kb/kb.../the-annual-renewal-of-labor-insurance/||||https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou.../index.html",
+		"reference_title": "厚生労働省：労働保険の年度更新とは||||労働保険とは？労働保険の年度更新と必要な手続き、保険料の計算 ...||||労働保険の年度更新",
+		"reference_text": "を単位として計算されることになっており、その額はすべての労働者（雇用保険について\nは、被保険者）に支払われる賃金の総額に、その事業ごとに定められた保険料率を乗じ\nて算定することになっております。 労働保険では、保険年度ごとに概算で保険料を納付（\n ...||||2020年2月5日 ... ここでは、改めて労働保険とは何かを解説し、労働保険の年度更新の手続きや労働\n保険料の納付方法、支払時期など、知っておきたい事項をまとめました。「労働保険\n概算保険料申告書」と「確定保険料算定基礎賃金集計表」の書き方について ...||||令和元年度労働保険の年度更新期間は令和元年６月３日（月）～７月１０日（水）です。 \n年度更新期間終了後も、年度更新申告書の提出状況及び申告書の記載内容について\n、 都道府県労働局・ ...",
+		"reference_image": "https://1.bp.blogspot.com/-jkjWb2M6Vr8/XQtdnTiGS4I/AAAAAAAAEz8/105R2yFvC34TsA6uISvG5OvvO3ktLKQKwCLcBGAs/s1600/l_e_others_501.png||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXMeVAiKiV8Biun2tBH4Aqge7nLjExO-W4SMwPO33OQq2_f_N_jVdJaavN"
+	},
+	{
+		"t_name": "年休付与日数の算定",
+		"role": "担当者",
+		"parent_task_id": 2,
+		"before_date": 30,
+		"date_duration": 15,
+		"t_number": 2,
+		"reference_url": "https://www.mhlw.go.jp/new-info/kobetu/roudou/gyousei/.../140811-3.pdf||||https://mag.smarthr.jp/procedure/detail/yukyu_kisochishiki/||||https://www.freee.co.jp/kb/kb-payroll/how-to-manage-paid-holidays/",
+		"reference_title": "有給休暇の付与日数||||「有給休暇」の基礎知識。“付与日数”や“5日取得義務”などの注意点を ...||||有給休暇（年次有給休暇）の管理や有給日数の計算方法 | クラウド会計 ...",
+		"reference_text": "厚生労働省・都道府県労働局・労働基準監督署. （H27.3）. １ 年次有給休暇の付与日数\n20. 週所定. 労働日数. １年間の. 所定労働日数※. 継続勤務年数. 0.5. 1.5. 2.5. 3.5.||||2018年12月25日 ... 例えば、週の所定労働時間が30時間未満のアルバイトが、週の所定労働日数4日（\n年間169〜216日）で勤務する場合、勤続年数が3年6ヶ月の場合、付与日数は10日\nとなります。 具体的には下図をご覧ください。 日本における有給休暇の取得 ...||||年次有給休暇は労働基準法で労働者に認められた権利であり、出勤率などの条件を\n満たしていれば付与するよう、使用者に義務付けられています。本記事では年次有給\n休暇とは何か、有給休暇の日数や計算方法、管理について解説し ...",
+		"reference_image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJ8UDR3Ar9-S9kLZXMnZUqfpWM-8SFPHKgppsE0EgzZlJsB-32rsajR5Y||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXMeVAiKiV8Biun2tBH4Aqge7nLjExO-W4SMwPO33OQq2_f_N_jVdJaavN"
+	}
+]

@@ -1,0 +1,110 @@
+[
+	{
+		"t_name": "４月〜７月",
+		"role": "担当者",
+		"parent_task_id": 0,
+		"before_date": 365,
+		"date_duration": 125,
+		"t_number": 1,
+		"reference_url": "",
+		"reference_title": "",
+		"reference_text": "",
+		"reference_image": ""
+	},
+	{
+		"t_name": "定期健康診断先の選定",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 335,
+		"date_duration": 30,
+		"t_number": 1,
+		"reference_url": "https://solution.hrbase.jp/article/eiseikanri/teikikenkousindan/||||https://www.kyoukaikenpo.or.jp/shibu/hyogo/cat040/20180615003||||www.city.katsushika.lg.jp/business/1000067/1005056/1011485.html",
+		"reference_title": "定期健康診断の運用、どうしたらいい？ 病院選定の方法から、書類保管 ...||||被扶養者の特定健康診査（無料集団健診）に係る個別契約機関の募集 ...||||プロポーザル方式業者選定委員会の選定結果について（職員定期健康 ...",
+		"reference_text": "2019年10月25日 ... この記事でわかること【基礎知識】定期健康診断の必要性、未実施のリスク、対象者、\n時期、費用など【手続きの流れ】対象者や病院選定、書類保管までの、手続きの流れ【\nよくある質問】健診日の賃金はどうなるか？など ...||||2018年11月5日 ... 申請書など提出書類の書類審査等により、選定基準に適合していることを確認した上で\n、委託契約を締結することとします。 ○お問い合わせ先. 全国健康保険協会兵庫支部 \n保健グループ. 電話：078-252-8705（保健グループ ...||||2016年5月24日 ... プロポーザル方式業者選定委員会の選定結果について（職員定期健康診断等業務\n委託）. ツイート ... 葛飾区職員定期健康診断等業務委託. 2.契約相手方. 公益財団法人\n結核予防会第一健康相談所 所長 田川 斉之. 3.業務内容. 職員の定期 ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzukaORu0UD3rLqLJgkErVQW2p_EHHiG1wTjdxLQih-CQDvOJnUmw_QdQL||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHKJ-aJdFBTP5bXv6oQ7O3cIEeapi7ZfCaGHDGLU0dUceleZ3VPbw18L4"
+	},
+	{
+		"t_name": "定期健康診断受診予約",
+		"role": "担当者",
+		"parent_task_id": 1,
+		"before_date": 335,
+		"date_duration": 60,
+		"t_number": 1,
+		"reference_url": "www.hc.u-tokyo.ac.jp/checkups/||||https://www.pasona.co.jp/blog/area/toyota/20171022_01.html||||https://www.naganoroukiren.or.jp/kenshin/",
+		"reference_title": "健康診断について／東京大学 保健センター||||2019年度 定期健康診断のご案内 ～もう受診しましたか？年に1回の ...||||健康診断｜長野県労働基準協会連合会",
+		"reference_text": "健康診断受診日が近くなったらwebから問診の入力をする必要があります。web問診\n画面の入口は、予約サイト内にあります。 ... 教職員定期健診. 2019年度「予約・問診」\nは9月6日（金）17時からです; 予約開始日はアクセスが集中し、つながりにくい状況が\n発生 ...||||2017年10月22日 ... パソナから大切なお知らせ、『2019年度定期健康診断のご案内』です。予約方法や受診\n内容、オプション健診はコチラをチェック。年に1回の健康診断で健康管理をしましょう！||||長野県労働基準協会連合会 松本健診所では、長野県全地域を対象に働く人の健康を\n守るため、各種健康診断を行っています。 健康診断の結果は、 ... 長野支部）】. 【定期 / \n特殊健診】各種申込書ダウンロード; 【施設健診】実施日程・受診予約; 当施設について ...",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfOo0XdL4u7G3PyvXUz16NZ5nC8NVnVNIRrrwyUeQFCv1gpLhnuRvHdQ||||https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0VahsfI0paEX4SoV3c4cvz0Oq-e57ubRj8UnMcX4SMSx6xI5i__lFvZbh||||https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPgiuFX0JwxLGAJM5YvzZniiA00McUY5D4uW8BRiLCjfo5iivxbe6v8w"
+	},
+	{
+		"t_name": "８月〜１１月",
+		"role": "担当者",
+		"parent_task_id": 0,
+		"before_date": 240,
+		"date_duration": 120,
+		"t_number": 2,
+		"reference_url": "",
+		"reference_title": "",
+		"reference_text": "",
+		"reference_image": ""
+	},
+	{
+		"t_name": "定期健康診断受診開始",
+		"role": "担当者",
+		"parent_task_id": 2,
+		"before_date": 240,
+		"date_duration": 60,
+		"t_number": 2,
+		"reference_url": "https://www.mhlw.go.jp/file/06-Seisakujouhou.../0000103900.pdf||||https://mag.smarthr.jp/labor/detail/kenkoshindan_point/||||https://ohno-kinen.jp/contents/traits/details/_66_3050.html",
+		"reference_title": "健康診断を実施しましょう（リーフレット）［PDF形式：236KB］||||会社の健康診断は義務？ 企業が把握すべき定期健康診断4つのポイント ...||||定期健康診断のご案内 | 健康診断・人間ドック | 病院の特色 | 社会医療 ...",
+		"reference_text": "労働安全衛生法に基づく. 健康診断を実施しましょう. ～労働者の健康確保のために～. \n健康診断の種類. 対象となる労働者. 実施時期. 一般健. 康. 診断. 雇入時の健康診断（\n安衛則第43条）. 常時使用する労働者. 雇入れの際. 定期健康診断. （安衛則第44条）.||||2016年12月28日 ... ただし、従業員各自に健康診断を受診させてその結果を提出させる場合は、検査項目に\n気をつけましょう。 病院が行う健康診断には様々な種類があり、中には定期健診として\n必要な検査項目が不足している ...||||定期健康診断とは、事業主に対し雇用したパートを含む週30時間以上（正規従業員の\n労働時間４分の３以上）働く労働者に、医師による健康診断を ... 一般健診を受診された\n方で以下の受診条件を満たす方は乳がん検診を追加して受診することが出来ます。",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQa3II3OF8Ww6fJC87mqfjaPm9Hv_BL02_3QW-XU0rHd_dDgySkkOfMB-qW"
+	},
+	{
+		"t_name": "定期健康診断結果報告",
+		"role": "担当者",
+		"parent_task_id": 2,
+		"before_date": 180,
+		"date_duration": 60,
+		"t_number": 2,
+		"reference_url": "https://www.mhlw.go.jp/bunya/roudoukijun/.../18-01-download.html||||https://www.carely.jp/company-care/howtowritekenshinresult/||||https://www.mhlw.go.jp/bunya/roudoukijun/anzeneisei36/dl/18_01.pdf",
+		"reference_title": "定期健康診断結果報告書様式｜厚生労働省||||定期健康診断結果報告書！この書き方でらくちん5分で終了！ | | 健康 ...||||定期健康診断結果報告書",
+		"reference_text": "機械で読み取りを行うため、印刷に使用する用紙については、白色度80％以上の用紙\nをご使用願います。また、印刷した用紙をコピーして使用しないで下さい。 様式名, \nファイル. 定期健康診断結果報告書様式, PDF [144KB]. ～ 下記リンクから、\nインターネット上 ...||||2020年2月20日 ... 労基署へ提出する「定期健康診断結果報告書」ですが、悲しいことに、間違った書き方で\n余計な時間をかけてしまっている場合が多いのです。 在籍労働者数や有所見者数など\n、どうやったら間違いなく、すばやくカウントできるのでしょうか。 今回は ...||||歯科健診. 産. 業. 医. 定期健康診断結果報告書. 7：平成. 9：令和. →. 7：平成. 9：令和. \n→. ( 月～ 月分) (報告 回目). 郵便番号( ). 電話 ( ). (＊) 労働安全衛生規則第13条第1\n項第2号に掲げる業務に従事する労働者数(右に詰めて記入する). 計. 実施者数.",
+		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5DS9nCzEQPQ3VDbs46YTJiMBpsrn5WGOmT8PgCPCuGRYydmknzHZlz1s"
+	},
+	{
+		"t_name": "１２月〜３月",
+		"role": "担当者",
+		"parent_task_id": 0,
+		"before_date": 120,
+		"date_duration": 120,
+		"t_number": 3,
+		"reference_url": "",
+		"reference_title": "",
+		"reference_text": "",
+		"reference_image": ""
+	},
+	{
+		"t_name": "３６協定の更新・届出",
+		"role": "担当者",
+		"parent_task_id": 3,
+		"before_date": 30,
+		"date_duration": 30,
+		"t_number": 3,
+		"reference_url": "https://www.teamspirit.co.jp/workforcesuccess/law/36agreement.html||||https://www.mhlw.go.jp/content/000350731.pdf||||https://roudou-pro.com/columns/36/",
+		"reference_title": "「知らなかった」では済まされない！36協定の基礎知識 | 働き方改革研究所||||36協定で定める時間外労働及び休日労働 について留意すべき事項 ...||||36協定(サブロク協定)とは｜仕組み・限度時間・違法時の対処法まで ...",
+		"reference_text": "2019年6月17日 ... 皆さんは「３６（サブロク）協定って何？」と聞かれたら、正しく答えられますか？３６協定と\nは、正式には「時間外・休日労働に関する協定届」といいます。会社が法定労働時間\n以上の残業や法定休日出勤を従業員に課す場合には、本来は労使間 ...||||労働基準法第三十六条第一項の協定で定める労働時間の延長及び休日の労働\nについて留意すべき事項等に関する指針）. ○2019（平成31）年４月より、３６（サブロク）\n協定（※１）で定める時間外労働に、罰則付. きの上限（※２）が設けられます。 ○厚生\n労働省 ...||||2019年3月7日 ... 正式には「時間外・休日労働に関する協定届」と言って、労働者は法定労働時間を超え\nた労働、休日労働をさせる際は、あらかじめ書面による協定を締結しましょうと定められ\nています。 この36協定（サブロク協定）について、一度は聞いたことが ...",
+		"reference_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh5Nc6yZ_kLCViyrMgtKVY6lIdfLWPls7sfB97pmYxSdl4Y09b7MWRfETt||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTu4Iql-1eisiAwhcP8f2P-GmFdYFQPXcRyCxiq4LKbLTjtAO0w1A8hbnC5"
+	},
+	{
+		"t_name": "就業規則改定・届出",
+		"role": "担当者",
+		"parent_task_id": 3,
+		"before_date": 30,
+		"date_duration": 30,
+		"t_number": 3,
+		"reference_url": "https://biz.moneyforward.com/blog/24008/||||https://www.freee.co.jp/kb/kb.../how-to-change-rules-of-employment/||||https://partners.en-japan.com/qanda/desc_224",
+		"reference_title": "就業規則を変更する前に知っておくべき手順と2つの注意点｜Bizpedia||||就業規則を変更するには？就業規則の変更届の作成方法||||就業規則の変更には、社員の合意を取らなければならないのでしょうか ...",
+		"reference_text": "2016年8月12日 ... 労働基準法第89条によれば、常時10人以上の労働者を使用する事業場は、就業規則\nを作成し、所轄の労働基準監督署長に申し出る必要があります。 この就業規則に変更\nを加える時にも、実は法律に従い手続きをする必要があることをご存知 ...||||常時10人以上の従業員を雇い入れている会社は、就業規則を作成して、所管の労働\n基準監督署に届出をしなければなりません（従業員10人未満の会社でも就業規則を\n自主的に作ること自体は差し支えありません）。 では、その就業規則を変更するときには\n、 ...||||就業規則を変更しようと検討しています。不利益変更ではないのですが、一部の社員が\n反対しています。就業規則の変更には、社員の合意を取らなければならないのでしょ\nうか？ 労働基準法第90条によって、使用者は、就業規則の作成又は変更について、\n当該 ...",
+		"reference_image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIPgipJ5cv1eQ0p0J4igWP2BWhmzE6mJU9II1NXIKZ9VJLL_Z8uvO2Wt8q||||https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXMeVAiKiV8Biun2tBH4Aqge7nLjExO-W4SMwPO33OQq2_f_N_jVdJaavN||||https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIcYhzWgnvrNf63gbyx38iOiq1V6V797KpqLmzEcNP28KAv-leeLt7_cU"
+	}
+]
