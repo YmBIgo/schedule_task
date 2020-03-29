@@ -44,6 +44,14 @@
 		"reference_image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWLTRh6jQr6E6nnDQ38fRotOzSiw62H5ePVUQ14gotHQ6xttJi5Lwebpzo||||https://1.bp.blogspot.com/-jkjWb2M6Vr8/XQtdnTiGS4I/AAAAAAAAEz8/105R2yFvC34TsA6uISvG5OvvO3ktLKQKwCLcBGAs/s1600/l_e_others_501.png"
 	},
 	{
+		"t_name": "１〜２ヶ月前",
+		"role": "担当者",
+		"parent_task_id": 0,
+		"before_date": 60,
+		"date_duration": 30,
+		"t_number": 2
+	},
+	{
 		"t_name": "税務登記（統計局）",
 		"role": "担当者",
 		"parent_task_id": 2,

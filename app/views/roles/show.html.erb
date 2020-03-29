@@ -33,6 +33,7 @@
             </div>
             <div class="text-left"><h5><i class="fas fa-align-left"></i>　個人プロジェクト</h5></div>
             <div class="row" style="margin-top:30px;margin-bottom:30px;">
+                <!-- 取り組む最中のタスクも追加する -->
                 <div class="col-sm-4" style="margin-bottom:30px;">
                     <div class="list-group">
                     <div class="list-group-item active">今日終わらせるタスク</div>
@@ -41,7 +42,7 @@
                         <div class="list-group-item">タスクはありません。</div>
                     <% else %>
                         <div class="list-group">
-                        <% @today_tasks.each do |t_task| %>
+                        <% @today_tasks[0..4].each do |t_task| %>
                             <a href="/tasks/<%= t_task.id %>" class="list-group-item">
                                 <span class="btn btn-sm btn-info"><%= t_task.work.w_name %></span>
                                 <br>
@@ -58,7 +59,7 @@
                     <% if @tomorrow_tasks == [] then %>
                         <div class="list-group-item">タスクはありません。</div>
                     <% else %>
-                        <% @tomorrow_tasks.each do |t_task| %>
+                        <% @tomorrow_tasks[0..4].each do |t_task| %>
                             <a href="/tasks/<%= t_task.id %>" class="list-group-item">
                                 <span class="btn btn-sm btn-info"><%= t_task.work.w_name %></span>
                                 <br>
@@ -74,7 +75,7 @@
                     <% if @this_week_tasks == [] then %>
                         <div class="list-group-item">タスクはありません。</div>
                     <% else %>
-                        <% @this_week_tasks.each do |t_task| %>
+                        <% @this_week_tasks[0..4].each do |t_task| %>
                             <a href="/tasks/<%= t_task.id %>" class="list-group-item">
                                 <span class="btn btn-sm btn-info"><%= t_task.work.w_name %></span>
                                 <br>
@@ -90,7 +91,7 @@
                     <% if @this_month_tasks == [] then %>
                         <div class="list-group-item">タスクはありません。</div>
                     <% else %>
-                        <% @this_month_tasks.each do |t_task| %>
+                        <% @this_month_tasks[0..4].each do |t_task| %>
                             <a href="/tasks/<%= t_task.id %>" class="list-group-item">
                                 <span class="btn btn-sm btn-info"><%= t_task.work.w_name %></span>
                                 <br>
