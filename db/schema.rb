@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_27_143615) do
+ActiveRecord::Schema.define(version: 2020_03_29_153047) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 2020_03_27_143615) do
     t.string "line_id", default: "", null: false
     t.boolean "is_line_friend", default: false, null: false
     t.integer "line_push_period", default: 7, null: false
+    t.integer "work_limit", default: 10, null: false
     t.index ["reset_password_token"], name: "index_roles_on_reset_password_token", unique: true
     t.index ["work_id"], name: "index_roles_on_work_id", unique: true
     t.index ["workurl"], name: "index_roles_on_workurl", unique: true
@@ -72,7 +73,6 @@ ActiveRecord::Schema.define(version: 2020_03_27_143615) do
     t.boolean "done", default: false, null: false
     t.integer "type_id", default: 1, null: false
     t.string "reference_title", default: "", null: false
-    t.integer "role_id", default: 0, null: false
     t.boolean "is_line_pushed", default: false, null: false
     t.integer "line_push_before", default: 0, null: false
     t.date "line_push_date"
@@ -84,6 +84,8 @@ ActiveRecord::Schema.define(version: 2020_03_27_143615) do
     t.text "te_work_names", default: "", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "download_count", default: 0, null: false
+    t.integer "is_date_fixed", default: 0, null: false
   end
 
   create_table "works", force: :cascade do |t|
@@ -95,6 +97,7 @@ ActiveRecord::Schema.define(version: 2020_03_27_143615) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "template_id", default: 1, null: false
+    t.integer "role_id", default: 1, null: false
   end
 
 end
