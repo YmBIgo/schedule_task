@@ -50,6 +50,9 @@ class Task < ApplicationRecord
             tasks = generate_event_operation_tasks()
         elsif input_word == "海外展示会" then
             tasks = generate_foreign_exhibition_tasks()
+
+        # 海外進出
+
         elsif input_word == "法人米国進出" then
             tasks = generate_us_company_tasks()
         elsif input_word == "法人ドイツ進出" then
@@ -60,12 +63,18 @@ class Task < ApplicationRecord
             tasks = generate_thai_company_tasks()
         elsif input_word == "法人フィリピン進出" then
             tasks = generate_philippine_company_tasks()
+
+        # 開業
+
         elsif input_word == "医院開業"
             tasks = generate_open_doctor_tasks()
         elsif input_word == "飲食店開業" then
             tasks = generate_open_restrant_tasks()
         elsif input_word == "サロン開業" then
             tasks = generate_open_salon_tasks()     
+
+        # 労務業務
+
         elsif input_word == "労務業務１〜３月" then
             tasks = generate_labor_quater1_tasks()
         elsif input_word == "労務業務４〜６月" then
@@ -74,6 +83,9 @@ class Task < ApplicationRecord
             tasks = generate_labor_quater3_tasks()  
         elsif input_word == "労務業務１０〜１２月" then
             tasks = generate_labor_quater4_tasks()  
+
+        # 経理業務
+
         elsif input_word == "経理業務１〜２月" then
             tasks = generate_accounting_1_2_tasks()  
         elsif input_word == "経理業務３〜４月" then
@@ -86,6 +98,34 @@ class Task < ApplicationRecord
             tasks = generate_accounting_9_10_tasks()  
         elsif input_word == "経理業務１１〜１２月" then
             tasks = generate_accounting_11_12_tasks()  
+
+        # 人事業務
+        # 人事評価　４〜７月 / ８〜１１月 / １２〜３月　　人事教育研修　４〜９月 / １０〜３月
+        # 人事労務管理４月〜３月　　人事法定業務　４〜６月 / ７〜９月 １０〜１２月 / １〜３月
+
+        elsif input_word == "人事評価４〜７月" then
+            tasks = generate_hr_evaliation_1third_tasks()
+        elsif input_word == "人事評価８〜１１月" then
+            tasks = generate_hr_evaliation_2third_tasks()
+        elsif input_word == "人事評価１２〜３月" then
+            tasks = generate_hr_evaliation_3third_tasks()
+        elsif input_word == "人事教育研修４〜９月" then
+            tasks = generate_hr_education_1half_tasks()  
+        elsif input_word == "人事教育研修１０〜３月" then
+            tasks = generate_hr_education_2half_tasks()  
+        elsif input_word == "人事労務管理４月〜３月" then
+            tasks = generate_hr_work_management_tasks()  
+        elsif input_word == "人事法定業務４〜６月" then
+            tasks = generate_hr_work_law_1quater_tasks()  
+        elsif input_word == "人事法定業務７〜９月" then
+            tasks = generate_hr_work_law_2quater_tasks()  
+        elsif input_word == "人事法定業務１０〜１２月" then
+            tasks = generate_hr_work_law_3quater_tasks()  
+        elsif input_word == "人事法定業務１〜３月" then
+            tasks = generate_hr_work_law_4quater_tasks()  
+
+        # 大学関係
+
         elsif input_word == "論文" then
             tasks = generate_article_tasks()
         elsif input_word == "アメリカ大学院留学" then
@@ -115,6 +155,8 @@ class Task < ApplicationRecord
         return task_collection   
     end
 
+# 未設定
+
     # 通常
     def generate_normal_tasks()
         # 書けないデータ
@@ -124,6 +166,8 @@ class Task < ApplicationRecord
         tc_normal = generate_public_taskcollection("schedule/general/sample.json")
         return tc_normal
     end
+
+# 結婚
 
     # 結婚
     def generate_wedding_tasks()
@@ -136,6 +180,8 @@ class Task < ApplicationRecord
         tc_divorce = generate_public_taskcollection("schedule/lifeevent/wedding/divorce.json")
         return tc_divorce
     end
+
+# お子さま
 
     # 赤ちゃん予防接種
     def generate_baby_vaccination_tasks()
@@ -161,6 +207,8 @@ class Task < ApplicationRecord
         return tc_event_basic
     end
 
+# 採用
+
     # 会社採用
     def generate_company_recruit_tasks()
         tc_company_recruit = generate_public_taskcollection("schedule/work/job_hunting/company_recruit.json")
@@ -172,6 +220,71 @@ class Task < ApplicationRecord
         tc_kosotsu_recruit = generate_public_taskcollection("schedule/work/job_hunting/kosotsu_recruit.json")
         return tc_kosotsu_recruit
     end
+
+    # 人事評価　４〜７月 / ８〜１１月 / １２〜３月　　人事教育研修　４〜９月 / １０〜３月
+    # 人事労務管理４月〜３月　　人事法定業務　４〜６月 / ７〜９月 １０〜１２月 / １〜３月
+    
+    # 人事評価　４〜７月
+    def generate_hr_evaliation_1third_tasks()
+        tc_hr_evaluation1 = generate_public_taskcollection("schedule/work/company/workflow/hr/hr_evaluation_1third.json")
+        return tc_hr_evaluation1
+    end
+
+    # 人事評価　８〜１１月
+    def generate_hr_evaliation_2third_tasks()
+        tc_hr_evaluation2 = generate_public_taskcollection("schedule/work/company/workflow/hr/hr_evaluation_2third.json")
+        return tc_hr_evaluation2
+    end
+
+    # 人事評価　１２〜３月
+    def generate_hr_evaliation_3third_tasks()
+        tc_hr_evaluation3 = generate_public_taskcollection("schedule/work/company/workflow/hr/hr_evaluation_3third.json")
+        return tc_hr_evaluation3
+    end
+
+    # 人事教育研修　４〜９月
+    def generate_hr_education_1half_tasks()
+        tc_hr_education1 = generate_public_taskcollection("schedule/work/company/workflow/hr/hr_education_1half.json")
+        return tc_hr_evaluation1
+    end
+
+    # 人事教育研修　１０〜３月
+    def generate_hr_education_2half_tasks()
+        tc_hr_education2 = generate_public_taskcollection("schedule/work/company/workflow/hr/hr_education_2half.json")
+        return tc_hr_evaluation2
+    end
+
+    # 人事労務管理　４〜３月
+    def generate_hr_work_management_tasks()
+        tc_hr_content = generate_public_taskcollection("schedule/work/company/workflow/hr/hr_work_management.json")
+        return tc_hr_content
+    end
+
+    # 人事法定業務　４〜６月
+    def generate_hr_work_law_1quater_tasks()
+        tc_hr_content = generate_public_taskcollection("schedule/work/company/workflow/hr/hr_work_law_1quater.json")
+        return tc_hr_content
+    end
+
+    # 人事法定業務　７〜９月
+    def generate_hr_work_law_2quater_tasks()
+        tc_hr_content = generate_public_taskcollection("schedule/work/company/workflow/hr/hr_work_law_2quater.json")
+        return tc_hr_content
+    end
+
+    # 人事法定業務　１０〜１２月
+    def generate_hr_work_law_3quater_tasks()
+        tc_hr_content = generate_public_taskcollection("schedule/work/company/workflow/hr/hr_work_law_3quater.json")
+        return tc_hr_content
+    end
+
+    # 人事法定業務　１〜３月
+    def generate_hr_work_law_4quater_tasks()
+        tc_hr_content = generate_public_taskcollection("schedule/work/company/workflow/hr/hr_work_law_4quater.json")
+        return tc_hr_content
+    end
+
+# 大学
 
     # 就活
     def generate_recruit_tasks()
@@ -185,6 +298,18 @@ class Task < ApplicationRecord
         return tc_article
     end
 
+    # 合宿
+    def generate_gassyuku_tasks()
+        tc_gassyuku = generate_public_taskcollection("schedule/lifeevent/school/gassuku.json")
+        return tc_gassyuku
+    end
+
+    # 飲み会
+    def generate_nomikai_tasks()
+        tc_nomi = generate_public_taskcollection("schedule/work/company/nomikai.json")
+        return tc_nomi
+    end
+
     # 大学院留学　アメリカ
     def generate_graduate_america()
         tc_graduate_america = generate_public_taskcollection("schedule/lifeevent/school/study_graduateschool_america.json")
@@ -196,6 +321,8 @@ class Task < ApplicationRecord
         tc_graduate_america = generate_public_taskcollection("schedule/lifeevent/school/study_graduateschool_england.json")
         return tc_graduate_america
     end
+
+# 海外進出
 
     # 海外展示会
     def generate_foreign_exhibition_tasks()
@@ -233,6 +360,8 @@ class Task < ApplicationRecord
         return tc_philippine_company
     end
 
+# くらし
+
     # 引越し
     def generate_housemoving_tasks()
         tc_house_moving = generate_public_taskcollection("schedule/lifeevent/house/house_moving.json")
@@ -251,6 +380,8 @@ class Task < ApplicationRecord
         return tc_gassyuku
     end
 
+# 不動産
+
     # 中古マンション
     def generate_old_mansion()
         tc_old_mansion = generate_public_taskcollection("schedule/lifeevent/house/old_mansion.json")
@@ -263,11 +394,15 @@ class Task < ApplicationRecord
         return tc_repair_mansion
     end
 
+# 法律
+
     # 相続
     def generate_inheritance_tasks()
         tc_itsub = generate_public_taskcollection("schedule/lifeevent/disease/inheritance.json")
         return tc_itsub
     end
+
+# IT
 
     # IT導入
     def generate_it_application_tasks()
@@ -275,17 +410,23 @@ class Task < ApplicationRecord
         return tc_it_application
     end
 
+# 助成金
+
     # IT補助金
     def generate_it_subsidy_tasks()
         tc_itsub = generate_public_taskcollection("schedule/work/entrepreneur/subsidy.json")
         return tc_itsub      
     end
 
+# 
+
     # オフィス移転
     def generate_new_office_tasks()
         tc_new_office = generate_public_taskcollection("schedule/work/office/new_office.json")
         return tc_new_office
     end
+
+# 労務
 
     # 労務１
     def generate_labor_quater1_tasks()
@@ -310,6 +451,8 @@ class Task < ApplicationRecord
         tc_labor_quater4 = generate_public_taskcollection("schedule/work/company/workflow/labor/labor_quater4.json")
         return tc_labor_quater4
     end
+
+# 経理
 
     # 経理１
     def generate_accounting_1_2_tasks()
@@ -347,6 +490,8 @@ class Task < ApplicationRecord
         return tc_accouting_11_12
     end
 
+# 開業
+
     # デイサービス事業所開設
     def generate_open_daycare_tasks()
         tc_daycare = generate_public_taskcollection("schedule/work/entrepreneur/daycare.json")
@@ -369,18 +514,6 @@ class Task < ApplicationRecord
     def generate_open_salon_tasks()
         tc_open_salon = generate_public_taskcollection("schedule/work/entrepreneur/open_salon.json")
         return tc_open_salon
-    end
-    
-    # 合宿
-    def generate_gassyuku_tasks()
-        tc_gassyuku = generate_public_taskcollection("schedule/lifeevent/school/gassuku.json")
-        return tc_gassyuku
-    end
-
-    # 飲み会
-    def generate_nomikai_tasks()
-        tc_nomi = generate_public_taskcollection("schedule/work/company/nomikai.json")
-        return tc_nomi
     end
 
 end
