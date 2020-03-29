@@ -245,13 +245,13 @@ class Task < ApplicationRecord
     # 人事教育研修　４〜９月
     def generate_hr_education_1half_tasks()
         tc_hr_education1 = generate_public_taskcollection("schedule/work/company/workflow/hr/hr_education_1half.json")
-        return tc_hr_evaluation1
+        return tc_hr_education1
     end
 
     # 人事教育研修　１０〜３月
     def generate_hr_education_2half_tasks()
         tc_hr_education2 = generate_public_taskcollection("schedule/work/company/workflow/hr/hr_education_2half.json")
-        return tc_hr_evaluation2
+        return tc_hr_education2
     end
 
     # 人事労務管理　４〜３月
