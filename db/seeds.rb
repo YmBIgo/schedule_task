@@ -33,6 +33,8 @@ te1.save; te2.save; te3.save; te4.save; te5.save;
 te6.save; te7.save; te8.save; te9.save; te10.save;
 te11.save; te12.save; te13.save; te14.save; te15.save; te100.save;
 
+new_te_1.save; new_te_2.save; new_te_3.save; new_te_4.save;
+
 k1 = Knowhow.new(:k_name => 'マイホーム購入', :k_tasks_json_url => "schedule/lifeevent/house/myhome.json", :template_id => 1, :date_duration => 330);
 k2 = Knowhow.new(:k_name => '新居インテリア', :k_tasks_json_url => "schedule/lifeevent/house/interior.json", :template_id => 1, :date_duration => 395);
 k3 = Knowhow.new(:k_name => '引越し', :k_tasks_json_url => "schedule/lifeevent/house/house_moving.json", :template_id => 1, :date_duration => 37);
