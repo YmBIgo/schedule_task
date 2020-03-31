@@ -6,13 +6,19 @@ class WorksController < ApplicationController
     before_action :authenticate_role_page!, :only => [:show, :welcome]
 
     def new
-        if params["start-date"] == nil then
-            @today = Time.now.next_day(200)
-        else
-            @today = Time.parse(params["start-date"])
-        end
         @templates = Template.all
         @tasks = Task.new.default_input(params["schedule-type"])
+        if params["end-date"] != nil then
+            @today = Time.parse(params["end-date"])
+        elsif params["start-date"] != nil then
+            @today = Time.parse(params["start-date"]).next_day(@tasks.collection.first.before_date)
+        elsif params["schedule-type"] != nil then
+            # Time.now.year() の翌年への振り越し 等 課題
+            start_month = params["schedule-type"].match(/([０-９]{1,2})〜([０-９]{1,2})/)[2].tr("０-９", "0-9").to_i + 1
+            @today = Time.new(Time.now.year(), start_month, 1)
+        else
+            @today = Time.now
+        end
         @task = TaskCollection.new
         @work  = Work.new
     end
@@ -22,10 +28,15 @@ class WorksController < ApplicationController
         @role = @work.role
         @tasks = @work.tasks.order(:id)
         # @recent_tasks = @work.tasks.where.not(:parent_task_id => 0).where('end_date <= ?', Date.today+7).limit(4)
-        @recent_tasks = @work.tasks.where.not(:parent_task_id => 0).order(end_date: "ASC").limit(4)
-        @recent_task_top = @work.tasks.find_by(:parent_task_id => 0, :t_number => @recent_tasks.first.t_number)
+        # @recent_tasks = @work.tasks.where.not(:parent_task_id => 0).order(end_date: "ASC").limit(4)
+        # @recent_task_top = @work.tasks.find_by(:parent_task_id => 0, :t_number => @recent_tasks.first.t_number)
         @persons = @work.tasks.pluck(:role).uniq
         @late_tasks = @work.tasks.where('end_date <= ?', Date.today+1).limit(3)
+
+        @today_tasks = @tasks.where(:end_date => Date.today).where.not(:parent_task_id => 0)
+        @tomorrow_tasks = @tasks.where(:end_date => Date.today + 1).where.not(:parent_task_id => 0)
+        @this_week_tasks = @tasks.where(:end_date => (Date.today + 2)..(Date.today + 6)).where.not(:parent_task_id => 0)
+        @this_month_tasks = @tasks.where(:end_date => (Date.today + 7)..(Date.today + 30)).where.not(:parent_task_id => 0)
     end
 
     def index
@@ -76,6 +87,7 @@ class WorksController < ApplicationController
     def confirm
         @templates = Template.all
         @template_name = params["schedule-type"]
+        @template = Template.where("te_work_names LIKE?", "%#{@template_name}%")
     end
 
     private

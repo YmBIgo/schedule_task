@@ -9,10 +9,10 @@ class RolesController < ApplicationController
         # work_id map
         work_ids = Work.where(:role_id => @role.id).map {|w| w.id}
         tasks = Task.where(:work_id => work_ids)
-        @today_tasks = tasks.where(:end_date => Date.today).limit(5)
-        @tomorrow_tasks = tasks.where(:end_date => Date.today + 1).limit(5)
-        @this_week_tasks = tasks.where(:end_date => (Date.today + 2)..(Date.today + 6))
-        @this_month_tasks = tasks.where(:end_date => (Date.today + 7)..(Date.today + 30))
+        @today_tasks = tasks.where(:end_date => Date.today).where.not(:parent_task_id => 0).limit(5)
+        @tomorrow_tasks = tasks.where(:end_date => Date.today + 1).where.not(:parent_task_id => 0).limit(5)
+        @this_week_tasks = tasks.where(:end_date => (Date.today + 2)..(Date.today + 6)).where.not(:parent_task_id => 0)
+        @this_month_tasks = tasks.where(:end_date => (Date.today + 7)..(Date.today + 30)).where.not(:parent_task_id => 0)
     end
     def update
         @role = Role.find(params[:id])

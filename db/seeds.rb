@@ -6,32 +6,40 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-te1 = Template.new(:id => 1,:te_name => "すまい", :te_work_names => "マイホーム購入,新居インテリア,引越し")
-te2 = Template.new(:id => 2,:te_name => "結婚", :te_work_names => "結婚,離婚")
-te3 = Template.new(:id => 3,:te_name => "子供", :te_work_names => "赤ちゃん予防接種,子供イベント運営,幼稚園バザー運営")
-te4 = Template.new(:id => 4,:te_name => "学校", :te_work_names => "アメリカ大学院留学,イギリス大学院留学")
-te5 = Template.new(:id => 5,:te_name => "開業", :te_work_names => "飲食店開業,サロン開業,デイサービス開業,医院開業")
-te6 = Template.new(:id => 6,:te_name => "学校生活", :te_work_names => "飲み会,合宿,論文,就活")
-te7 = Template.new(:id => 7,:te_name => "法律", :te_work_names => "相続")
-te8 = Template.new(:id => 8,:te_name => "海外進出", :te_work_names => "法人米国進出,法人ドイツ進出,法人中国進出,法人タイ進出,法人フィリピン進出")
-te9 = Template.new(:id => 9,:te_name => "イベント運営", :te_work_names => "オフィス移転,イベント運営,海外展示会")
-te10 = Template.new(:id => 10,:te_name => "採用", :te_work_names => "会社就活準備,会社高卒採用準備,人事評価４〜７月,人事評価８〜１１月,人事評価１２〜３月,人事教育研修４〜９月,人事教育研修１０〜３月,人事労務管理４月〜３月,人事法定業務４〜６月,人事法定業務７〜９月,人事法定業務１０〜１２月,人事法定業務１〜３月")
-te11 = Template.new(:id => 11,:te_name => "助成金", :te_work_names => "IT補助金")
-te12 = Template.new(:id => 12,:te_name => "ITシステム", :te_work_names => "IT導入")
+te1 = Template.new(:id => 1,:te_name => "すまい", :te_work_names => "マイホーム購入,新居インテリア,引越し", :is_date_fixed => 1)
+te2 = Template.new(:id => 2,:te_name => "結婚", :te_work_names => "結婚,離婚", :is_date_fixed => 1)
+te3 = Template.new(:id => 3,:te_name => "子供", :te_work_names => "赤ちゃん予防接種,子供イベント運営,幼稚園バザー運営", :is_date_fixed => 1)
+te4 = Template.new(:id => 4,:te_name => "学校", :te_work_names => "アメリカ大学院留学１〜９月,イギリス大学院留学１〜９月")
+te5 = Template.new(:id => 5,:te_name => "開業", :te_work_names => "飲食店開業,サロン開業,デイサービス開業,医院開業", :is_date_fixed => 1)
+te6 = Template.new(:id => 6,:te_name => "学校生活", :te_work_names => "飲み会,合宿,論文,就活", :is_date_fixed => 1)
+te7 = Template.new(:id => 7,:te_name => "法律", :te_work_names => "相続", :is_date_fixed => 1)
+te8 = Template.new(:id => 8,:te_name => "海外進出", :te_work_names => "法人米国進出,法人ドイツ進出,法人中国進出,法人タイ進出,法人フィリピン進出", :is_date_fixed => 1)
+te9 = Template.new(:id => 9,:te_name => "イベント運営", :te_work_names => "オフィス移転,イベント運営,海外展示会", :is_date_fixed => 1)
+te10 = Template.new(:id => 10,:te_name => "採用", :te_work_names => "会社就活準備６〜４月,会社高卒採用準備１〜３月,人事評価４〜７月,人事評価８〜１１月,人事評価１２〜３月,人事教育研修４〜９月,人事教育研修１０〜３月,人事労務管理４月〜３月,人事法定業務４〜６月,人事法定業務７〜９月,人事法定業務１０〜１２月,人事法定業務１〜３月")
+te11 = Template.new(:id => 11,:te_name => "助成金", :te_work_names => "IT補助金４〜２月")
+te12 = Template.new(:id => 12,:te_name => "ITシステム", :te_work_names => "IT導入", :is_date_fixed => 1)
 te13 = Template.new(:id => 13,:te_name => "労務業務", :te_work_names => "労務業務１〜３月,労務業務４〜６月,労務業務７〜９月,労務業務１０〜１２月")
-te14 = Template.new(:id => 14,:te_name => "不動産", :te_work_names => "中古マンション購入,マンション購入")
+te14 = Template.new(:id => 14,:te_name => "不動産", :te_work_names => "中古マンション購入,マンション購入", :is_date_fixed => 1)
 te15 = Template.new(:id => 15,:te_name => "経理業務", :te_work_names => "経理業務１〜２月,経理業務３〜４月,経理業務５〜６月,経理業務７〜８月,経理業務９〜１０月,経理業務１１〜１２月")
+
+new_te_1 = Template.new(:id => 41, :te_name => "学習ノウハウ", :te_work_names => "１ヶ月でサービスをリリースする勉強法,２ヶ月でサービスをリリースする勉強法,３ヶ月でサービスをリリースする勉強法,１ヶ月でゲームを作って友達にドヤるための勉強法,圧倒的成長！１ヶ月のスキマ時間で資格を取る勉強法,時間がないを言い訳にしない！成功するダイエット３０日,学生のうちに将来の備えを！資格を取るまでの３ヶ月スケジュール,これで夢のトリリンガル？第２外国語を習得する１年スケジュール")
+new_te_2 = Template.new(:id => 42, :te_name => "家ノウハウ", :te_work_names => "10年間で350万円節約！？家族４人１ヶ月食費４万円家庭の節約術,もう迷わない！断捨離・鬼の１週間スケジュール,徹底的コストカット！節約術30本ノック１ヶ月スケジュール,将来のために。家のお財布を見直す１週間,無料を使いこなそう！最新アプリを使って節約しまくる１ヶ月,家のごちゃごちゃで悩まない！収納整理の１ヶ月,外食がタダ！？飲食店財テクを使いこなす１ヶ月,家の時間を有意義に！最新アプリを使って稼ぐ１ヶ月,ちゃんとチェックできてる？家事の棚卸しをする１ヶ月,ここからが長い。相続が終わるまでの２年スケジュール")
+new_te_3 = Template.new(:id => 43, :te_name => "買い物ノウハウ", :te_work_names => "最速！１年でマイホームを買うスケジュール,のんびりでいいかなぁ？２年でマイホームを買うスケジュール,もうやらかさない！引越し前１ヶ月マニュアル,思い立ったら即行動！１週間旅準備マニュアル,実は狙いどころ？中古物件購入するの１ヶ月,一生の買い物を最高のものに！新居インテリア選び半年スケジュール")
+new_te_4 = Template.new(:id => 44, :te_name => "ビジネスノウハウ", :te_work_names => "実は簡単？アメリカで法人設立するまでの３ヶ月,ついつい忘れがち税務。スタートアップ経営者向け税務スケジュール１年分,重大な機会損失！東京都企業の助成金１年スケジュール,会社の次の１ページを！最高のオフィスを移転する３ヶ月スケジュール,新規顧客との接点を増やそう！成功する展示会出展１年スケジュール,新しいサービスを作ろう！ウェブサイト外注をする２ヶ月スケジュール")
+
 te100 = Template.new(:id => 100,:te_name => "不明", :te_work_names => "")
 
 te1.save; te2.save; te3.save; te4.save; te5.save;
 te6.save; te7.save; te8.save; te9.save; te10.save;
-te11.save; te12.save; te13.save; te14.save; te100.save
+te11.save; te12.save; te13.save; te14.save; te15.save; te100.save;
 
-w1 = Work.new(:w_name => "合宿1", :content => "", :w_percent => 0, :w_url => "e4376c18a4f27ef0bd5f", :email => "coffeecup_japan@icloud.com", :template_id => te6.id)
-w1.save
+new_te_1.save; new_te_2.save; new_te_3.save; new_te_4.save;
 
-role1 = Role.new(:workurl => w1.w_url, :email => "coffeecup_japan@icloud.com", :password => "kz48", :line_id => "igymb0218", :is_line_friend => true)
+role1 = Role.new(:workurl => "e4376c18a4f27ef0bd5f", :email => "coffeecup_japan@icloud.com", :password => "kz48", :line_id => "igymb0218", :is_line_friend => true)
 role1.save
+
+w1 = Work.new(:w_name => "合宿1", :content => "", :w_percent => 0, :w_url => "e4376c18a4f27ef0bd5f", :email => "coffeecup_japan@icloud.com", :template_id => 6, :role_id => 1)
+w1.save;
 
 p1 = Person.new(:p_name => "たろお", :role => "幹部1")
 p2 = Person.new(:p_name => "二郎", :role => "幹部2")

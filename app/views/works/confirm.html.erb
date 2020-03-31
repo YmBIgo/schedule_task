@@ -4,7 +4,7 @@
         <ul class="nav flex-column nav-pills nav-stacked">
             <% @templates.each do |template| %>
                 <% if template.te_work_names.split(",").include?(params["schedule-type"]) %>
-                    <li class="nav-item"><a class="nav-link active" href="/templaes/<%= template.id %>"><%= template.te_name %></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/templates/<%= template.id %>"><%= template.te_name %></a></li>
                 <% else %>
                     <li class="nav-item"><a class="nav-link" href="/templates/<%= template.id %>"><%= template.te_name %></a></li>
                 <% end %>
@@ -20,17 +20,41 @@
         </div>
         <div class="col-sm-5" style="margin-left:-20px;">
             <div style="margin-top:0px;">
-            <p style="margin-bottom:20px;font-size:21px;">
-            <strong>開始する日を入力しましょう。<br>
-            <small><固定日 or 終了する日><br>を条件分岐させる</small></strong>
-            </p>
-            <form action="/works/new" method="get">
-                <label name="start-date" style="margin-bottom:20px;">開始日</label>
-                <input type="date" name="start-date" class="form-control" value="<%= year_month_date(Time.now) %>">
-                <input type="hidden" name="schedule-type" value="<%= @template_name %>">
+                <form action="/works/new" name="dateform" method="get">
+                <% if @template.first.is_date_fixed != 0 then %>
+                <p style="margin-bottom:20px;font-size:21px;">
+                <strong>開始する日を入力しましょう。</strong>
+                </p>
+                <label name="start-date" style="margin-bottom:20px;">日付を選択して下さい</label>
+                <select name="is_date_fixed" id="isdateFixedSelect" class="form-control" style="margin-bottom:20px;" onChange="selectboxChanged();">
+                    <option value="1">開始日</option>
+                    <option value="2">終了日</option>
+                </select>
+                <input type="date" id="date-input" name="start-date" class="form-control" value="<%= year_month_date(Time.now) %>">
                 <br>
+                <script type="text/javascript">
+                    function selectboxChanged(){
+                        var selected_value = document.dateform.isdateFixedSelect.selectedIndex;
+                        if (selected_value == 0){
+                            $("#date-input").attr("name", "start-date");
+                        }else{
+                            $("#date-input").attr("name", "end-date");
+                        }
+                    }
+                </script>
+                <% else %>
+                <p style="margin-bottom:20px;font-size:21px;">
+                <strong>スケジュールを作成しますか？</strong>
+                <% if @template.first.id > 40 then  %>
+                    <br><br>
+                        <small style="color:#777;">未実装です・・・すみません</small>
+                    <br><br>
+                <% end %>
+                </p>
+                <% end %>
+                <input type="hidden" name="schedule-type" value="<%= @template_name %>">
                 <input type="submit" value="日程を決定する" style="color:white;" class="btn btn-warning"></a>
-            </form>
+                </form>
             </div>
         </div>
     </div>

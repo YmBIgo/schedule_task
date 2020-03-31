@@ -12,22 +12,21 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-          <a class="nav-link" href="/templates_category">「やらかす」場面一覧</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" href="/templates">「やらかす」カテゴリー一覧</a>
+          <a class="nav-link" href="/templates_category">「やらかし」を探す</a>
       </li>
       <% if current_role != nil then %>
         <li class="nav-item">
             <a class="nav-link" href="/works/<%= current_role.works.first.w_url %>"><%= current_role.works.first.w_name %></a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="/roles/<%= current_role.id %> %>">マイページ</a>
         </li>
       <% end %>
-      <li class="nav-item">
-        <% if role_signed_in? %>
-          <%= link_to "ログアウト", destroy_role_session_path, :class => "nav-link", :style => "color:rgb(234, 234, 234,1);", method: :delete %>
-        <% end %>
-      </li>
+      <% if role_signed_in? %>
+        <li  class="nav-item">
+        <%= link_to "ログアウト", destroy_role_session_path, :class => "nav-link", :style => "color:rgb(234, 234, 234,1);", method: :delete %>
+        </li>
+      <% end %>
     </ul>
   </div>
 </nav>

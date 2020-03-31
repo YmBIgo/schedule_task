@@ -40,7 +40,7 @@ class Task < ApplicationRecord
             tasks = generate_repair_mansion()
         elsif input_word == "デイサービス事業所開設" then
             tasks = generate_open_daycare_tasks()
-        elsif input_word == "IT補助金" then
+        elsif input_word == "IT補助金４〜２月" then
             tasks = generate_it_subsidy_tasks()
         elsif input_word == "IT導入" then
             tasks = generate_it_application_tasks()
@@ -128,15 +128,15 @@ class Task < ApplicationRecord
 
         elsif input_word == "論文" then
             tasks = generate_article_tasks()
-        elsif input_word == "アメリカ大学院留学" then
+        elsif input_word == "アメリカ大学院留学１〜９月" then
             tasks = generate_graduate_america()
-        elsif input_word == "イギリス大学院留学" then
+        elsif input_word == "イギリス大学院留学１〜９月" then
             tasks = generate_graduate_england()
         elsif input_word == "就活" then
             tasks = generate_recruit_tasks()
-        elsif input_word == "会社就活準備" then
+        elsif input_word == "会社就活準備６〜４月" then
             tasks = generate_company_recruit_tasks()
-        elsif input_word == "会社高卒採用準備" then
+        elsif input_word == "会社高卒採用準備１〜３月" then
             tasks = generate_kosotsu_recruit_tasks()
         else
             tasks = generate_normal_tasks()

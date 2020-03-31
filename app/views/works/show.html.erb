@@ -3,6 +3,10 @@
     <hr>
     <h4><i class="fas fa-angle-double-right"></i>　スケジュール</h4>
     <br>
+    <p>
+    <a class="btn btn-success" href="javascript:zoomIn()">拡大する</a>　<a href="javascript:zoomOut()" class="btn btn-info">縮小する</a>
+    </p>
+    <br>
     <div id="gantt_here" style='width:100%; height:400px;'></div>
     <div style="margin-top:40px;">
         <script>
@@ -20,34 +24,171 @@
                 ]
             };
             gantt.init("gantt_here");
-            gantt.config.scales = [
-                <% if @work.tasks.first.date_duration > 60 then %>
-                    {unit: "month", step: 1, format: "%Y-%m"}
-                <% elsif @work.tasks.first.date_duration > 15 then %>
-                    {unit: "week", step: 1, format: "%Y-%m-%d"}
-                <% else %>
-                    {unit: "day", step: 1, format: "%Y-%m-%d"}
-                <% end %>
-            ];
+            var zoomConfig = {
+                levels: [
+                    {
+                        name:"day",
+                        scale_height: 27,
+                        min_column_width:80,
+                        scales:[
+                            {unit: "day", step: 1, format: "%M%d日"}
+                        ]
+                    },
+                    {
+                        name:"week",
+                        scale_height: 50,
+                        min_column_width:50,
+                        scales:[
+                            {unit: "week", step: 1, format: "%M%d日"}
+                        ]
+                    },
+                    {
+                        name:"week2",
+                        scale_height: 50,
+                        min_column_width:50,
+                        scales:[
+                            {unit: "week", step: 2, format: "%M%d日"}
+                        ]
+                    },
+                    {
+                        name:"month",
+                        scale_height: 50,
+                        min_column_width:120,
+                        scales:[
+                            {unit: "month", format: "%F, %Y"},
+                        ]
+                    },
+                    {
+                        name:"quarter",
+                        height: 50,
+                        min_column_width:90,
+                        scales:[
+                            {unit: "month", step: 1, format: "%M"},
+                            {
+                                unit: "quarter", step: 1, format: function (date) {
+                                    var dateToStr = gantt.date.date_to_str("%M");
+                                    var endDate = gantt.date.add(gantt.date.add(date, 3, "month"), -1, "day");
+                                    return dateToStr(date) + " - " + dateToStr(endDate);
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        name:"year",
+                        scale_height: 50,
+                        min_column_width: 30,
+                        scales:[
+                            {unit: "year", step: 1, format: "%Y"}
+                        ]
+                    }
+                ]
+            };
+
+            gantt.ext.zoom.init(zoomConfig);
+            gantt.ext.zoom.setLevel("month");
+            function zoomIn(){
+                gantt.ext.zoom.zoomIn();
+            }
+            function zoomOut(){
+                gantt.ext.zoom.zoomOut()
+            }
             gantt.attachEvent("onBeforeLinkAdd", function(id,link){ return false; });
             gantt.parse(tasks);
         </script>
-        <div class="btn-group btn-group-justified" role="group" style="width:100%;margin-bottom:30px;">
-            <% @work.tasks.where(:parent_task_id => 0).order(:t_number).each do |p_t| %>
-                <a class="btn btn-sm btn-info" href="javascript:change_calendar(<%= p_t.t_number %>)"><%= p_t.t_name %></a>
-            <% end %>
+
+        <div class="">
+            <div class="text-left"><h5><i class="fas fa-align-left"></i>　個人プロジェクト</h5></div>
+            <div class="row" style="margin-top:30px;margin-bottom:30px;">
+                <!-- 取り組む最中のタスクも追加する -->
+                <div class="col-sm-4" style="margin-bottom:30px;">
+                    <div class="list-group">
+                    <div class="list-group-item active">今日終わらせるタスク</div>
+                    <!-- 暫定的に list-group を使う -->
+                    <% if @today_tasks == [] then %>
+                        <div class="list-group-item">タスクはありません。</div>
+                    <% else %>
+                        <div class="list-group">
+                        <% @today_tasks.each do |t_task| %>
+                            <a href="/tasks/<%= t_task.id %>" class="list-group-item">
+                                <span class="btn btn-sm btn-info" style="margin-bottom:10px;"><%= t_task.work.w_name %></span>　<span class="btn btn-sm btn-<%= t_task.task_status[1] %>" style="color:white;float:right;"><%= t_task.task_status[0] %></span>
+                                <br>
+                                <span style="padding-top:10px;margin-left:10px;"><%= t_task.t_name %></span>
+                            </a>
+                        <% end %>
+                        </div>
+                    <% end %>
+                    </div>
+                </div>
+                <div class="col-sm-4" style="margin-bottom:30px;">
+                    <div class="list-group">
+                    <div class="list-group-item active">明日終わらせるタスク</div>
+                    <% if @tomorrow_tasks == [] then %>
+                        <div class="list-group-item">タスクはありません。</div>
+                    <% else %>
+                        <% @tomorrow_tasks.each do |t_task| %>
+                            <a href="/tasks/<%= t_task.id %>" class="list-group-item">
+                                <span class="btn btn-sm btn-info" style="margin-bottom:10px;"><%= t_task.work.w_name %></span>　<span class="btn btn-sm btn-<%= t_task.task_status[1] %>" style="color:white;float:right;"><%= t_task.task_status[0] %></span>
+                                <br>
+                                <span style="padding-top:10px;margin-left:10px;"><%= t_task.t_name %></span>
+                            </a>
+                        <% end %>
+                    <% end %>
+                    </div>
+                </div>
+                <div class="col-sm-4" style="margin-bottom:30px;">
+                    <div class="list-group">
+                    <div class="list-group-item active">今週終わらせるタスク</div>
+                    <% if @this_week_tasks == [] then %>
+                        <div class="list-group-item">タスクはありません。</div>
+                    <% else %>
+                        <% @this_week_tasks.each do |t_task| %>
+                            <a href="/tasks/<%= t_task.id %>" class="list-group-item">
+                                <span class="btn btn-sm btn-info" style="margin-bottom:10px;"><%= t_task.work.w_name %></span>　<span class="btn btn-sm btn-<%= t_task.task_status[1] %>" style="color:white;float:right;"><%= t_task.task_status[0] %></span>
+                                <br>
+                                <span style="padding-top:10px;margin-left:10px;"><%= t_task.t_name %></span>
+                            </a>
+                        <% end %>
+                    <% end %>
+                    </div>
+                </div>
+                <div class="col-sm-4" style="margin-bottom:30px;">
+                    <div class="list-group">
+                    <div class="list-group-item active">今月終わらせるタスク</div>
+                    <% if @this_month_tasks == [] then %>
+                        <div class="list-group-item">タスクはありません。</div>
+                    <% else %>
+                        <% @this_month_tasks.each do |t_task| %>
+                            <a href="/tasks/<%= t_task.id %>" class="list-group-item">
+                                <span class="btn btn-sm btn-info" style="margin-bottom:10px;"><%= t_task.work.w_name %></span>　<span class="btn btn-sm btn-<%= t_task.task_status[1] %>" style="color:white;float:right;"><%= t_task.task_status[0] %></span>
+                                <br>
+                                <span style="padding-top:10px;margin-left:10px;"><%= t_task.t_name %></span>
+                            </a>
+                        <% end %>
+                    <% end %>
+                    </div>
+                </div>
+            </div>
         </div>
-        <% @work.tasks.where(:parent_task_id => 0).each do |p_t| %>
-            <% w_start_date = @work.tasks.find_by(:t_number => p_t.t_number, :parent_task_id => 0).start_date %>
-            <% w_end_date = @work.tasks.find_by(:t_number => p_t.t_number, :parent_task_id => 0).end_date %>
-            <% w_diff_date = ((w_end_date - w_start_date+2).to_i/4).ceil %>
-            <% if p_t.t_number == 1 then %>
-                <div id="calendar-<%= p_t.t_number %>" class="visible-calendar">
-            <% else %>
-                <div id="calendar-<%= p_t.t_number %>" style="display:none">
-            <% end %>
+
+        <hr>
+        <div class="row">
+            <div class="col-sm-9">
+            <div class="btn-group btn-group-justified" role="group" style="width:100%;margin-bottom:30px;">
+                <% @work.tasks.where(:parent_task_id => 0).order(:t_number).each do |p_t| %>
+                    <a class="btn btn-sm btn-info" href="javascript:change_calendar(<%= p_t.t_number %>)"><%= p_t.t_name %></a>
+                <% end %>
+            </div>
+            <% @work.tasks.where(:parent_task_id => 0).each do |p_t| %>
+                <% w_start_date = @work.tasks.find_by(:t_number => p_t.t_number, :parent_task_id => 0).start_date %>
+                <% w_end_date = @work.tasks.find_by(:t_number => p_t.t_number, :parent_task_id => 0).end_date %>
+                <% w_diff_date = ((w_end_date - w_start_date+2).to_i/4).ceil %>
+                <% if p_t.t_number == 1 then %>
+                    <div id="calendar-<%= p_t.t_number %>" class="visible-calendar">
+                <% else %>
+                    <div id="calendar-<%= p_t.t_number %>" style="display:none">
+                <% end %>
                 <h4><a class="btn btn-lg btn-primary" style="color:white"><%= p_t.t_name %>　<%= w_start_date %>〜<%= w_end_date %></a></h4>
-                <br>
+                    <br>
                 <table class="table table-borderless">
                     <thead>
                     <% if p_t.before_date != 0 then %>
@@ -75,8 +216,18 @@
                         <% end %>
                     <% end %>
                 </table>
+                </div>
+            <% end %>
             </div>
-        <% end %>
+            <div class="col-sm-3">
+                <h3><i class="fas fa-angle-double-right" style="margin-top:10px"></i><%= @work.w_name %>の進捗</h3>
+                <br>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="<%= @work.w_percent %>" aria-valuemin="0" aria-valuemax="100" style="width:<%= @work.w_percent %>%;"></div>
+                    <span class="ml-1"><%= @work.w_percent %>%</span>
+                </div>
+            </div>
+        </div>
         <br>
         <div>
             <br>
@@ -112,53 +263,6 @@
     <hr>
     <div class="row">
         <div class="col-sm-7" style="padding-right:30px;">
-            <h4><i class="fas fa-angle-double-right"></i>直近のタスク</h4>
-            <br>
-            <div class="list-group">
-                <a href="/tasks/<%= @recent_task_top.id %>" style="color:white;">
-                    <div class="list-group-item list-group-item-action active">
-                        <%= @recent_task_top.t_name %>　　
-                        <small><i class="fas fa-clock"></i>　<%= @recent_task_top.start_date %>まで</small>
-                    </div>
-                </a>
-                <% @recent_tasks.each do |r_task| %>
-                    <a href="/tasks/<%= r_task.id %>" class="list-group-item list-group-item-action" style="padding:20px">
-                        <%= r_task.t_name %>
-                        <br>
-                        <small>
-                        <i class="fas fa-user-circle"></i>　<%= r_task.role %>
-                        <br>
-                        <i class="fas fa-clock"></i>　<%= r_task.end_date %>まで
-                        </small>
-                        <% if @role.is_line_friend == true then %>
-                            <div style="float:right;margin-top:-40px;">
-                            <span class="btn btn-warning btn-sm" style="margin-bottom:5px;color:white;"><%= r_task.line_push_date %>にLine通知</span>
-                            <br>
-                        <% else %>
-                            <div style="float:right;margin-top:-10px;">
-                        <% end %>
-                            <span class="btn btn-sm btn-<%= r_task.task_status[1] %>" style="color:white;float:right;"><%= r_task.task_status[0] %></span>
-                        </div>
-                    </a>
-                <% end %>
-            </div>
-            <br>
-            <hr>
-            <h4><i class="fas fa-angle-double-right"></i>明日期限のタスク</h4>
-            <br>
-            <% unless @late_tasks == [] then %>
-                <div class="list-group">
-                    <% @late_tasks.each do |l_task| %>
-                        <a href="/tasks/<%= l_task.id %>" class="list-group-item list-group-item-action">
-                        <%= l_task.t_name %> <small>締め切り <%= (l_task.end_date - Date.today).to_i %>日前</small>
-                        <span class="btn btn-sm btn-<%= l_task.task_status[1] %>" style="color:white;float:right;"><%= l_task.task_status[0] %></span>
-                        </a>
-                    <% end %>
-                </div>
-            <% else %>
-                <p>明日期限のタスクはありません。</p>
-            <% end %>
-            <br>
         </div>
         <div class="col-sm-5">
             <h4><i class="fas fa-angle-double-right"></i>LINE連携</h4>
@@ -182,14 +286,6 @@
                     <%= f.submit "保存する", :class => "btn btn-sm btn-success", :style => "margin-left:10px;margin-top:5px;margin-bottom:5px;" %>
                 <% end %>
             <% end %>
-            <hr>
-            <h3><i class="fas fa-angle-double-right"></i><%= @work.w_name %>の進捗</h3>
-            <br>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="<%= @work.w_percent %>" aria-valuemin="0" aria-valuemax="100" style="width:<%= @work.w_percent %>%;"></div>
-                <span class="ml-1"><%= @work.w_percent %>%</span>
-            </div>
-            <br>
             <hr>
             <h4><i class="fas fa-angle-double-right"></i>役割</h4>
             <br>
