@@ -1,5 +1,6 @@
 class Template < ApplicationRecord
     has_many :works
+    has_many :knowhows
 
     def date_fixed
         date_flag = self.is_date_fixed

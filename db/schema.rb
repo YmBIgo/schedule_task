@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_29_153047) do
+ActiveRecord::Schema.define(version: 2020_03_31_081750) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,21 @@ ActiveRecord::Schema.define(version: 2020_03_29_153047) do
     t.integer "task_id", default: 1, null: false
     t.string "c_name", default: "", null: false
     t.boolean "checked", default: false, null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "knowhows", force: :cascade do |t|
+    t.string "k_name", default: "", null: false
+    t.integer "template_id", default: 1, null: false
+    t.text "k_description", default: "", null: false
+    t.string "reference_url", default: "", null: false
+    t.text "reference_title", default: "", null: false
+    t.string "k_tasks_json_url", default: "", null: false
+    t.date "start_date"
+    t.integer "date_duration", default: 0, null: false
+    t.integer "is_date_fixed", default: 0, null: false
+    t.integer "download_count", default: 0, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
