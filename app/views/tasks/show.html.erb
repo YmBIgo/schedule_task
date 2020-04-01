@@ -10,7 +10,13 @@
         <%= f.text_field :t_name, :class => "form-control", :style => "width:180px;display:inline-block;margin-left:-50px;" %>
         <%= f.submit "保存する", :class => "btn btn-sm btn-success" %>
     <% end %>
+    <% #次の予定を追加 %>
     </span>
+    <% if @task.parent_task_id != 0 then %>
+    <span>
+        <a href="/tasks/<%= @task.following_task_id %>" style="margin-left:30px;" class="btn btn-sm btn-info">次の予定</a>
+    </span>
+    <% end %>
     <% if @parent_task != nil then %>
         <br>
         <span style="margin-top:7px;margin-left:33px;">
@@ -47,61 +53,69 @@
                             </div>
                         </div>
                          案2 -->
-                        <div style="padding-left:30px;">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="card border-info" style="height:200px;margin-bottom:20px;">
-                                        <div class="card-header">
-                                            今日のタスク
-                                            <div style="float:right">
-                                            <% if @task.done == false %>
-                                                <a id="task<%= @task.id %>" class="btn btn-success btn-sm" style="display:none;width:100px;color:white;display:none"><%= @task.task_status[0] %></a>
-                                                <%= button_to @task.task_status[0], done_path(@task), method: :post, remote: true, :class => "btn btn-#{@task.task_status[1]} btn-sm", :id => "task-not-yet"%>
-                                            <% elsif @task.done == true %>
-                                                <a id="task<%= @task.id %>" class="btn btn-danger btn-sm" style="display:none;width:100px;color:white;display:none">未完了</a>
-                                                <%= button_to @task.task_status[0], undone_path(@task), method: :post, remote: true, :class => "btn btn-#{@task.task_status[1]} btn-sm", :id => "task-not-yet"%>
-                                            <% end %>
+                         <% if @task_checklists != {} then %>
+                            <div style="padding-left:30px;">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="card border-info task-card">
+                                            <div class="card-header task-card-title">
+                                                今日のタスク
+                                                <div style="float:right">
+                                                <% if @task.done == false %>
+                                                    <a id="task<%= @task.id %>" class="btn btn-success btn-sm" style="display:none;width:100px;color:white;display:none"><%= @task.task_status[0] %></a>
+                                                    <%= button_to @task.task_status[0], done_path(@task), method: :post, remote: true, :class => "btn btn-#{@task.task_status[1]} btn-sm", :id => "task-not-yet"%>
+                                                <% elsif @task.done == true %>
+                                                    <a id="task<%= @task.id %>" class="btn btn-danger btn-sm" style="display:none;width:100px;color:white;display:none">未完了</a>
+                                                    <%= button_to @task.task_status[0], undone_path(@task), method: :post, remote: true, :class => "btn btn-#{@task.task_status[1]} btn-sm", :id => "task-not-yet"%>
+                                                <% end %>
+                                                </div>
+                                            </div>
+                                            <div class="card-body text-primary">
+                                                <%= @task_checklists["c_d_name"] %>
+                                                <br>
+                                                <a href="<%= @task_checklists["c_d_url"] %>" style="color:white;margin-top:10px;" class="btn btn-sm btn-warning"><i class="fas fa-arrow-right"></i>　見てみる</a>
                                             </div>
                                         </div>
-                                        <div class="card-body text-primary">
-                                            Progate 1〜3 HTML/CSS
-                                            <br>
-                                            <a style="color:white;margin-top:10px;margin-bottom:10px;" class="btn btn-sm btn-warning"><i class="fas fa-arrow-right"></i>　学習する</a>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="card border-info task-card">
+                                            <div class="card-header task-card-title">学習の全体像</div>
+                                            <div class="card-body text-primary">
+                                                <%= @task_checklists["c_d_url_name"] %>
+                                                <br>
+                                                <a href="<%= @task_checklists["c_p_url"] %>" style="color:white;margin-top:10px;" class="btn btn-sm btn-warning"><i class="fas fa-arrow-right"></i>　見てみる</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="card border-info" style="height:200px;margin-bottom:10px;">
-                                        <div class="card-header">学習の全体像</div>
-                                        <div class="card-body text-primary">
-                                            ホームページの仕組み
-                                            <br>
-                                            <a style="color:white;margin-top:10px;" class="btn btn-sm btn-warning"><i class="fas fa-arrow-right"></i>　見てみる</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="card border-info" style="height:200px;margin-bottom:20px;">
-                                        <div class="card-header">挫折しないために</div>
-                                        <div class="card-body text-primary">
-                                            Menta を登録しましょう。1日の食費で1ヶ月聞き放題です。<br><a style="color:white;" class="btn btn-sm btn-success"><i class="fas fa-arrow-right"></i>　登録</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="card border-info" style="height:200px;margin-bottom:20px;">
-                                        <div class="card-header">心得</div>
-                                        <div class="card-body text-primary">
+                                    <div class="col-sm-6">
+                                        <div class="card border-info task-card">
+                                            <div class="card-header task-card-title">挫折防止のToDo</div>
+                                            <div class="card-body text-primary">
                                             <ol>
-                                                <li>理解しなくても動けばいい</li>
-                                                <li>とりあえず動かして動くか試す</li>
-                                                <li>分からないことは理解しなくていい</li>
-                                            </ol>
+                                            <% 0.upto(@task_checklists["ce_url_name"].length-1) do |t_c| %>
+                                                <li>
+                                                <a href="<%= @task_checklists['ce_url'][t_c] %>" style="margin-left:10px;margin-top:3px;margin-bottom:3px;"><%= @task_checklists['ce_url_name'][t_c] %></a>
+                                                </li>
+                                            <% end %>
+                                            </ol>                                 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="card border-info task-card">
+                                            <div class="card-header task-card-title">心得</div>
+                                            <div class="card-body text-primary">
+                                                <ol>
+                                                    <% 0.upto(@task_checklists['c_kokoro'].length-1) do |c_k_i| %>
+                                                    <li><%= @task_checklists["c_kokoro"][c_k_i] %></li>
+                                                    <% end %>
+                                                </ol>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        <% end %>
                     </div>
                     <% # %>
                     <i class="fas fa-clock"></i>　<a class="btn btn-light" id="time-text" href="javascript:create_input('#time-text')" style="background-color:#eee;" href=""><%= @task.start_date %>〜<%= @task.end_date %></a>

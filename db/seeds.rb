@@ -88,10 +88,14 @@ k50 = Knowhow.new(:k_name => '経理業務５〜６月', :k_tasks_json_url => "s
 k51 = Knowhow.new(:k_name => '経理業務７〜８月', :k_tasks_json_url => "schedule/work/company/workflow/accounting/accounting_7_8.json", :template_id => 15, :start_date => '2020-07-01', :date_duration => 62, :is_date_fixed => 0);
 k52 = Knowhow.new(:k_name => '経理業務９〜１０月', :k_tasks_json_url => "schedule/work/company/workflow/accounting/accounting_9_10.json", :template_id => 15, :start_date => '2020-09-01', :date_duration => 61, :is_date_fixed => 0);
 k53 = Knowhow.new(:k_name => '経理業務１１〜１２月', :k_tasks_json_url => "schedule/work/company/workflow/accounting/accounting_11_12.json", :template_id => 15, :start_date => '2020-11-01', :date_duration => 61, :is_date_fixed => 0);
-k54 = Knowhow.new(:k_name => '１ヶ月でサービスをリリースする勉強法', :k_tasks_json_url => "", :template_id => 41, :date_duration => 0);
-k55 = Knowhow.new(:k_name => '２ヶ月でサービスをリリースする勉強法', :k_tasks_json_url => "", :template_id => 41, :date_duration => 0);
-k56 = Knowhow.new(:k_name => '３ヶ月でサービスをリリースする勉強法', :k_tasks_json_url => "", :template_id => 41, :date_duration => 0);
-k57 = Knowhow.new(:k_name => '１ヶ月でゲームを作って友達にドヤるための勉強法', :k_tasks_json_url => "", :template_id => 41, :date_duration => 0);
+# <premium>
+# programming
+k54 = Knowhow.new(:k_name => '１ヶ月でサービスの基本を作る勉強法', :k_tasks_json_url => "schedule/premium/programming/web_development_tasks_2.json", :template_id => 41, :date_duration => 31);
+k55 = Knowhow.new(:k_name => '２ヶ月でサービスの基本を作る勉強法', :k_tasks_json_url => "schedule/premium/programming/web_development_tasks_3.json", :template_id => 41, :date_duration => 60);
+k56 = Knowhow.new(:k_name => '３ヶ月でサービスの基本を作る勉強法', :k_tasks_json_url => "schedule/premium/programming/web_development_tasks_4.json", :template_id => 41, :date_duration => 90);
+k57 = Knowhow.new(:k_name => '１ヶ月でゲームを作って友達にドヤるための勉強法', :k_tasks_json_url => "schedule/premium/programming/web_development_tasks_1.json", :template_id => 41, :date_duration => 30);
+k57_2 = Knowhow.new(:k_name => 'アナと雪の女王で学ぶプログラミング！', :k_tasks_json_url => "schedule/premium/programming/web_development_tasks_0.json", :template_id => 41, :date_duration => 9 );
+
 k58 = Knowhow.new(:k_name => '圧倒的成長！１ヶ月のスキマ時間で資格を取る勉強法', :k_tasks_json_url => "", :template_id => 41, :date_duration => 0);
 k59 = Knowhow.new(:k_name => '時間がないを言い訳にしない！成功するダイエット３０日', :k_tasks_json_url => "", :template_id => 41, :date_duration => 0);
 k60 = Knowhow.new(:k_name => '学生のうちに将来の備えを！資格を取るまでの３ヶ月スケジュール', :k_tasks_json_url => "", :template_id => 41, :date_duration => 0);

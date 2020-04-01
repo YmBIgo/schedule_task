@@ -89,6 +89,15 @@
   background:rgb(234, 234, 234);
 }
 
+.task-card-title{
+  height:57px;
+}
+
+.task-card{
+  margin-bottom:20px;
+  min-height:234px;
+}
+
 /* checkbox @tasks-show */
 
 input[type=checkbox] {
